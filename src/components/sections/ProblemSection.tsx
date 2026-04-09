@@ -82,7 +82,7 @@ const ProblemSection = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden"
             >
-              <div className="h-40 overflow-hidden">
+              <div className="h-56 overflow-hidden">
                 <img
                   src={p.image}
                   alt={p.title}
