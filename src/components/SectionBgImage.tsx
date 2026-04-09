@@ -24,7 +24,6 @@ const SectionBgImage = ({ src, alt, opacity = 0.06, position = "center" }: Secti
         className="absolute inset-0 bg-primary/15 mix-blend-multiply"
         style={{ opacity }}
       />
-      />
       <div
         className="absolute inset-0"
         style={{
