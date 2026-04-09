@@ -17,6 +17,14 @@ const FooterSection = () => {
             <p className="text-sm text-muted-foreground mt-3">
               info@quantummaking.com
             </p>
+            <a
+              href="https://www.linkedin.com/company/quantummaking"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors mt-1 inline-block"
+            >
+              LinkedIn
+            </a>
           </div>
 
           <div>
