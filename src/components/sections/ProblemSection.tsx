@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Users, Clock, AlertTriangle } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
+import bgProblem from "@/assets/bg-problem-worker.jpg";
+import SectionBgImage from "@/components/SectionBgImage";
 
 const problems = [
   {
@@ -43,7 +45,8 @@ const ProblemSection = () => {
 
   return (
     <section id="problem" className="relative section-padding">
-      <div className="section-container">
+      <SectionBgImage src={bgProblem} alt="Worker at controls" opacity={0.05} />
+      <div className="section-container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

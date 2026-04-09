@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Video, Layers, PlayCircle } from "lucide-react";
+import bgHowIt from "@/assets/bg-howit-collab.jpg";
+import SectionBgImage from "@/components/SectionBgImage";
 
 const steps = [
   {
@@ -28,7 +30,8 @@ const steps = [
 const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="relative section-padding">
-      <div className="section-container">
+      <SectionBgImage src={bgHowIt} alt="Team collaboration" opacity={0.05} />
+      <div className="section-container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
