@@ -9,14 +9,14 @@ const steps = [
     number: "01",
     title: "Capture",
     description:
-      "Our AI observes and records how experienced operators perform tasks — capturing the tacit knowledge that traditional documentation misses.",
+      "Our AI observes and records how experienced operators perform tasks, capturing the tacit knowledge that traditional documentation misses.",
   },
   {
     icon: Layers,
     number: "02",
     title: "Structure",
     description:
-      "Raw demonstrations are transformed into clear, step-by-step task knowledge — standardized, searchable, and easy to follow.",
+      "Raw demonstrations are transformed into clear, step-by-step task knowledge: standardized, searchable, and easy to follow.",
   },
   {
     icon: PlayCircle,

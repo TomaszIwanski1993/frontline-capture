@@ -12,31 +12,31 @@ const industries = [
   {
     icon: Factory,
     title: "Manufacturing",
-    example: "Machine setup procedures, quality checks, changeover routines — captured from operators who've done it for decades.",
+    example: "Machine setup procedures, quality checks, changeover routines. Captured from operators who've done it for decades.",
     image: cardManufacturing,
   },
   {
     icon: Package,
     title: "FMCG",
-    example: "Line operations, batch adjustments, packaging specifications — consistent across shifts and sites.",
+    example: "Line operations, batch adjustments, packaging specifications. Consistent across shifts and sites.",
     image: cardFmcg,
   },
   {
     icon: Truck,
     title: "Logistics & Warehousing",
-    example: "Picking sequences, equipment handling, safety protocols — documented once, used everywhere.",
+    example: "Picking sequences, equipment handling, safety protocols. Documented once, used everywhere.",
     image: cardLogistics,
   },
   {
     icon: HardHat,
     title: "Construction",
-    example: "Site setup procedures, material handling, safety compliance — preserved from experienced site managers.",
+    example: "Site setup procedures, material handling, safety compliance. Preserved from experienced site managers.",
     image: cardConstruction,
   },
   {
     icon: Wrench,
     title: "Field Service",
-    example: "Troubleshooting guides, maintenance routines, client-specific configurations — always accessible in the field.",
+    example: "Troubleshooting guides, maintenance routines, client-specific configurations. Always accessible in the field.",
     image: cardFieldservice,
   },
 ];

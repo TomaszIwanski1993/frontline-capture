@@ -12,7 +12,7 @@ const outcomes = [
     icon: TrendingDown,
     metric: "20–40%",
     title: "Faster time-to-proficiency",
-    description: "New operators reach competence significantly faster with structured, real-world task guidance — reducing onboarding from months to weeks.",
+    description: "New operators reach competence significantly faster with structured, real-world task guidance, reducing onboarding from months to weeks.",
     image: cardProficiency,
   },
   {
@@ -68,7 +68,7 @@ const ValueSection = () => {
             Measurable impact on operations
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
-            Real improvements validated in industrial environments — not marketing claims.
+            Real improvements validated in industrial environments, not marketing claims.
           </p>
         </motion.div>
 

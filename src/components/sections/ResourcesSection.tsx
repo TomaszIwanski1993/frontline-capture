@@ -5,7 +5,7 @@ const articles = [
   {
     title: "The hidden cost of knowledge loss in manufacturing",
     category: "Insight",
-    description: "Why tacit knowledge is the most undervalued asset in industrial operations — and what happens when it disappears.",
+    description: "Why tacit knowledge is the most undervalued asset in industrial operations, and what happens when it disappears.",
   },
   {
     title: "Rethinking onboarding for frontline operators",
@@ -15,7 +15,7 @@ const articles = [
   {
     title: "AI in operations: beyond automation",
     category: "Analysis",
-    description: "How AI can support — not replace — human expertise in industrial environments. A practical framework.",
+    description: "How AI can support, not replace, human expertise in industrial environments. A practical framework.",
   },
 ];
 
