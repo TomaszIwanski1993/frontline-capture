@@ -21,7 +21,7 @@ const wordChild = {
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      <SectionBgImage src={bgHero} alt="Factory floor" opacity={0.07} />
+      <SectionBgImage src={bgHero} alt="Factory floor" opacity={0.12} />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

@@ -45,7 +45,7 @@ const ProblemSection = () => {
 
   return (
     <section id="problem" className="relative section-padding">
-      <SectionBgImage src={bgProblem} alt="Worker at controls" opacity={0.05} />
+      <SectionBgImage src={bgProblem} alt="Worker at controls" opacity={0.10} />
       <div className="section-container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
