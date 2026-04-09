@@ -47,7 +47,7 @@ const cardVariants = {
 const ValueSection = () => {
   return (
     <section id="outcomes" className="relative section-padding">
-      <SectionBgImage src={bgValue} alt="Warehouse operations" opacity={0.05} />
+      <SectionBgImage src={bgValue} alt="Warehouse operations" opacity={0.10} />
       <div className="section-container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

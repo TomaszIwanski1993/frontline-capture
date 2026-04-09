@@ -30,7 +30,7 @@ const steps = [
 const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="relative section-padding">
-      <SectionBgImage src={bgHowIt} alt="Team collaboration" opacity={0.05} />
+      <SectionBgImage src={bgHowIt} alt="Team collaboration" opacity={0.10} />
       <div className="section-container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
