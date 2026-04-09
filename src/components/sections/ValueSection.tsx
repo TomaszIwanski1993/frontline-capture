@@ -10,7 +10,7 @@ import cardContinuity from "@/assets/card-continuity.jpg";
 const outcomes = [
   {
     icon: TrendingDown,
-    metric: "20-40%",
+    metric: "30-40%",
     title: "Faster time-to-proficiency",
     description: "New operators reach competence significantly faster with structured, real-world task guidance, reducing onboarding from months to weeks.",
     image: cardProficiency,
