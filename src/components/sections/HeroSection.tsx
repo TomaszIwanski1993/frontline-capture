@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import bgHero from "@/assets/bg-hero-factory.jpg";
+import SectionBgImage from "@/components/SectionBgImage";
 
 const wordReveal = {
   hidden: {},
@@ -19,6 +21,7 @@ const wordChild = {
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <SectionBgImage src={bgHero} alt="Factory floor" opacity={0.07} />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

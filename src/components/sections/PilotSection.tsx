@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import bgPilot from "@/assets/bg-pilot-machinery.jpg";
+import SectionBgImage from "@/components/SectionBgImage";
 
 const pilotPoints = [
   "2–4 week pilot on a single line or process",
@@ -10,7 +12,8 @@ const pilotPoints = [
 const PilotSection = () => {
   return (
     <section id="pilot" className="relative section-padding">
-      <div className="section-container">
+      <SectionBgImage src={bgPilot} alt="Industrial machinery" opacity={0.06} />
+      <div className="section-container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30, scale: 0.97 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}

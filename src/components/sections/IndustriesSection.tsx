@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Factory, Package, Truck, HardHat, Wrench } from "lucide-react";
+import bgIndustries from "@/assets/bg-industries-aerial.jpg";
+import SectionBgImage from "@/components/SectionBgImage";
 
 const industries = [
   {
@@ -46,7 +48,8 @@ const cardVariants = {
 const IndustriesSection = () => {
   return (
     <section id="industries" className="relative section-padding">
-      <div className="section-container">
+      <SectionBgImage src={bgIndustries} alt="Industrial complex" opacity={0.06} />
+      <div className="section-container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

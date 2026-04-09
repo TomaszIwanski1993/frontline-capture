@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { TrendingDown, CheckCircle, Shield, RefreshCw } from "lucide-react";
+import bgValue from "@/assets/bg-value-logistics.jpg";
+import SectionBgImage from "@/components/SectionBgImage";
 
 const outcomes = [
   {
@@ -45,7 +47,8 @@ const cardVariants = {
 const ValueSection = () => {
   return (
     <section id="outcomes" className="relative section-padding">
-      <div className="section-container">
+      <SectionBgImage src={bgValue} alt="Warehouse operations" opacity={0.05} />
+      <div className="section-container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
