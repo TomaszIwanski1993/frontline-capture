@@ -3,6 +3,9 @@ import { Users, Clock, AlertTriangle } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
 import bgProblem from "@/assets/bg-problem-worker.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
+import cardKnowledge from "@/assets/card-knowledge.jpg";
+import cardOnboarding from "@/assets/card-onboarding.jpg";
+import cardRisk from "@/assets/card-risk.jpg";
 
 const problems = [
   {
@@ -10,18 +13,21 @@ const problems = [
     title: "Knowledge lives in people, not systems",
     description:
       "Critical operational know-how — the workarounds, adjustments, and judgment calls — exists only in the heads of experienced operators. When they leave, that knowledge goes with them.",
+    image: cardKnowledge,
   },
   {
     icon: Clock,
     title: "Onboarding is slow and inconsistent",
     description:
       "New operators learn through shadowing and trial-and-error. The result: months of ramp-up time, variable quality, and repeated mistakes that could have been avoided.",
+    image: cardOnboarding,
   },
   {
     icon: AlertTriangle,
     title: "Loss of experience creates operational risk",
     description:
       "Every retirement, resignation, or shift change is a potential disruption. Organizations become dependent on a small number of key individuals — a fragile operating model.",
+    image: cardRisk,
   },
 ];
 
@@ -74,18 +80,30 @@ const ProblemSection = () => {
               variants={cardVariants}
               whileHover={{ y: -6, boxShadow: "0 12px 40px hsl(265 30% 50% / 0.12)" }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="glass-card p-8"
+              className="glass-card overflow-hidden"
             >
-              <motion.div
-                initial={{ scale: 0, rotate: -20 }}
-                whileInView={{ scale: 1, rotate: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 + i * 0.15, type: "spring", stiffness: 200 }}
-              >
-                <p.icon className="h-6 w-6 text-primary mb-5" strokeWidth={1.5} />
-              </motion.div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">{p.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{p.description}</p>
+              <div className="h-40 overflow-hidden">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  loading="lazy"
+                  width={640}
+                  height={512}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-8">
+                <motion.div
+                  initial={{ scale: 0, rotate: -20 }}
+                  whileInView={{ scale: 1, rotate: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 + i * 0.15, type: "spring", stiffness: 200 }}
+                >
+                  <p.icon className="h-6 w-6 text-primary mb-5" strokeWidth={1.5} />
+                </motion.div>
+                <h3 className="text-lg font-semibold text-foreground mb-3">{p.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{p.description}</p>
+              </div>
             </motion.div>
           ))}
         </div>
