@@ -1,0 +1,131 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Mail, MapPin } from "lucide-react";
+
+const ContactSection = () => {
+  const [form, setForm] = useState({ name: "", company: "", email: "" });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+  };
+
+  return (
+    <section id="contact" className="relative section-padding">
+      <div className="section-container">
+        <div className="grid lg:grid-cols-2 gap-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Contact</p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+              Want to talk?
+            </h2>
+            <p className="mt-4 text-muted-foreground text-lg">
+              We'll get back to you within one business day.
+            </p>
+
+            <div className="mt-10 space-y-5">
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <Mail className="h-5 w-5 text-primary" strokeWidth={1.5} />
+                <a href="mailto:info@quantummaking.com" className="hover:text-foreground transition-colors">
+                  info@quantummaking.com
+                </a>
+              </div>
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <MapPin className="h-5 w-5 text-primary flex-shrink-0" strokeWidth={1.5} />
+                <span>Stockholm, Sweden</span>
+              </div>
+            </div>
+
+            <div className="mt-8 glass-card overflow-hidden rounded-xl h-48">
+              <iframe
+                title="Office Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130062.81635771776!2d17.89603!3d59.32932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm%2C%20Sweden!5e0!3m2!1sen!2sus!4v1700000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0, filter: "invert(0.9) hue-rotate(180deg) saturate(0.3)" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            {submitted ? (
+              <div className="glass-card p-10 text-center h-full flex flex-col items-center justify-center">
+                <h3 className="text-xl font-semibold text-foreground mb-3">Thank you</h3>
+                <p className="text-muted-foreground">We'll be in touch shortly.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="glass-card p-8 lg:p-10 space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    type="text"
+                    required
+                    maxLength={100}
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
+                    className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
+                    Company
+                  </label>
+                  <input
+                    id="company"
+                    type="text"
+                    required
+                    maxLength={100}
+                    value={form.company}
+                    onChange={(e) => setForm({ ...form, company: e.target.value })}
+                    className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    placeholder="Your company"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    type="email"
+                    required
+                    maxLength={255}
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    placeholder="you@company.com"
+                  />
+                </div>
+                <button type="submit" className="cta-button w-full text-base py-4">
+                  Send Message
+                </button>
+              </form>
+            )}
+          </motion.div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-0 left-0 right-0 subtle-divider" />
+    </section>
+  );
+};
+
+export default ContactSection;
