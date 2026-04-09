@@ -9,7 +9,7 @@
     --background: 0 0% 100%;
     --foreground: 240 10% 10%;
 
-    --card: 0 0% 99%;
+    --card: 0 0% 100%;
     --card-foreground: 240 10% 10%;
 
     --popover: 0 0% 100%;
@@ -18,27 +18,29 @@
     --primary: 265 55% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 260 20% 96%;
+    --secondary: 260 20% 97%;
     --secondary-foreground: 240 10% 20%;
 
     --muted: 260 15% 95%;
     --muted-foreground: 240 5% 45%;
 
-    --accent: 265 45% 94%;
+    --accent: 265 30% 96%;
     --accent-foreground: 265 55% 40%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 260 10% 90%;
-    --input: 260 10% 90%;
+    --border: 260 10% 92%;
+    --input: 260 10% 92%;
     --ring: 265 55% 50%;
 
     --radius: 0.5rem;
 
+    --section-tint: 265 30% 98%;
+
     --gradient-primary: linear-gradient(135deg, hsl(265 55% 50%), hsl(280 60% 42%));
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(265 30% 97%) 50%, hsl(0 0% 100%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(265 20% 98%));
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(265 25% 98%) 50%, hsl(0 0% 100%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(265 20% 99%));
     --gradient-cta: linear-gradient(135deg, hsl(265 60% 52%), hsl(280 55% 45%));
     --gradient-cta-hover: linear-gradient(135deg, hsl(265 60% 47%), hsl(280 55% 40%));
 
@@ -76,13 +78,22 @@
     @apply py-24 lg:py-32;
   }
 
+  .section-tinted {
+    background-color: hsl(var(--section-tint));
+  }
+
   .gradient-text {
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(135deg, hsl(265 55% 50%), hsl(280 50% 45%));
   }
 
   .glass-card {
-    @apply rounded-xl border border-border bg-card shadow-sm;
+    @apply rounded-xl border border-border bg-card shadow-sm transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply shadow-md;
+    border-color: hsl(265 30% 85%);
   }
 
   .cta-button {
@@ -93,33 +104,60 @@
 
   .cta-button:hover {
     background: var(--gradient-cta-hover);
-    box-shadow: 0 6px 30px hsl(265 55% 50% / 0.35);
-    transform: translateY(-1px);
+    box-shadow: 0 8px 35px hsl(265 55% 50% / 0.35);
+    transform: translateY(-2px);
+  }
+
+  .cta-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px hsl(265 55% 50% / 0.25);
   }
 
   .subtle-divider {
     @apply w-full h-px;
-    background: linear-gradient(90deg, transparent, hsl(260 20% 88%), transparent);
+    background: linear-gradient(90deg, transparent, hsl(260 20% 90%), transparent);
+  }
+
+  .section-gradient-top {
+    background: linear-gradient(180deg, hsl(var(--section-tint)) 0%, hsl(var(--background)) 100%);
+  }
+
+  .section-gradient-bottom {
+    background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--section-tint)) 100%);
   }
 }
 
 /* Animated background waves */
 @keyframes wave-flow {
   0% { transform: translateX(0) translateY(0); }
-  50% { transform: translateX(-20px) translateY(10px); }
+  25% { transform: translateX(-15px) translateY(8px); }
+  50% { transform: translateX(-25px) translateY(12px); }
+  75% { transform: translateX(-10px) translateY(5px); }
   100% { transform: translateX(0) translateY(0); }
 }
 
 @keyframes wave-flow-2 {
   0% { transform: translateX(0) translateY(0); }
-  50% { transform: translateX(15px) translateY(-8px); }
+  25% { transform: translateX(12px) translateY(-6px); }
+  50% { transform: translateX(18px) translateY(-10px); }
+  75% { transform: translateX(8px) translateY(-3px); }
   100% { transform: translateX(0) translateY(0); }
 }
 
+@keyframes wave-flow-3 {
+  0% { transform: translateX(0) translateY(0) scale(1); }
+  50% { transform: translateX(-10px) translateY(6px) scale(1.03); }
+  100% { transform: translateX(0) translateY(0) scale(1); }
+}
+
 .wave-bg {
-  animation: wave-flow 20s ease-in-out infinite;
+  animation: wave-flow 25s ease-in-out infinite;
 }
 
 .wave-bg-2 {
-  animation: wave-flow-2 25s ease-in-out infinite;
+  animation: wave-flow-2 30s ease-in-out infinite;
+}
+
+.wave-bg-3 {
+  animation: wave-flow-3 35s ease-in-out infinite;
 }

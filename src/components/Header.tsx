@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo-quantum-2.png";
+import logo from "@/assets/logo-quantum.svg";
 
 const navLinks = [
   { label: "Problem", href: "#problem" },
@@ -18,7 +18,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 backdrop-blur-xl bg-background/80">
       <div className="section-container flex items-center justify-between h-16 lg:h-20">
         <a href="/" className="flex items-center gap-3">
-          <img src={logo} alt="Quantum" className="h-12 w-12 lg:h-14 lg:w-14 rounded-lg" />
+          <img src={logo} alt="Quantum" className="h-10 lg:h-12" />
           <span className="text-xl lg:text-2xl font-bold tracking-tight text-foreground">Quantum</span>
         </a>
 
