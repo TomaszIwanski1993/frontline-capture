@@ -55,7 +55,7 @@ const HowItWorksSection = () => {
               className="relative"
             >
               <motion.span
-                className="text-6xl font-bold text-primary/10 block"
+                className="text-6xl font-bold text-primary/25 block"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
