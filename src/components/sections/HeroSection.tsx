@@ -3,10 +3,15 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* Hero gradient accent */}
+      {/* Hero gradient background */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{ background: "var(--gradient-hero)" }}
+      />
+      {/* Extra hero glow behind headline area */}
+      <div
+        className="absolute top-[15%] left-[10%] w-[60%] h-[50%] pointer-events-none rounded-full blur-[160px] opacity-[0.06]"
+        style={{ background: "radial-gradient(ellipse at center, hsl(265 55% 60%), transparent 70%)" }}
       />
 
       <div className="section-container w-full relative z-10">
@@ -39,7 +44,7 @@ const HeroSection = () => {
             </motion.a>
             <motion.a
               href="#how-it-works"
-              className="px-8 py-5 rounded-lg text-base font-medium text-muted-foreground border border-border hover:border-primary/40 hover:text-foreground transition-all duration-300 text-center"
+              className="px-8 py-5 rounded-lg text-base font-medium text-muted-foreground border border-border hover:border-primary/40 hover:text-foreground hover:shadow-sm transition-all duration-300 text-center"
               whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.99 }}
             >
