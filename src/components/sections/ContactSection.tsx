@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { Mail, MapPin } from "lucide-react";
 
 const ContactSection = () => {
@@ -15,12 +14,7 @@ const ContactSection = () => {
     <section id="contact" className="relative section-padding">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Contact</p>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
               Want to talk?
@@ -54,14 +48,9 @@ const ContactSection = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+          <div>
             {submitted ? (
               <div className="glass-card p-10 text-center h-full flex flex-col items-center justify-center">
                 <h3 className="text-xl font-semibold text-foreground mb-3">Thank you</h3>
@@ -119,7 +108,7 @@ const ContactSection = () => {
                 </button>
               </form>
             )}
-          </motion.div>
+          </div>
         </div>
       </div>
 

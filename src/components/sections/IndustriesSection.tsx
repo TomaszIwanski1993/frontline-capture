@@ -41,46 +41,22 @@ const industries = [
   },
 ];
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 40, scale: 0.95 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.6,
-      delay: i * 0.1,
-      ease: [0.25, 0.4, 0.25, 1],
-    },
-  }),
-};
-
 const IndustriesSection = () => {
   return (
     <section id="industries" className="relative section-padding">
       <SectionBgImage src={bgIndustries} alt="Industrial complex" opacity={0.18} />
       <div className="section-container relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
-        >
+        <div>
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Industries</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
             Built for frontline operations
           </h2>
-        </motion.div>
+        </div>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {industries.map((ind, i) => (
+          {industries.map((ind) => (
             <motion.div
               key={ind.title}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-60px" }}
-              variants={cardVariants}
               whileHover={{ y: -6, boxShadow: "0 12px 40px hsl(265 30% 50% / 0.12)" }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden group hover:border-primary/30 transition-colors duration-300"
@@ -97,14 +73,7 @@ const IndustriesSection = () => {
                 <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
               </div>
               <div className="p-7">
-                <motion.div
-                  initial={{ scale: 0, rotate: -20 }}
-                  whileInView={{ scale: 1, rotate: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1, type: "spring", stiffness: 200 }}
-                >
-                  <ind.icon className="h-6 w-6 text-primary mb-4" strokeWidth={1.5} />
-                </motion.div>
+                <ind.icon className="h-6 w-6 text-primary mb-4" strokeWidth={1.5} />
                 <h3 className="text-lg font-semibold text-foreground mb-2">{ind.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{ind.example}</p>
               </div>

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Video, Layers, PlayCircle } from "lucide-react";
 import bgHowIt from "@/assets/bg-howit-collab.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
@@ -32,61 +31,32 @@ const HowItWorksSection = () => {
     <section id="how-it-works" className="relative section-padding">
       <SectionBgImage src={bgHowIt} alt="Team collaboration" opacity={0.18} />
       <div className="section-container relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
-        >
+        <div>
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">How It Works</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
             Three steps to retained knowledge
           </h2>
-        </motion.div>
+        </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           {steps.map((step, i) => (
-            <motion.div
-              key={step.number}
-              initial={{ opacity: 0, y: 40, scale: 0.95 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.6, delay: i * 0.2, ease: [0.25, 0.4, 0.25, 1] }}
-              className="relative"
-            >
-              <motion.span
+            <div key={step.number} className="relative">
+              <span
                 className="text-8xl font-black block bg-gradient-to-br from-primary/50 via-primary/30 to-transparent bg-clip-text text-transparent select-none"
                 style={{ WebkitTextStroke: "1.5px hsl(var(--primary) / 0.3)" }}
-                initial={{ opacity: 0, x: -20, scale: 0.8 }}
-                whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.1 + i * 0.2 }}
               >
                 {step.number}
-              </motion.span>
-              <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.3 + i * 0.2, type: "spring", stiffness: 200 }}
-              >
-                <step.icon className="h-6 w-6 text-primary mt-4 mb-4" strokeWidth={1.5} />
-              </motion.div>
+              </span>
+              <step.icon className="h-6 w-6 text-primary mt-4 mb-4" strokeWidth={1.5} />
               <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
 
-              {/* Connecting line between steps */}
               {i < steps.length - 1 && (
-                <motion.div
+                <div
                   className="hidden md:block absolute top-8 -right-4 w-8 h-px bg-primary/20"
-                  initial={{ scaleX: 0 }}
-                  whileInView={{ scaleX: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: 0.5 + i * 0.2 }}
-                  style={{ originX: 0 }}
                 />
               )}
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

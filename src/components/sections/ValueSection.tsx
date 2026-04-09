@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import { TrendingDown, CheckCircle, Shield, RefreshCw } from "lucide-react";
+import { motion } from "framer-motion";
 import bgValue from "@/assets/bg-value-logistics.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import cardProficiency from "@/assets/card-proficiency.jpg";
@@ -38,31 +38,12 @@ const outcomes = [
   },
 ];
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 40, scale: 0.95 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.6,
-      delay: i * 0.12,
-      ease: [0.25, 0.4, 0.25, 1],
-    },
-  }),
-};
-
 const ValueSection = () => {
   return (
     <section id="outcomes" className="relative section-padding">
       <SectionBgImage src={bgValue} alt="Warehouse operations" opacity={0.18} />
       <div className="section-container relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
-        >
+        <div>
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Outcomes</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
             Measurable impact on operations
@@ -70,17 +51,12 @@ const ValueSection = () => {
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
             Real improvements validated in industrial environments, not marketing claims.
           </p>
-        </motion.div>
+        </div>
 
         <div className="mt-16 grid sm:grid-cols-2 gap-6">
-          {outcomes.map((item, i) => (
+          {outcomes.map((item) => (
             <motion.div
               key={item.title}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-60px" }}
-              variants={cardVariants}
               whileHover={{ y: -6, boxShadow: "0 12px 40px hsl(265 30% 50% / 0.12)" }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden"
@@ -97,25 +73,11 @@ const ValueSection = () => {
                 <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
               </div>
               <div className="p-8 flex gap-5">
-                <motion.div
-                  initial={{ scale: 0, rotate: -20 }}
-                  whileInView={{ scale: 1, rotate: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.3 + i * 0.12, type: "spring", stiffness: 200 }}
-                  className="flex-shrink-0 mt-1"
-                >
+                <div className="flex-shrink-0 mt-1">
                   <item.icon className="h-6 w-6 text-primary" strokeWidth={1.5} />
-                </motion.div>
+                </div>
                 <div>
-                  <motion.p
-                    className="text-2xl font-bold gradient-text mb-1"
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.4 + i * 0.12 }}
-                  >
-                    {item.metric}
-                  </motion.p>
+                  <p className="text-2xl font-bold gradient-text mb-1">{item.metric}</p>
                   <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
                 </div>

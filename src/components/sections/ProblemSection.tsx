@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Users, Clock, AlertTriangle } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
 import bgProblem from "@/assets/bg-problem-worker.jpg";
@@ -6,6 +5,7 @@ import SectionBgImage from "@/components/SectionBgImage";
 import cardKnowledge from "@/assets/card-knowledge.jpg";
 import cardOnboarding from "@/assets/card-onboarding.jpg";
 import cardRisk from "@/assets/card-risk.jpg";
+import { motion } from "framer-motion";
 
 const problems = [
   {
@@ -31,20 +31,6 @@ const problems = [
   },
 ];
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 40, scale: 0.95 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.6,
-      delay: i * 0.15,
-      ease: [0.25, 0.4, 0.25, 1],
-    },
-  }),
-};
-
 const ProblemSection = () => {
   const { count: stat1, ref: stat1Ref } = useCountUp(70, 2000);
   const { count: stat2, ref: stat2Ref } = useCountUp(12, 2000);
@@ -53,12 +39,7 @@ const ProblemSection = () => {
     <section id="problem" className="relative section-padding">
       <SectionBgImage src={bgProblem} alt="Worker at controls" opacity={0.18} />
       <div className="section-container relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
-        >
+        <div>
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">The Problem</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
             Operational knowledge is disappearing
@@ -67,17 +48,12 @@ const ProblemSection = () => {
             In the next decade, an estimated 30% of the industrial workforce will retire.
             Most of what they know has never been documented.
           </p>
-        </motion.div>
+        </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-6">
-          {problems.map((p, i) => (
+          {problems.map((p) => (
             <motion.div
               key={p.title}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-60px" }}
-              variants={cardVariants}
               whileHover={{ y: -6, boxShadow: "0 12px 40px hsl(265 30% 50% / 0.12)" }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden"
@@ -89,19 +65,12 @@ const ProblemSection = () => {
                   loading="lazy"
                   width={640}
                   height={512}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 brightness-110"
+                  className="w-full h-full object-cover brightness-110"
                 />
                 <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
               </div>
               <div className="p-8">
-                <motion.div
-                  initial={{ scale: 0, rotate: -20 }}
-                  whileInView={{ scale: 1, rotate: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.3 + i * 0.15, type: "spring", stiffness: 200 }}
-                >
-                  <p.icon className="h-6 w-6 text-primary mb-5" strokeWidth={1.5} />
-                </motion.div>
+                <p.icon className="h-6 w-6 text-primary mb-5" strokeWidth={1.5} />
                 <h3 className="text-lg font-semibold text-foreground mb-3">{p.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{p.description}</p>
               </div>
@@ -109,27 +78,17 @@ const ProblemSection = () => {
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
-          className="mt-16 grid sm:grid-cols-2 gap-6"
-        >
+        <div className="mt-16 grid sm:grid-cols-2 gap-6">
           <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-10 lg:p-12 text-center">
             <div className="absolute -top-8 -right-8 w-40 h-40 bg-primary/15 rounded-full blur-3xl" />
             <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
-            <motion.p
-              initial={{ scale: 0.5, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.5, type: "spring", stiffness: 150 }}
-              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite] text-5xl"
+            <p
+              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight text-5xl"
               style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
               ref={stat1Ref as React.Ref<HTMLParagraphElement>}
             >
               {stat1}%
-            </motion.p>
+            </p>
             <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
               of operational knowledge is <span className="text-foreground font-semibold">tacit and undocumented</span>
             </p>
@@ -137,22 +96,18 @@ const ProblemSection = () => {
           <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-10 lg:p-12 text-center">
             <div className="absolute -top-8 -right-8 w-40 h-40 bg-primary/15 rounded-full blur-3xl" />
             <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
-            <motion.p
-              initial={{ scale: 0.5, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.7, type: "spring", stiffness: 150 }}
-              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite] text-5xl"
+            <p
+              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight text-5xl"
               style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
               ref={stat2Ref as React.Ref<HTMLParagraphElement>}
             >
               6-{stat2} months
-            </motion.p>
+            </p>
             <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
               <span className="text-foreground font-semibold"></span> average ramp-up for a new industrial operator
             </p>
           </div>
-        </motion.div>
+        </div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 subtle-divider" />
