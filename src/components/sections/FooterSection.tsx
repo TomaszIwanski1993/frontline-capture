@@ -3,13 +3,13 @@ import logo from "@/assets/logo-quantum-2.png";
 
 const FooterSection = () => {
   return (
-    <footer className="border-t border-border/30 py-16">
+    <footer className="border-t border-border/50 py-16 bg-secondary/30">
       <div className="section-container">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Quantum" className="h-8 w-8 rounded-md" />
-              <span className="text-base font-semibold text-foreground">Quantum</span>
+              <img src={logo} alt="Quantum" className="h-10 w-10 rounded-lg" />
+              <span className="text-lg font-bold text-foreground">Quantum</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               AI for operational knowledge retention.

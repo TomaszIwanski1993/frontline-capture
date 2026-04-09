@@ -11,23 +11,24 @@ const HeroSection = () => {
           className="max-w-3xl"
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1] text-foreground">
-            Operational knowledge
+            Your best operators
             <br />
-            <span className="gradient-text">shouldn't walk out the door.</span>
+            <span className="gradient-text">won't be here forever.</span>
           </h1>
 
           <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-            Quantum captures, structures, and scales the frontline knowledge that
-            keeps your operations running — before it disappears with your people.
+            Quantum uses AI to capture frontline operational knowledge — the hands-on
+            expertise that keeps your factory running — and turns it into structured
+            guidance for every operator, every shift.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <a href="#pilot" className="cta-button text-base px-10 py-4 text-center">
+            <a href="#pilot" className="cta-button text-base lg:text-lg px-12 py-5 text-center">
               Book a Demo
             </a>
             <a
               href="#how-it-works"
-              className="px-8 py-4 rounded-lg text-base font-medium text-muted-foreground border border-border hover:border-primary/40 hover:text-foreground transition-all duration-300 text-center"
+              className="px-8 py-5 rounded-lg text-base font-medium text-muted-foreground border border-border hover:border-primary/40 hover:text-foreground transition-all duration-300 text-center"
             >
               See How It Works
             </a>
