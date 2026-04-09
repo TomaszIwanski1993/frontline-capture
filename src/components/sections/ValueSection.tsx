@@ -85,7 +85,7 @@ const ValueSection = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden"
             >
-              <div className="h-36 overflow-hidden">
+              <div className="h-52 overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}

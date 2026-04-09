@@ -85,7 +85,7 @@ const IndustriesSection = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden group hover:border-primary/30 transition-colors duration-300"
             >
-              <div className="h-36 overflow-hidden">
+              <div className="h-48 overflow-hidden">
                 <img
                   src={ind.image}
                   alt={ind.title}
