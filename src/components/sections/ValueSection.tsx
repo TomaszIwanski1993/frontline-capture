@@ -94,7 +94,7 @@ const ValueSection = () => {
                   height={512}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-primary/20 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-primary/35 mix-blend-multiply" />
               </div>
               <div className="p-8 flex gap-5">
                 <motion.div
