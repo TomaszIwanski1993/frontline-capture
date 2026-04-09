@@ -123,7 +123,7 @@ const ProblemSection = () => {
           </div>
           <div>
             <p className="text-3xl font-bold gradient-text" ref={stat2Ref as React.Ref<HTMLParagraphElement>}>
-              6–{stat2} months
+              6-{stat2} months
             </p>
             <p className="text-sm text-muted-foreground mt-1">average ramp-up time for a new industrial operator</p>
           </div>
