@@ -12,7 +12,7 @@ const pilotPoints = [
 const PilotSection = () => {
   return (
     <section id="pilot" className="relative section-padding">
-      <SectionBgImage src={bgPilot} alt="Industrial machinery" opacity={0.11} />
+      <SectionBgImage src={bgPilot} alt="Industrial machinery" opacity={0.18} />
       <div className="section-container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30, scale: 0.97 }}
