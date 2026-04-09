@@ -83,7 +83,7 @@ const ProblemSection = () => {
             <div className="absolute -top-8 -right-8 w-40 h-40 bg-primary/15 rounded-full blur-3xl" />
             <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
             <p
-              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight text-5xl"
+              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight text-4xl"
               style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
               ref={stat1Ref as React.Ref<HTMLParagraphElement>}
             >
@@ -97,7 +97,7 @@ const ProblemSection = () => {
             <div className="absolute -top-8 -right-8 w-40 h-40 bg-primary/15 rounded-full blur-3xl" />
             <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
             <p
-              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight text-5xl"
+              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight text-4xl"
               style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
               ref={stat2Ref as React.Ref<HTMLParagraphElement>}
             >
