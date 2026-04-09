@@ -116,36 +116,40 @@ const ProblemSection = () => {
           transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
           className="mt-16 grid sm:grid-cols-2 gap-6"
         >
-          <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-8 text-center">
-            <div className="absolute -top-8 -right-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
+          <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-10 lg:p-12 text-center">
+            <div className="absolute -top-8 -right-8 w-40 h-40 bg-primary/15 rounded-full blur-3xl" />
+            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
             <motion.p
               initial={{ scale: 0.5, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5, type: "spring", stiffness: 150 }}
-              className="text-6xl lg:text-7xl font-black gradient-text tracking-tight"
+              className="text-7xl lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite]"
+              style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
               ref={stat1Ref as React.Ref<HTMLParagraphElement>}
             >
               {stat1}%
             </motion.p>
-            <p className="text-base text-muted-foreground mt-4 leading-relaxed">
+            <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
               of operational knowledge is <span className="text-foreground font-semibold">tacit and undocumented</span>
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-8 text-center">
-            <div className="absolute -top-8 -right-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
+          <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-10 lg:p-12 text-center">
+            <div className="absolute -top-8 -right-8 w-40 h-40 bg-primary/15 rounded-full blur-3xl" />
+            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
             <motion.p
               initial={{ scale: 0.5, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.7, type: "spring", stiffness: 150 }}
-              className="text-6xl lg:text-7xl font-black gradient-text tracking-tight"
+              className="text-7xl lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite]"
+              style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
               ref={stat2Ref as React.Ref<HTMLParagraphElement>}
             >
-              6-{stat2}<span className="text-4xl lg:text-5xl">mo</span>
+              6-{stat2}
             </motion.p>
-            <p className="text-base text-muted-foreground mt-4 leading-relaxed">
-              average ramp-up time for a <span className="text-foreground font-semibold">new industrial operator</span>
+            <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
+              <span className="text-foreground font-semibold">months</span> average ramp-up for a new industrial operator
             </p>
           </div>
         </motion.div>
