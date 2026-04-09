@@ -85,7 +85,7 @@ const IndustriesSection = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden group hover:border-primary/30 transition-colors duration-300"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden relative">
                 <img
                   src={ind.image}
                   alt={ind.title}
@@ -94,6 +94,7 @@ const IndustriesSection = () => {
                   height={512}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-primary/20 mix-blend-multiply" />
               </div>
               <div className="p-7">
                 <motion.div

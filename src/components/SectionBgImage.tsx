@@ -16,9 +16,14 @@ const SectionBgImage = ({ src, alt, opacity = 0.06, position = "center" }: Secti
         style={{
           opacity,
           objectPosition: position,
-          filter: "grayscale(30%) blur(1px)",
+          filter: "grayscale(20%) blur(1px)",
           mixBlendMode: "multiply",
         }}
+      />
+      <div
+        className="absolute inset-0 bg-primary/15 mix-blend-multiply"
+        style={{ opacity }}
+      />
       />
       <div
         className="absolute inset-0"
