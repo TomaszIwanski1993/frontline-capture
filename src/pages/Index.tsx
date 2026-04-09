@@ -56,6 +56,8 @@ const Index = () => {
         <ContactSection />
       </main>
       <FooterSection />
+      <CookieConsent />
+      <ScrollToTop />
     </div>
   );
 };
