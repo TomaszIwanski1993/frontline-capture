@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
@@ -41,25 +40,14 @@ const FAQSection = () => {
   return (
     <section id="faq" className="relative section-padding">
       <div className="section-container max-w-3xl">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">FAQ</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
             Common questions
           </h2>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-12"
-        >
+        <div className="mt-12">
           <Accordion type="single" collapsible className="space-y-3">
             {faqs.map((faq, i) => (
               <AccordionItem
@@ -76,7 +64,7 @@ const FAQSection = () => {
               </AccordionItem>
             ))}
           </Accordion>
-        </motion.div>
+        </div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 subtle-divider" />

@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { FileText, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 const articles = [
   {
@@ -23,26 +22,17 @@ const ResourcesSection = () => {
   return (
     <section id="resources" className="relative section-padding">
       <div className="section-container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Resources</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
             Insights & perspectives
           </h2>
-        </motion.div>
+        </div>
 
         <div className="mt-12 grid md:grid-cols-3 gap-6">
-          {articles.map((article, i) => (
-            <motion.div
+          {articles.map((article) => (
+            <div
               key={article.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
               className="glass-card p-7 group cursor-pointer hover:border-primary/30 transition-colors duration-300"
             >
               <div className="flex items-center justify-between mb-4">
@@ -51,7 +41,7 @@ const ResourcesSection = () => {
               </div>
               <h3 className="text-base font-semibold text-foreground mb-2 leading-snug">{article.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{article.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
 
