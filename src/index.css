@@ -80,14 +80,12 @@
   }
 
   .section-tinted {
-    background-color: hsl(var(--section-tint) / 0.82);
-    background-image: linear-gradient(180deg, hsl(var(--background) / 0.28), hsl(var(--section-tint) / 0.88));
+    background-color: hsl(265 30% 98% / 0.92);
     backdrop-filter: blur(1px);
   }
 
   .section-tinted-strong {
-    background-color: hsl(var(--section-tint-strong) / 0.86);
-    background-image: linear-gradient(180deg, hsl(265 40% 98% / 0.36), hsl(var(--section-tint-strong) / 0.9));
+    background-color: hsl(265 25% 97% / 0.94);
     backdrop-filter: blur(1px);
   }
 

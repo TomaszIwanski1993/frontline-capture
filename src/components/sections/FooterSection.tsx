@@ -3,7 +3,7 @@ import logo from "@/assets/logo-quantum.svg";
 
 const FooterSection = () => {
   return (
-    <footer className="border-t border-border/50 py-16 bg-secondary/30">
+    <footer className="relative z-10 border-t border-border/50 py-16 bg-background">
       <div className="section-container">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
