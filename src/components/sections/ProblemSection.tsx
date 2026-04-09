@@ -124,7 +124,7 @@ const ProblemSection = () => {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5, type: "spring", stiffness: 150 }}
-              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite] text-6xl"
+              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite] text-5xl"
               style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
               ref={stat1Ref as React.Ref<HTMLParagraphElement>}
             >
@@ -142,7 +142,7 @@ const ProblemSection = () => {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.7, type: "spring", stiffness: 150 }}
-              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite] text-6xl"
+              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite] text-5xl"
               style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
               ref={stat2Ref as React.Ref<HTMLParagraphElement>}
             >
