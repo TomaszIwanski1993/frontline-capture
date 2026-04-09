@@ -65,6 +65,10 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+  }
+
   html {
     scroll-behavior: smooth;
   }
