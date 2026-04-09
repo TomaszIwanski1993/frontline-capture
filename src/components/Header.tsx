@@ -19,7 +19,7 @@ const Header = () => {
       <div className="section-container flex items-center justify-between h-16 lg:h-20">
         <a href="/" className="flex items-center gap-3">
           <img src={logo} alt="Quantum" className="h-10 lg:h-12" />
-          <span className="text-xl lg:text-2xl font-bold tracking-tight text-foreground">Quantum</span>
+          <span className="text-xl lg:text-2xl font-bold tracking-tight text-foreground font-display">Quantum</span>
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
