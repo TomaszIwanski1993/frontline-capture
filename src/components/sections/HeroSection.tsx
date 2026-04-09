@@ -8,11 +8,10 @@ const wordReveal = {
 };
 
 const wordChild = {
-  hidden: { opacity: 0, y: 40, filter: "blur(8px)" },
+  hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
     transition: { duration: 0.5, ease: [0.25, 0.4, 0.25, 1] },
   },
 };
@@ -69,13 +68,11 @@ const HeroSection = () => {
                 </motion.span>
               ))}
               <br />
-              <span className="gradient-text">
-                {["won't", "be", "here", "forever."].map((word) => (
-                  <motion.span key={word} variants={wordChild} className="inline-block mr-[0.3em]">
-                    {word}
-                  </motion.span>
-                ))}
-              </span>
+              {["won't", "be", "here", "forever."].map((word) => (
+                <motion.span key={word} variants={wordChild} className="inline-block mr-[0.3em] gradient-text">
+                  {word}
+                </motion.span>
+              ))}
             </h1>
           </motion.div>
 
