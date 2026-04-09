@@ -19,21 +19,37 @@ const Index = () => {
       <Header />
       <main className="relative z-10">
         <HeroSection />
+
+        <div className="section-transition-down" />
         <div className="section-tinted">
           <ProblemSection />
         </div>
+        <div className="section-transition-up" />
+
         <HowItWorksSection />
+
+        <div className="section-transition-down" />
         <div className="section-tinted">
           <ValueSection />
         </div>
+        <div className="section-transition-up" />
+
         <IndustriesSection />
+
+        <div className="section-transition-down" />
         <div className="section-tinted">
           <PilotSection />
         </div>
+        <div className="section-transition-up" />
+
         <FAQSection />
+
+        <div className="section-transition-down" />
         <div className="section-tinted">
           <AboutSection />
         </div>
+        <div className="section-transition-up" />
+
         <ResourcesSection />
         <ContactSection />
       </main>
