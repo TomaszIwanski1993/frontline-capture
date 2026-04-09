@@ -124,7 +124,7 @@ const ProblemSection = () => {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5, type: "spring", stiffness: 150 }}
-              className="text-7xl lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite]"
+              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite] text-6xl"
               style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
               ref={stat1Ref as React.Ref<HTMLParagraphElement>}
             >
@@ -142,14 +142,14 @@ const ProblemSection = () => {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.7, type: "spring", stiffness: 150 }}
-              className="text-7xl lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite]"
+              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight animate-[pulse_3s_ease-in-out_infinite] text-6xl"
               style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
               ref={stat2Ref as React.Ref<HTMLParagraphElement>}
             >
-              6-{stat2}
+              6-{stat2} months
             </motion.p>
             <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
-              <span className="text-foreground font-semibold">months</span> average ramp-up for a new industrial operator
+              <span className="text-foreground font-semibold"></span> average ramp-up for a new industrial operator
             </p>
           </div>
         </motion.div>
