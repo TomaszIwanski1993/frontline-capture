@@ -1,41 +1,64 @@
 const AnimatedBackground = () => {
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {/* Large primary wave — top-left, slow diagonal drift */}
+      {/* Primary wave — top-left, large slow drift */}
       <div
-        className="wave-bg absolute -top-[20%] -left-[15%] w-[90%] h-[90%] rounded-full blur-[140px]"
+        className="wave-bg absolute -top-[25%] -left-[20%] w-[100%] h-[100%] rounded-full blur-[100px]"
         style={{
-          background: "radial-gradient(ellipse at 40% 40%, hsl(265 55% 70% / 0.08), hsl(280 50% 65% / 0.04) 50%, transparent 75%)",
+          background:
+            "radial-gradient(ellipse at 35% 35%, hsl(265 60% 72% / 0.18), hsl(280 55% 68% / 0.08) 45%, transparent 70%)",
         }}
       />
-      {/* Secondary wave — bottom-right */}
+      {/* Secondary wave — bottom-right counter-motion */}
       <div
-        className="wave-bg-2 absolute -bottom-[15%] -right-[10%] w-[75%] h-[75%] rounded-full blur-[120px]"
+        className="wave-bg-2 absolute -bottom-[20%] -right-[15%] w-[85%] h-[85%] rounded-full blur-[100px]"
         style={{
-          background: "radial-gradient(ellipse at 60% 60%, hsl(280 50% 68% / 0.07), hsl(265 45% 60% / 0.03) 50%, transparent 70%)",
+          background:
+            "radial-gradient(ellipse at 65% 65%, hsl(280 55% 70% / 0.15), hsl(265 50% 65% / 0.06) 45%, transparent 70%)",
         }}
       />
-      {/* Tertiary accent — center-left, adds depth */}
+      {/* Tertiary — center, adds midground glow */}
       <div
-        className="wave-bg-3 absolute top-[30%] left-[20%] w-[55%] h-[55%] rounded-full blur-[160px]"
+        className="wave-bg-3 absolute top-[25%] left-[15%] w-[65%] h-[60%] rounded-full blur-[120px]"
         style={{
-          background: "radial-gradient(ellipse at center, hsl(260 50% 65% / 0.05), transparent 65%)",
+          background:
+            "radial-gradient(ellipse at center, hsl(260 55% 70% / 0.12), hsl(270 45% 65% / 0.04) 50%, transparent 70%)",
         }}
       />
-      {/* Fourth layer — top-right, counter-motion */}
+      {/* Fourth — top-right accent */}
       <div
-        className="wave-bg-4 absolute -top-[10%] right-[5%] w-[45%] h-[50%] rounded-full blur-[130px]"
+        className="wave-bg-4 absolute -top-[10%] right-[0%] w-[55%] h-[60%] rounded-full blur-[90px]"
         style={{
-          background: "radial-gradient(ellipse at 70% 30%, hsl(270 55% 72% / 0.06), transparent 65%)",
+          background:
+            "radial-gradient(ellipse at 70% 25%, hsl(270 60% 75% / 0.14), hsl(285 50% 70% / 0.05) 50%, transparent 70%)",
         }}
       />
-      {/* Mesh/grain overlay for texture depth */}
+      {/* Fifth — mid-bottom left, extra depth */}
       <div
-        className="absolute inset-0 opacity-[0.015]"
+        className="wave-bg absolute top-[55%] -left-[10%] w-[50%] h-[50%] rounded-full blur-[110px]"
         style={{
-          backgroundImage: `radial-gradient(circle at 25% 25%, hsl(265 40% 60%) 1px, transparent 1px),
-                           radial-gradient(circle at 75% 75%, hsl(280 40% 60%) 1px, transparent 1px)`,
-          backgroundSize: "60px 60px",
+          background:
+            "radial-gradient(ellipse at 30% 70%, hsl(258 50% 68% / 0.1), transparent 65%)",
+          animationDelay: "-8s",
+        }}
+      />
+      {/* Sixth — far bottom-right, subtle warm accent */}
+      <div
+        className="wave-bg-2 absolute bottom-[5%] right-[10%] w-[40%] h-[40%] rounded-full blur-[100px]"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, hsl(275 50% 72% / 0.09), transparent 60%)",
+          animationDelay: "-14s",
+        }}
+      />
+      {/* Dot-mesh overlay for fine texture */}
+      <div
+        className="absolute inset-0 opacity-[0.025]"
+        style={{
+          backgroundImage: `radial-gradient(circle, hsl(265 40% 55%) 1px, transparent 1px),
+                           radial-gradient(circle, hsl(280 40% 55%) 0.5px, transparent 0.5px)`,
+          backgroundSize: "48px 48px, 32px 32px",
+          backgroundPosition: "0 0, 16px 16px",
         }}
       />
     </div>
