@@ -26,14 +26,14 @@ const AboutSection = () => {
           <p>
             Quantum was founded by a team with deep experience in industrial operations,
             manufacturing systems, and applied AI. We've spent years on factory floors,
-            in control rooms, and alongside frontline teams — and we've watched critical
+            in control rooms, and alongside frontline teams - and we've watched critical
             knowledge disappear when experienced operators moved on.
           </p>
           <p>
             We built Quantum because we believe the most valuable knowledge in any
             operation isn't in a manual or a database. It's in the hands and minds of
             the people doing the work. Our mission is to make that knowledge permanent,
-            accessible, and useful — so it serves the next generation of operators just
+            accessible, and useful - so it serves the next generation of operators just
             as effectively as it served the last.
           </p>
           <p>
