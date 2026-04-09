@@ -3,15 +3,25 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* Hero gradient background */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ background: "var(--gradient-hero)" }}
+        style={{
+          background:
+            "linear-gradient(180deg, hsl(var(--background) / 0.9) 0%, hsl(265 60% 98% / 0.72) 34%, hsl(276 46% 97% / 0.42) 66%, hsl(var(--background) / 0.94) 100%)",
+        }}
       />
-      {/* Extra hero glow behind headline area */}
       <div
-        className="absolute top-[15%] left-[10%] w-[60%] h-[50%] pointer-events-none rounded-full blur-[160px] opacity-[0.06]"
-        style={{ background: "radial-gradient(ellipse at center, hsl(265 55% 60%), transparent 70%)" }}
+        className="wave-bg-3 absolute top-[8%] left-[6%] w-[72%] h-[42%] pointer-events-none rounded-[999px] rotate-[6deg] blur-[82px] opacity-[0.22]"
+        style={{
+          background:
+            "radial-gradient(ellipse at 40% 50%, hsl(265 62% 72%), hsl(280 56% 76% / 0.48) 42%, transparent 74%)",
+        }}
+      />
+      <div
+        className="wave-bg-4 absolute top-[10%] right-[2%] w-[38%] h-[28%] pointer-events-none rounded-[999px] -rotate-[10deg] blur-[74px] opacity-[0.18]"
+        style={{
+          background: "radial-gradient(ellipse at center, hsl(280 54% 78%), transparent 72%)",
+        }}
       />
 
       <div className="section-container w-full relative z-10">
