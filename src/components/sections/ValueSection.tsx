@@ -85,7 +85,7 @@ const ValueSection = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden"
             >
-              <div className="h-52 overflow-hidden">
+              <div className="h-52 overflow-hidden relative">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -94,6 +94,7 @@ const ValueSection = () => {
                   height={512}
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute inset-0 bg-primary/20 mix-blend-multiply" />
               </div>
               <div className="p-8 flex gap-5">
                 <motion.div
