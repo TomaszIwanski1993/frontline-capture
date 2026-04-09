@@ -15,11 +15,11 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/30 backdrop-blur-xl bg-background/70">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 backdrop-blur-xl bg-background/80">
       <div className="section-container flex items-center justify-between h-16 lg:h-20">
         <a href="/" className="flex items-center gap-3">
-          <img src={logo} alt="Quantum" className="h-9 w-9 rounded-md" />
-          <span className="text-lg font-semibold tracking-tight text-foreground">Quantum</span>
+          <img src={logo} alt="Quantum" className="h-12 w-12 lg:h-14 lg:w-14 rounded-lg" />
+          <span className="text-xl lg:text-2xl font-bold tracking-tight text-foreground">Quantum</span>
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
@@ -50,7 +50,7 @@ const Header = () => {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-border/30 bg-background/95 backdrop-blur-xl">
+        <div className="lg:hidden border-t border-border/50 bg-background/95 backdrop-blur-xl">
           <nav className="section-container py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a

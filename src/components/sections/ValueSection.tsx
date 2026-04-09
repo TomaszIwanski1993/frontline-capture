@@ -4,23 +4,27 @@ import { TrendingDown, CheckCircle, Shield, RefreshCw } from "lucide-react";
 const outcomes = [
   {
     icon: TrendingDown,
-    title: "Reduced onboarding time",
-    description: "New operators reach competence faster with structured, real-world task guidance — cutting weeks off traditional shadowing programs.",
+    metric: "20–40%",
+    title: "Faster time-to-proficiency",
+    description: "New operators reach competence significantly faster with structured, real-world task guidance — reducing onboarding from months to weeks.",
   },
   {
     icon: CheckCircle,
+    metric: "Measurably",
     title: "More consistent execution",
-    description: "When everyone works from the same proven knowledge base, quality variance drops and standard operating procedures actually get followed.",
+    description: "When every operator works from the same proven knowledge base, task execution variability drops and quality becomes predictable across shifts.",
   },
   {
     icon: Shield,
-    title: "Lower dependency on key individuals",
-    description: "Critical knowledge is no longer locked in a few experts' heads. Teams become more resilient, and shift handovers become smoother.",
+    metric: "Eliminated",
+    title: "Single points of failure",
+    description: "Critical knowledge is no longer locked in a few experts' heads. Operations continue smoothly through retirements, turnover, and shift changes.",
   },
   {
     icon: RefreshCw,
-    title: "Better knowledge continuity",
-    description: "Retirements, turnover, and transfers stop being knowledge emergencies. Institutional know-how persists regardless of personnel changes.",
+    metric: "Continuous",
+    title: "Knowledge continuity",
+    description: "Institutional know-how persists regardless of personnel changes. Every departure stops being a knowledge emergency.",
   },
 ];
 
@@ -39,7 +43,7 @@ const ValueSection = () => {
             Measurable impact on operations
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
-            Our clients see real improvements — not marketing claims. Here's what changes when operational knowledge is properly retained.
+            Real improvements validated in industrial environments — not marketing claims.
           </p>
         </motion.div>
 
@@ -55,6 +59,7 @@ const ValueSection = () => {
             >
               <item.icon className="h-6 w-6 text-primary flex-shrink-0 mt-1" strokeWidth={1.5} />
               <div>
+                <p className="text-2xl font-bold gradient-text mb-1">{item.metric}</p>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
               </div>

@@ -9,31 +9,31 @@ import {
 const faqs = [
   {
     q: "Who is Quantum built for?",
-    a: "Quantum is built for companies with frontline operations — manufacturing plants, warehouses, FMCG production lines, field service teams, and construction sites. If your business relies on experienced operators whose knowledge isn't fully documented, Quantum is relevant.",
+    a: "Quantum is built for companies that rely on frontline operators — manufacturing plants, FMCG production lines, warehouses, construction sites, and field service teams. If your operations depend on experienced people whose knowledge isn't formally documented, Quantum is built for you.",
   },
   {
     q: "Can this work in any factory environment?",
-    a: "Yes. Quantum is designed to be environment-agnostic. Whether you operate in cleanrooms, heavy industry, or outdoor field conditions, the system adapts. We work within your existing processes — no specialized infrastructure required.",
+    a: "Yes. Quantum is designed for real operational conditions — production floors, cleanrooms, outdoor sites, and heavy industry. We work within your existing workflows and don't require specialized infrastructure or changes to your production setup.",
   },
   {
-    q: "What data do you capture?",
-    a: "We capture task demonstrations performed by your operators — the steps, sequences, adjustments, and decision points that make up real operational knowledge. We do not capture personal data or monitor individual performance.",
+    q: "What exactly do you capture?",
+    a: "We capture task demonstrations performed by experienced operators — the specific steps, sequences, adjustments, and decision points that make up real operational knowledge. This is the tacit know-how that traditional documentation misses: how to feel when a machine is running right, which adjustments to make during a changeover, and what to watch for during quality checks.",
   },
   {
     q: "How do you handle data security and GDPR?",
-    a: "Data security is foundational to how we operate. All data is encrypted in transit and at rest, stored in EU-based infrastructure, and processed in full compliance with GDPR. We sign data processing agreements with all clients and can accommodate specific security requirements.",
+    a: "Data security is built into our architecture. All data is encrypted in transit and at rest, stored in EU-based infrastructure, and processed in full GDPR compliance. We do not capture personal data or monitor individual performance. We sign data processing agreements with all clients and can meet specific security requirements from your IT and compliance teams.",
   },
   {
-    q: "What results can we expect?",
-    a: "Clients typically see meaningful reductions in onboarding time and improved consistency in task execution within the first pilot. Results vary by context, but the pattern is consistent: when knowledge is structured and accessible, operations improve.",
+    q: "What results can we realistically expect?",
+    a: "Clients typically see 20–40% faster time-to-proficiency for new operators and measurably more consistent task execution across shifts. Results depend on the specific process and environment, but the pattern is consistent: when operational knowledge is structured and accessible, onboarding accelerates and execution quality improves.",
   },
   {
-    q: "How is Quantum different from other knowledge management tools?",
-    a: "Most knowledge management tools are built for office work — documents, wikis, search. Quantum is built specifically for frontline operations. We capture knowledge through demonstration, not documentation. The result is practical, task-level guidance that operators actually use.",
+    q: "How is Quantum different from a knowledge management tool or wiki?",
+    a: "Most knowledge tools are built for office work — documents, wikis, search. Quantum is built specifically for frontline operations. We capture knowledge through operator demonstrations, not documentation. The result is practical, task-level guidance that operators actually use on the floor — not another system they ignore.",
   },
   {
-    q: "Can we try before committing?",
-    a: "Absolutely. We always start with a short pilot — typically 2 to 4 weeks, focused on a single process or line. There's no long-term commitment required. The pilot gives you concrete results to evaluate before deciding on a broader rollout.",
+    q: "Can we try before making a commitment?",
+    a: "Always. We start every engagement with a short pilot — typically 2 to 4 weeks, focused on a single process or production line. There's no long-term commitment required. The pilot gives you concrete, measurable results to evaluate before deciding on broader deployment.",
   },
 ];
 
