@@ -8,6 +8,7 @@ import IndustriesSection from "@/components/sections/IndustriesSection";
 import PilotSection from "@/components/sections/PilotSection";
 import FAQSection from "@/components/sections/FAQSection";
 import AboutSection from "@/components/sections/AboutSection";
+import CareersSection from "@/components/sections/CareersSection";
 import ResourcesSection from "@/components/sections/ResourcesSection";
 import ContactSection from "@/components/sections/ContactSection";
 import FooterSection from "@/components/sections/FooterSection";
