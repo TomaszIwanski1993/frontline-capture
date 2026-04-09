@@ -53,6 +53,8 @@ const Index = () => {
         </div>
         <div className="section-transition-up" />
 
+        <CareersSection />
+
         <ResourcesSection />
         <ContactSection />
       </main>
