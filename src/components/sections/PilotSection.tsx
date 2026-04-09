@@ -5,7 +5,7 @@ import SectionBgImage from "@/components/SectionBgImage";
 
 const pilotPoints = [
   "2–4 week pilot on a single line or process",
-  "Works within your existing workflows — no IT overhaul",
+  "Works within your existing workflows, no IT overhaul needed",
   "Clear metrics so you can evaluate results objectively",
 ];
 
@@ -34,7 +34,7 @@ const PilotSection = () => {
             Start with a pilot. No commitment required.
           </h2>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto">
-            We run a short, focused pilot in your real environment — minimal disruption,
+            We run a short, focused pilot in your real environment. Minimal disruption,
             real results. See the value before making any decisions.
           </p>
 

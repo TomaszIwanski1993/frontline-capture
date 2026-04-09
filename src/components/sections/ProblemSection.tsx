@@ -12,7 +12,7 @@ const problems = [
     icon: Users,
     title: "Knowledge lives in people, not systems",
     description:
-      "Critical operational know-how — the workarounds, adjustments, and judgment calls — exists only in the heads of experienced operators. When they leave, that knowledge goes with them.",
+      "Critical operational know-how, from workarounds and adjustments to judgment calls, exists only in the heads of experienced operators. When they leave, that knowledge goes with them.",
     image: cardKnowledge,
   },
   {
@@ -26,7 +26,7 @@ const problems = [
     icon: AlertTriangle,
     title: "Loss of experience creates operational risk",
     description:
-      "Every retirement, resignation, or shift change is a potential disruption. Organizations become dependent on a small number of key individuals — a fragile operating model.",
+      "Every retirement, resignation, or shift change is a potential disruption. Organizations end up dependent on a small number of key individuals, and that's a fragile way to operate.",
     image: cardRisk,
   },
 ];

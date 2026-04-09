@@ -85,8 +85,8 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
             className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-            Quantum uses AI to capture frontline operational knowledge — the hands-on
-            expertise that keeps your factory running — and turns it into structured
+            Quantum uses AI to capture frontline operational knowledge, the hands-on
+            expertise that keeps your factory running, and turns it into structured
             guidance for every operator, every shift.
           </motion.p>
 
