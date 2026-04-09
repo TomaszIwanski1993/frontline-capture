@@ -11,6 +11,8 @@ import AboutSection from "@/components/sections/AboutSection";
 import ResourcesSection from "@/components/sections/ResourcesSection";
 import ContactSection from "@/components/sections/ContactSection";
 import FooterSection from "@/components/sections/FooterSection";
+import CookieConsent from "@/components/CookieConsent";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
