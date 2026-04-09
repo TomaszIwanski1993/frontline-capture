@@ -14,18 +14,26 @@ import FooterSection from "@/components/sections/FooterSection";
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen bg-background">
       <AnimatedBackground />
       <Header />
       <main className="relative z-10">
         <HeroSection />
-        <ProblemSection />
+        <div className="section-tinted">
+          <ProblemSection />
+        </div>
         <HowItWorksSection />
-        <ValueSection />
+        <div className="section-tinted">
+          <ValueSection />
+        </div>
         <IndustriesSection />
-        <PilotSection />
+        <div className="section-tinted">
+          <PilotSection />
+        </div>
         <FAQSection />
-        <AboutSection />
+        <div className="section-tinted">
+          <AboutSection />
+        </div>
         <ResourcesSection />
         <ContactSection />
       </main>

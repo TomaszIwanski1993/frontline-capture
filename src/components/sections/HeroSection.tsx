@@ -2,8 +2,14 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
-      <div className="section-container w-full">
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      {/* Hero gradient accent */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: "var(--gradient-hero)" }}
+      />
+
+      <div className="section-container w-full relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -23,15 +29,22 @@ const HeroSection = () => {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <a href="#pilot" className="cta-button text-base lg:text-lg px-12 py-5 text-center">
+            <motion.a
+              href="#pilot"
+              className="cta-button text-base lg:text-lg px-12 py-5 text-center"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
               Book a Demo
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="#how-it-works"
               className="px-8 py-5 rounded-lg text-base font-medium text-muted-foreground border border-border hover:border-primary/40 hover:text-foreground transition-all duration-300 text-center"
+              whileHover={{ scale: 1.01 }}
+              whileTap={{ scale: 0.99 }}
             >
               See How It Works
-            </a>
+            </motion.a>
           </div>
         </motion.div>
       </div>
