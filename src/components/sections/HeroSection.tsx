@@ -29,7 +29,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-3xl"
+          className="max-w-3xl mx-auto text-center"
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1] text-foreground">
             Your best operators
@@ -37,13 +37,13 @@ const HeroSection = () => {
             <span className="gradient-text">won't be here forever.</span>
           </h1>
 
-          <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+          <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
             Quantum uses AI to capture frontline operational knowledge — the hands-on
             expertise that keeps your factory running — and turns it into structured
             guidance for every operator, every shift.
           </p>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
               href="#pilot"
               className="cta-button text-base lg:text-lg px-12 py-5 text-center"
