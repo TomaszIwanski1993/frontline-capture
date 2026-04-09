@@ -39,7 +39,7 @@ const AnimatedBackground = () => {
 
       {/* Subtle grid lines */}
       <div
-        className="absolute inset-0 opacity-[0.04]"
+        className="absolute inset-0 opacity-[0.065]"
         style={{
           backgroundImage:
             "linear-gradient(hsl(265 30% 70%) 1px, transparent 1px), linear-gradient(90deg, hsl(265 30% 70%) 1px, transparent 1px)",
