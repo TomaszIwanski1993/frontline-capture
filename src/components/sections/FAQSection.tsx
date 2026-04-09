@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "What results can we realistically expect?",
-    a: "Clients typically see 20 to 40% faster time-to-proficiency for new operators and measurably more consistent task execution across shifts. Results depend on the specific process and environment, but the pattern is consistent: when operational knowledge is structured and accessible, onboarding accelerates and execution quality improves.",
+    a: "Clients typically see 30 to 40% faster time-to-proficiency for new operators and measurably more consistent task execution across shifts. Results depend on the specific process and environment, but the pattern is consistent: when operational knowledge is structured and accessible, onboarding accelerates and execution quality improves.",
   },
   {
     q: "How is Quantum different from a knowledge management tool or wiki?",
