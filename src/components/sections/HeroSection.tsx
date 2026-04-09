@@ -1,5 +1,22 @@
 import { motion } from "framer-motion";
 
+const wordReveal = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08 },
+  },
+};
+
+const wordChild = {
+  hidden: { opacity: 0, y: 40, filter: "blur(8px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.5, ease: [0.25, 0.4, 0.25, 1] },
+  },
+};
+
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -24,47 +41,89 @@ const HeroSection = () => {
         }}
       />
 
-      <div className="section-container w-full relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-3xl mx-auto text-center"
-        >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1] text-foreground">
-            Your best operators
-            <br />
-            <span className="gradient-text">won't be here forever.</span>
-          </h1>
+      {/* Floating gradient orbs */}
+      <motion.div
+        className="absolute top-[20%] right-[12%] w-32 h-32 rounded-full blur-[60px] opacity-[0.15] pointer-events-none"
+        style={{ background: "hsl(265 60% 70%)" }}
+        animate={{ y: [0, -20, 0], x: [0, 10, 0], scale: [1, 1.1, 1] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.div
+        className="absolute bottom-[25%] left-[8%] w-24 h-24 rounded-full blur-[50px] opacity-[0.12] pointer-events-none"
+        style={{ background: "hsl(280 55% 72%)" }}
+        animate={{ y: [0, 15, 0], x: [0, -8, 0], scale: [1, 0.9, 1] }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+      />
 
-          <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+      <div className="section-container w-full relative z-10">
+        <div className="max-w-3xl mx-auto text-center">
+          <motion.div
+            variants={wordReveal}
+            initial="hidden"
+            animate="visible"
+          >
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1] text-foreground">
+              {["Your", "best", "operators"].map((word) => (
+                <motion.span key={word} variants={wordChild} className="inline-block mr-[0.3em]">
+                  {word}
+                </motion.span>
+              ))}
+              <br />
+              <span className="gradient-text">
+                {["won't", "be", "here", "forever."].map((word) => (
+                  <motion.span key={word} variants={wordChild} className="inline-block mr-[0.3em]">
+                    {word}
+                  </motion.span>
+                ))}
+              </span>
+            </h1>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
+            className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
+          >
             Quantum uses AI to capture frontline operational knowledge — the hands-on
             expertise that keeps your factory running — and turns it into structured
             guidance for every operator, every shift.
-          </p>
+          </motion.p>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.1, ease: "easeOut" }}
+            className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
+          >
             <motion.a
               href="#pilot"
               className="cta-button text-base lg:text-lg px-12 py-5 text-center"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={{ scale: 1.04, boxShadow: "0 12px 40px hsl(265 55% 50% / 0.4)" }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               Book a Demo
             </motion.a>
             <motion.a
               href="#how-it-works"
-              className="px-8 py-5 rounded-lg text-base font-medium text-muted-foreground border border-border hover:border-primary/40 hover:text-foreground hover:shadow-sm transition-all duration-300 text-center"
-              whileHover={{ scale: 1.01 }}
-              whileTap={{ scale: 0.99 }}
+              className="px-8 py-5 rounded-lg text-base font-medium text-muted-foreground border border-border hover:border-primary/40 hover:text-foreground transition-colors duration-300 text-center"
+              whileHover={{ scale: 1.03, borderColor: "hsl(265 55% 50% / 0.4)" }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               See How It Works
             </motion.a>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 subtle-divider" />
+      <motion.div
+        className="absolute bottom-0 left-0 right-0 subtle-divider"
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 1 }}
+        transition={{ duration: 1.2, delay: 1.4, ease: "easeOut" }}
+      />
     </section>
   );
 };

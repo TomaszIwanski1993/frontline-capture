@@ -141,12 +141,12 @@
 
   /* Transition strips between sections */
   .section-transition-down {
-    @apply w-full h-16;
+    @apply w-full h-20;
     background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--section-tint)) 100%);
   }
 
   .section-transition-up {
-    @apply w-full h-16;
+    @apply w-full h-20;
     background: linear-gradient(180deg, hsl(var(--section-tint)) 0%, hsl(var(--background)) 100%);
   }
 }

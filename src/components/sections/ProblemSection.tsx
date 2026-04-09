@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Users, Clock, AlertTriangle } from "lucide-react";
+import { useCountUp } from "@/hooks/useCountUp";
 
 const problems = [
   {
@@ -22,15 +23,32 @@ const problems = [
   },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 40, scale: 0.95 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      delay: i * 0.15,
+      ease: [0.25, 0.4, 0.25, 1],
+    },
+  }),
+};
+
 const ProblemSection = () => {
+  const { count: stat1, ref: stat1Ref } = useCountUp(70, 2000);
+  const { count: stat2, ref: stat2Ref } = useCountUp(12, 2000);
+
   return (
     <section id="problem" className="relative section-padding">
       <div className="section-container">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
         >
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">The Problem</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
@@ -46,13 +64,23 @@ const ProblemSection = () => {
           {problems.map((p, i) => (
             <motion.div
               key={p.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, delay: i * 0.15 }}
+              custom={i}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-60px" }}
+              variants={cardVariants}
+              whileHover={{ y: -6, boxShadow: "0 12px 40px hsl(265 30% 50% / 0.12)" }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card p-8"
             >
-              <p.icon className="h-6 w-6 text-primary mb-5" strokeWidth={1.5} />
+              <motion.div
+                initial={{ scale: 0, rotate: -20 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 + i * 0.15, type: "spring", stiffness: 200 }}
+              >
+                <p.icon className="h-6 w-6 text-primary mb-5" strokeWidth={1.5} />
+              </motion.div>
               <h3 className="text-lg font-semibold text-foreground mb-3">{p.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{p.description}</p>
             </motion.div>
@@ -60,18 +88,22 @@ const ProblemSection = () => {
         </div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
           className="mt-12 glass-card p-6 flex flex-col sm:flex-row gap-8 sm:gap-16 items-start sm:items-center"
         >
           <div>
-            <p className="text-3xl font-bold gradient-text">70%</p>
+            <p className="text-3xl font-bold gradient-text" ref={stat1Ref as React.Ref<HTMLParagraphElement>}>
+              {stat1}%
+            </p>
             <p className="text-sm text-muted-foreground mt-1">of operational knowledge is tacit and undocumented</p>
           </div>
           <div>
-            <p className="text-3xl font-bold gradient-text">6–12 months</p>
+            <p className="text-3xl font-bold gradient-text" ref={stat2Ref as React.Ref<HTMLParagraphElement>}>
+              6–{stat2} months
+            </p>
             <p className="text-sm text-muted-foreground mt-1">average ramp-up time for a new industrial operator</p>
           </div>
         </motion.div>
