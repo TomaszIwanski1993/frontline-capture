@@ -92,9 +92,9 @@ const IndustriesSection = () => {
                   loading="lazy"
                   width={640}
                   height={512}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 brightness-110"
                 />
-                <div className="absolute inset-0 bg-primary/35 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
               </div>
               <div className="p-7">
                 <motion.div

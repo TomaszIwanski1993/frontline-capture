@@ -89,9 +89,9 @@ const ProblemSection = () => {
                   loading="lazy"
                   width={640}
                   height={512}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 brightness-110"
                 />
-                <div className="absolute inset-0 bg-primary/35 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
               </div>
               <div className="p-8">
                 <motion.div
@@ -110,23 +110,43 @@ const ProblemSection = () => {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
-          className="mt-12 glass-card p-6 flex flex-col sm:flex-row gap-8 sm:gap-16 items-start sm:items-center"
+          className="mt-16 grid sm:grid-cols-2 gap-6"
         >
-          <div>
-            <p className="text-3xl font-bold gradient-text" ref={stat1Ref as React.Ref<HTMLParagraphElement>}>
+          <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-8 text-center">
+            <div className="absolute -top-8 -right-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
+            <motion.p
+              initial={{ scale: 0.5, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5, type: "spring", stiffness: 150 }}
+              className="text-6xl lg:text-7xl font-black gradient-text tracking-tight"
+              ref={stat1Ref as React.Ref<HTMLParagraphElement>}
+            >
               {stat1}%
+            </motion.p>
+            <p className="text-base text-muted-foreground mt-4 leading-relaxed">
+              of operational knowledge is <span className="text-foreground font-semibold">tacit and undocumented</span>
             </p>
-            <p className="text-sm text-muted-foreground mt-1">of operational knowledge is tacit and undocumented</p>
           </div>
-          <div>
-            <p className="text-3xl font-bold gradient-text" ref={stat2Ref as React.Ref<HTMLParagraphElement>}>
-              6-{stat2} months
+          <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-8 text-center">
+            <div className="absolute -top-8 -right-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
+            <motion.p
+              initial={{ scale: 0.5, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.7, type: "spring", stiffness: 150 }}
+              className="text-6xl lg:text-7xl font-black gradient-text tracking-tight"
+              ref={stat2Ref as React.Ref<HTMLParagraphElement>}
+            >
+              6-{stat2}<span className="text-4xl lg:text-5xl">mo</span>
+            </motion.p>
+            <p className="text-base text-muted-foreground mt-4 leading-relaxed">
+              average ramp-up time for a <span className="text-foreground font-semibold">new industrial operator</span>
             </p>
-            <p className="text-sm text-muted-foreground mt-1">average ramp-up time for a new industrial operator</p>
           </div>
         </motion.div>
       </div>
