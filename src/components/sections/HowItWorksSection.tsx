@@ -55,9 +55,10 @@ const HowItWorksSection = () => {
               className="relative"
             >
               <motion.span
-                className="text-7xl font-black text-primary/40 block"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                className="text-8xl font-black block bg-gradient-to-br from-primary/50 via-primary/30 to-transparent bg-clip-text text-transparent select-none"
+                style={{ WebkitTextStroke: "1.5px hsl(var(--primary) / 0.3)" }}
+                initial={{ opacity: 0, x: -20, scale: 0.8 }}
+                whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 + i * 0.2 }}
               >
