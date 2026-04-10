@@ -33,9 +33,9 @@ const Index = () => {
         <div className="section-transition-up" />
 
         {/* Pull quote */}
-        <div className="py-16 lg:py-20">
-          <div className="section-container max-w-4xl text-center">
-            <p className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight gradient-text leading-snug">
+        <div className="py-14 lg:py-18">
+          <div className="section-container max-w-3xl text-center">
+            <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-foreground/80 leading-snug">
               "Your operation is only as strong as what your best operator remembers."
             </p>
           </div>

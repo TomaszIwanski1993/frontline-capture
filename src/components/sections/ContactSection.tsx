@@ -15,11 +15,11 @@ const ContactSection = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
-            <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Contact</p>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Contact</p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
               Let's talk
             </h2>
-            <p className="mt-4 text-muted-foreground text-lg">
+            <p className="mt-3 text-muted-foreground text-base">
               We respond within one business day.
             </p>
 

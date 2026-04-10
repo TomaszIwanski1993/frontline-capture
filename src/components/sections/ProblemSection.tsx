@@ -40,11 +40,11 @@ const ProblemSection = () => {
       <SectionBgImage src={bgProblem} alt="Worker at controls" opacity={0.18} />
       <div className="section-container relative z-10">
         <div>
-          <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">The Problem</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
-            Operational knowledge is disappearing, and it's directly impacting performance
+          <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">The Problem</p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+            Operational knowledge is disappearing — and it's costing you
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
+          <p className="mt-3 text-muted-foreground text-base max-w-2xl">
             When experienced operators leave, performance drops, errors increase,
             and onboarding slows down. Most of what they know has never been documented.
           </p>
@@ -66,59 +66,51 @@ const ProblemSection = () => {
 
         <div className="mt-16 grid md:grid-cols-3 gap-6">
           {problems.map((p) => (
-            <motion.div
+            <div
               key={p.title}
-              whileHover={{ y: -6, boxShadow: "0 12px 40px hsl(265 30% 50% / 0.12)" }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden"
             >
-              <div className="h-56 overflow-hidden relative">
+              <div className="h-48 overflow-hidden relative">
                 <img
                   src={p.image}
                   alt={p.title}
                   loading="lazy"
                   width={640}
                   height={512}
-                  className="w-full h-full object-cover brightness-110"
+                  className="w-full h-full object-cover grayscale-[20%]"
                 />
-                <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-primary/15 mix-blend-multiply" />
               </div>
-              <div className="p-8">
-                <p.icon className="h-6 w-6 text-primary mb-5" strokeWidth={1.5} />
-                <h3 className="text-lg font-semibold text-foreground mb-3">{p.title}</h3>
+              <div className="p-6">
+                <p.icon className="h-5 w-5 text-primary mb-4" strokeWidth={1.5} />
+                <h3 className="text-base font-semibold text-foreground mb-2">{p.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{p.description}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-2 gap-6">
-          <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-10 lg:p-12 text-center">
-            <div className="absolute -top-8 -right-8 w-40 h-40 bg-primary/15 rounded-full blur-3xl" />
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
+        <div className="mt-12 grid sm:grid-cols-2 gap-5">
+          <div className="rounded-md border border-border bg-card p-8 lg:p-10 text-center">
             <p
-              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight text-4xl"
-              style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
+              className="text-5xl lg:text-7xl font-black text-foreground tracking-tight"
               ref={stat1Ref as React.Ref<HTMLParagraphElement>}
             >
               {stat1}%
             </p>
-            <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
-              Most of your operation runs on <span className="text-foreground font-semibold">undocumented knowledge</span>
+            <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+              of operational knowledge is <span className="text-foreground font-semibold">undocumented</span>
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-10 lg:p-12 text-center">
-            <div className="absolute -top-8 -right-8 w-40 h-40 bg-primary/15 rounded-full blur-3xl" />
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
+          <div className="rounded-md border border-border bg-card p-8 lg:p-10 text-center">
             <p
-              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight text-4xl"
-              style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
+              className="text-5xl lg:text-7xl font-black text-foreground tracking-tight"
               ref={stat2Ref as React.Ref<HTMLParagraphElement>}
             >
-              6-{stat2} months
+              6–{stat2}mo
             </p>
-            <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
-              It takes up to 12 months to <span className="text-foreground font-semibold">replace one experienced operator</span>
+            <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+              to <span className="text-foreground font-semibold">replace one experienced operator</span>
             </p>
           </div>
         </div>

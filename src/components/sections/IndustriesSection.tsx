@@ -44,40 +44,38 @@ const industries = [
 const IndustriesSection = () => {
   return (
     <section id="industries" className="relative section-padding">
-      <SectionBgImage src={bgIndustries} alt="Industrial complex" opacity={0.18} />
+      <SectionBgImage src={bgIndustries} alt="Industrial complex" opacity={0.12} />
       <div className="section-container relative z-10">
         <div>
-          <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Industries</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+          <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Industries</p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
             Wherever operations depend on human expertise
           </h2>
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {industries.map((ind) => (
-            <motion.div
+            <div
               key={ind.title}
-              whileHover={{ y: -6, boxShadow: "0 12px 40px hsl(265 30% 50% / 0.12)" }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="glass-card overflow-hidden group hover:border-primary/30 transition-colors duration-300"
+              className="glass-card overflow-hidden"
             >
-              <div className="h-48 overflow-hidden relative">
+              <div className="h-44 overflow-hidden relative">
                 <img
                   src={ind.image}
                   alt={ind.title}
                   loading="lazy"
                   width={640}
                   height={512}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 brightness-110"
+                  className="w-full h-full object-cover grayscale-[20%]"
                 />
-                <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-primary/15 mix-blend-multiply" />
               </div>
-              <div className="p-7">
-                <ind.icon className="h-6 w-6 text-primary mb-4" strokeWidth={1.5} />
-                <h3 className="text-lg font-semibold text-foreground mb-2">{ind.title}</h3>
+              <div className="p-6">
+                <ind.icon className="h-5 w-5 text-primary mb-3" strokeWidth={1.5} />
+                <h3 className="text-base font-semibold text-foreground mb-1.5">{ind.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{ind.example}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
