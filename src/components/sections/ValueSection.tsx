@@ -58,7 +58,7 @@ const ValueSection = () => {
         <div className="mt-12 grid sm:grid-cols-2 gap-5">
           {outcomes.map((item, i) => (
             <ScrollReveal key={item.title} delay={0.08 * i}>
-              <div className="glass-card overflow-hidden h-full">
+              <div className="glass-card overflow-hidden h-full shimmer-overlay">
                 <div className="h-44 overflow-hidden relative">
                   <img
                     src={item.image}
@@ -66,7 +66,8 @@ const ValueSection = () => {
                     loading="lazy"
                     width={640}
                     height={512}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover animate-card-pan"
+                    style={{ animationDelay: `${i * 3}s` }}
                   />
                 </div>
                 <div className="p-6 flex gap-4">

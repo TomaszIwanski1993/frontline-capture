@@ -243,3 +243,76 @@ html {
   0%, 100% { opacity: 0.2; transform: scale(0.95); }
   50% { opacity: 0.8; transform: scale(1.1); }
 }
+
+/* Premium ambient visual animations */
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes floatGentleAlt {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.5deg); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 15px hsl(258 48% 58% / 0.08), 0 0 30px hsl(258 48% 58% / 0.04); }
+  50% { box-shadow: 0 0 25px hsl(258 48% 58% / 0.15), 0 0 50px hsl(258 48% 58% / 0.08); }
+}
+
+@keyframes shimmerFlow {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes cardImagePan {
+  0%, 100% { transform: scale(1.02) translateY(0); }
+  50% { transform: scale(1.05) translateY(-2%); }
+}
+
+@keyframes stepNumberGlow {
+  0%, 100% { opacity: 0.30; text-shadow: 0 0 20px hsl(258 48% 58% / 0.05); }
+  50% { opacity: 0.40; text-shadow: 0 0 40px hsl(258 48% 58% / 0.15); }
+}
+
+@layer components {
+  .animate-float {
+    animation: floatGentle 8s ease-in-out infinite;
+  }
+
+  .animate-float-alt {
+    animation: floatGentleAlt 10s ease-in-out infinite;
+  }
+
+  .animate-glow-pulse {
+    animation: glowPulse 6s ease-in-out infinite;
+  }
+
+  .animate-card-pan {
+    animation: cardImagePan 20s ease-in-out infinite;
+  }
+
+  .animate-step-glow {
+    animation: stepNumberGlow 5s ease-in-out infinite;
+  }
+
+  .shimmer-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      hsl(258 48% 58% / 0.06) 50%,
+      transparent 60%
+    );
+    background-size: 200% 100%;
+    animation: shimmerFlow 12s linear infinite;
+    pointer-events: none;
+  }
+}

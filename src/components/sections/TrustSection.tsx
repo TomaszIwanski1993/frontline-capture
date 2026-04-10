@@ -14,7 +14,7 @@ const TrustSection = () => {
                 loading="lazy"
                 width={800}
                 height={800}
-                className="w-14 h-14 rounded-md"
+                className="w-14 h-14 rounded-md animate-float"
               />
               <p className="text-sm font-semibold text-foreground tracking-wide uppercase">
                 Trusted by industrial teams
