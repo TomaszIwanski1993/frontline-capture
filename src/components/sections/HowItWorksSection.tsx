@@ -29,34 +29,33 @@ const steps = [
 const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="relative section-padding">
-      <SectionBgImage src={bgHowIt} alt="Team collaboration" opacity={0.18} />
+      <SectionBgImage src={bgHowIt} alt="Team collaboration" opacity={0.12} />
       <div className="section-container relative z-10">
         <div>
-          <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">How It Works</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+          <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">How It Works</p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
             Three steps to retained knowledge
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
-            Built on AI that understands real-world workflows, not just documents.
+          <p className="mt-3 text-muted-foreground text-base max-w-2xl">
+            Built on AI that understands real-world workflows, not documents.
           </p>
         </div>
 
-        <div className="mt-16 grid md:grid-cols-3 gap-8">
+        <div className="mt-12 grid md:grid-cols-3 gap-8">
           {steps.map((step, i) => (
             <div key={step.number} className="relative">
               <span
-                className="text-8xl font-black block bg-gradient-to-br from-primary/50 via-primary/30 to-transparent bg-clip-text text-transparent select-none"
-                style={{ WebkitTextStroke: "1.5px hsl(var(--primary) / 0.3)" }}
+                className="text-6xl font-black block text-foreground/[0.06] select-none leading-none"
               >
                 {step.number}
               </span>
-              <step.icon className="h-6 w-6 text-primary mt-4 mb-4" strokeWidth={1.5} />
-              <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
+              <step.icon className="h-5 w-5 text-primary mt-3 mb-3" strokeWidth={1.5} />
+              <h3 className="text-lg font-semibold text-foreground mb-2">{step.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
 
               {i < steps.length - 1 && (
                 <div
-                  className="hidden md:block absolute top-8 -right-4 w-8 h-px bg-primary/20"
+                  className="hidden md:block absolute top-6 -right-4 w-8 h-px bg-border"
                 />
               )}
             </div>
