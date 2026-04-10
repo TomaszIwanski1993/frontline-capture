@@ -12,28 +12,28 @@ const outcomes = [
     icon: TrendingDown,
     metric: "30-40%",
     title: "Faster time-to-proficiency",
-    description: "New operators reach competence in weeks instead of months, with real-time, structured guidance from your best performers.",
+    description: "Quantum cuts onboarding time by 30-40%. New operators reach competence in weeks, guided by structured knowledge from your best performers.",
     image: cardProficiency,
   },
   {
     icon: CheckCircle,
     metric: "Measurably",
     title: "Reduce variability across shifts and sites",
-    description: "Every operator works from the same proven knowledge base, updated instantly. Task execution becomes predictable regardless of who's on shift.",
+    description: "Every operator works from the same proven knowledge base. Execution becomes predictable. Quality stops depending on who's on shift.",
     image: cardConsistency,
   },
   {
     icon: Shield,
     metric: "Eliminated",
     title: "Single points of failure",
-    description: "Critical knowledge is no longer locked in a few experts' heads. Operations continue smoothly through retirements and turnover.",
+    description: "Critical knowledge no longer lives in a few experts' heads. Retirements and turnover stop disrupting operations.",
     image: cardResilience,
   },
   {
     icon: RefreshCw,
     metric: "Reduced",
     title: "Dependency on top-performing operators",
-    description: "Instantly scale the expertise of your best people across every team and location, without relying on their constant availability.",
+    description: "Quantum scales the expertise of your best people across every team and location. Their knowledge works even when they don't.",
     image: cardContinuity,
   },
 ];
@@ -49,7 +49,7 @@ const ValueSection = () => {
             Measurable impact on operations
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
-            Real improvements validated in industrial environments, not marketing claims.
+            Proven results from real industrial environments. Not projections.
           </p>
         </div>
 

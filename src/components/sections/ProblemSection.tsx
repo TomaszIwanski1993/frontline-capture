@@ -12,21 +12,21 @@ const problems = [
     icon: Users,
     title: "Knowledge lives in people, not systems",
     description:
-      "Critical operational know-how, from workarounds and adjustments to judgment calls, exists only in the heads of experienced operators. When they leave, that knowledge goes with them.",
+      "Critical operational know-how exists only in the heads of experienced operators. When they leave, that knowledge disappears. No workaround fixes this.",
     image: cardKnowledge,
   },
   {
     icon: Clock,
     title: "Onboarding is slow and inconsistent",
     description:
-      "New operators learn through shadowing and trial-and-error. The result: months of ramp-up time, variable quality, and repeated mistakes that could have been avoided.",
+      "New operators learn through shadowing and trial-and-error. The result: months of wasted ramp-up time, inconsistent quality, and repeated mistakes.",
     image: cardOnboarding,
   },
   {
     icon: AlertTriangle,
     title: "Loss of experience creates operational risk",
     description:
-      "Every retirement, resignation, or shift change is a potential disruption. Organizations end up dependent on a small number of key individuals, and that's a fragile way to operate.",
+      "Every retirement, resignation, or shift change disrupts output. Dependence on a small number of key individuals weakens the entire operation.",
     image: cardRisk,
   },
 ];

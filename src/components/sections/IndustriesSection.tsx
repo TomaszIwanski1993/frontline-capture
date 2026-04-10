@@ -12,31 +12,31 @@ const industries = [
   {
     icon: Factory,
     title: "Manufacturing",
-    example: "Capture machine setup, changeover, and quality check expertise from veteran operators, and make it available to every shift.",
+    example: "Captures machine setup, changeover, and quality check expertise. Eliminates knowledge loss when veteran operators leave.",
     image: cardManufacturing,
   },
   {
     icon: Package,
     title: "FMCG",
-    example: "Standardize line operations, batch adjustments, and packaging know-how across sites and teams.",
+    example: "Standardizes line operations, batch adjustments, and packaging know-how. Ensures consistency across every site and shift.",
     image: cardFmcg,
   },
   {
     icon: Truck,
     title: "Logistics & Warehousing",
-    example: "Document picking sequences, equipment handling, and safety protocols once, then deploy them everywhere.",
+    example: "Locks in picking sequences, equipment handling, and safety protocols. Deploys them instantly across all locations.",
     image: cardLogistics,
   },
   {
     icon: HardHat,
     title: "Construction",
-    example: "Preserve site setup procedures and safety compliance knowledge from experienced managers before they move on.",
+    example: "Preserves site setup procedures and safety compliance from experienced managers. Reduces risk from staff turnover.",
     image: cardConstruction,
   },
   {
     icon: Wrench,
     title: "Field Service",
-    example: "Give every technician access to troubleshooting guides, maintenance routines, and client-specific configurations in the field.",
+    example: "Delivers troubleshooting guides, maintenance routines, and client configs directly to technicians in the field.",
     image: cardFieldservice,
   },
 ];

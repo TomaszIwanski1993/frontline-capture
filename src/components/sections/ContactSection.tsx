@@ -17,10 +17,10 @@ const ContactSection = () => {
           <div>
             <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Contact</p>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
-              Want to talk?
+              Let's talk
             </h2>
             <p className="mt-4 text-muted-foreground text-lg">
-              We'll get back to you within one business day.
+              We respond within one business day.
             </p>
 
             <div className="mt-10 space-y-5">
