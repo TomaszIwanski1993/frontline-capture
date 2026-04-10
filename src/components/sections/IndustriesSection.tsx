@@ -59,18 +59,6 @@ const IndustriesSection = () => {
               </div>
             </ScrollReveal>
           </div>
-          <ScrollReveal delay={0.15} className="flex-shrink-0">
-            <FloatingVisual variant="slow">
-              <img
-                src={layersIndustries}
-                alt="Interconnected knowledge layers"
-                loading="lazy"
-                width={800}
-                height={800}
-                className="w-48 lg:w-56 rounded-lg"
-              />
-            </FloatingVisual>
-          </ScrollReveal>
         </div>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
