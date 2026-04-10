@@ -53,17 +53,19 @@ const Index = () => {
 
         <div className="section-transition-down" />
         <div className="section-tinted">
+          <AboutSection />
+        </div>
+        <div className="section-transition-up" />
+
+        <IndustriesSection />
+
+        <div className="section-transition-down" />
+        <div className="section-tinted">
           <PilotSection />
         </div>
         <div className="section-transition-up" />
 
         <FAQSection />
-
-        <div className="section-transition-down" />
-        <div className="section-tinted">
-          <AboutSection />
-        </div>
-        <div className="section-transition-up" />
 
         <ResourcesSection />
         <ContactSection />
