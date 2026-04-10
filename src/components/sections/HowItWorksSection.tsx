@@ -1,4 +1,5 @@
 import { Video, Layers, PlayCircle } from "lucide-react";
+import FloatingVisual from "@/components/FloatingVisual";
 import bgHowIt from "@/assets/bg-howit-collab.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import layersHowit from "@/assets/layers-howit.jpg";
@@ -48,14 +49,16 @@ const HowItWorksSection = () => {
             </ScrollReveal>
           </div>
           <ScrollReveal delay={0.15} className="flex-shrink-0">
-            <img
-              src={layersHowit}
-              alt="Ascending knowledge steps"
-              loading="lazy"
-              width={1200}
-              height={600}
-              className="w-48 lg:w-64 rounded-lg animate-float-alt animate-glow-pulse"
-            />
+            <FloatingVisual variant="alt">
+              <img
+                src={layersHowit}
+                alt="Ascending knowledge steps"
+                loading="lazy"
+                width={1200}
+                height={600}
+                className="w-48 lg:w-64 rounded-lg"
+              />
+            </FloatingVisual>
           </ScrollReveal>
         </div>
 

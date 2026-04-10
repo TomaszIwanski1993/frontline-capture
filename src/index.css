@@ -246,18 +246,27 @@ html {
 
 /* Premium ambient visual animations */
 @keyframes floatGentle {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-8px) rotate(0.4deg); }
+  50% { transform: translateY(-5px) rotate(-0.3deg); }
+  75% { transform: translateY(-10px) rotate(0.2deg); }
 }
 
 @keyframes floatGentleAlt {
   0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-8px) rotate(0.5deg); }
+  30% { transform: translateY(-10px) rotate(-0.6deg); }
+  60% { transform: translateY(-4px) rotate(0.5deg); }
+  80% { transform: translateY(-8px) rotate(-0.2deg); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+  50% { transform: translateY(-6px) rotate(0.8deg) scale(1.008); }
 }
 
 @keyframes glowPulse {
   0%, 100% { box-shadow: 0 0 15px hsl(258 48% 58% / 0.08), 0 0 30px hsl(258 48% 58% / 0.04); }
-  50% { box-shadow: 0 0 25px hsl(258 48% 58% / 0.15), 0 0 50px hsl(258 48% 58% / 0.08); }
+  50% { box-shadow: 0 0 25px hsl(258 48% 58% / 0.18), 0 0 60px hsl(258 48% 58% / 0.10); }
 }
 
 @keyframes shimmerFlow {
@@ -265,35 +274,49 @@ html {
   100% { background-position: 200% 0; }
 }
 
-@keyframes cardImagePan {
-  0%, 100% { transform: scale(1.02) translateY(0); }
-  50% { transform: scale(1.05) translateY(-2%); }
+@keyframes cardImageDrift {
+  0%, 100% { transform: scale(1.04) translateY(0) rotate(0deg); }
+  33% { transform: scale(1.06) translateY(-1.5%) rotate(0.3deg); }
+  66% { transform: scale(1.05) translateY(-0.5%) rotate(-0.2deg); }
 }
 
 @keyframes stepNumberGlow {
   0%, 100% { opacity: 0.30; text-shadow: 0 0 20px hsl(258 48% 58% / 0.05); }
-  50% { opacity: 0.40; text-shadow: 0 0 40px hsl(258 48% 58% / 0.15); }
+  50% { opacity: 0.42; text-shadow: 0 0 40px hsl(258 48% 58% / 0.18); }
+}
+
+@keyframes subtleRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 @layer components {
   .animate-float {
-    animation: floatGentle 8s ease-in-out infinite;
+    animation: floatGentle 9s ease-in-out infinite;
   }
 
   .animate-float-alt {
-    animation: floatGentleAlt 10s ease-in-out infinite;
+    animation: floatGentleAlt 11s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: floatSlow 14s ease-in-out infinite;
   }
 
   .animate-glow-pulse {
-    animation: glowPulse 6s ease-in-out infinite;
+    animation: glowPulse 7s ease-in-out infinite;
   }
 
-  .animate-card-pan {
-    animation: cardImagePan 20s ease-in-out infinite;
+  .animate-card-drift {
+    animation: cardImageDrift 18s ease-in-out infinite;
   }
 
   .animate-step-glow {
     animation: stepNumberGlow 5s ease-in-out infinite;
+  }
+
+  .animate-subtle-rotate {
+    animation: subtleRotate 35s linear infinite;
   }
 
   .shimmer-overlay {

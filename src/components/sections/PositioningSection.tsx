@@ -1,4 +1,5 @@
 import ScrollReveal from "@/components/ScrollReveal";
+import FloatingVisual from "@/components/FloatingVisual";
 import layersImg from "@/assets/layers-illustration.jpg";
 
 const PositioningSection = () => {
@@ -27,14 +28,16 @@ const PositioningSection = () => {
 
           {/* Image — right */}
           <ScrollReveal delay={0.15} className="flex-1 flex justify-center">
-            <img
-              src={layersImg}
-              alt="Stacked operational knowledge layers"
-              loading="lazy"
-              width={800}
-              height={800}
-              className="w-full max-w-sm lg:max-w-md rounded-lg animate-float-alt animate-glow-pulse"
-            />
+            <FloatingVisual variant="alt">
+              <img
+                src={layersImg}
+                alt="Stacked operational knowledge layers"
+                loading="lazy"
+                width={800}
+                height={800}
+                className="w-full max-w-sm lg:max-w-md rounded-lg"
+              />
+            </FloatingVisual>
           </ScrollReveal>
         </div>
       </div>

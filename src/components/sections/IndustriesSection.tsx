@@ -1,4 +1,5 @@
 import { Factory, Package, Truck, HardHat, Wrench } from "lucide-react";
+import FloatingVisual from "@/components/FloatingVisual";
 import bgIndustries from "@/assets/bg-industries-aerial.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import cardManufacturing from "@/assets/card-manufacturing.jpg";
@@ -59,14 +60,16 @@ const IndustriesSection = () => {
             </ScrollReveal>
           </div>
           <ScrollReveal delay={0.15} className="flex-shrink-0">
-            <img
-              src={layersIndustries}
-              alt="Interconnected knowledge layers"
-              loading="lazy"
-              width={800}
-              height={800}
-              className="w-48 lg:w-56 rounded-lg animate-float animate-glow-pulse"
-            />
+            <FloatingVisual variant="slow">
+              <img
+                src={layersIndustries}
+                alt="Interconnected knowledge layers"
+                loading="lazy"
+                width={800}
+                height={800}
+                className="w-48 lg:w-56 rounded-lg"
+              />
+            </FloatingVisual>
           </ScrollReveal>
         </div>
 
@@ -81,7 +84,7 @@ const IndustriesSection = () => {
                     loading="lazy"
                     width={640}
                     height={512}
-                    className="w-full h-full object-cover animate-card-pan"
+                    className="w-full h-full object-cover animate-card-drift"
                     style={{ animationDelay: `${i * 2.5}s` }}
                   />
                 </div>
