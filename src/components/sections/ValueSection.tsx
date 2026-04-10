@@ -66,9 +66,8 @@ const ValueSection = () => {
                     loading="lazy"
                     width={640}
                     height={512}
-                    className="w-full h-full object-cover grayscale-[20%]"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-primary/15 mix-blend-multiply" />
                 </div>
                 <div className="p-6 flex gap-4">
                   <div className="flex-shrink-0 mt-0.5">

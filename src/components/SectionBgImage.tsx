@@ -12,12 +12,10 @@ const SectionBgImage = ({ src, alt, opacity = 0.06, position = "center" }: Secti
         src={src}
         alt={alt}
         loading="lazy"
-        className="absolute inset-0 w-full h-full object-cover dark:mix-blend-luminosity"
+        className="absolute inset-0 w-full h-full object-cover"
         style={{
           opacity,
           objectPosition: position,
-          filter: "grayscale(40%)",
-          mixBlendMode: undefined,
         }}
       />
       <div
