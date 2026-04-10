@@ -184,3 +184,37 @@ html {
     background: linear-gradient(180deg, hsl(var(--section-tint)) 0%, hsl(var(--background)) 100%);
   }
 }
+
+/* Ambient background animations — ultra-slow, smooth, no perceptible loop seam */
+@keyframes ambientDrift1 {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-8%, 12%) scale(1.08);
+    opacity: 0.7;
+  }
+}
+
+@keyframes ambientDrift2 {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(10%, -8%) scale(1.05);
+    opacity: 0.6;
+  }
+}
+
+@keyframes ambientBreathe {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.12);
+    opacity: 0.5;
+  }
+}
