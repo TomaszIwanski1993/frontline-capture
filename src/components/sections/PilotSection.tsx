@@ -20,8 +20,8 @@ const PilotSection = () => {
             Prove value in weeks, not months
           </h2>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto">
-            We run a focused pilot in your real environment. Minimal disruption,
-            measurable results. See the impact before making any decisions.
+            We run a focused pilot in your real environment. Fast setup, immediate
+            insights, measurable results. See the impact before making any decisions.
           </p>
 
           <div className="mt-6 space-y-3 text-sm text-muted-foreground max-w-md mx-auto text-left">

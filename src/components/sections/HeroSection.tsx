@@ -68,8 +68,8 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
             className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-            Capture how your best operators work, and turn it into structured,
-            real-time guidance for every shift.
+            Capture how your best operators work, and instantly turn it into
+            structured, real-time guidance for every shift.
           </motion.p>
 
           <motion.p

@@ -8,21 +8,21 @@ const steps = [
     number: "01",
     title: "Capture",
     description:
-      "AI observes how experienced operators perform tasks, recording the tacit knowledge that never makes it into manuals.",
+      "AI observes how experienced operators perform tasks in real time, recording the tacit knowledge that never makes it into manuals.",
   },
   {
     icon: Layers,
     number: "02",
     title: "Structure",
     description:
-      "Raw expertise is transformed into clear, step-by-step guidance: standardized, searchable, and ready to use.",
+      "Raw expertise is instantly transformed into structured, actionable guidance: standardized, searchable, and ready to deploy.",
   },
   {
     icon: PlayCircle,
     number: "03",
     title: "Apply",
     description:
-      "Structured knowledge is delivered directly to operators during work: for onboarding, task execution, and shift consistency.",
+      "Structured knowledge is delivered to operators in seconds during live work: for onboarding, task execution, and shift consistency.",
   },
 ];
 
