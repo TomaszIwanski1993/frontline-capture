@@ -1,50 +1,46 @@
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import bgPilot from "@/assets/bg-pilot-machinery.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 
 const pilotPoints = [
   "2–4 week pilot on a single line or process",
-  "Works within your existing workflows, no IT overhaul needed",
-  "Clear metrics so you can evaluate results objectively",
+  "Integrates with existing workflows — no IT overhaul",
+  "Clear metrics to evaluate results objectively",
 ];
 
 const PilotSection = () => {
   return (
     <section id="pilot" className="relative section-padding">
-      <SectionBgImage src={bgPilot} alt="Industrial machinery" opacity={0.18} />
+      <SectionBgImage src={bgPilot} alt="Industrial machinery" opacity={0.12} />
       <div className="section-container relative z-10">
-        <div className="glass-card p-10 lg:p-16 text-center max-w-3xl mx-auto relative overflow-hidden">
-          <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Get Started</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+        <div className="glass-card p-8 lg:p-14 text-center max-w-3xl mx-auto">
+          <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Get Started</p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
             Prove value in weeks, not months
           </h2>
-          <p className="mt-6 text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="mt-5 text-muted-foreground text-base leading-relaxed max-w-xl mx-auto">
             We deploy a focused pilot in your real environment. Fast setup, immediate
             results. You evaluate the impact before committing to anything.
           </p>
 
-          <div className="mt-6 space-y-3 text-sm text-muted-foreground max-w-md mx-auto text-left">
+          <div className="mt-6 space-y-2.5 text-sm text-muted-foreground max-w-md mx-auto text-left">
             {pilotPoints.map((point, i) => (
-              <div key={i} className="flex items-start gap-3">
-                <ArrowRight className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+              <div key={i} className="flex items-start gap-2.5">
+                <ArrowRight className="h-3.5 w-3.5 text-primary flex-shrink-0 mt-0.5" />
                 <span>{point}</span>
               </div>
             ))}
           </div>
 
-          <div className="mt-10">
-            <motion.a
+          <div className="mt-8">
+            <a
               href="#contact"
-              className="cta-button text-base px-10 py-4 inline-block"
-              whileHover={{ scale: 1.04, boxShadow: "0 12px 40px hsl(265 55% 50% / 0.4)" }}
-              whileTap={{ scale: 0.97 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className="cta-button text-sm px-8 py-3.5 inline-block"
             >
-              Book a Demo — See It on Your Workflow
-            </motion.a>
-            <p className="mt-4 text-sm text-muted-foreground/70">
-              See how Quantum works on your actual operations — in weeks, not months.
+              Book a Demo
+            </a>
+            <p className="mt-3 text-xs text-muted-foreground/50 tracking-wide">
+              See Quantum on your actual operations.
             </p>
           </div>
         </div>
