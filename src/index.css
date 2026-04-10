@@ -12,52 +12,52 @@ html {
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 10%;
+    --foreground: 230 15% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 10%;
+    --card-foreground: 230 15% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 10%;
+    --popover-foreground: 230 15% 8%;
 
-    --primary: 265 55% 50%;
+    --primary: 265 55% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 260 20% 97%;
-    --secondary-foreground: 240 10% 20%;
+    --secondary: 260 12% 96%;
+    --secondary-foreground: 230 12% 18%;
 
-    --muted: 260 15% 95%;
-    --muted-foreground: 240 5% 45%;
+    --muted: 250 10% 94%;
+    --muted-foreground: 230 8% 40%;
 
-    --accent: 265 30% 96%;
-    --accent-foreground: 265 55% 40%;
+    --accent: 265 20% 95%;
+    --accent-foreground: 265 50% 38%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 260 10% 92%;
-    --input: 260 10% 92%;
-    --ring: 265 55% 50%;
+    --border: 250 8% 90%;
+    --input: 250 8% 90%;
+    --ring: 265 55% 48%;
 
     --radius: 0.5rem;
 
-    --section-tint: 265 30% 98%;
-    --section-tint-strong: 265 25% 96%;
+    --section-tint: 260 18% 97%;
+    --section-tint-strong: 260 15% 95%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(265 55% 50%), hsl(280 60% 42%));
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(265 30% 97%) 40%, hsl(265 20% 98%) 70%, hsl(0 0% 100%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(265 20% 99%));
-    --gradient-cta: linear-gradient(135deg, hsl(265 60% 52%), hsl(280 55% 45%));
-    --gradient-cta-hover: linear-gradient(135deg, hsl(265 60% 47%), hsl(280 55% 40%));
+    --gradient-primary: linear-gradient(135deg, hsl(265 55% 48%), hsl(280 58% 40%));
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(260 20% 97%) 40%, hsl(260 14% 98%) 70%, hsl(0 0% 100%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(260 12% 99%));
+    --gradient-cta: linear-gradient(135deg, hsl(265 58% 48%), hsl(280 55% 40%));
+    --gradient-cta-hover: linear-gradient(135deg, hsl(265 58% 43%), hsl(280 55% 36%));
 
     --sidebar-background: 0 0% 99%;
-    --sidebar-foreground: 240 10% 10%;
-    --sidebar-primary: 265 55% 50%;
+    --sidebar-foreground: 230 15% 8%;
+    --sidebar-primary: 265 55% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 260 20% 96%;
-    --sidebar-accent-foreground: 240 10% 20%;
-    --sidebar-border: 260 10% 90%;
-    --sidebar-ring: 265 55% 50%;
+    --sidebar-accent: 260 14% 95%;
+    --sidebar-accent-foreground: 230 12% 18%;
+    --sidebar-border: 250 8% 88%;
+    --sidebar-ring: 265 55% 48%;
   }
 }
 
@@ -85,55 +85,53 @@ html {
   }
 
   .section-padding {
-    @apply py-24 lg:py-32;
+    @apply py-20 lg:py-28;
   }
 
   .section-tinted {
-    background-color: hsl(265 30% 98% / 0.92);
-    backdrop-filter: blur(1px);
+    background-color: hsl(260 18% 97% / 0.95);
   }
 
   .section-tinted-strong {
-    background-color: hsl(265 25% 97% / 0.94);
-    backdrop-filter: blur(1px);
+    background-color: hsl(260 15% 96% / 0.96);
   }
 
   .gradient-text {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(265 55% 50%), hsl(280 50% 45%));
+    background-image: linear-gradient(135deg, hsl(265 55% 48%), hsl(280 48% 40%));
   }
 
   .glass-card {
-    @apply rounded-xl border border-border bg-card transition-all duration-300;
-    box-shadow: 0 1px 3px hsl(265 20% 50% / 0.04), 0 1px 2px hsl(265 20% 50% / 0.02);
+    @apply rounded-lg border border-border bg-card transition-all duration-200;
+    box-shadow: 0 1px 3px hsl(230 15% 50% / 0.05);
   }
 
   .glass-card:hover {
-    border-color: hsl(265 30% 85%);
-    box-shadow: 0 8px 30px hsl(265 30% 50% / 0.08), 0 2px 8px hsl(265 20% 50% / 0.04);
-    transform: translateY(-2px);
+    border-color: hsl(260 20% 82%);
+    box-shadow: 0 6px 24px hsl(260 20% 50% / 0.08);
+    transform: translateY(-1px);
   }
 
   .cta-button {
-    @apply px-8 py-4 rounded-lg font-semibold text-primary-foreground transition-all duration-300;
+    @apply px-8 py-4 rounded-lg font-semibold text-primary-foreground transition-all duration-200;
     background: var(--gradient-cta);
-    box-shadow: 0 4px 20px hsl(265 55% 50% / 0.2), 0 1px 3px hsl(265 55% 50% / 0.1);
+    box-shadow: 0 4px 16px hsl(265 55% 48% / 0.22);
   }
 
   .cta-button:hover {
     background: var(--gradient-cta-hover);
-    box-shadow: 0 8px 35px hsl(265 55% 50% / 0.35), 0 2px 6px hsl(265 55% 50% / 0.15);
-    transform: translateY(-2px);
+    box-shadow: 0 6px 28px hsl(265 55% 48% / 0.32);
+    transform: translateY(-1px);
   }
 
   .cta-button:active {
     transform: translateY(0);
-    box-shadow: 0 4px 15px hsl(265 55% 50% / 0.25);
+    box-shadow: 0 3px 12px hsl(265 55% 48% / 0.2);
   }
 
   .subtle-divider {
     @apply w-full h-px;
-    background: linear-gradient(90deg, transparent, hsl(260 20% 88%), transparent);
+    background: linear-gradient(90deg, transparent, hsl(250 14% 86%), transparent);
   }
 
   .section-gradient-top {
@@ -146,12 +144,12 @@ html {
 
   /* Transition strips between sections */
   .section-transition-down {
-    @apply w-full h-20;
+    @apply w-full h-16;
     background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--section-tint)) 100%);
   }
 
   .section-transition-up {
-    @apply w-full h-20;
+    @apply w-full h-16;
     background: linear-gradient(180deg, hsl(var(--section-tint)) 0%, hsl(var(--background)) 100%);
   }
 }
