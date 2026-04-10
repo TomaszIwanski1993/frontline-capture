@@ -17,11 +17,11 @@ const PilotSection = () => {
         <div className="glass-card p-10 lg:p-16 text-center max-w-3xl mx-auto relative overflow-hidden">
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Get Started</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
-            Start with a pilot. No commitment required.
+            Prove value in weeks, not months
           </h2>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto">
-            We run a short, focused pilot in your real environment. Minimal disruption,
-            real results. See the value before making any decisions.
+            We run a focused pilot in your real environment. Minimal disruption,
+            measurable results. See the impact before making any decisions.
           </p>
 
           <div className="mt-6 space-y-3 text-sm text-muted-foreground max-w-md mx-auto text-left">

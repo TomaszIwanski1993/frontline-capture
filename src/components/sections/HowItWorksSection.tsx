@@ -8,21 +8,21 @@ const steps = [
     number: "01",
     title: "Capture",
     description:
-      "Our AI observes and records how experienced operators perform tasks, capturing the tacit knowledge that traditional documentation misses.",
+      "AI observes how experienced operators perform tasks, recording the tacit knowledge that never makes it into manuals.",
   },
   {
     icon: Layers,
     number: "02",
     title: "Structure",
     description:
-      "Raw demonstrations are transformed into clear, step-by-step task knowledge: standardized, searchable, and easy to follow.",
+      "Raw expertise is transformed into clear, step-by-step guidance: standardized, searchable, and ready to use.",
   },
   {
     icon: PlayCircle,
     number: "03",
     title: "Apply",
     description:
-      "Structured knowledge is used directly in operations: for onboarding new operators, guiding task execution, and maintaining consistency across shifts.",
+      "Structured knowledge is delivered directly to operators during work: for onboarding, task execution, and shift consistency.",
   },
 ];
 
@@ -36,6 +36,9 @@ const HowItWorksSection = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
             Three steps to retained knowledge
           </h2>
+          <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
+            Built on AI that understands real-world workflows, not just documents.
+          </p>
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">

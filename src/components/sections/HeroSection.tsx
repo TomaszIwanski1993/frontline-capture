@@ -35,9 +35,9 @@ const HeroSection = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1] text-foreground">
-              Your best operators
+              Turn frontline expertise into
               <br />
-              <span className="gradient-text">won't be here forever.</span>
+              <span className="gradient-text">scalable, AI-powered operations</span>
             </h1>
           </motion.div>
 
@@ -47,9 +47,17 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
             className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-            Quantum uses AI to capture frontline operational knowledge, the hands-on
-            expertise that keeps your factory running, and turns it into structured
-            guidance for every operator, every shift.
+            Capture how your best operators work, and turn it into structured,
+            real-time guidance for every shift.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.45, ease: "easeOut" }}
+            className="mt-3 text-base text-muted-foreground/80 italic"
+          >
+            Your best operators won't be here forever.
           </motion.p>
 
           <motion.div
@@ -77,6 +85,15 @@ const HeroSection = () => {
               See How It Works
             </motion.a>
           </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
+            className="mt-5 text-sm text-muted-foreground/70"
+          >
+            Pilot in 2–4 weeks. No IT overhaul required.
+          </motion.p>
         </div>
       </div>
 

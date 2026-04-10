@@ -12,31 +12,31 @@ const industries = [
   {
     icon: Factory,
     title: "Manufacturing",
-    example: "Machine setup procedures, quality checks, changeover routines. Captured from operators who've done it for decades.",
+    example: "Capture machine setup, changeover, and quality check expertise from veteran operators, and make it available to every shift.",
     image: cardManufacturing,
   },
   {
     icon: Package,
     title: "FMCG",
-    example: "Line operations, batch adjustments, packaging specifications. Consistent across shifts and sites.",
+    example: "Standardize line operations, batch adjustments, and packaging know-how across sites and teams.",
     image: cardFmcg,
   },
   {
     icon: Truck,
     title: "Logistics & Warehousing",
-    example: "Picking sequences, equipment handling, safety protocols. Documented once, used everywhere.",
+    example: "Document picking sequences, equipment handling, and safety protocols once, then deploy them everywhere.",
     image: cardLogistics,
   },
   {
     icon: HardHat,
     title: "Construction",
-    example: "Site setup procedures, material handling, safety compliance. Preserved from experienced site managers.",
+    example: "Preserve site setup procedures and safety compliance knowledge from experienced managers before they move on.",
     image: cardConstruction,
   },
   {
     icon: Wrench,
     title: "Field Service",
-    example: "Troubleshooting guides, maintenance routines, client-specific configurations. Always accessible in the field.",
+    example: "Give every technician access to troubleshooting guides, maintenance routines, and client-specific configurations in the field.",
     image: cardFieldservice,
   },
 ];
@@ -49,7 +49,7 @@ const IndustriesSection = () => {
         <div>
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Industries</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
-            Built for frontline operations
+            Wherever operations depend on human expertise
           </h2>
         </div>
 
