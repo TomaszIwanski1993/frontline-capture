@@ -47,6 +47,7 @@ const PilotSection = () => {
               See how Quantum works on your actual operations — in weeks, not months.
             </p>
           </div>
+        </div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 subtle-divider" />
