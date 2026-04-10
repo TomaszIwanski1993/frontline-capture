@@ -48,18 +48,6 @@ const HowItWorksSection = () => {
               </div>
             </ScrollReveal>
           </div>
-          <ScrollReveal delay={0.15} className="flex-shrink-0">
-            <FloatingVisual variant="alt">
-              <img
-                src={layersHowit}
-                alt="Ascending knowledge steps"
-                loading="lazy"
-                width={1200}
-                height={600}
-                className="w-48 lg:w-64 rounded-lg"
-              />
-            </FloatingVisual>
-          </ScrollReveal>
         </div>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">
