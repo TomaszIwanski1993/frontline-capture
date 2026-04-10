@@ -12,7 +12,9 @@ const FooterSection = () => {
               <span className="text-lg font-bold text-foreground">Quantum</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              AI for operational knowledge retention.
+              Quantum Making Spółka z ograniczoną odpowiedzialnością<br />
+              Grzegórzecka 69D/46<br />
+              31-559 Kraków, Poland
             </p>
             <p className="text-sm text-muted-foreground mt-3">
               info@quantummaking.com
