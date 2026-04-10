@@ -41,9 +41,11 @@ const PilotSection = () => {
               whileTap={{ scale: 0.97 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
-              Book a Demo
+              Book a Demo — See It on Your Workflow
             </motion.a>
-          </div>
+            <p className="mt-4 text-sm text-muted-foreground/70">
+              See how Quantum works on your actual operations — in weeks, not months.
+            </p>
         </div>
       </div>
 

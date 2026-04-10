@@ -94,7 +94,7 @@ const HeroSection = () => {
               whileTap={{ scale: 0.97 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
-              Book a Demo
+              Book a Demo — See It on Your Workflow
             </motion.a>
             <motion.a
               href="#how-it-works"
@@ -113,7 +113,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
             className="mt-5 text-sm text-muted-foreground/70"
           >
-            Pilot in 2–4 weeks. No IT overhaul required.
+            See how Quantum works on your actual operations — in weeks, not months.
           </motion.p>
         </div>
       </div>
