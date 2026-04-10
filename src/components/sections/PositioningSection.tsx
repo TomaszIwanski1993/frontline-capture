@@ -1,19 +1,17 @@
 const PositioningSection = () => {
   return (
-    <section className="relative py-20 lg:py-28">
+    <section className="relative py-16 lg:py-20">
       <div className="section-container relative z-10 max-w-3xl text-center">
-        <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">
+        <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
           The Quantum Layer
         </p>
-        <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground tracking-tight leading-[1.15]">
-          A new layer for frontline operations
+        <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground tracking-tight leading-[1.2]">
+          A new operational layer for frontline work
         </h2>
-        <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-          Most operations rely on undocumented human expertise.
-        </p>
-        <p className="mt-4 text-base lg:text-lg text-muted-foreground/90 leading-relaxed max-w-2xl mx-auto">
+        <p className="mt-5 text-base lg:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+          Most operations depend on undocumented human expertise.
           Quantum captures how work is actually done, structures it with AI in seconds,
-          and delivers it to operators in real time. No documentation. No delays.
+          and delivers it to operators in real time.
         </p>
       </div>
 
