@@ -5,6 +5,7 @@ import SectionBgImage from "@/components/SectionBgImage";
 import cardKnowledge from "@/assets/card-knowledge.jpg";
 import cardOnboarding from "@/assets/card-onboarding.jpg";
 import cardRisk from "@/assets/card-risk.jpg";
+import layersProblem from "@/assets/layers-problem.jpg";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const problems = [
@@ -39,18 +40,32 @@ const ProblemSection = () => {
     <section id="problem" className="relative section-padding">
       <SectionBgImage src={bgProblem} alt="Worker at controls" opacity={0.18} />
       <div className="section-container relative z-10">
-        <ScrollReveal>
-          <div>
-            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">The Problem</p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-              Operational knowledge is disappearing — and it's costing you
-            </h2>
-            <p className="mt-3 text-muted-foreground text-base max-w-2xl">
-              When experienced operators leave, performance drops, errors increase,
-              and onboarding slows down. Most of what they know has never been documented.
-            </p>
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
+          <div className="flex-1">
+            <ScrollReveal>
+              <div>
+                <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">The Problem</p>
+                <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+                  Operational knowledge is disappearing — and it's costing you
+                </h2>
+                <p className="mt-3 text-muted-foreground text-base max-w-2xl">
+                  When experienced operators leave, performance drops, errors increase,
+                  and onboarding slows down. Most of what they know has never been documented.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
-        </ScrollReveal>
+          <ScrollReveal delay={0.15} className="flex-shrink-0">
+            <img
+              src={layersProblem}
+              alt="Knowledge layers fragmenting"
+              loading="lazy"
+              width={800}
+              height={800}
+              className="w-48 lg:w-64 rounded-lg"
+            />
+          </ScrollReveal>
+        </div>
 
         {/* Cost of inaction strip */}
         <div className="mt-10 grid sm:grid-cols-3 gap-4">
