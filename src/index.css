@@ -155,17 +155,22 @@ html {
   }
 
   .cta-button {
-    @apply px-8 py-4 rounded-md font-semibold text-primary-foreground transition-all duration-150;
+    @apply px-8 py-4 rounded-md font-semibold text-primary-foreground;
     background: var(--gradient-cta);
     box-shadow: 0 2px 8px hsl(258 52% 44% / 0.18);
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+                background 0.25s ease;
   }
 
   .cta-button:hover {
+    transform: scale(1.03);
     background: var(--gradient-cta-hover);
-    box-shadow: 0 4px 16px hsl(258 52% 44% / 0.28);
+    box-shadow: 0 6px 24px hsl(258 52% 44% / 0.35), 0 0 0 1px hsl(258 52% 44% / 0.08);
   }
 
   .cta-button:active {
+    transform: scale(0.98);
     box-shadow: 0 1px 4px hsl(258 52% 44% / 0.15);
   }
 
