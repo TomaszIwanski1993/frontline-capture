@@ -46,7 +46,8 @@ const Header = () => {
           )}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex items-center gap-3">
+          <ThemeToggle />
           <a href="#pilot" className="cta-button text-sm px-6 py-2.5 inline-block">
             Book a Demo
           </a>
