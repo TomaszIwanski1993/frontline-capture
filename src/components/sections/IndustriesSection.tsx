@@ -65,7 +65,7 @@ const IndustriesSection = () => {
               loading="lazy"
               width={800}
               height={800}
-              className="w-48 lg:w-56 rounded-lg"
+              className="w-48 lg:w-56 rounded-lg animate-float animate-glow-pulse"
             />
           </ScrollReveal>
         </div>
@@ -73,7 +73,7 @@ const IndustriesSection = () => {
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {industries.map((ind, i) => (
             <ScrollReveal key={ind.title} delay={0.07 * i}>
-              <div className="glass-card overflow-hidden h-full">
+              <div className="glass-card overflow-hidden h-full shimmer-overlay">
                 <div className="h-44 overflow-hidden relative">
                   <img
                     src={ind.image}
@@ -81,7 +81,8 @@ const IndustriesSection = () => {
                     loading="lazy"
                     width={640}
                     height={512}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover animate-card-pan"
+                    style={{ animationDelay: `${i * 2.5}s` }}
                   />
                 </div>
                 <div className="p-6">

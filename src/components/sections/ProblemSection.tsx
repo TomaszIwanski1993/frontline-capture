@@ -62,7 +62,8 @@ const ProblemSection = () => {
               loading="lazy"
               width={800}
               height={800}
-              className="w-48 lg:w-64 rounded-lg"
+              className="w-48 lg:w-64 rounded-lg animate-float animate-glow-pulse"
+            />
             />
           </ScrollReveal>
         </div>
@@ -71,7 +72,7 @@ const ProblemSection = () => {
         <div className="mt-16 grid md:grid-cols-3 gap-6">
           {problems.map((p, i) => (
             <ScrollReveal key={p.title} delay={0.08 * i}>
-              <div className="glass-card overflow-hidden h-full">
+              <div className="glass-card overflow-hidden h-full shimmer-overlay">
                 <div className="h-48 overflow-hidden relative">
                   <img
                     src={p.image}
@@ -79,7 +80,7 @@ const ProblemSection = () => {
                     loading="lazy"
                     width={640}
                     height={512}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover animate-card-pan"
                   />
                 </div>
                 <div className="p-6">

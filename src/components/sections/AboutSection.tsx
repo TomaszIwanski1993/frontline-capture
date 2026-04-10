@@ -40,8 +40,8 @@ const AboutSection = () => {
         <div className="mt-12 grid md:grid-cols-3 gap-8">
           {values.map((item, i) => (
             <ScrollReveal key={i} delay={0.08 * i}>
-              <div className="glass-card p-8 h-full text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 mb-5">
+              <div className="glass-card p-8 h-full text-center shimmer-overlay">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 mb-5 animate-glow-pulse">
                   <item.icon className="h-6 w-6 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-3">

@@ -33,7 +33,7 @@ const PositioningSection = () => {
               loading="lazy"
               width={800}
               height={800}
-              className="w-full max-w-sm lg:max-w-md rounded-lg"
+              className="w-full max-w-sm lg:max-w-md rounded-lg animate-float-alt animate-glow-pulse"
             />
           </ScrollReveal>
         </div>
