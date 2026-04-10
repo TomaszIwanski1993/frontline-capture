@@ -49,7 +49,7 @@ const HowItWorksSection = () => {
             <ScrollReveal key={step.number} delay={0.1 * i}>
               <div className="relative">
                 <span
-                  className="text-6xl font-black block text-primary/20 select-none leading-none"
+                  className="text-7xl font-black block text-primary/30 select-none leading-none"
                 >
                   {step.number}
                 </span>
