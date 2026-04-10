@@ -1,6 +1,7 @@
 import { Video, Layers, PlayCircle } from "lucide-react";
 import bgHowIt from "@/assets/bg-howit-collab.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
+import layersHowit from "@/assets/layers-howit.jpg";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const steps = [
@@ -32,17 +33,31 @@ const HowItWorksSection = () => {
     <section id="how-it-works" className="relative section-padding">
       <SectionBgImage src={bgHowIt} alt="Team collaboration" opacity={0.12} />
       <div className="section-container relative z-10">
-        <ScrollReveal>
-          <div>
-            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">How It Works</p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-              Three steps to retained knowledge
-            </h2>
-            <p className="mt-3 text-muted-foreground text-base max-w-2xl">
-              Built on AI that understands real-world workflows, not documents.
-            </p>
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
+          <div className="flex-1">
+            <ScrollReveal>
+              <div>
+                <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">How It Works</p>
+                <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+                  Three steps to retained knowledge
+                </h2>
+                <p className="mt-3 text-muted-foreground text-base max-w-2xl">
+                  Built on AI that understands real-world workflows, not documents.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
-        </ScrollReveal>
+          <ScrollReveal delay={0.15} className="flex-shrink-0">
+            <img
+              src={layersHowit}
+              alt="Ascending knowledge steps"
+              loading="lazy"
+              width={1200}
+              height={600}
+              className="w-48 lg:w-64 rounded-lg"
+            />
+          </ScrollReveal>
+        </div>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">
           {steps.map((step, i) => (

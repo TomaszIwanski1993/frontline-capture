@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import bgPilot from "@/assets/bg-pilot-machinery.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
+import layersCapture from "@/assets/layers-capture.jpg";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const pilotPoints = [
@@ -15,17 +16,29 @@ const PilotSection = () => {
       <SectionBgImage src={bgPilot} alt="Industrial machinery" opacity={0.12} />
       <div className="section-container relative z-10">
         <ScrollReveal>
-          <div className="glass-card p-8 lg:p-14 text-center max-w-3xl mx-auto">
-            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Get Started</p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-              Prove value in weeks, not months
-            </h2>
-            <p className="mt-5 text-muted-foreground text-base leading-relaxed max-w-xl mx-auto">
-              We deploy a focused pilot in your real environment. Fast setup, immediate
-              results. You evaluate the impact before committing to anything.
-            </p>
+          <div className="glass-card p-8 lg:p-14 max-w-3xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center gap-8">
+              <img
+                src={layersCapture}
+                alt="Data flowing through knowledge layers"
+                loading="lazy"
+                width={800}
+                height={800}
+                className="w-32 sm:w-40 rounded-lg flex-shrink-0"
+              />
+              <div className="text-center sm:text-left">
+                <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Get Started</p>
+                <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+                  Prove value in weeks, not months
+                </h2>
+                <p className="mt-5 text-muted-foreground text-base leading-relaxed">
+                  We deploy a focused pilot in your real environment. Fast setup, immediate
+                  results. You evaluate the impact before committing to anything.
+                </p>
+              </div>
+            </div>
 
-            <div className="mt-6 space-y-2.5 text-sm text-muted-foreground max-w-md mx-auto text-left">
+            <div className="mt-6 space-y-2.5 text-sm text-muted-foreground max-w-md mx-auto sm:mx-0 text-left">
               {pilotPoints.map((point, i) => (
                 <div key={i} className="flex items-start gap-2.5">
                   <ArrowRight className="h-3.5 w-3.5 text-primary flex-shrink-0 mt-0.5" />
@@ -34,7 +47,7 @@ const PilotSection = () => {
               ))}
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 text-center sm:text-left">
               <a
                 href="#contact"
                 className="cta-button text-sm px-8 py-3.5 inline-block"

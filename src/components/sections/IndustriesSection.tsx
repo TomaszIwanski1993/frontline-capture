@@ -6,6 +6,7 @@ import cardFmcg from "@/assets/card-fmcg.jpg";
 import cardLogistics from "@/assets/card-logistics.jpg";
 import cardConstruction from "@/assets/card-construction.jpg";
 import cardFieldservice from "@/assets/card-fieldservice.jpg";
+import layersIndustries from "@/assets/layers-industries.jpg";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const industries = [
@@ -46,14 +47,28 @@ const IndustriesSection = () => {
     <section id="industries" className="relative section-padding">
       <SectionBgImage src={bgIndustries} alt="Industrial complex" opacity={0.12} />
       <div className="section-container relative z-10">
-        <ScrollReveal>
-          <div>
-            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Industries</p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-              Wherever operations depend on human expertise
-            </h2>
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
+          <div className="flex-1">
+            <ScrollReveal>
+              <div>
+                <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Industries</p>
+                <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+                  Wherever operations depend on human expertise
+                </h2>
+              </div>
+            </ScrollReveal>
           </div>
-        </ScrollReveal>
+          <ScrollReveal delay={0.15} className="flex-shrink-0">
+            <img
+              src={layersIndustries}
+              alt="Interconnected knowledge layers"
+              loading="lazy"
+              width={800}
+              height={800}
+              className="w-48 lg:w-56 rounded-lg"
+            />
+          </ScrollReveal>
+        </div>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {industries.map((ind, i) => (
