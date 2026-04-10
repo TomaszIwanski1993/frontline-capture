@@ -11,21 +11,16 @@ const AboutSection = () => {
 
         <div className="mt-10 space-y-6 text-muted-foreground leading-relaxed">
           <p>
-            Quantum was founded by a team with deep experience in industrial operations,
-            manufacturing systems, and applied AI. We've spent years on factory floors,
-            in control rooms, and alongside frontline teams - and we've watched critical
-            knowledge disappear when experienced operators moved on.
+            We've worked inside real operations, and seen critical knowledge
+            disappear when experienced operators leave.
           </p>
           <p>
-            We built Quantum because we believe the most valuable knowledge in any
-            operation isn't in a manual or a database. It's in the hands and minds of
-            the people doing the work. Our mission is to make that knowledge permanent,
-            accessible, and useful - so it serves the next generation of operators just
-            as effectively as it served the last.
+            Quantum was built to make that knowledge permanent, scalable,
+            and usable in real time.
           </p>
           <p>
-            We're not trying to replace human expertise. We're building the tools to
-            preserve it.
+            We're not replacing human expertise. We're making it accessible
+            to every operator.
           </p>
         </div>
       </div>

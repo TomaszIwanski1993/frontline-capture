@@ -42,11 +42,11 @@ const ProblemSection = () => {
         <div>
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">The Problem</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
-            Operational knowledge is disappearing
+            Operational knowledge is disappearing, and it's directly impacting performance
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
-            In the next decade, an estimated 30% of the industrial workforce will retire.
-            Most of what they know has never been documented.
+            When experienced operators leave, performance drops, errors increase,
+            and onboarding slows down. Most of what they know has never been documented.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ const ProblemSection = () => {
               {stat1}%
             </p>
             <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
-              of operational knowledge is <span className="text-foreground font-semibold">tacit and undocumented</span>
+              Most of your operation runs on <span className="text-foreground font-semibold">undocumented knowledge</span>
             </p>
           </div>
           <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-10 lg:p-12 text-center">
@@ -104,7 +104,7 @@ const ProblemSection = () => {
               6-{stat2} months
             </p>
             <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
-              <span className="text-foreground font-semibold"></span> average ramp-up for a new industrial operator
+              It takes up to 12 months to <span className="text-foreground font-semibold">replace one experienced operator</span>
             </p>
           </div>
         </div>
