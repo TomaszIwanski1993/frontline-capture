@@ -32,7 +32,10 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08] text-foreground">
+            <p className="text-sm text-muted-foreground/60 font-medium tracking-wide uppercase">
+              Your best operators won't be here forever.
+            </p>
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08] text-foreground">
               The operating system for
               <br />
               <span className="gradient-text">frontline knowledge</span>
@@ -47,15 +50,6 @@ const HeroSection = () => {
           >
             Quantum captures how your best operators work and transforms it into
             structured, real-time guidance for every shift.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.35 }}
-            className="mt-3 text-sm text-muted-foreground/60 font-medium tracking-wide uppercase"
-          >
-            Your best operators won't be here forever.
           </motion.p>
 
           <motion.div
@@ -77,15 +71,6 @@ const HeroSection = () => {
               How It Works
             </a>
           </motion.div>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="mt-5 text-xs text-muted-foreground/50 tracking-wide"
-          >
-            Pilot in 2–4 weeks · No IT overhaul · Measurable results
-          </motion.p>
         </div>
       </div>
 
