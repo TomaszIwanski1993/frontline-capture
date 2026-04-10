@@ -81,7 +81,7 @@ const IndustriesSection = () => {
                     loading="lazy"
                     width={640}
                     height={512}
-                    className="w-full h-full object-cover animate-card-pan"
+                    className="w-full h-full object-cover animate-card-drift"
                     style={{ animationDelay: `${i * 2.5}s` }}
                   />
                 </div>

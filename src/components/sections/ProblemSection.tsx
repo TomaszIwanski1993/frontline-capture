@@ -79,7 +79,7 @@ const ProblemSection = () => {
                     loading="lazy"
                     width={640}
                     height={512}
-                    className="w-full h-full object-cover animate-card-pan"
+                    className="w-full h-full object-cover animate-card-drift"
                   />
                 </div>
                 <div className="p-6">
