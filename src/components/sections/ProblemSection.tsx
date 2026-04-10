@@ -64,7 +64,6 @@ const ProblemSection = () => {
               height={800}
               className="w-48 lg:w-64 rounded-lg animate-float animate-glow-pulse"
             />
-            />
           </ScrollReveal>
         </div>
 

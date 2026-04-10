@@ -67,7 +67,6 @@ const HowItWorksSection = () => {
                   className="text-7xl font-black block text-primary/30 select-none leading-none animate-step-glow"
                   style={{ animationDelay: `${i * 1.5}s` }}
                 >
-                >
                   {step.number}
                 </span>
                 <step.icon className="h-5 w-5 text-primary mt-3 mb-3" strokeWidth={1.5} />
