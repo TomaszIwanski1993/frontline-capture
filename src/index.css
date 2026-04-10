@@ -57,6 +57,52 @@ html {
     --sidebar-border: 220 10% 88%;
     --sidebar-ring: 258 52% 44%;
   }
+
+  .dark {
+    --background: 220 16% 6%;
+    --foreground: 220 10% 92%;
+
+    --card: 220 14% 9%;
+    --card-foreground: 220 10% 92%;
+
+    --popover: 220 14% 9%;
+    --popover-foreground: 220 10% 92%;
+
+    --primary: 258 48% 58%;
+    --primary-foreground: 220 16% 6%;
+
+    --secondary: 220 12% 12%;
+    --secondary-foreground: 220 10% 85%;
+
+    --muted: 220 10% 14%;
+    --muted-foreground: 220 8% 55%;
+
+    --accent: 258 12% 14%;
+    --accent-foreground: 258 40% 70%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 10% 14%;
+    --input: 220 10% 14%;
+    --ring: 258 48% 58%;
+
+    --section-tint: 220 12% 8%;
+    --section-tint-strong: 220 10% 10%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(258 48% 58%), hsl(272 44% 50%));
+    --gradient-cta: linear-gradient(135deg, hsl(258 50% 56%), hsl(272 46% 48%));
+    --gradient-cta-hover: linear-gradient(135deg, hsl(258 50% 50%), hsl(272 46% 42%));
+
+    --sidebar-background: 220 14% 8%;
+    --sidebar-foreground: 220 10% 92%;
+    --sidebar-primary: 258 48% 58%;
+    --sidebar-primary-foreground: 220 16% 6%;
+    --sidebar-accent: 220 10% 12%;
+    --sidebar-accent-foreground: 220 10% 85%;
+    --sidebar-border: 220 10% 14%;
+    --sidebar-ring: 258 48% 58%;
+  }
 }
 
 @layer base {
@@ -86,26 +132,26 @@ html {
   }
 
   .section-tinted {
-    background-color: hsl(220 10% 96%);
+    background-color: hsl(var(--section-tint));
   }
 
   .section-tinted-strong {
-    background-color: hsl(220 8% 94%);
+    background-color: hsl(var(--section-tint-strong));
   }
 
   .gradient-text {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(258 52% 44%), hsl(272 44% 38%));
+    background-image: var(--gradient-primary);
   }
 
   .glass-card {
     @apply rounded-md border border-border bg-card transition-all duration-150;
-    box-shadow: 0 1px 2px hsl(220 15% 50% / 0.04);
+    box-shadow: 0 1px 2px hsl(var(--foreground) / 0.04);
   }
 
   .glass-card:hover {
-    border-color: hsl(220 12% 82%);
-    box-shadow: 0 4px 16px hsl(220 15% 50% / 0.06);
+    border-color: hsl(var(--border));
+    box-shadow: 0 4px 16px hsl(var(--foreground) / 0.06);
   }
 
   .cta-button {
@@ -125,7 +171,7 @@ html {
 
   .subtle-divider {
     @apply w-full h-px;
-    background: hsl(220 10% 88%);
+    background: hsl(var(--border));
   }
 
   .section-transition-down {
