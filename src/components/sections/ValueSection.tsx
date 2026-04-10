@@ -41,15 +41,15 @@ const outcomes = [
 const ValueSection = () => {
   return (
     <section id="outcomes" className="relative section-padding">
-      <SectionBgImage src={bgValue} alt="Warehouse operations" opacity={0.18} />
+      <SectionBgImage src={bgValue} alt="Warehouse operations" opacity={0.12} />
       <div className="section-container relative z-10">
         <div>
-          <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Outcomes</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+          <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Outcomes</p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
             Measurable impact on operations
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
-            Proven results from real industrial environments. Not projections.
+          <p className="mt-3 text-muted-foreground text-base max-w-2xl">
+            Proven results from real industrial deployments.
           </p>
         </div>
 

@@ -40,11 +40,11 @@ const ProblemSection = () => {
       <SectionBgImage src={bgProblem} alt="Worker at controls" opacity={0.18} />
       <div className="section-container relative z-10">
         <div>
-          <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">The Problem</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
-            Operational knowledge is disappearing, and it's directly impacting performance
+          <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">The Problem</p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+            Operational knowledge is disappearing — and it's costing you
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
+          <p className="mt-3 text-muted-foreground text-base max-w-2xl">
             When experienced operators leave, performance drops, errors increase,
             and onboarding slows down. Most of what they know has never been documented.
           </p>

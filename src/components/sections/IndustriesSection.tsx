@@ -44,11 +44,11 @@ const industries = [
 const IndustriesSection = () => {
   return (
     <section id="industries" className="relative section-padding">
-      <SectionBgImage src={bgIndustries} alt="Industrial complex" opacity={0.18} />
+      <SectionBgImage src={bgIndustries} alt="Industrial complex" opacity={0.12} />
       <div className="section-container relative z-10">
         <div>
-          <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Industries</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+          <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Industries</p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
             Wherever operations depend on human expertise
           </h2>
         </div>

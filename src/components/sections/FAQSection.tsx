@@ -41,8 +41,8 @@ const FAQSection = () => {
     <section id="faq" className="relative section-padding">
       <div className="section-container max-w-3xl">
         <div>
-          <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">FAQ</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+          <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">FAQ</p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
             Common questions
           </h2>
         </div>
