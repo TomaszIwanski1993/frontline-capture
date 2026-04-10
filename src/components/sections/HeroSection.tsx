@@ -5,14 +5,35 @@ import SectionBgImage from "@/components/SectionBgImage";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      {/* Base industrial background */}
       <SectionBgImage src={bgHero} alt="Factory floor" opacity={0.20} />
+
+      {/* Fade-out dissolve overlay: edges and figures gradually disappear */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "linear-gradient(180deg, hsl(var(--background) / 0.9) 0%, hsl(265 60% 98% / 0.72) 34%, hsl(276 46% 97% / 0.42) 66%, hsl(var(--background) / 0.94) 100%)",
+            "radial-gradient(ellipse 70% 60% at 50% 45%, transparent 30%, hsl(var(--background) / 0.55) 65%, hsl(var(--background) / 0.92) 100%)",
         }}
       />
+      {/* Directional fade: bottom and right edges dissolve more */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(180deg, hsl(var(--background) / 0.85) 0%, hsl(var(--background) / 0.3) 20%, transparent 45%, hsl(var(--background) / 0.6) 78%, hsl(var(--background) / 0.95) 100%), linear-gradient(90deg, hsl(var(--background) / 0.7) 0%, transparent 25%, transparent 70%, hsl(var(--background) / 0.7) 100%)",
+        }}
+      />
+      {/* Subtle animated "fading" pulse — knowledge disappearing */}
+      <div
+        className="absolute inset-0 pointer-events-none animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite]"
+        style={{
+          background:
+            "radial-gradient(ellipse 50% 40% at 55% 50%, hsl(var(--background) / 0.18) 0%, transparent 70%)",
+        }}
+      />
+
+      {/* Colour tint overlays */}
       <div
         className="wave-bg-3 absolute top-[8%] left-[6%] w-[72%] h-[42%] pointer-events-none rounded-[999px] rotate-[6deg] blur-[82px] opacity-[0.22]"
         style={{
