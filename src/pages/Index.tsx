@@ -4,6 +4,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import ProblemSection from "@/components/sections/ProblemSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import ValueSection from "@/components/sections/ValueSection";
+import TrustSection from "@/components/sections/TrustSection";
 import IndustriesSection from "@/components/sections/IndustriesSection";
 import PilotSection from "@/components/sections/PilotSection";
 import FAQSection from "@/components/sections/FAQSection";
@@ -37,7 +38,7 @@ const Index = () => {
         </div>
         <div className="section-transition-up" />
 
-        <IndustriesSection />
+        <TrustSection />
 
         <div className="section-transition-down" />
         <div className="section-tinted">
