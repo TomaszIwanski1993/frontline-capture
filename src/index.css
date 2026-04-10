@@ -145,13 +145,17 @@ html {
   }
 
   .glass-card {
-    @apply rounded-md border border-border bg-card transition-all duration-150;
+    @apply rounded-md border border-border bg-card;
     box-shadow: 0 1px 2px hsl(var(--foreground) / 0.04);
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+                border-color 0.2s ease;
   }
 
   .glass-card:hover {
-    border-color: hsl(var(--border));
-    box-shadow: 0 4px 16px hsl(var(--foreground) / 0.06);
+    transform: translateY(-3px);
+    border-color: hsl(var(--primary) / 0.15);
+    box-shadow: 0 8px 24px hsl(var(--foreground) / 0.08), 0 2px 6px hsl(var(--foreground) / 0.04);
   }
 
   .cta-button {
