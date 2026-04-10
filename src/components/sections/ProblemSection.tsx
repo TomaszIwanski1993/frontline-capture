@@ -46,7 +46,7 @@ const ProblemSection = () => {
               <div>
                 <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">The Problem</p>
                 <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-                  Operational knowledge is disappearing — and it's costing you
+                  Operational knowledge is disappearing - and it's costing you
                 </h2>
                 <p className="mt-3 text-muted-foreground text-base max-w-2xl">
                   When experienced operators leave, performance drops, errors increase,
@@ -113,7 +113,7 @@ const ProblemSection = () => {
                 className="text-5xl lg:text-7xl font-black text-foreground tracking-tight"
                 ref={stat2Ref as React.Ref<HTMLParagraphElement>}
               >
-                6–{stat2}mo
+                6-{stat2}mo
               </p>
               <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
                 to <span className="text-foreground font-semibold">replace one experienced operator</span>

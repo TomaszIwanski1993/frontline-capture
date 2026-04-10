@@ -6,19 +6,19 @@ const values = [
     icon: Zap,
     title: "Built for speed & scale",
     description:
-      "Knowledge is captured in minutes and deployed instantly. No lengthy documentation projects — your team moves faster from day one.",
+      "Knowledge is captured in minutes and deployed instantly. No lengthy documentation projects - your team moves faster from day one.",
   },
   {
     icon: Bot,
     title: "Let Quantum handle the manual work",
     description:
-      "Our AI captures how your best operators work, structures it automatically, and delivers real-time guidance — at unlimited scale, across every shift.",
+      "Our AI captures how your best operators work, structures it automatically, and delivers real-time guidance - at unlimited scale, across every shift.",
   },
   {
     icon: ShieldCheck,
     title: "Consistent execution, instantly",
     description:
-      "Every operator gets the same expert-level guidance. No guesswork, no variation — just reliable output across all lines and sites.",
+      "Every operator gets the same expert-level guidance. No guesswork, no variation - just reliable output across all lines and sites.",
   },
 ];
 

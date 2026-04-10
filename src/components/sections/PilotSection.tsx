@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const pilotPoints = [
   "2–4 week pilot on a single line or process",
-  "Integrates with existing workflows — no IT overhaul",
+  "Integrates with existing workflows - no IT overhaul",
   "Clear metrics to evaluate results objectively",
 ];
 

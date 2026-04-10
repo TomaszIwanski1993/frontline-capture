@@ -44,7 +44,7 @@ const FAQSection = () => {
         <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-16">
           <ScrollReveal>
             <div className="lg:sticky lg:top-24">
-              <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">FAQ</p>
+              <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">{"\n"}</p>
               <h2 className="text-3xl lg:text-5xl font-bold text-foreground tracking-tight leading-tight">
                 Common<br />Questions<br />&amp; Answers
               </h2>
