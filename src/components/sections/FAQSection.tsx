@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const faqs = [
   {
@@ -40,28 +41,31 @@ const FAQSection = () => {
   return (
     <section id="faq" className="relative section-padding">
       <div className="section-container max-w-3xl">
-        <div>
-          <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">FAQ</p>
-          <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-            Common questions
-          </h2>
-        </div>
+        <ScrollReveal>
+          <div>
+            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">FAQ</p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+              Common questions
+            </h2>
+          </div>
+        </ScrollReveal>
 
         <div className="mt-12">
           <Accordion type="single" collapsible className="space-y-3">
             {faqs.map((faq, i) => (
-              <AccordionItem
-                key={i}
-                value={`item-${i}`}
-                className="glass-card px-6 border-border/50"
-              >
-                <AccordionTrigger className="text-left text-foreground hover:no-underline py-5 text-base font-medium">
-                  {faq.q}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-5">
-                  {faq.a}
-                </AccordionContent>
-              </AccordionItem>
+              <ScrollReveal key={i} delay={0.05 * i}>
+                <AccordionItem
+                  value={`item-${i}`}
+                  className="glass-card px-6 border-border/50"
+                >
+                  <AccordionTrigger className="text-left text-foreground hover:no-underline py-5 text-base font-medium">
+                    {faq.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-5">
+                    {faq.a}
+                  </AccordionContent>
+                </AccordionItem>
+              </ScrollReveal>
             ))}
           </Accordion>
         </div>
