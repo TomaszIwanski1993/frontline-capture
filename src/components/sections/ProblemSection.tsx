@@ -67,21 +67,6 @@ const ProblemSection = () => {
           </ScrollReveal>
         </div>
 
-        {/* Cost of inaction strip */}
-        <div className="mt-10 grid sm:grid-cols-3 gap-4">
-          {[
-            { label: "Slower operations", detail: "Every departure removes the knowledge that keeps lines running at peak efficiency." },
-            { label: "Inconsistent execution", detail: "Without shared expertise, output quality varies shift to shift, site to site." },
-            { label: "More errors and downtime", detail: "Undocumented workarounds disappear. Problems that were solved years ago resurface." },
-          ].map((item, i) => (
-            <ScrollReveal key={item.label} delay={0.08 * i}>
-              <div className="border-l-2 border-primary/40 pl-4 py-2">
-                <p className="text-sm font-semibold text-foreground">{item.label}</p>
-                <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{item.detail}</p>
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-6">
           {problems.map((p, i) => (

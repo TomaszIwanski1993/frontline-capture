@@ -14,17 +14,20 @@ const ContactSection = () => {
   return (
     <section id="contact" className="relative section-padding">
       <div className="section-container">
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="max-w-2xl mx-auto text-center">
+          <ScrollReveal>
+            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Contact</p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+              Let's talk
+            </h2>
+            <p className="mt-3 text-muted-foreground text-base">
+              We respond within one business day.
+            </p>
+          </ScrollReveal>
+        </div>
+
+        <div className="mt-12 grid lg:grid-cols-2 gap-16 max-w-4xl mx-auto">
           <div>
-            <ScrollReveal>
-              <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Contact</p>
-              <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-                Let's talk
-              </h2>
-              <p className="mt-3 text-muted-foreground text-base">
-                We respond within one business day.
-              </p>
-            </ScrollReveal>
 
             <ScrollReveal delay={0.1}>
               <div className="mt-10 space-y-5">
