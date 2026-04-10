@@ -16,7 +16,7 @@ const SectionBgImage = ({ src, alt, opacity = 0.06, position = "center" }: Secti
         style={{
           opacity,
           objectPosition: position,
-          filter: "grayscale(20%) blur(1px)",
+          filter: "grayscale(30%) blur(0.5px)",
           mixBlendMode: "multiply",
         }}
       />
