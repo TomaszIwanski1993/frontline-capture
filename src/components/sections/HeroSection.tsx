@@ -33,18 +33,18 @@ const HeroSection = () => {
         }}
       />
 
-      {/* Colour tint overlays */}
+      {/* Colour tint overlays — reduced for enterprise tone */}
       <div
-        className="wave-bg-3 absolute top-[8%] left-[6%] w-[72%] h-[42%] pointer-events-none rounded-[999px] rotate-[6deg] blur-[82px] opacity-[0.22]"
+        className="wave-bg-3 absolute top-[8%] left-[6%] w-[72%] h-[42%] pointer-events-none rounded-[999px] rotate-[6deg] blur-[80px] opacity-[0.12]"
         style={{
           background:
-            "radial-gradient(ellipse at 40% 50%, hsl(265 62% 72%), hsl(280 56% 76% / 0.48) 42%, transparent 74%)",
+            "radial-gradient(ellipse at 40% 50%, hsl(265 45% 72%), hsl(270 38% 76% / 0.3) 42%, transparent 74%)",
         }}
       />
       <div
-        className="wave-bg-4 absolute top-[10%] right-[2%] w-[38%] h-[28%] pointer-events-none rounded-[999px] -rotate-[10deg] blur-[74px] opacity-[0.18]"
+        className="wave-bg-4 absolute top-[10%] right-[2%] w-[38%] h-[28%] pointer-events-none rounded-[999px] -rotate-[10deg] blur-[72px] opacity-[0.10]"
         style={{
-          background: "radial-gradient(ellipse at center, hsl(280 54% 78%), transparent 72%)",
+          background: "radial-gradient(ellipse at center, hsl(270 40% 78%), transparent 72%)",
         }}
       />
 
