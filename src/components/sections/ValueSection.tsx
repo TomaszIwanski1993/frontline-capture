@@ -12,14 +12,14 @@ const outcomes = [
     icon: TrendingDown,
     metric: "30-40%",
     title: "Faster time-to-proficiency",
-    description: "New operators reach competence in weeks instead of months, guided by structured knowledge from your best performers.",
+    description: "New operators reach competence in weeks instead of months, with real-time, structured guidance from your best performers.",
     image: cardProficiency,
   },
   {
     icon: CheckCircle,
     metric: "Measurably",
     title: "Reduce variability across shifts and sites",
-    description: "Every operator works from the same proven knowledge base. Task execution becomes predictable regardless of who's on shift.",
+    description: "Every operator works from the same proven knowledge base, updated instantly. Task execution becomes predictable regardless of who's on shift.",
     image: cardConsistency,
   },
   {
@@ -33,7 +33,7 @@ const outcomes = [
     icon: RefreshCw,
     metric: "Reduced",
     title: "Dependency on top-performing operators",
-    description: "Scale the expertise of your best people across every team and location, without relying on their constant availability.",
+    description: "Instantly scale the expertise of your best people across every team and location, without relying on their constant availability.",
     image: cardContinuity,
   },
 ];

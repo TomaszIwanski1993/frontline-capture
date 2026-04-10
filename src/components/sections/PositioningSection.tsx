@@ -13,7 +13,7 @@ const PositioningSection = () => {
         </p>
         <p className="mt-4 text-base lg:text-lg text-muted-foreground/90 leading-relaxed max-w-2xl mx-auto">
           Quantum creates a new operational layer — capturing how work is actually done,
-          structuring it with AI, and making it accessible in real time.
+          structuring it with AI in seconds, and delivering it to operators in real time.
         </p>
       </div>
 
