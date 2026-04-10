@@ -26,7 +26,7 @@ const FloatingVisual = ({
         : "animate-float";
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative overflow-hidden ${className}`}>
       {/* Background depth layer — slow rotating glow ring */}
       <div
         className="absolute inset-[-15%] rounded-full animate-subtle-rotate pointer-events-none"
