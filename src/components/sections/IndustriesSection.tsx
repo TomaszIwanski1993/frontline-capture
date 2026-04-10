@@ -70,7 +70,7 @@ const IndustriesSection = () => {
                 className="w-48 lg:w-56 rounded-lg"
               />
             </FloatingVisual>
-        </div>
+          </ScrollReveal>
         </div>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
