@@ -90,33 +90,27 @@ const ProblemSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-2 gap-6">
-          <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-10 lg:p-12 text-center">
-            <div className="absolute -top-8 -right-8 w-40 h-40 bg-primary/15 rounded-full blur-3xl" />
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
+        <div className="mt-12 grid sm:grid-cols-2 gap-5">
+          <div className="rounded-md border border-border bg-card p-8 lg:p-10 text-center">
             <p
-              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight text-4xl"
-              style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
+              className="text-5xl lg:text-7xl font-black text-foreground tracking-tight"
               ref={stat1Ref as React.Ref<HTMLParagraphElement>}
             >
               {stat1}%
             </p>
-            <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
-              Most of your operation runs on <span className="text-foreground font-semibold">undocumented knowledge</span>
+            <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+              of operational knowledge is <span className="text-foreground font-semibold">undocumented</span>
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-10 lg:p-12 text-center">
-            <div className="absolute -top-8 -right-8 w-40 h-40 bg-primary/15 rounded-full blur-3xl" />
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
+          <div className="rounded-md border border-border bg-card p-8 lg:p-10 text-center">
             <p
-              className="lg:text-8xl xl:text-9xl font-black gradient-text tracking-tight text-4xl"
-              style={{ filter: "drop-shadow(0 0 30px hsl(var(--primary) / 0.3))" }}
+              className="text-5xl lg:text-7xl font-black text-foreground tracking-tight"
               ref={stat2Ref as React.Ref<HTMLParagraphElement>}
             >
-              6-{stat2} months
+              6–{stat2}mo
             </p>
-            <p className="text-base lg:text-lg text-muted-foreground mt-5 leading-relaxed">
-              It takes up to 12 months to <span className="text-foreground font-semibold">replace one experienced operator</span>
+            <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+              to <span className="text-foreground font-semibold">replace one experienced operator</span>
             </p>
           </div>
         </div>
