@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo-quantum.svg";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
   { label: "Problem", href: "#problem" },
@@ -46,7 +47,8 @@ const Header = () => {
           )}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex items-center gap-3">
+          <ThemeToggle />
           <a href="#pilot" className="cta-button text-sm px-6 py-2.5 inline-block">
             Book a Demo
           </a>
