@@ -79,9 +79,8 @@ const ProblemSection = () => {
                     loading="lazy"
                     width={640}
                     height={512}
-                    className="w-full h-full object-cover grayscale-[20%]"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-primary/15 mix-blend-multiply" />
                 </div>
                 <div className="p-6">
                   <p.icon className="h-5 w-5 text-primary mb-4" strokeWidth={1.5} />
