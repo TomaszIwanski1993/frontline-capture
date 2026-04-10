@@ -66,29 +66,27 @@ const ProblemSection = () => {
 
         <div className="mt-16 grid md:grid-cols-3 gap-6">
           {problems.map((p) => (
-            <motion.div
+            <div
               key={p.title}
-              whileHover={{ y: -6, boxShadow: "0 12px 40px hsl(265 30% 50% / 0.12)" }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden"
             >
-              <div className="h-56 overflow-hidden relative">
+              <div className="h-48 overflow-hidden relative">
                 <img
                   src={p.image}
                   alt={p.title}
                   loading="lazy"
                   width={640}
                   height={512}
-                  className="w-full h-full object-cover brightness-110"
+                  className="w-full h-full object-cover grayscale-[20%]"
                 />
-                <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-primary/15 mix-blend-multiply" />
               </div>
-              <div className="p-8">
-                <p.icon className="h-6 w-6 text-primary mb-5" strokeWidth={1.5} />
-                <h3 className="text-lg font-semibold text-foreground mb-3">{p.title}</h3>
+              <div className="p-6">
+                <p.icon className="h-5 w-5 text-primary mb-4" strokeWidth={1.5} />
+                <h3 className="text-base font-semibold text-foreground mb-2">{p.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{p.description}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 

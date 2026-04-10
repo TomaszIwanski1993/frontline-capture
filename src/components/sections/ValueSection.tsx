@@ -53,36 +53,34 @@ const ValueSection = () => {
           </p>
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-2 gap-6">
+        <div className="mt-12 grid sm:grid-cols-2 gap-5">
           {outcomes.map((item) => (
-            <motion.div
+            <div
               key={item.title}
-              whileHover={{ y: -6, boxShadow: "0 12px 40px hsl(265 30% 50% / 0.12)" }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="glass-card overflow-hidden"
             >
-              <div className="h-52 overflow-hidden relative">
+              <div className="h-44 overflow-hidden relative">
                 <img
                   src={item.image}
                   alt={item.title}
                   loading="lazy"
                   width={640}
                   height={512}
-                  className="w-full h-full object-cover brightness-110"
+                  className="w-full h-full object-cover grayscale-[20%]"
                 />
-                <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-primary/15 mix-blend-multiply" />
               </div>
-              <div className="p-8 flex gap-5">
-                <div className="flex-shrink-0 mt-1">
-                  <item.icon className="h-6 w-6 text-primary" strokeWidth={1.5} />
+              <div className="p-6 flex gap-4">
+                <div className="flex-shrink-0 mt-0.5">
+                  <item.icon className="h-5 w-5 text-primary" strokeWidth={1.5} />
                 </div>
                 <div>
-                  <p className="text-2xl font-bold gradient-text mb-1">{item.metric}</p>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-xl font-bold gradient-text mb-1">{item.metric}</p>
+                  <h3 className="text-base font-semibold text-foreground mb-1.5">{item.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
