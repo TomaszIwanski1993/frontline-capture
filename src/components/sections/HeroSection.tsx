@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import bgHero from "@/assets/bg-hero-factory.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
+import DataFlowCanvas from "@/components/DataFlowCanvas";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       <SectionBgImage src={bgHero} alt="Factory floor" opacity={0.14} />
+      <DataFlowCanvas />
 
       {/* Clean fade overlay */}
       <div
