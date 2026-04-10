@@ -2,6 +2,7 @@ import AnimatedBackground from "@/components/AnimatedBackground";
 import Header from "@/components/Header";
 import HeroSection from "@/components/sections/HeroSection";
 import ProblemSection from "@/components/sections/ProblemSection";
+import ScrollReveal from "@/components/ScrollReveal";
 import PositioningSection from "@/components/sections/PositioningSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import ValueSection from "@/components/sections/ValueSection";
@@ -35,9 +36,11 @@ const Index = () => {
         {/* Pull quote */}
         <div className="py-14 lg:py-18">
           <div className="section-container max-w-3xl text-center">
-            <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-foreground/80 leading-snug">
-              "Your operation is only as strong as what your best operator remembers."
-            </p>
+            <ScrollReveal>
+              <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-foreground/80 leading-snug">
+                "Your operation is only as strong as what your best operator remembers."
+              </p>
+            </ScrollReveal>
           </div>
         </div>
 
