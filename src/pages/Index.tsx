@@ -2,6 +2,7 @@ import AnimatedBackground from "@/components/AnimatedBackground";
 import Header from "@/components/Header";
 import HeroSection from "@/components/sections/HeroSection";
 import ProblemSection from "@/components/sections/ProblemSection";
+import PositioningSection from "@/components/sections/PositioningSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import ValueSection from "@/components/sections/ValueSection";
 import TrustSection from "@/components/sections/TrustSection";
@@ -24,6 +25,7 @@ const Index = () => {
       <main className="relative z-10">
         <HeroSection />
 
+        <PositioningSection />
         <div className="section-transition-down" />
         <div className="section-tinted">
           <ProblemSection />
