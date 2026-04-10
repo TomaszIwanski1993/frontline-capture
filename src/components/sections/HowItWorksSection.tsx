@@ -59,9 +59,7 @@ const HowItWorksSection = () => {
                 className="w-48 lg:w-64 rounded-lg"
               />
             </FloatingVisual>
-          </ScrollReveal>
-            />
-          </ScrollReveal>
+        </div>
         </div>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">
