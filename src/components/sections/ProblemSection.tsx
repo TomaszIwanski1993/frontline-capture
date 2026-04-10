@@ -56,18 +56,6 @@ const ProblemSection = () => {
               </div>
             </ScrollReveal>
           </div>
-          <ScrollReveal delay={0.15} className="flex-shrink-0">
-            <FloatingVisual variant="default">
-              <img
-                src={layersProblem}
-                alt="Knowledge layers fragmenting"
-                loading="lazy"
-                width={800}
-                height={800}
-                className="w-48 lg:w-64 rounded-lg"
-              />
-            </FloatingVisual>
-          </ScrollReveal>
         </div>
 
 
