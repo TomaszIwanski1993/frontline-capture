@@ -11,16 +11,16 @@ const AboutSection = () => {
 
         <div className="mt-10 space-y-6 text-muted-foreground leading-relaxed">
           <p>
-            We've worked inside real operations, and seen critical knowledge
-            disappear when experienced operators leave.
+            We've worked inside real operations and watched critical knowledge
+            disappear when experienced operators left.
           </p>
           <p>
-            Quantum was built to make that knowledge permanent, scalable,
+            Quantum makes that knowledge permanent, scalable,
             and usable in real time.
           </p>
           <p>
-            We're not replacing human expertise. We're making it accessible
-            to every operator.
+            We don't replace human expertise. We make it accessible
+            to every operator, on every shift.
           </p>
         </div>
       </div>

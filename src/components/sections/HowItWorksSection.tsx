@@ -8,21 +8,21 @@ const steps = [
     number: "01",
     title: "Capture",
     description:
-      "AI observes how experienced operators perform tasks in real time, recording the tacit knowledge that never makes it into manuals.",
+      "Quantum records how experienced operators perform tasks in real time. It extracts the tacit knowledge that manuals and documentation never capture.",
   },
   {
     icon: Layers,
     number: "02",
     title: "Structure",
     description:
-      "Raw expertise is instantly transformed into structured, actionable guidance: standardized, searchable, and ready to deploy.",
+      "Raw expertise is instantly transformed into structured, actionable guidance: standardized, searchable, and ready to deploy across teams.",
   },
   {
     icon: PlayCircle,
     number: "03",
     title: "Apply",
     description:
-      "Structured knowledge is delivered to operators in seconds during live work: for onboarding, task execution, and shift consistency.",
+      "Operators receive step-by-step guidance in seconds during live work. Onboarding accelerates. Execution becomes consistent. Knowledge stays.",
   },
 ];
 

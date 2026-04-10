@@ -12,8 +12,8 @@ const PositioningSection = () => {
           Most operations rely on undocumented human expertise.
         </p>
         <p className="mt-4 text-base lg:text-lg text-muted-foreground/90 leading-relaxed max-w-2xl mx-auto">
-          Quantum creates a new operational layer — capturing how work is actually done,
-          structuring it with AI in seconds, and delivering it to operators in real time.
+          Quantum captures how work is actually done, structures it with AI in seconds,
+          and delivers it to operators in real time. No documentation. No delays.
         </p>
       </div>
 
