@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Factory, Package, Truck, HardHat, Wrench } from "lucide-react";
 import bgIndustries from "@/assets/bg-industries-aerial.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
@@ -7,6 +6,7 @@ import cardFmcg from "@/assets/card-fmcg.jpg";
 import cardLogistics from "@/assets/card-logistics.jpg";
 import cardConstruction from "@/assets/card-construction.jpg";
 import cardFieldservice from "@/assets/card-fieldservice.jpg";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const industries = [
   {
@@ -46,36 +46,37 @@ const IndustriesSection = () => {
     <section id="industries" className="relative section-padding">
       <SectionBgImage src={bgIndustries} alt="Industrial complex" opacity={0.12} />
       <div className="section-container relative z-10">
-        <div>
-          <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Industries</p>
-          <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-            Wherever operations depend on human expertise
-          </h2>
-        </div>
+        <ScrollReveal>
+          <div>
+            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Industries</p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+              Wherever operations depend on human expertise
+            </h2>
+          </div>
+        </ScrollReveal>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {industries.map((ind) => (
-            <div
-              key={ind.title}
-              className="glass-card overflow-hidden"
-            >
-              <div className="h-44 overflow-hidden relative">
-                <img
-                  src={ind.image}
-                  alt={ind.title}
-                  loading="lazy"
-                  width={640}
-                  height={512}
-                  className="w-full h-full object-cover grayscale-[20%]"
-                />
-                <div className="absolute inset-0 bg-primary/15 mix-blend-multiply" />
+          {industries.map((ind, i) => (
+            <ScrollReveal key={ind.title} delay={0.07 * i}>
+              <div className="glass-card overflow-hidden h-full">
+                <div className="h-44 overflow-hidden relative">
+                  <img
+                    src={ind.image}
+                    alt={ind.title}
+                    loading="lazy"
+                    width={640}
+                    height={512}
+                    className="w-full h-full object-cover grayscale-[20%]"
+                  />
+                  <div className="absolute inset-0 bg-primary/15 mix-blend-multiply" />
+                </div>
+                <div className="p-6">
+                  <ind.icon className="h-5 w-5 text-primary mb-3" strokeWidth={1.5} />
+                  <h3 className="text-base font-semibold text-foreground mb-1.5">{ind.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{ind.example}</p>
+                </div>
               </div>
-              <div className="p-6">
-                <ind.icon className="h-5 w-5 text-primary mb-3" strokeWidth={1.5} />
-                <h3 className="text-base font-semibold text-foreground mb-1.5">{ind.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{ind.example}</p>
-              </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
