@@ -46,6 +46,8 @@ const Index = () => {
 
         <HowItWorksSection />
 
+        <AboutSection />
+
         <div className="section-transition-down" />
         <div className="section-tinted">
           <ValueSection />
@@ -53,12 +55,6 @@ const Index = () => {
         <div className="section-transition-up" />
 
         <TrustSection />
-
-        <div className="section-transition-down" />
-        <div className="section-tinted">
-          <AboutSection />
-        </div>
-        <div className="section-transition-up" />
 
         <IndustriesSection />
 

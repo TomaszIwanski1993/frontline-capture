@@ -1,37 +1,58 @@
 import ScrollReveal from "@/components/ScrollReveal";
+import { Zap, Bot, ShieldCheck } from "lucide-react";
+
+const values = [
+  {
+    icon: Zap,
+    title: "Built for speed & scale",
+    description:
+      "Knowledge is captured in minutes and deployed instantly. No lengthy documentation projects — your team moves faster from day one.",
+  },
+  {
+    icon: Bot,
+    title: "Let Quantum handle the manual work",
+    description:
+      "Our AI captures how your best operators work, structures it automatically, and delivers real-time guidance — at unlimited scale, across every shift.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Consistent execution, instantly",
+    description:
+      "Every operator gets the same expert-level guidance. No guesswork, no variation — just reliable output across all lines and sites.",
+  },
+];
 
 const AboutSection = () => {
   return (
     <section id="about" className="relative section-padding">
-      <div className="section-container max-w-3xl">
+      <div className="section-container">
         <ScrollReveal>
-          <div>
-            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">About</p>
+          <div className="text-center max-w-2xl mx-auto">
+            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
+              Why Quantum
+            </p>
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-              Built from the factory floor
+              Quantum is designed for speed&nbsp;&amp;&nbsp;scale
             </h2>
           </div>
         </ScrollReveal>
 
-        <div className="mt-8 space-y-5 text-muted-foreground text-base leading-relaxed">
-          <ScrollReveal delay={0.08}>
-            <p>
-              We've worked inside real operations and watched critical knowledge
-              disappear when experienced operators left.
-            </p>
-          </ScrollReveal>
-          <ScrollReveal delay={0.14}>
-            <p>
-              Quantum makes that knowledge permanent, scalable,
-              and usable in real time.
-            </p>
-          </ScrollReveal>
-          <ScrollReveal delay={0.2}>
-            <p className="text-foreground font-medium">
-              We don't replace human expertise. We make it accessible
-              to every operator, on every shift.
-            </p>
-          </ScrollReveal>
+        <div className="mt-12 grid md:grid-cols-3 gap-8">
+          {values.map((item, i) => (
+            <ScrollReveal key={i} delay={0.08 * i}>
+              <div className="glass-card p-8 h-full text-center">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 mb-5">
+                  <item.icon className="h-6 w-6 text-primary" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            </ScrollReveal>
+          ))}
         </div>
       </div>
 

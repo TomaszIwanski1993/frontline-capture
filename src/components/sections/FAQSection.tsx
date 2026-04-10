@@ -45,8 +45,8 @@ const FAQSection = () => {
           <ScrollReveal>
             <div className="lg:sticky lg:top-24">
               <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">FAQ</p>
-              <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-                Common Questions<br />&amp; Answers
+              <h2 className="text-3xl lg:text-5xl font-bold text-foreground tracking-tight leading-tight">
+                Common<br />Questions<br />&amp; Answers
               </h2>
             </div>
           </ScrollReveal>
