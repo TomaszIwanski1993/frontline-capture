@@ -16,34 +16,35 @@ const en = {
       eyebrow: "Your best operators won't be here forever.",
       titleA: "The operating system for",
       titleB: "frontline knowledge",
-      sub: "Quantum captures how your best operators work and transforms it into structured, real-time guidance for every shift.",
+      tagline: "AI that captures how operators work and turns it into real-time guidance.",
+      sub: "Quantum keeps your best know-how in the operation — even when people leave.",
       cta1: "Book a Demo",
       cta2: "How It Works",
     },
     positioning: {
       eyebrow: "The Quantum Layer",
       title: "A new operational layer for frontline work",
-      body: "Most operations depend on undocumented human expertise. Quantum captures how work is actually done, structures it with AI in seconds, and delivers it to operators in real time.",
+      body: "Most operations run on undocumented expertise. Quantum captures how work is really done and delivers it to operators in real time.",
     },
     problem: {
       eyebrow: "The Problem",
-      title: "Operational knowledge is disappearing — and it's costing you",
-      sub: "When experienced operators leave, performance drops, errors increase, and onboarding slows down. Most of what they know has never been documented.",
+      title: "Operational knowledge is disappearing",
+      sub: "When experienced operators leave, performance drops and onboarding slows down. Most of what they know was never documented.",
       cards: [
         {
           title: "Knowledge lives in people, not systems",
           description:
-            "Critical operational know-how exists only in the heads of experienced operators. When they leave, that knowledge disappears. No workaround fixes this.",
+            "Critical know-how exists only in operators' heads. When they leave, it leaves with them.",
         },
         {
           title: "Onboarding is slow and inconsistent",
           description:
-            "New operators learn through shadowing and trial-and-error. The result: months of wasted ramp-up time, inconsistent quality, and repeated mistakes.",
+            "New hires learn by shadowing and trial-and-error. The result: months of ramp-up and uneven quality.",
         },
         {
-          title: "Loss of experience creates operational risk",
+          title: "Loss of experience creates risk",
           description:
-            "Every retirement, resignation, or shift change disrupts output. Dependence on a small number of key individuals weakens the entire operation.",
+            "Every retirement or shift change disrupts output. A few key people carry the whole operation.",
         },
       ],
       stat1: "of operational knowledge is",
@@ -55,43 +56,43 @@ const en = {
     howItWorks: {
       eyebrow: "How It Works",
       title: "Three steps to retained knowledge",
-      sub: "Built on AI that understands real-world workflows, not documents.",
+      sub: "Built on AI that understands real workflows, not documents.",
       steps: [
         {
           title: "Capture",
           description:
-            "Quantum records how experienced operators perform tasks in real time. It extracts the tacit knowledge that manuals and documentation never capture.",
+            "Quantum records how experienced operators work — including the tacit knowledge manuals miss.",
         },
         {
           title: "Structure",
           description:
-            "Raw expertise is instantly transformed into structured, actionable guidance: standardized, searchable, and ready to deploy across teams.",
+            "Raw expertise becomes structured, searchable guidance, ready to deploy across teams.",
         },
         {
           title: "Apply",
           description:
-            "Operators receive step-by-step guidance in seconds during live work. Onboarding accelerates. Execution becomes consistent. Knowledge stays.",
+            "Operators get step-by-step guidance during live work. Onboarding accelerates. Knowledge stays.",
         },
       ],
     },
     about: {
       eyebrow: "Why Quantum",
-      title: "Quantum is designed for speed & scale",
+      title: "Built for speed and scale",
       values: [
         {
-          title: "Built for speed & scale",
+          title: "Fast to deploy",
           description:
-            "Knowledge is captured in minutes and deployed instantly. No lengthy documentation projects — your team moves faster from day one.",
+            "Knowledge is captured in minutes and live the same day. No long documentation projects.",
         },
         {
-          title: "Let Quantum handle the manual work",
+          title: "AI does the manual work",
           description:
-            "Our AI captures how your best operators work, structures it automatically, and delivers real-time guidance — at unlimited scale, across every shift.",
+            "Quantum captures, structures, and delivers guidance automatically — across every shift.",
         },
         {
-          title: "Consistent execution, instantly",
+          title: "Consistent execution",
           description:
-            "Every operator gets the same expert-level guidance. No guesswork, no variation — just reliable output across all lines and sites.",
+            "Every operator gets the same expert-level guidance. Output stops depending on who's on shift.",
         },
       ],
       origin: "Built in Poland",
@@ -105,25 +106,25 @@ const en = {
           metric: "30-40%",
           title: "Faster time-to-proficiency",
           description:
-            "Quantum cuts onboarding time by 30-40%. New operators reach competence in weeks, guided by structured knowledge from your best performers.",
+            "New operators reach competence in weeks, guided by your best performers' knowledge.",
         },
         {
           metric: "Measurably",
-          title: "Reduce variability across shifts and sites",
+          title: "Less variability across shifts",
           description:
-            "Every operator works from the same proven knowledge base. Execution becomes predictable. Quality stops depending on who's on shift.",
+            "Every operator works from the same proven knowledge. Quality stops depending on who's on shift.",
         },
         {
           metric: "Eliminated",
           title: "Single points of failure",
           description:
-            "Critical knowledge no longer lives in a few experts' heads. Retirements and turnover stop disrupting operations.",
+            "Critical knowledge no longer lives in a few heads. Turnover stops disrupting operations.",
         },
         {
           metric: "Reduced",
-          title: "Dependency on top-performing operators",
+          title: "Dependency on top operators",
           description:
-            "Quantum scales the expertise of your best people across every team and location. Their knowledge works even when they don't.",
+            "Your best people's expertise scales across every team and site.",
         },
       ],
     },
@@ -138,38 +139,38 @@ const en = {
         {
           title: "Manufacturing",
           example:
-            "Captures machine setup, changeover, and quality check expertise. Eliminates knowledge loss when veteran operators leave.",
+            "Captures setup, changeover, and quality know-how. No knowledge loss when veterans leave.",
         },
         {
           title: "FMCG",
           example:
-            "Standardizes line operations, batch adjustments, and packaging know-how. Ensures consistency across every site and shift.",
+            "Standardizes line work and packaging. Consistency on every shift and site.",
         },
         {
           title: "Logistics & Warehousing",
           example:
-            "Locks in picking sequences, equipment handling, and safety protocols. Deploys them instantly across all locations.",
+            "Locks in picking, equipment, and safety procedures. Deployed instantly everywhere.",
         },
         {
           title: "Construction",
           example:
-            "Preserves site setup procedures and safety compliance from experienced managers. Reduces risk from staff turnover.",
+            "Preserves site setup and safety practices. Lower risk from staff turnover.",
         },
         {
           title: "Field Service",
           example:
-            "Delivers troubleshooting guides, maintenance routines, and client configs directly to technicians in the field.",
+            "Troubleshooting and maintenance routines delivered to technicians in the field.",
         },
       ],
     },
     pilot: {
       eyebrow: "Get Started",
       title: "Prove value in weeks, not months",
-      body: "We deploy a focused pilot in your real environment. Fast setup, immediate results. You evaluate the impact before committing to anything.",
+      body: "We deploy a focused pilot in your real environment. You evaluate the impact before committing.",
       points: [
         "2–4 week pilot on a single line or process",
-        "Integrates with existing workflows — no IT overhaul",
-        "Clear metrics to evaluate results objectively",
+        "Fits existing workflows — no IT overhaul",
+        "Clear metrics to evaluate results",
       ],
       cta: "Book a Demo",
       ctaSub: "See Quantum on your actual operations.",
@@ -182,31 +183,31 @@ const en = {
       items: [
         {
           q: "Who is Quantum built for?",
-          a: "Quantum serves companies that depend on frontline operators: manufacturing plants, FMCG production lines, warehouses, construction sites, and field service teams. If your operations rely on experienced people whose knowledge isn't documented, Quantum solves that problem.",
+          a: "Companies that depend on frontline operators: manufacturing, FMCG, warehouses, construction, and field service. If your operation relies on experienced people whose knowledge isn't documented, Quantum solves that.",
         },
         {
           q: "Does this work in any factory environment?",
-          a: "Yes. Quantum operates in real industrial conditions: production floors, cleanrooms, outdoor sites, and heavy industry. It integrates with your existing workflows and requires no specialized infrastructure or changes to your production setup.",
+          a: "Yes. Quantum runs in real industrial conditions — production floors, cleanrooms, outdoor sites — and fits existing workflows without specialized infrastructure.",
         },
         {
           q: "What exactly does Quantum capture?",
-          a: "Quantum captures task demonstrations from experienced operators: the specific steps, sequences, adjustments, and decision points that define real operational knowledge. This is the tacit expertise that traditional documentation misses — how to feel when a machine runs correctly, which adjustments to make during changeover, what to watch for during quality checks.",
+          a: "Task demonstrations from experienced operators: the steps, sequences, and decision points that define real know-how. The tacit expertise documentation always misses.",
         },
         {
           q: "How do you handle data security and GDPR?",
-          a: "Security is built into the architecture. All data is encrypted in transit and at rest, stored in EU-based infrastructure, and processed in full GDPR compliance. Quantum does not capture personal data or monitor individual performance. We sign data processing agreements with every client and meet specific requirements from IT and compliance teams.",
+          a: "All data is encrypted, stored in EU infrastructure, and processed under GDPR. We don't capture personal data or monitor individuals. DPAs signed with every client.",
         },
         {
           q: "What results should we expect?",
-          a: "Quantum reduces time-to-proficiency by 30-40% and delivers measurably more consistent task execution across shifts. When operational knowledge is structured and accessible, onboarding accelerates and execution quality improves. Every deployment confirms this pattern.",
+          a: "30-40% faster time-to-proficiency and measurably more consistent execution across shifts. Confirmed in every deployment.",
         },
         {
-          q: "How is Quantum different from a knowledge management tool?",
-          a: "Knowledge tools are built for office work: documents, wikis, search. Quantum is built for frontline operations. It captures knowledge through operator demonstrations, not documentation. The result is practical, task-level guidance that operators actually use on the floor — not another system they ignore.",
+          q: "How is this different from a knowledge management tool?",
+          a: "Knowledge tools are built for office work. Quantum is built for the floor — capturing knowledge through demonstrations, not documents. Operators actually use it.",
         },
         {
           q: "Can we try before committing?",
-          a: "Every engagement starts with a pilot: 2-4 weeks, focused on a single process or line. No long-term commitment. The pilot delivers concrete, measurable results you evaluate before deciding on broader deployment.",
+          a: "Every engagement starts with a 2-4 week pilot on a single process. No long-term commitment. Concrete results before you decide on broader deployment.",
         },
       ],
     },
@@ -219,19 +220,19 @@ const en = {
           category: "Insight",
           title: "The hidden cost of knowledge loss in manufacturing",
           description:
-            "Why tacit knowledge is the most undervalued asset in industrial operations, and what happens when it disappears.",
+            "Why tacit knowledge is the most undervalued asset in industrial operations.",
         },
         {
           category: "Perspective",
           title: "Rethinking onboarding for frontline operators",
           description:
-            "Traditional onboarding programs weren't designed for the pace and complexity of modern operations. A better approach exists.",
+            "Traditional programs weren't built for the pace of modern operations. A better way exists.",
         },
         {
           category: "Analysis",
           title: "AI in operations: beyond automation",
           description:
-            "How AI can support, not replace, human expertise in industrial environments. A practical framework.",
+            "How AI can support — not replace — human expertise on the floor.",
         },
       ],
     },
@@ -311,34 +312,35 @@ const pl: Translations = {
       eyebrow: "Twoi najlepsi operatorzy nie będą tu na zawsze.",
       titleA: "System operacyjny dla",
       titleB: "wiedzy produkcyjnej",
-      sub: "Quantum rejestruje sposób pracy najlepszych operatorów i zamienia go w uporządkowane, dostępne na bieżąco wskazówki dla każdej zmiany.",
+      tagline: "AI, które rejestruje pracę operatorów i zamienia ją w wskazówki na bieżąco.",
+      sub: "Quantum zatrzymuje wiedzę w operacji — nawet gdy ludzie odchodzą.",
       cta1: "Umów demo",
       cta2: "Jak to działa",
     },
     positioning: {
       eyebrow: "Warstwa Quantum",
       title: "Nowa warstwa operacyjna dla pracy na hali",
-      body: "Większość operacji opiera się na nieudokumentowanej wiedzy ludzi. Quantum rejestruje, jak praca naprawdę wygląda, w kilka sekund porządkuje ją z pomocą AI i przekazuje operatorom w czasie rzeczywistym.",
+      body: "Większość operacji opiera się na nieudokumentowanej wiedzy. Quantum rejestruje, jak praca naprawdę wygląda, i podaje ją operatorom w czasie rzeczywistym.",
     },
     problem: {
       eyebrow: "Problem",
-      title: "Wiedza operacyjna znika — i kosztuje cię to coraz więcej",
-      sub: "Gdy odchodzi doświadczony operator, spada wydajność, rośnie liczba błędów, a wdrożenia trwają dłużej. Większość tego, co wie zespół, nigdy nie została spisana.",
+      title: "Wiedza operacyjna znika",
+      sub: "Gdy odchodzi doświadczony operator, spada wydajność, a wdrożenia trwają dłużej. Większość tej wiedzy nigdy nie została spisana.",
       cards: [
         {
           title: "Wiedza zostaje w głowach, nie w systemach",
           description:
-            "Krytyczne know-how mają tylko doświadczeni operatorzy. Kiedy odchodzą, znika razem z nimi. Nie da się tego obejść.",
+            "Krytyczne know-how mają tylko doświadczeni operatorzy. Kiedy odchodzą, znika razem z nimi.",
         },
         {
           title: "Wdrożenie jest długie i niespójne",
           description:
-            "Nowi operatorzy uczą się przez podpatrywanie i metodą prób i błędów. Efekt: miesiące powolnego rozruchu, niestabilna jakość i powtarzające się błędy.",
+            "Nowi uczą się przez podpatrywanie i metodą prób i błędów. Efekt: miesiące rozruchu i niestabilna jakość.",
         },
         {
-          title: "Utrata doświadczenia to ryzyko operacyjne",
+          title: "Utrata doświadczenia to ryzyko",
           description:
-            "Każda emerytura, odejście czy zmiana brygady zaburza produkcję. Zależność od kilku kluczowych osób osłabia całą operację.",
+            "Każde odejście czy zmiana brygady zaburza produkcję. Cała operacja stoi na kilku osobach.",
         },
       ],
       stat1: "wiedzy operacyjnej jest",
@@ -356,38 +358,38 @@ const pl: Translations = {
         {
           title: "Rejestracja",
           description:
-            "Quantum nagrywa, jak doświadczeni operatorzy wykonują zadania na żywo. Wyłapuje wiedzę praktyczną, której nie zawiera żadna instrukcja.",
+            "Quantum nagrywa, jak doświadczeni operatorzy pracują — łapie wiedzę praktyczną, której nie ma w instrukcjach.",
         },
         {
           title: "Strukturyzacja",
           description:
-            "Surowe doświadczenie zamieniane jest w uporządkowane, gotowe do użycia wskazówki: ujednolicone, łatwe do wyszukania, gotowe do wdrożenia w zespołach.",
+            "Surowe doświadczenie staje się uporządkowanymi, gotowymi do użycia wskazówkami dla zespołów.",
         },
         {
           title: "Zastosowanie",
           description:
-            "Operator dostaje wskazówki krok po kroku w kilka sekund podczas pracy. Wdrożenie przyspiesza. Wykonanie staje się powtarzalne. Wiedza zostaje w firmie.",
+            "Operator dostaje wskazówki krok po kroku podczas pracy. Wdrożenie przyspiesza. Wiedza zostaje.",
         },
       ],
     },
     about: {
       eyebrow: "Dlaczego Quantum",
-      title: "Quantum projektowany pod tempo i skalę",
+      title: "Zbudowany pod tempo i skalę",
       values: [
         {
-          title: "Zbudowany pod tempo i skalę",
+          title: "Szybkie wdrożenie",
           description:
-            "Wiedza powstaje w kilka minut i jest natychmiast dostępna. Żadnych długich projektów dokumentacyjnych — zespół działa szybciej od pierwszego dnia.",
+            "Wiedza powstaje w kilka minut i działa tego samego dnia. Bez długich projektów dokumentacyjnych.",
         },
         {
-          title: "Pracę manualną zostaw Quantum",
+          title: "AI robi pracę manualną",
           description:
-            "Nasza AI rejestruje sposób pracy najlepszych operatorów, automatycznie ją porządkuje i podaje wskazówki na bieżąco — bez limitu skali, na każdej zmianie.",
+            "Quantum sam rejestruje, porządkuje i podaje wskazówki — na każdej zmianie, bez limitu skali.",
         },
         {
-          title: "Spójne wykonanie, od razu",
+          title: "Spójne wykonanie",
           description:
-            "Każdy operator dostaje wskazówki na poziomie eksperta. Bez zgadywania, bez różnic — przewidywalny wynik na wszystkich liniach i lokalizacjach.",
+            "Każdy operator dostaje wskazówki na poziomie eksperta. Jakość przestaje zależeć od zmiany.",
         },
       ],
       origin: "Zbudowane w Polsce",
@@ -401,25 +403,25 @@ const pl: Translations = {
           metric: "30-40%",
           title: "Krótszy czas dochodzenia do biegłości",
           description:
-            "Quantum skraca czas wdrożenia o 30-40%. Nowi operatorzy osiągają biegłość w kilka tygodni, prowadzeni wiedzą najlepszych w zespole.",
+            "Nowi operatorzy osiągają biegłość w kilka tygodni, prowadzeni wiedzą najlepszych w zespole.",
         },
         {
           metric: "Mierzalnie",
-          title: "Mniejsza zmienność między zmianami i lokalizacjami",
+          title: "Mniejsza zmienność między zmianami",
           description:
-            "Każdy operator pracuje z tej samej, sprawdzonej bazy wiedzy. Wykonanie staje się przewidywalne. Jakość przestaje zależeć od tego, kto jest na zmianie.",
+            "Każdy pracuje z tej samej, sprawdzonej bazy wiedzy. Jakość przestaje zależeć od tego, kto jest na zmianie.",
         },
         {
           metric: "Eliminacja",
           title: "Pojedynczych punktów awarii",
           description:
-            "Krytyczna wiedza nie zostaje już w głowach kilku ekspertów. Odejścia i rotacja przestają zaburzać produkcję.",
+            "Wiedza nie zostaje w głowach kilku osób. Rotacja przestaje zaburzać produkcję.",
         },
         {
           metric: "Mniejsza",
           title: "Zależność od najlepszych operatorów",
           description:
-            "Quantum przenosi doświadczenie najlepszych ludzi na każdy zespół i lokalizację. Ich wiedza działa nawet wtedy, gdy ich nie ma.",
+            "Doświadczenie najlepszych ludzi działa w każdym zespole i lokalizacji.",
         },
       ],
     },
@@ -434,38 +436,38 @@ const pl: Translations = {
         {
           title: "Produkcja",
           example:
-            "Rejestruje wiedzę o ustawieniach maszyn, przezbrojeniach i kontroli jakości. Zapobiega utracie know-how, gdy odchodzą doświadczeni operatorzy.",
+            "Rejestruje wiedzę o ustawieniach, przezbrojeniach i kontroli jakości. Bez utraty know-how przy odejściach.",
         },
         {
           title: "FMCG",
           example:
-            "Standaryzuje pracę na linii, regulacje partii i pakowanie. Zapewnia spójność na każdej zmianie i w każdej lokalizacji.",
+            "Standaryzuje pracę na linii i pakowanie. Spójność na każdej zmianie i w każdej lokalizacji.",
         },
         {
           title: "Logistyka i magazyny",
           example:
-            "Utrwala kolejność kompletacji, obsługę sprzętu i procedury BHP. Wdraża je natychmiast w każdej lokalizacji.",
+            "Utrwala kompletację, obsługę sprzętu i procedury BHP. Wdrażane natychmiast w każdej lokalizacji.",
         },
         {
           title: "Budownictwo",
           example:
-            "Zachowuje procedury organizacji placu i wymogi BHP od doświadczonych kierowników. Ogranicza ryzyko związane z rotacją.",
+            "Zachowuje organizację placu i wymogi BHP od doświadczonych kierowników. Mniejsze ryzyko rotacji.",
         },
         {
           title: "Serwis terenowy",
           example:
-            "Dostarcza technikom w terenie instrukcje diagnostyczne, harmonogramy serwisu i konfiguracje klientów.",
+            "Instrukcje diagnostyczne i serwisowe trafiają wprost do techników w terenie.",
         },
       ],
     },
     pilot: {
       eyebrow: "Zacznij",
       title: "Udowodnij wartość w tygodnie, nie miesiące",
-      body: "Wdrażamy ukierunkowany pilotaż w twoim realnym środowisku. Szybki start, natychmiastowe wyniki. Decyzję o dalszych krokach podejmujesz po ocenie efektów.",
+      body: "Wdrażamy ukierunkowany pilotaż w twoim realnym środowisku. Decydujesz po ocenie efektów.",
       points: [
         "Pilotaż 2–4 tygodnie na jednej linii lub procesie",
         "Wpasowuje się w istniejące procesy — bez przebudowy IT",
-        "Czytelne wskaźniki do obiektywnej oceny wyników",
+        "Czytelne wskaźniki do oceny wyników",
       ],
       cta: "Umów demo",
       ctaSub: "Zobacz Quantum na twoich realnych operacjach.",
@@ -478,31 +480,31 @@ const pl: Translations = {
       items: [
         {
           q: "Dla kogo jest Quantum?",
-          a: "Quantum jest dla firm, których praca opiera się na operatorach pierwszej linii: zakładów produkcyjnych, linii FMCG, magazynów, budów i zespołów serwisu terenowego. Jeśli twoja operacja zależy od doświadczonych ludzi, których wiedza nie jest spisana — Quantum to rozwiązuje.",
+          a: "Dla firm opartych na operatorach pierwszej linii: produkcja, FMCG, magazyny, budowy, serwis terenowy. Jeśli twoja operacja zależy od doświadczonych ludzi, których wiedza nie jest spisana — Quantum to rozwiązuje.",
         },
         {
           q: "Czy to działa w każdej fabryce?",
-          a: "Tak. Quantum działa w realnych warunkach przemysłowych: na halach produkcyjnych, w cleanroomach, na zewnątrz i w przemyśle ciężkim. Wpasowuje się w istniejące procesy i nie wymaga specjalistycznej infrastruktury ani zmian w produkcji.",
+          a: "Tak. Quantum działa w realnych warunkach przemysłowych — halach, cleanroomach, na zewnątrz — i wpasowuje się w istniejące procesy bez specjalistycznej infrastruktury.",
         },
         {
           q: "Co dokładnie rejestruje Quantum?",
-          a: "Quantum rejestruje pokazy zadań wykonywane przez doświadczonych operatorów: konkretne kroki, sekwencje, regulacje i punkty decyzyjne, które tworzą realną wiedzę operacyjną. To wiedza praktyczna, której nie ma w dokumentacji — jak rozpoznać, że maszyna pracuje dobrze, jakie korekty wprowadzić przy przezbrojeniu, na co zwrócić uwagę przy kontroli jakości.",
+          a: "Pokazy zadań od doświadczonych operatorów: kroki, sekwencje i punkty decyzyjne, które tworzą realną wiedzę. To, czego nie ma w dokumentacji.",
         },
         {
-          q: "Jak wygląda bezpieczeństwo danych i RODO?",
-          a: "Bezpieczeństwo jest wbudowane w architekturę. Wszystkie dane są szyfrowane w transmisji i spoczynku, przechowywane w infrastrukturze w UE i przetwarzane zgodnie z RODO. Quantum nie zbiera danych osobowych ani nie monitoruje wyników pojedynczych osób. Z każdym klientem podpisujemy umowę powierzenia i spełniamy wymogi działów IT i compliance.",
+          q: "Jak wygląda bezpieczeństwo i RODO?",
+          a: "Dane są szyfrowane, przechowywane w UE i przetwarzane zgodnie z RODO. Nie zbieramy danych osobowych ani nie monitorujemy osób. Z każdym klientem podpisujemy umowę powierzenia.",
         },
         {
           q: "Jakich efektów można się spodziewać?",
-          a: "Quantum skraca czas dochodzenia do biegłości o 30-40% i zauważalnie zwiększa spójność wykonania zadań między zmianami. Gdy wiedza operacyjna jest uporządkowana i dostępna, wdrożenia idą szybciej, a jakość rośnie. Każde wdrożenie potwierdza ten schemat.",
+          a: "30-40% szybsze dochodzenie do biegłości i zauważalnie spójniejsze wykonanie zadań między zmianami. Potwierdzone w każdym wdrożeniu.",
         },
         {
           q: "Czym Quantum różni się od narzędzia do zarządzania wiedzą?",
-          a: "Narzędzia do wiedzy są zrobione pod pracę biurową: dokumenty, wiki, wyszukiwarki. Quantum jest zrobiony pod pracę na hali. Rejestruje wiedzę przez pokazy operatorów, nie przez dokumentację. Efekt to praktyczne wskazówki na poziomie zadania, z których operatorzy realnie korzystają — a nie kolejny system, który zostaje pomijany.",
+          a: "Narzędzia do wiedzy są pod pracę biurową. Quantum jest pod pracę na hali — rejestruje wiedzę przez pokazy, nie dokumenty. Operatorzy realnie z niego korzystają.",
         },
         {
           q: "Czy można sprawdzić bez zobowiązań?",
-          a: "Każda współpraca zaczyna się od pilotażu: 2-4 tygodnie, jeden proces lub linia. Bez długoterminowych zobowiązań. Pilotaż daje konkretne, mierzalne wyniki, na podstawie których decydujesz o szerszym wdrożeniu.",
+          a: "Każda współpraca zaczyna się od pilotażu 2-4 tygodnie na jednym procesie. Bez długoterminowych zobowiązań. Konkretne wyniki przed decyzją o szerszym wdrożeniu.",
         },
       ],
     },
@@ -515,19 +517,19 @@ const pl: Translations = {
           category: "Analiza",
           title: "Ukryty koszt utraty wiedzy w produkcji",
           description:
-            "Dlaczego wiedza praktyczna jest najbardziej niedocenianym aktywem w przemyśle i co dzieje się, gdy znika.",
+            "Dlaczego wiedza praktyczna jest najbardziej niedocenianym aktywem w przemyśle.",
         },
         {
           category: "Perspektywa",
           title: "Nowe podejście do wdrożeń operatorów pierwszej linii",
           description:
-            "Klasyczne programy onboardingowe nie były projektowane pod tempo i złożoność współczesnych operacji. Da się to zrobić lepiej.",
+            "Klasyczne programy onboardingowe nie były projektowane pod tempo współczesnych operacji.",
         },
         {
           category: "Analiza",
           title: "AI w operacjach: poza automatyzacją",
           description:
-            "Jak AI może wspierać, a nie zastępować, wiedzę ludzi w środowisku przemysłowym. Praktyczne ramy.",
+            "Jak AI może wspierać, a nie zastępować, wiedzę ludzi w przemyśle.",
         },
       ],
     },

@@ -27,6 +27,8 @@ const Index = () => {
       <main className="relative z-10">
         <HeroSection />
 
+        <HowItWorksSection />
+
         <PositioningSection />
         <div className="section-transition-down" />
         <div className="section-tinted">
@@ -45,15 +47,13 @@ const Index = () => {
           </div>
         </div>
 
-        <HowItWorksSection />
-
-        <AboutSection />
-
         <div className="section-transition-down" />
         <div className="section-tinted">
           <ValueSection />
         </div>
         <div className="section-transition-up" />
+
+        <AboutSection />
 
         <TrustSection />
 
