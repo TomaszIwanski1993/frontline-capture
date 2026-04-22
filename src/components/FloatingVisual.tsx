@@ -32,7 +32,7 @@ const FloatingVisual = ({
         className="absolute inset-[-15%] rounded-full animate-subtle-rotate pointer-events-none"
         style={{
           background:
-            "conic-gradient(from 0deg, transparent 0%, hsl(258 48% 58% / 0.06) 25%, transparent 50%, hsl(272 44% 50% / 0.04) 75%, transparent 100%)",
+            "conic-gradient(from 0deg, transparent 0%, hsl(239 96% 60% / 0.06) 25%, transparent 50%, hsl(283 95% 62% / 0.04) 75%, transparent 100%)",
           filter: "blur(20px)",
         }}
         aria-hidden="true"
@@ -43,7 +43,7 @@ const FloatingVisual = ({
         className="absolute inset-[-5%] rounded-lg animate-float-slow pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at center, hsl(258 48% 58% / 0.08) 0%, transparent 70%)",
+            "radial-gradient(ellipse at center, hsl(239 96% 60% / 0.08) 0%, transparent 70%)",
           filter: "blur(12px)",
           animationDirection: "reverse",
         }}
