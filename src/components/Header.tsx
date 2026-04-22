@@ -22,7 +22,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90 h-16 lg:h-20">
       <div className="section-container flex items-center justify-between h-full overflow-visible">
         <a href="/" className="flex items-center shrink-0 overflow-visible">
-          <Logo alt="Quantum" className="h-44 lg:h-52 w-auto -my-14 lg:-my-16" />
+          <Logo alt="Quantum" className="h-36 lg:h-44 w-auto -my-11 lg:-my-13" />
         </a>
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
