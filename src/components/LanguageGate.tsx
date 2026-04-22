@@ -35,11 +35,7 @@ const LanguageGate = () => {
           className="h-24 sm:h-28 mb-6 w-auto drop-shadow-[0_0_40px_rgba(137,6,230,0.35)]"
         />
 
-        <h1 className="text-white text-2xl sm:text-3xl font-bold tracking-tight font-display">
-          Quantum
-        </h1>
-
-        <p className="mt-3 text-white/70 text-sm sm:text-base tracking-wide">
+        <p className="mt-1 text-white/70 text-sm sm:text-base tracking-wide">
           AI for operational knowledge retention
         </p>
 
