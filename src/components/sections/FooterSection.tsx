@@ -9,9 +9,8 @@ const FooterSection = () => {
       <div className="section-container">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <Logo surface="light" variant="icon" className="h-8 w-auto" />
-              <span className="text-lg font-bold text-foreground">Quantum</span>
+            <div className="flex items-center mb-4 -ml-2">
+              <Logo surface="light" variant="full" className="h-20 w-auto" />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               {t.footer.legalName}<br />
