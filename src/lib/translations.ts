@@ -102,7 +102,7 @@ const en = {
       sub: "Proven results from real industrial deployments.",
       items: [
         {
-          metric: "30-40%",
+          metric: "Expected 30-40%",
           title: "Faster time-to-proficiency",
           description:
             "New operators reach competence in weeks, guided by your best performers' knowledge.",
@@ -412,7 +412,7 @@ const pl: Translations = {
       sub: "Sprawdzone wyniki z realnych wdrożeń przemysłowych.",
       items: [
         {
-          metric: "30-40%",
+          metric: "Oczekiwane 30-40%",
           title: "Krótszy czas dochodzenia do biegłości",
           description:
             "Nowi operatorzy osiągają biegłość w kilka tygodni, prowadzeni wiedzą najlepszych w zespole.",
