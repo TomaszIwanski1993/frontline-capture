@@ -1,5 +1,5 @@
 import { useLanguage, Language } from "@/contexts/LanguageContext";
-import logo from "@/assets/logo-quantum.svg";
+import Logo from "@/components/Logo";
 
 const LanguageGate = () => {
   const { hasSelected, setLanguage } = useLanguage();

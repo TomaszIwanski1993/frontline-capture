@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo-quantum.svg";
+import Logo from "@/components/Logo";
 import ThemeToggle from "@/components/ThemeToggle";
 import LanguageSwitch from "@/components/LanguageSwitch";
 
@@ -22,7 +22,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90">
       <div className="section-container flex items-center justify-between h-14 lg:h-16">
         <a href="/" className="flex items-center gap-2.5">
-          <img src={logo} alt="Quantum" className="h-8 lg:h-9" />
+          <Logo surface="light" variant="icon" className="h-8 lg:h-9 w-auto" />
           <span className="text-lg lg:text-xl font-bold tracking-tight text-foreground font-display">Quantum</span>
         </a>
 
