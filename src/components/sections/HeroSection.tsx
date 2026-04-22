@@ -46,8 +46,17 @@ const HeroSection = () => {
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
+            transition={{ duration: 0.6, delay: 0.18, ease: "easeOut" }}
+            className="mt-6 text-base lg:text-lg text-primary/90 font-medium tracking-wide max-w-2xl mx-auto"
+          >
+            {t.hero.tagline}
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.28, ease: "easeOut" }}
+            className="mt-4 text-base lg:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
             {t.hero.sub}
           </motion.p>
