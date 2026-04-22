@@ -13,7 +13,7 @@ const images = [cardKnowledge, cardOnboarding, cardRisk];
 
 const ProblemSection = () => {
   const t = useT();
-  const { count: stat1, ref: stat1Ref } = useCountUp(70, 2000);
+  const { count: stat1, ref: stat1Ref } = useCountUp(80, 2000);
   const { count: stat2, ref: stat2Ref } = useCountUp(12, 2000);
 
   return (
@@ -72,7 +72,7 @@ const ProblemSection = () => {
                 className="text-5xl lg:text-7xl font-black text-foreground tracking-tight"
                 ref={stat1Ref as React.Ref<HTMLParagraphElement>}
               >
-                {stat1}%
+                50-{stat1}%
               </p>
               <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
                 {t.problem.stat1}{" "}
