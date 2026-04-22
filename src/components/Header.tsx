@@ -33,7 +33,7 @@ const Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+              className="text-sm text-white/70 hover:text-white transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -49,7 +49,7 @@ const Header = () => {
         </div>
 
         <button
-          className="lg:hidden text-foreground"
+          className="lg:hidden text-white"
           onClick={() => setOpen(!open)}
           aria-label={t.nav.toggleMenu}
         >
@@ -58,14 +58,14 @@ const Header = () => {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-border/50 bg-background/95 backdrop-blur-xl">
+        <div className="lg:hidden border-t border-white/10" style={{ backgroundColor: "#100d28" }}>
           <nav className="section-container py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-white/70 hover:text-white transition-colors"
               >
                 {link.label}
               </a>
