@@ -22,7 +22,12 @@ const Header = () => {
       <div className="section-container flex items-center justify-between h-16 lg:h-20">
         <a href="/" className="flex items-center gap-2.5">
           <Logo alt="Quantum" className="h-11 lg:h-14 w-auto" />
-          <span className="text-lg lg:text-xl font-bold tracking-tight text-foreground font-display">Quantum</span>
+          <span
+            className="text-2xl lg:text-3xl font-bold tracking-wide text-foreground uppercase"
+            style={{ fontFamily: '"Glaser Stencil", "Stardos Stencil", "Stencil Std", serif' }}
+          >
+            Quantum
+          </span>
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
