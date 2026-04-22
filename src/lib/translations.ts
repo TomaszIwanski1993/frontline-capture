@@ -584,7 +584,6 @@ const pl: Translations = {
       tagline: "AI do utrzymania wiedzy operacyjnej",
       choose: "Wybierz język",
     },
-  },
 };
 
 export const translations = { en, pl };
