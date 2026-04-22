@@ -18,14 +18,11 @@ const Header = () => {
   ];
 
   return (
-    <header
-      className="fixed top-0 left-0 right-0 z-50 border-b border-white/5"
-      style={{ backgroundColor: "#100d28" }}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90">
       <div className="section-container flex items-center justify-between h-16 lg:h-20">
         <a href="/" className="flex items-center gap-2.5">
           <Logo alt="Quantum" className="h-11 lg:h-14 w-auto" />
-          <span className="text-lg lg:text-xl font-bold tracking-tight text-white font-display">Quantum</span>
+          <span className="text-lg lg:text-xl font-bold tracking-tight text-foreground font-display">Quantum</span>
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
@@ -33,7 +30,7 @@ const Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-white/70 hover:text-white transition-colors duration-200"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -49,7 +46,7 @@ const Header = () => {
         </div>
 
         <button
-          className="lg:hidden text-white"
+          className="lg:hidden text-foreground"
           onClick={() => setOpen(!open)}
           aria-label={t.nav.toggleMenu}
         >
@@ -58,7 +55,7 @@ const Header = () => {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-white/10" style={{ backgroundColor: "#100d28" }}>
+        <div className="lg:hidden border-t border-border/50 bg-background/95 backdrop-blur-xl">
           <nav className="section-container py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
