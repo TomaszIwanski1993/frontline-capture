@@ -290,8 +290,11 @@ const en = {
       tagline: "AI for operational knowledge retention",
       choose: "Choose your language",
     },
-  },
-  pl: {
+};
+
+export type Translations = typeof en;
+
+const pl: Translations = {
     nav: {
       problem: "Problem",
       howItWorks: "Jak to działa",
@@ -582,10 +585,10 @@ const en = {
       choose: "Wybierz język",
     },
   },
-} as const;
+};
 
-export type Translations = typeof translations.en;
+export const translations = { en, pl };
 
 export const getT = (lang: Language | null): Translations => {
-  return translations[lang === "pl" ? "pl" : "en"];
+  return lang === "pl" ? pl : en;
 };
