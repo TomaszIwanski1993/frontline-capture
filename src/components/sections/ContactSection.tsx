@@ -51,7 +51,7 @@ const ContactSection = () => {
                   <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary border border-border group-hover:border-primary/50 transition-colors">
                     <Linkedin className="h-5 w-5 text-primary" strokeWidth={1.5} />
                   </span>
-                  <span className="text-sm">linkedin.com/company/quantummaking</span>
+                  <span className="text-sm">quantummaking</span>
                 </a>
               </div>
             </ScrollReveal>
