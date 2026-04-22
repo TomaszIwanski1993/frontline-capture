@@ -25,8 +25,6 @@ const Header = () => {
           <Logo alt="Quantum" className="h-20 lg:h-28 w-auto" />
           <img src={wordmarkQuantum} alt="Quantum" className="h-24 lg:h-36 w-auto" loading="eager" />
         </a>
-        </a>
-
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
