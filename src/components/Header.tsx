@@ -23,7 +23,7 @@ const Header = () => {
       <div className="section-container flex items-center justify-between h-16 lg:h-20">
         <a href="/" className="flex items-center gap-2.5">
           <Logo alt="Quantum" className="h-11 lg:h-14 w-auto" />
-          <img src={wordmarkQuantum} alt="Quantum" className="h-5 lg:h-7 w-auto" loading="eager" />
+          <img src={wordmarkQuantum} alt="Quantum" className="h-9 lg:h-12 w-auto" loading="eager" />
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
