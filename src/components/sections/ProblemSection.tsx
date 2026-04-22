@@ -1,39 +1,18 @@
 import { Users, Clock, AlertTriangle } from "lucide-react";
-import FloatingVisual from "@/components/FloatingVisual";
 import { useCountUp } from "@/hooks/useCountUp";
 import bgProblem from "@/assets/bg-problem-worker.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import cardKnowledge from "@/assets/card-knowledge.jpg";
 import cardOnboarding from "@/assets/card-onboarding.jpg";
 import cardRisk from "@/assets/card-risk.jpg";
-import layersProblem from "@/assets/layers-problem.jpg";
 import ScrollReveal from "@/components/ScrollReveal";
+import { useT } from "@/hooks/useT";
 
-const problems = [
-  {
-    icon: Users,
-    title: "Knowledge lives in people, not systems",
-    description:
-      "Critical operational know-how exists only in the heads of experienced operators. When they leave, that knowledge disappears. No workaround fixes this.",
-    image: cardKnowledge,
-  },
-  {
-    icon: Clock,
-    title: "Onboarding is slow and inconsistent",
-    description:
-      "New operators learn through shadowing and trial-and-error. The result: months of wasted ramp-up time, inconsistent quality, and repeated mistakes.",
-    image: cardOnboarding,
-  },
-  {
-    icon: AlertTriangle,
-    title: "Loss of experience creates operational risk",
-    description:
-      "Every retirement, resignation, or shift change disrupts output. Dependence on a small number of key individuals weakens the entire operation.",
-    image: cardRisk,
-  },
-];
+const icons = [Users, Clock, AlertTriangle];
+const images = [cardKnowledge, cardOnboarding, cardRisk];
 
 const ProblemSection = () => {
+  const t = useT();
   const { count: stat1, ref: stat1Ref } = useCountUp(70, 2000);
   const { count: stat2, ref: stat2Ref } = useCountUp(12, 2000);
 
@@ -45,42 +24,45 @@ const ProblemSection = () => {
           <div className="flex-1">
             <ScrollReveal>
               <div>
-                <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">The Problem</p>
+                <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
+                  {t.problem.eyebrow}
+                </p>
                 <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-                  Operational knowledge is disappearing - and it's costing you
+                  {t.problem.title}
                 </h2>
                 <p className="mt-3 text-muted-foreground text-base max-w-2xl">
-                  When experienced operators leave, performance drops, errors increase,
-                  and onboarding slows down. Most of what they know has never been documented.
+                  {t.problem.sub}
                 </p>
               </div>
             </ScrollReveal>
           </div>
         </div>
 
-
         <div className="mt-16 grid md:grid-cols-3 gap-6">
-          {problems.map((p, i) => (
-            <ScrollReveal key={p.title} delay={0.08 * i}>
-              <div className="glass-card overflow-hidden h-full shimmer-overlay">
-                <div className="h-48 overflow-hidden relative">
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    loading="lazy"
-                    width={640}
-                    height={512}
-                    className="w-full h-full object-cover animate-card-drift"
-                  />
+          {t.problem.cards.map((p, i) => {
+            const Icon = icons[i];
+            return (
+              <ScrollReveal key={p.title} delay={0.08 * i}>
+                <div className="glass-card overflow-hidden h-full shimmer-overlay">
+                  <div className="h-48 overflow-hidden relative">
+                    <img
+                      src={images[i]}
+                      alt={p.title}
+                      loading="lazy"
+                      width={640}
+                      height={512}
+                      className="w-full h-full object-cover animate-card-drift"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <Icon className="h-5 w-5 text-primary mb-4" strokeWidth={1.5} />
+                    <h3 className="text-base font-semibold text-foreground mb-2">{p.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{p.description}</p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <p.icon className="h-5 w-5 text-primary mb-4" strokeWidth={1.5} />
-                  <h3 className="text-base font-semibold text-foreground mb-2">{p.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{p.description}</p>
-                </div>
-              </div>
-            </ScrollReveal>
-          ))}
+              </ScrollReveal>
+            );
+          })}
         </div>
 
         <div className="mt-12 grid sm:grid-cols-2 gap-5">
@@ -93,7 +75,8 @@ const ProblemSection = () => {
                 {stat1}%
               </p>
               <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
-                of operational knowledge is <span className="text-foreground font-semibold">undocumented</span>
+                {t.problem.stat1}{" "}
+                <span className="text-foreground font-semibold">{t.problem.stat1Bold}</span>
               </p>
             </div>
           </ScrollReveal>
@@ -106,7 +89,8 @@ const ProblemSection = () => {
                 6-{stat2}mo
               </p>
               <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
-                to <span className="text-foreground font-semibold">replace one experienced operator</span>
+                {t.problem.stat2}{" "}
+                <span className="text-foreground font-semibold">{t.problem.stat2Bold}</span>
               </p>
             </div>
           </ScrollReveal>

@@ -1,35 +1,14 @@
 import { Video, Layers, PlayCircle } from "lucide-react";
-import FloatingVisual from "@/components/FloatingVisual";
 import bgHowIt from "@/assets/bg-howit-collab.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
-import layersHowit from "@/assets/layers-howit.jpg";
 import ScrollReveal from "@/components/ScrollReveal";
+import { useT } from "@/hooks/useT";
 
-const steps = [
-  {
-    icon: Video,
-    number: "01",
-    title: "Capture",
-    description:
-      "Quantum records how experienced operators perform tasks in real time. It extracts the tacit knowledge that manuals and documentation never capture.",
-  },
-  {
-    icon: Layers,
-    number: "02",
-    title: "Structure",
-    description:
-      "Raw expertise is instantly transformed into structured, actionable guidance: standardized, searchable, and ready to deploy across teams.",
-  },
-  {
-    icon: PlayCircle,
-    number: "03",
-    title: "Apply",
-    description:
-      "Operators receive step-by-step guidance in seconds during live work. Onboarding accelerates. Execution becomes consistent. Knowledge stays.",
-  },
-];
+const icons = [Video, Layers, PlayCircle];
+const numbers = ["01", "02", "03"];
 
 const HowItWorksSection = () => {
+  const t = useT();
   return (
     <section id="how-it-works" className="relative section-padding">
       <SectionBgImage src={bgHowIt} alt="Team collaboration" opacity={0.12} />
@@ -38,12 +17,14 @@ const HowItWorksSection = () => {
           <div className="flex-1">
             <ScrollReveal>
               <div>
-                <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">How It Works</p>
+                <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
+                  {t.howItWorks.eyebrow}
+                </p>
                 <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-                  Three steps to retained knowledge
+                  {t.howItWorks.title}
                 </h2>
                 <p className="mt-3 text-muted-foreground text-base max-w-2xl">
-                  Built on AI that understands real-world workflows, not documents.
+                  {t.howItWorks.sub}
                 </p>
               </div>
             </ScrollReveal>
@@ -51,27 +32,28 @@ const HowItWorksSection = () => {
         </div>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">
-          {steps.map((step, i) => (
-            <ScrollReveal key={step.number} delay={0.1 * i}>
-              <div className="relative">
-                <span
-                  className="text-7xl font-black block text-primary/60 select-none leading-none animate-step-glow"
-                  style={{ animationDelay: `${i * 1.5}s` }}
-                >
-                  {step.number}
-                </span>
-                <step.icon className="h-5 w-5 text-primary mt-3 mb-3" strokeWidth={1.5} />
-                <h3 className="text-lg font-semibold text-foreground mb-2">{step.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+          {t.howItWorks.steps.map((step, i) => {
+            const Icon = icons[i];
+            return (
+              <ScrollReveal key={numbers[i]} delay={0.1 * i}>
+                <div className="relative">
+                  <span
+                    className="text-7xl font-black block text-primary/60 select-none leading-none animate-step-glow"
+                    style={{ animationDelay: `${i * 1.5}s` }}
+                  >
+                    {numbers[i]}
+                  </span>
+                  <Icon className="h-5 w-5 text-primary mt-3 mb-3" strokeWidth={1.5} />
+                  <h3 className="text-lg font-semibold text-foreground mb-2">{step.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
 
-                {i < steps.length - 1 && (
-                  <div
-                    className="hidden md:block absolute top-6 -right-4 w-8 h-px bg-border"
-                  />
-                )}
-              </div>
-            </ScrollReveal>
-          ))}
+                  {i < t.howItWorks.steps.length - 1 && (
+                    <div className="hidden md:block absolute top-6 -right-4 w-8 h-px bg-border" />
+                  )}
+                </div>
+              </ScrollReveal>
+            );
+          })}
         </div>
       </div>
 

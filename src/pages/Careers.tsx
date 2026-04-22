@@ -5,8 +5,10 @@ import AnimatedBackground from "@/components/AnimatedBackground";
 import Header from "@/components/Header";
 import FooterSection from "@/components/sections/FooterSection";
 import ScrollToTop from "@/components/ScrollToTop";
+import { useT } from "@/hooks/useT";
 
 const Careers = () => {
+  const t = useT();
   return (
     <div className="relative min-h-screen bg-background">
       <AnimatedBackground />
@@ -18,7 +20,7 @@ const Careers = () => {
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to home
+            {t.careers.back}
           </Link>
 
           <motion.div
@@ -26,9 +28,11 @@ const Careers = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Careers</p>
+            <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">
+              {t.careers.eyebrow}
+            </p>
             <h1 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
-              Join Our Team
+              {t.careers.title}
             </h1>
           </motion.div>
 
@@ -41,11 +45,9 @@ const Careers = () => {
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
               <Briefcase className="w-8 h-8 text-primary" />
             </div>
-            <h2 className="text-xl font-semibold text-foreground mb-3">
-              No open roles at the moment
-            </h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">{t.careers.empty}</h2>
             <p className="text-muted-foreground leading-relaxed max-w-md">
-              We're not actively hiring right now, but we're always interested in hearing from talented people. Feel free to reach out at{" "}
+              {t.careers.bodyA}{" "}
               <a href="mailto:info@quantummaking.com" className="text-primary hover:underline">
                 info@quantummaking.com
               </a>

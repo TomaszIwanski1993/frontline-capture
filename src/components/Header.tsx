@@ -4,19 +4,21 @@ import { Link } from "react-router-dom";
 import Logo from "@/components/Logo";
 import ThemeToggle from "@/components/ThemeToggle";
 import LanguageSwitch from "@/components/LanguageSwitch";
-
-const navLinks = [
-  { label: "Problem", href: "#problem" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Outcomes", href: "#outcomes" },
-  { label: "Industries", href: "#industries" },
-  { label: "Why Quantum", href: "#about" },
-  { label: "Careers", href: "/careers" },
-  { label: "Contact", href: "#contact" },
-];
+import { useT } from "@/hooks/useT";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const t = useT();
+
+  const navLinks = [
+    { label: t.nav.problem, href: "#problem" },
+    { label: t.nav.howItWorks, href: "#how-it-works" },
+    { label: t.nav.outcomes, href: "#outcomes" },
+    { label: t.nav.industries, href: "#industries" },
+    { label: t.nav.whyQuantum, href: "#about" },
+    { label: t.nav.careers, href: "/careers" },
+    { label: t.nav.contact, href: "#contact" },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90">
@@ -52,14 +54,14 @@ const Header = () => {
           <LanguageSwitch />
           <ThemeToggle />
           <a href="#pilot" className="cta-button text-sm px-6 py-2.5 inline-block">
-            Book a Demo
+            {t.nav.bookDemo}
           </a>
         </div>
 
         <button
           className="lg:hidden text-foreground"
           onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
+          aria-label={t.nav.toggleMenu}
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -89,8 +91,12 @@ const Header = () => {
                 </a>
               )
             )}
+            <div className="flex items-center gap-3 pt-2">
+              <LanguageSwitch />
+              <ThemeToggle />
+            </div>
             <a href="#pilot" onClick={() => setOpen(false)} className="cta-button text-sm px-6 py-2.5 text-center mt-2">
-              Book a Demo
+              {t.nav.bookDemo}
             </a>
           </nav>
         </div>

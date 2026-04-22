@@ -2,14 +2,15 @@ import { motion } from "framer-motion";
 import bgHero from "@/assets/bg-hero-factory.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import DataFlowCanvas from "@/components/DataFlowCanvas";
+import { useT } from "@/hooks/useT";
 
 const HeroSection = () => {
+  const t = useT();
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       <SectionBgImage src={bgHero} alt="Factory floor" opacity={0.14} />
       <DataFlowCanvas />
 
-      {/* Clean fade overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -33,12 +34,12 @@ const HeroSection = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <p className="text-sm text-muted-foreground/60 font-medium tracking-wide uppercase">
-              Your best operators won't be here forever.
+              {t.hero.eyebrow}
             </p>
             <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08] text-foreground">
-              The operating system for
+              {t.hero.titleA}
               <br />
-              <span className="gradient-text">frontline knowledge</span>
+              <span className="gradient-text">{t.hero.titleB}</span>
             </h1>
           </motion.div>
 
@@ -48,8 +49,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
             className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-            Quantum captures how your best operators work and transforms it into
-            structured, real-time guidance for every shift.
+            {t.hero.sub}
           </motion.p>
 
           <motion.div
@@ -58,17 +58,14 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
             className="mt-10 flex flex-col sm:flex-row gap-3 justify-center"
           >
-            <a
-              href="#pilot"
-              className="cta-button text-base lg:text-lg px-10 py-4 text-center"
-            >
-              Book a Demo
+            <a href="#pilot" className="cta-button text-base lg:text-lg px-10 py-4 text-center">
+              {t.hero.cta1}
             </a>
             <a
               href="#how-it-works"
               className="px-8 py-4 rounded-md text-base font-medium text-muted-foreground border border-border hover:border-foreground/20 hover:text-foreground transition-colors duration-150 text-center"
             >
-              How It Works
+              {t.hero.cta2}
             </a>
           </motion.div>
         </div>

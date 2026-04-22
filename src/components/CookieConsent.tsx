@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { X, Cookie } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useT } from "@/hooks/useT";
 
 const CookieConsent = () => {
+  const t = useT();
   const [visible, setVisible] = useState(false);
   const [showButton, setShowButton] = useState(false);
 
@@ -39,10 +41,10 @@ const CookieConsent = () => {
         <button
           onClick={reopen}
           className="fixed bottom-4 left-4 z-50 flex items-center gap-2 px-3 py-2 text-xs text-muted-foreground hover:text-foreground bg-card/90 backdrop-blur-md border border-border/50 rounded-lg shadow-sm transition-all duration-200 hover:shadow-md"
-          aria-label="Customise consent preferences"
+          aria-label={t.cookies.reopen}
         >
           <Cookie className="h-3.5 w-3.5" />
-          Customise Consent Preferences
+          {t.cookies.reopen}
         </button>
       )}
 
@@ -50,17 +52,17 @@ const CookieConsent = () => {
         <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-in slide-in-from-bottom-4 duration-500">
           <div className="max-w-3xl mx-auto rounded-xl border border-border bg-card/95 backdrop-blur-xl shadow-lg p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <div className="flex-1 text-sm text-muted-foreground leading-relaxed">
-              We use essential cookies to ensure our website functions properly. Analytics cookies are optional.{" "}
+              {t.cookies.message}{" "}
               <Link to="/cookies" className="text-foreground underline underline-offset-2 hover:text-primary transition-colors">
-                Cookie Policy
+                {t.cookies.policy}
               </Link>
             </div>
             <div className="flex items-center gap-2 shrink-0">
               <button onClick={decline} className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-lg border border-border hover:border-border/80">
-                Decline
+                {t.cookies.decline}
               </button>
               <button onClick={accept} className="px-4 py-2 text-sm font-medium text-primary-foreground rounded-lg transition-all duration-300" style={{ background: "var(--gradient-cta)" }}>
-                Accept
+                {t.cookies.accept}
               </button>
             </div>
             <button onClick={decline} className="absolute top-3 right-3 sm:hidden text-muted-foreground hover:text-foreground">
