@@ -42,7 +42,6 @@ const FooterSection = () => {
             <h4 className="text-sm font-semibold text-foreground mb-4">{t.footer.solutions}</h4>
             <ul className="space-y-2.5 text-sm text-muted-foreground">
               <li><a href="#how-it-works" className="hover:text-foreground transition-colors">{t.footer.links.howItWorks}</a></li>
-              <li><a href="#industries" className="hover:text-foreground transition-colors">{t.footer.links.industries}</a></li>
               <li><a href="#outcomes" className="hover:text-foreground transition-colors">{t.footer.links.outcomes}</a></li>
             </ul>
           </div>
