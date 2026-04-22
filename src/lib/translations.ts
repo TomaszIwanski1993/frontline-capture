@@ -28,27 +28,27 @@ const en = {
     },
     problem: {
       eyebrow: "The Problem",
-      title: "Operational knowledge is disappearing",
-      sub: "When experienced operators leave, performance drops and onboarding slows down. Most of what they know was never documented.",
+      title: "We've seen this problem first-hand",
+      sub: "We're researchers and practitioners. We've spent time on factory floors, in warehouses, and on construction sites. The same pattern repeats: 50-80% of operational knowledge is tacit — it lives in people, not systems. When experienced workers leave, it goes with them.",
       cards: [
         {
-          title: "Knowledge lives in people, not systems",
+          title: "Knowledge walks out the door",
           description:
-            "Critical know-how exists only in operators' heads. When they leave, it leaves with them.",
+            "Most operational know-how is never written down. When experienced operators retire or change jobs, what they knew disappears overnight.",
         },
         {
-          title: "Onboarding is slow and inconsistent",
+          title: "Traditional training doesn't work here",
           description:
-            "New hires learn by shadowing and trial-and-error. The result: months of ramp-up and uneven quality.",
+            "Manuals, slides, and classrooms aren't built for the floor. Real expertise comes from doing the work — and that's what classic training never captures.",
         },
         {
-          title: "Loss of experience creates risk",
+          title: "The impact is operational",
           description:
-            "Every retirement or shift change disrupts output. A few key people carry the whole operation.",
+            "Slower onboarding. More errors. Lower OEE. Production quality that swings with whoever is on shift.",
         },
       ],
       stat1: "of operational knowledge is",
-      stat1Bold: "undocumented",
+      stat1Bold: "tacit, not documented",
       stat2: "to",
       stat2Bold: "replace one experienced operator",
     },
@@ -324,27 +324,27 @@ const pl: Translations = {
     },
     problem: {
       eyebrow: "Problem",
-      title: "Wiedza operacyjna znika",
-      sub: "Gdy odchodzi doświadczony operator, spada wydajność, a wdrożenia trwają dłużej. Większość tej wiedzy nigdy nie została spisana.",
+      title: "Widzieliśmy ten problem z bliska",
+      sub: "Jesteśmy badaczami i praktykami. Spędziliśmy czas na halach produkcyjnych, w magazynach i na budowach. Wzorzec się powtarza: 50-80% wiedzy operacyjnej jest niejawna — żyje w ludziach, nie w systemach. Gdy odchodzą doświadczeni pracownicy, wiedza odchodzi z nimi.",
       cards: [
         {
-          title: "Wiedza zostaje w głowach, nie w systemach",
+          title: "Wiedza wychodzi razem z ludźmi",
           description:
-            "Krytyczne know-how mają tylko doświadczeni operatorzy. Kiedy odchodzą, znika razem z nimi.",
+            "Większość know-how nigdy nie zostaje spisana. Gdy doświadczony operator odchodzi, jego wiedza znika z dnia na dzień.",
         },
         {
-          title: "Wdrożenie jest długie i niespójne",
+          title: "Klasyczne szkolenia tu nie działają",
           description:
-            "Nowi uczą się przez podpatrywanie i metodą prób i błędów. Efekt: miesiące rozruchu i niestabilna jakość.",
+            "Instrukcje, slajdy i sale szkoleniowe nie są zrobione pod halę. Prawdziwa wiedza powstaje przy pracy — a tego klasyczne szkolenia nigdy nie łapią.",
         },
         {
-          title: "Utrata doświadczenia to ryzyko",
+          title: "Skutki są operacyjne",
           description:
-            "Każde odejście czy zmiana brygady zaburza produkcję. Cała operacja stoi na kilku osobach.",
+            "Wolniejsze wdrożenia. Więcej błędów. Niższe OEE. Jakość produkcji zmienia się razem ze zmianą.",
         },
       ],
       stat1: "wiedzy operacyjnej jest",
-      stat1Bold: "nieudokumentowane",
+      stat1Bold: "niejawne, nie spisane",
       stat2: "potrzeba na",
       stat2Bold: "zastąpienie jednego doświadczonego operatora",
     },
