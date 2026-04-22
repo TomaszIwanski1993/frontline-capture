@@ -1,39 +1,25 @@
 import { ArrowUpRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
-
-const articles = [
-  {
-    title: "The hidden cost of knowledge loss in manufacturing",
-    category: "Insight",
-    description: "Why tacit knowledge is the most undervalued asset in industrial operations, and what happens when it disappears.",
-  },
-  {
-    title: "Rethinking onboarding for frontline operators",
-    category: "Perspective",
-    description: "Traditional onboarding programs weren't designed for the pace and complexity of modern operations. A better approach exists.",
-  },
-  {
-    title: "AI in operations: beyond automation",
-    category: "Analysis",
-    description: "How AI can support, not replace, human expertise in industrial environments. A practical framework.",
-  },
-];
+import { useT } from "@/hooks/useT";
 
 const ResourcesSection = () => {
+  const t = useT();
   return (
     <section id="resources" className="relative section-padding">
       <div className="section-container">
         <ScrollReveal>
           <div>
-            <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Resources</p>
+            <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">
+              {t.resources.eyebrow}
+            </p>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
-              Insights & perspectives
+              {t.resources.title}
             </h2>
           </div>
         </ScrollReveal>
 
         <div className="mt-12 grid md:grid-cols-3 gap-6">
-          {articles.map((article, i) => (
+          {t.resources.items.map((article, i) => (
             <ScrollReveal key={article.title} delay={0.08 * i}>
               <div className="glass-card p-7 group cursor-pointer hover:border-primary/30 transition-colors duration-300 h-full">
                 <div className="flex items-center justify-between mb-4">
@@ -49,7 +35,7 @@ const ResourcesSection = () => {
 
         <ScrollReveal delay={0.2}>
           <div className="mt-8 text-center">
-            <p className="text-sm text-muted-foreground">More articles coming soon.</p>
+            <p className="text-sm text-muted-foreground">{t.resources.more}</p>
           </div>
         </ScrollReveal>
       </div>

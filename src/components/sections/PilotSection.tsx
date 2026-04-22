@@ -3,14 +3,10 @@ import bgPilot from "@/assets/bg-pilot-machinery.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import layersCapture from "@/assets/layers-capture.jpg";
 import ScrollReveal from "@/components/ScrollReveal";
-
-const pilotPoints = [
-  "2–4 week pilot on a single line or process",
-  "Integrates with existing workflows - no IT overhaul",
-  "Clear metrics to evaluate results objectively",
-];
+import { useT } from "@/hooks/useT";
 
 const PilotSection = () => {
+  const t = useT();
   return (
     <section id="pilot" className="relative section-padding">
       <SectionBgImage src={bgPilot} alt="Industrial machinery" opacity={0.12} />
@@ -27,19 +23,20 @@ const PilotSection = () => {
                 className="w-32 sm:w-40 rounded-lg flex-shrink-0 animate-float animate-glow-pulse"
               />
               <div>
-                <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Get Started</p>
+                <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
+                  {t.pilot.eyebrow}
+                </p>
                 <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-                  Prove value in weeks, not months
+                  {t.pilot.title}
                 </h2>
                 <p className="mt-5 text-muted-foreground text-base leading-relaxed">
-                  We deploy a focused pilot in your real environment. Fast setup, immediate
-                  results. You evaluate the impact before committing to anything.
+                  {t.pilot.body}
                 </p>
               </div>
             </div>
 
             <div className="mt-6 space-y-2.5 text-sm text-muted-foreground max-w-md mx-auto text-left">
-              {pilotPoints.map((point, i) => (
+              {t.pilot.points.map((point, i) => (
                 <div key={i} className="flex items-start gap-2.5">
                   <ArrowRight className="h-3.5 w-3.5 text-primary flex-shrink-0 mt-0.5" />
                   <span>{point}</span>
@@ -48,14 +45,11 @@ const PilotSection = () => {
             </div>
 
             <div className="mt-8 text-center">
-              <a
-                href="#contact"
-                className="cta-button text-sm px-8 py-3.5 inline-block"
-              >
-                Book a Demo
+              <a href="#contact" className="cta-button text-sm px-8 py-3.5 inline-block">
+                {t.pilot.cta}
               </a>
               <p className="mt-3 text-xs text-muted-foreground/50 tracking-wide">
-                See Quantum on your actual operations.
+                {t.pilot.ctaSub}
               </p>
             </div>
           </div>

@@ -17,8 +17,10 @@ import ContactSection from "@/components/sections/ContactSection";
 import FooterSection from "@/components/sections/FooterSection";
 import CookieConsent from "@/components/CookieConsent";
 import ScrollToTop from "@/components/ScrollToTop";
+import { useT } from "@/hooks/useT";
 
 const Index = () => {
+  const t = useT();
   return (
     <div className="relative min-h-screen bg-background">
       <AnimatedBackground />
@@ -38,7 +40,7 @@ const Index = () => {
           <div className="section-container max-w-3xl text-center">
             <ScrollReveal>
               <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-foreground/80 leading-snug">
-                "Your operation is only as strong as what your best operator remembers."
+                {t.pullQuote}
               </p>
             </ScrollReveal>
           </div>

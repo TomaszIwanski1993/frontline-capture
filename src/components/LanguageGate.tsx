@@ -6,9 +6,7 @@ const LanguageGate = () => {
 
   if (hasSelected) return null;
 
-  const choose = (lang: Language) => {
-    setLanguage(lang);
-  };
+  const choose = (lang: Language) => setLanguage(lang);
 
   return (
     <div
@@ -18,7 +16,6 @@ const LanguageGate = () => {
       aria-modal="true"
       aria-label="Language selection"
     >
-      {/* Subtle ambient gradient */}
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
@@ -37,6 +34,7 @@ const LanguageGate = () => {
 
         <p className="mt-1 text-white/70 text-sm sm:text-base tracking-wide">
           AI for operational knowledge retention
+          <span className="block text-white/40 text-xs mt-1">AI do utrzymania wiedzy operacyjnej</span>
         </p>
 
         <div className="mt-12 mb-6 text-white/50 text-xs sm:text-sm tracking-[0.2em] uppercase">

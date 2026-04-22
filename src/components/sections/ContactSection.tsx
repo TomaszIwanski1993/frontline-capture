@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Mail, MapPin } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import { useT } from "@/hooks/useT";
 
 const ContactSection = () => {
+  const t = useT();
   const [form, setForm] = useState({ name: "", company: "", email: "" });
   const [submitted, setSubmitted] = useState(false);
 
@@ -16,19 +18,18 @@ const ContactSection = () => {
       <div className="section-container">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
-            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">Contact</p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-              Let's talk
-            </h2>
-            <p className="mt-3 text-muted-foreground text-base">
-              We respond within one business day.
+            <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
+              {t.contact.eyebrow}
             </p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+              {t.contact.title}
+            </h2>
+            <p className="mt-3 text-muted-foreground text-base">{t.contact.sub}</p>
           </ScrollReveal>
         </div>
 
         <div className="mt-12 grid lg:grid-cols-2 gap-16 max-w-4xl mx-auto">
           <div>
-
             <ScrollReveal delay={0.1}>
               <div className="mt-10 space-y-5">
                 <div className="flex items-center gap-3 text-muted-foreground">
@@ -39,7 +40,7 @@ const ContactSection = () => {
                 </div>
                 <div className="flex items-start gap-3 text-muted-foreground">
                   <MapPin className="h-5 w-5 text-primary flex-shrink-0" strokeWidth={1.5} />
-                  <span>Grzegórzecka 69D/46<br />31-559 Kraków, Poland</span>
+                  <span>{t.contact.addressLine1}<br />{t.contact.addressLine2}</span>
                 </div>
               </div>
             </ScrollReveal>
@@ -64,14 +65,14 @@ const ContactSection = () => {
             <div>
               {submitted ? (
                 <div className="glass-card p-10 text-center h-full flex flex-col items-center justify-center">
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Thank you</h3>
-                  <p className="text-muted-foreground">We'll be in touch shortly.</p>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{t.contact.thanks}</h3>
+                  <p className="text-muted-foreground">{t.contact.thanksSub}</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="glass-card p-8 lg:p-10 space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                      Name
+                      {t.contact.name}
                     </label>
                     <input
                       id="name"
@@ -81,12 +82,12 @@ const ContactSection = () => {
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                       className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                      placeholder="Your name"
+                      placeholder={t.contact.namePh}
                     />
                   </div>
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                      Company
+                      {t.contact.company}
                     </label>
                     <input
                       id="company"
@@ -96,12 +97,12 @@ const ContactSection = () => {
                       value={form.company}
                       onChange={(e) => setForm({ ...form, company: e.target.value })}
                       className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                      placeholder="Your company"
+                      placeholder={t.contact.companyPh}
                     />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                      Email
+                      {t.contact.email}
                     </label>
                     <input
                       id="email"
@@ -111,11 +112,11 @@ const ContactSection = () => {
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
                       className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                      placeholder="you@company.com"
+                      placeholder={t.contact.emailPh}
                     />
                   </div>
                   <button type="submit" className="cta-button w-full text-base py-4">
-                    Send Message
+                    {t.contact.submit}
                   </button>
                 </form>
               )}
