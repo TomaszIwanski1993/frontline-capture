@@ -522,8 +522,24 @@ const pl: Translations = {
     },
     resources: {
       eyebrow: "Materiały",
-      title: "Analizy i perspektywy",
-      more: "Wkrótce więcej artykułów.",
+      title: "Badania, whitepaper i wyniki pilotaży",
+      more: "Whitepaper i pierwszy raport z pilotażu już wkrótce.",
+      featured: [
+        {
+          tag: "Whitepaper",
+          status: "Wkrótce",
+          title: "Jak rejestrować wiedzę niejawną w operacjach przemysłowych",
+          description:
+            "Praktyczne ramy utrzymania wiedzy operatorów — oparte na badaniach terenowych w produkcji, logistyce i FMCG.",
+        },
+        {
+          tag: "Wyniki pilotażu",
+          status: "W trakcie",
+          title: "Pilotaż Quantum — onboarding i OEE",
+          description:
+            "Mierzony wpływ na czas dochodzenia do biegłości, liczbę błędów i OEE z naszego pierwszego pilotażu przemysłowego. Pełny raport po publikacji.",
+        },
+      ],
       items: [
         {
           category: "Analiza",
@@ -588,13 +604,11 @@ const pl: Translations = {
       accept: "Akceptuj",
       reopen: "Ustawienia zgód",
     },
-    careers: {
-      back: "Powrót do strony głównej",
-      eyebrow: "Kariera",
-      title: "Dołącz do zespołu",
-      empty: "Aktualnie nie prowadzimy rekrutacji",
-      bodyA:
-        "Nie rekrutujemy aktywnie, ale chętnie poznamy zdolnych ludzi. Napisz na",
+    sources: {
+      label: "Źródła",
+      stat1: "(*) Zakres oparty na badaniach naukowych i branżowych nad wiedzą niejawną w operacjach przemysłowych (Polanyi, 1966; McKinsey & Company, 2023).",
+      stat2: "(*) Szacowany czas dojścia do pełnej biegłości na złożonym stanowisku przemysłowym; różni się w zależności od branży i procesu.",
+      proficiency: "(*) Wartość oczekiwana — na podstawie wczesnych benchmarków z pilotaży. Ostateczne wyniki opublikujemy w kolejnym raporcie.",
     },
     gate: {
       tagline: "AI do utrzymania wiedzy operacyjnej",
