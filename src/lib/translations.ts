@@ -1,7 +1,6 @@
 import { Language } from "@/contexts/LanguageContext";
 
-export const translations = {
-  en: {
+const en = {
     nav: {
       problem: "Problem",
       howItWorks: "How It Works",
