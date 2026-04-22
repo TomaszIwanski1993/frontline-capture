@@ -21,9 +21,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90">
       <div className="section-container flex items-center justify-between h-16 lg:h-20">
-        <a href="/" className="flex items-center gap-2.5">
-          <Logo alt="Quantum" className="h-11 lg:h-14 w-auto" />
-          <img src={wordmarkQuantum} alt="Quantum" className="h-12 lg:h-16 w-auto" loading="eager" />
+        <a href="/" className="flex items-center">
+          <Logo alt="Quantum" className="h-12 lg:h-16 w-auto" />
         </a>
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
