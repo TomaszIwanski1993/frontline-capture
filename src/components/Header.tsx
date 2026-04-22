@@ -20,9 +20,9 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90 h-28 lg:h-32">
-      <div className="section-container flex items-center justify-between h-full">
-        <a href="/" className="flex items-center shrink-0">
-          <Logo alt="Quantum" className="h-20 lg:h-24 w-auto" />
+      <div className="section-container flex items-center justify-between h-full overflow-visible">
+        <a href="/" className="flex items-center shrink-0 overflow-visible">
+          <Logo alt="Quantum" className="h-44 lg:h-52 w-auto -my-8" />
         </a>
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
