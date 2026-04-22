@@ -94,6 +94,7 @@ const en = {
             "Every operator gets the same expert-level guidance. No guesswork, no variation — just reliable output across all lines and sites.",
         },
       ],
+      origin: "Built in Poland",
     },
     value: {
       eyebrow: "Outcomes",
@@ -389,6 +390,7 @@ const pl: Translations = {
             "Każdy operator dostaje wskazówki na poziomie eksperta. Bez zgadywania, bez różnic — przewidywalny wynik na wszystkich liniach i lokalizacjach.",
         },
       ],
+      origin: "Zbudowane w Polsce",
     },
     value: {
       eyebrow: "Efekty",
