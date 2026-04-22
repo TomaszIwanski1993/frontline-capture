@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
 import Logo from "@/components/Logo";
 import ThemeToggle from "@/components/ThemeToggle";
 import LanguageSwitch from "@/components/LanguageSwitch";
@@ -14,9 +13,7 @@ const Header = () => {
     { label: t.nav.problem, href: "#problem" },
     { label: t.nav.howItWorks, href: "#how-it-works" },
     { label: t.nav.outcomes, href: "#outcomes" },
-    { label: t.nav.industries, href: "#industries" },
     { label: t.nav.whyQuantum, href: "#about" },
-    { label: t.nav.careers, href: "/careers" },
     { label: t.nav.contact, href: "#contact" },
   ];
 
@@ -29,25 +26,15 @@ const Header = () => {
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) =>
-            link.href.startsWith("/") ? (
-              <Link
-                key={link.href}
-                to={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-              >
-                {link.label}
-              </Link>
-            ) : (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-              >
-                {link.label}
-              </a>
-            )
-          )}
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
@@ -70,27 +57,16 @@ const Header = () => {
       {open && (
         <div className="lg:hidden border-t border-border/50 bg-background/95 backdrop-blur-xl">
           <nav className="section-container py-6 flex flex-col gap-4">
-            {navLinks.map((link) =>
-              link.href.startsWith("/") ? (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  onClick={() => setOpen(false)}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ) : (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.label}
-                </a>
-              )
-            )}
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
             <div className="flex items-center gap-3 pt-2">
               <LanguageSwitch />
               <ThemeToggle />

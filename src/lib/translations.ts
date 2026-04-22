@@ -7,7 +7,6 @@ const en = {
       outcomes: "Outcomes",
       industries: "Industries",
       whyQuantum: "Why Quantum",
-      careers: "Careers",
       contact: "Contact",
       bookDemo: "Book a Demo",
       toggleMenu: "Toggle menu",
@@ -213,8 +212,24 @@ const en = {
     },
     resources: {
       eyebrow: "Resources",
-      title: "Insights & perspectives",
-      more: "More articles coming soon.",
+      title: "Research, whitepaper and pilot results",
+      more: "Whitepaper and first pilot report coming soon.",
+      featured: [
+        {
+          tag: "Whitepaper",
+          status: "Coming soon",
+          title: "Capturing tacit knowledge in industrial operations",
+          description:
+            "A practical framework for retaining operator know-how — based on field research across manufacturing, logistics, and FMCG.",
+        },
+        {
+          tag: "Pilot results",
+          status: "In progress",
+          title: "Quantum pilot — onboarding and OEE",
+          description:
+            "Measured impact on time-to-proficiency, error rates, and OEE from our first industrial pilot. Full report on release.",
+        },
+      ],
       items: [
         {
           category: "Insight",
@@ -280,13 +295,11 @@ const en = {
       accept: "Accept",
       reopen: "Customise Consent Preferences",
     },
-    careers: {
-      back: "Back to home",
-      eyebrow: "Careers",
-      title: "Join Our Team",
-      empty: "No open roles at the moment",
-      bodyA:
-        "We're not actively hiring right now, but we're always interested in hearing from talented people. Feel free to reach out at",
+    sources: {
+      label: "Sources",
+      stat1: "(*) Range based on academic and industry research on tacit knowledge in industrial operations (Polanyi, 1966; McKinsey & Company, 2023).",
+      stat2: "(*) Estimated time to reach full proficiency on a complex industrial role; varies by sector and process.",
+      proficiency: "(*) Expected — based on early pilot benchmarks. Final results will be published with the next pilot report.",
     },
     gate: {
       tagline: "AI for operational knowledge retention",
@@ -303,7 +316,6 @@ const pl: Translations = {
       outcomes: "Efekty",
       industries: "Branże",
       whyQuantum: "Dlaczego Quantum",
-      careers: "Kariera",
       contact: "Kontakt",
       bookDemo: "Umów demo",
       toggleMenu: "Otwórz menu",
