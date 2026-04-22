@@ -18,11 +18,14 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90">
-      <div className="section-container flex items-center justify-between h-14 lg:h-16">
+    <header
+      className="fixed top-0 left-0 right-0 z-50 border-b border-white/5"
+      style={{ backgroundColor: "#100d28" }}
+    >
+      <div className="section-container flex items-center justify-between h-16 lg:h-20">
         <a href="/" className="flex items-center gap-2.5">
-          <Logo surface="light" variant="icon" className="h-8 lg:h-9 w-auto" />
-          <span className="text-lg lg:text-xl font-bold tracking-tight text-foreground font-display">Quantum</span>
+          <Logo alt="Quantum" className="h-11 lg:h-14 w-auto" />
+          <span className="text-lg lg:text-xl font-bold tracking-tight text-white font-display">Quantum</span>
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
