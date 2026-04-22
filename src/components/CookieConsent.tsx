@@ -40,11 +40,11 @@ const CookieConsent = () => {
       {showButton && !visible && (
         <button
           onClick={reopen}
-          className="fixed bottom-4 left-4 z-50 flex items-center gap-2 px-3 py-2 text-xs text-muted-foreground hover:text-foreground bg-card/90 backdrop-blur-md border border-border/50 rounded-lg shadow-sm transition-all duration-200 hover:shadow-md"
+          className="fixed bottom-6 left-6 z-40 h-11 w-11 rounded-full border border-border bg-card/90 backdrop-blur-sm shadow-md flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/30 hover:shadow-lg transition-all duration-300"
           aria-label={t.cookies.reopen}
+          title={t.cookies.reopen}
         >
-          <Cookie className="h-3.5 w-3.5" />
-          {t.cookies.reopen}
+          <Cookie className="h-4 w-4" />
         </button>
       )}
 
