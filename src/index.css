@@ -6,13 +6,13 @@
 
 html {
   scroll-behavior: smooth;
-  /* Locked to header height: 5rem (80px) mobile, 6rem (96px) desktop, +0.5rem breathing room */
-  scroll-padding-top: 5.5rem;
+  /* Locked to header height: 7rem (112px) mobile, 8rem (128px) desktop, +0.5rem breathing room */
+  scroll-padding-top: 7.5rem;
 }
 
 @media (min-width: 1024px) {
   html {
-    scroll-padding-top: 6.5rem;
+    scroll-padding-top: 8.5rem;
   }
 }
 
