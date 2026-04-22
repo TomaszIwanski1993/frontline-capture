@@ -36,6 +36,15 @@ const AboutSection = () => {
             );
           })}
         </div>
+
+        <ScrollReveal delay={0.2}>
+          <div className="mt-12 flex justify-center">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border text-xs text-muted-foreground tracking-wide">
+              <span className="h-1.5 w-1.5 rounded-full bg-primary/60" />
+              {t.about.origin}
+            </span>
+          </div>
+        </ScrollReveal>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 subtle-divider" />
