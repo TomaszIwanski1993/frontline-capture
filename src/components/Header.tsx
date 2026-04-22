@@ -19,9 +19,9 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90">
-      <div className="section-container flex items-center justify-between h-16 lg:h-20">
-        <a href="/" className="flex items-center">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90 h-20 lg:h-24">
+      <div className="section-container flex items-center justify-between h-full">
+        <a href="/" className="flex items-center shrink-0">
           <Logo alt="Quantum" className="h-12 lg:h-16 w-auto" />
         </a>
         <nav className="hidden lg:flex items-center gap-8">
