@@ -7,7 +7,6 @@ import PositioningSection from "@/components/sections/PositioningSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import ValueSection from "@/components/sections/ValueSection";
 import TrustSection from "@/components/sections/TrustSection";
-import IndustriesSection from "@/components/sections/IndustriesSection";
 import PilotSection from "@/components/sections/PilotSection";
 import FAQSection from "@/components/sections/FAQSection";
 import AboutSection from "@/components/sections/AboutSection";
@@ -57,8 +56,6 @@ const Index = () => {
         <div className="section-transition-up" />
 
         <TrustSection />
-
-        <IndustriesSection />
 
         <div className="section-transition-down" />
         <div className="section-tinted">

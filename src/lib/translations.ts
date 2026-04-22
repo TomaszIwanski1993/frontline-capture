@@ -127,7 +127,7 @@ const en = {
       ],
     },
     trust: {
-      label: "Trusted by industrial teams",
+      label: "Piloted in real warehousing and production environments",
       tags: ["Manufacturing", "Logistics", "FMCG", "Field Service"],
     },
     industries: {
@@ -422,7 +422,7 @@ const pl: Translations = {
       ],
     },
     trust: {
-      label: "Zaufali nam zespoły przemysłowe",
+      label: "Pilotowane w realnych środowiskach magazynowych i produkcyjnych",
       tags: ["Produkcja", "Logistyka", "FMCG", "Serwis terenowy"],
     },
     industries: {
