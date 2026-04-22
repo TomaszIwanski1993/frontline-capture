@@ -28,10 +28,11 @@ const LanguageGate = () => {
       />
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-lg w-full animate-fade-in">
-        <img
-          src={logo}
+        <Logo
+          surface="dark"
+          variant="full"
           alt="Quantum"
-          className="h-16 sm:h-20 mb-8 drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]"
+          className="h-24 sm:h-28 mb-6 w-auto drop-shadow-[0_0_40px_rgba(137,6,230,0.35)]"
         />
 
         <h1 className="text-white text-2xl sm:text-3xl font-bold tracking-tight font-display">
