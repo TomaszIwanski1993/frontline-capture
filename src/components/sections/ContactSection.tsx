@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useT } from "@/hooks/useT";
 
@@ -28,35 +28,31 @@ const ContactSection = () => {
           </ScrollReveal>
         </div>
 
-        <div className="mt-12 grid lg:grid-cols-2 gap-16 max-w-4xl mx-auto">
+        <div className="mt-12 grid lg:grid-cols-2 gap-16 max-w-4xl mx-auto items-start">
           <div>
             <ScrollReveal delay={0.1}>
-              <div className="mt-10 space-y-5">
-                <div className="flex items-center gap-3 text-muted-foreground">
-                  <Mail className="h-5 w-5 text-primary" strokeWidth={1.5} />
-                  <a href="mailto:info@quantummaking.com" className="hover:text-foreground transition-colors">
-                    info@quantummaking.com
-                  </a>
-                </div>
-                <div className="flex items-start gap-3 text-muted-foreground">
-                  <MapPin className="h-5 w-5 text-primary flex-shrink-0" strokeWidth={1.5} />
-                  <span>{t.contact.addressLine1}<br />{t.contact.addressLine2}</span>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.15}>
-              <div className="mt-8 glass-card overflow-hidden rounded-xl h-48">
-                <iframe
-                  title="Office Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.5!2d19.9445!3d50.0614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b1a3a3e3c3d%3A0x0!2sGrzeg%C3%B3rzecka%2069D%2C%2031-559%20Krak%C3%B3w!5e0!3m2!1sen!2spl!4v1700000000000"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+              <div className="space-y-4">
+                <a
+                  href="mailto:info@quantummaking.com"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
+                >
+                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary border border-border group-hover:border-primary/50 transition-colors">
+                    <Mail className="h-5 w-5 text-primary" strokeWidth={1.5} />
+                  </span>
+                  <span className="text-sm">info@quantummaking.com</span>
+                </a>
+                <a
+                  href="https://linkedin.com/company/quantummaking"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Quantum on LinkedIn"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
+                >
+                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary border border-border group-hover:border-primary/50 transition-colors">
+                    <Linkedin className="h-5 w-5 text-primary" strokeWidth={1.5} />
+                  </span>
+                  <span className="text-sm">linkedin.com/company/quantummaking</span>
+                </a>
               </div>
             </ScrollReveal>
           </div>
