@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo-quantum.svg";
+import Logo from "@/components/Logo";
 
 const FooterSection = () => {
   return (
@@ -8,7 +8,7 @@ const FooterSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Quantum" className="h-8" />
+              <Logo surface="light" variant="icon" className="h-8 w-auto" />
               <span className="text-lg font-bold text-foreground">Quantum</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
