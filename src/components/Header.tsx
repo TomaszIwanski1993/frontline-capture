@@ -22,6 +22,9 @@ const Header = () => {
       <div className="section-container flex items-center justify-between h-16 lg:h-20">
         <a href="/" className="flex items-center gap-2.5">
           <Logo alt="Quantum" className="h-11 lg:h-14 w-auto" />
+          <span className="text-2xl lg:text-3xl font-bold tracking-[0.18em] text-foreground font-display uppercase">
+            Quantum
+          </span>
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
