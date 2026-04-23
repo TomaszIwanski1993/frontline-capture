@@ -3,59 +3,16 @@ import type { ReactNode } from "react";
 interface FloatingVisualProps {
   children: ReactNode;
   className?: string;
-  /** Float variant: changes timing and motion curve */
+  /** Reserved for API compatibility — no longer affects motion */
   variant?: "default" | "alt" | "slow";
 }
 
 /**
- * Wraps a visual element with:
- * - A slow-rotating glow ring behind it (parallax depth layer)
- * - Floating animation on the main visual
- * - Subtle depth separation between layers
+ * Simplified wrapper — visual sits flat with no glow rings or float animation.
+ * Kept as a component for layout consistency across sections.
  */
-const FloatingVisual = ({
-  children,
-  className = "",
-  variant = "default",
-}: FloatingVisualProps) => {
-  const floatClass =
-    variant === "alt"
-      ? "animate-float-alt"
-      : variant === "slow"
-        ? "animate-float-slow"
-        : "animate-float";
-
-  return (
-    <div className={`relative ${className}`}>
-      {/* Background depth layer — slow rotating glow ring */}
-      <div
-        className="absolute inset-[-15%] rounded-full animate-subtle-rotate pointer-events-none"
-        style={{
-          background:
-            "conic-gradient(from 0deg, transparent 0%, hsl(239 96% 60% / 0.06) 25%, transparent 50%, hsl(283 95% 62% / 0.04) 75%, transparent 100%)",
-          filter: "blur(20px)",
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Mid depth layer — counter-floating soft glow */}
-      <div
-        className="absolute inset-[-5%] rounded-lg animate-float-slow pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, hsl(239 96% 60% / 0.08) 0%, transparent 70%)",
-          filter: "blur(12px)",
-          animationDirection: "reverse",
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Main visual — floats with glow pulse */}
-      <div className={`relative ${floatClass} animate-glow-pulse`}>
-        {children}
-      </div>
-    </div>
-  );
+const FloatingVisual = ({ children, className = "" }: FloatingVisualProps) => {
+  return <div className={`relative ${className}`}>{children}</div>;
 };
 
 export default FloatingVisual;

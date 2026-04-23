@@ -139,7 +139,7 @@ html {
   }
 
   .section-padding {
-    @apply py-20 lg:py-24;
+    @apply py-24 lg:py-32;
   }
 
   .section-tinted {
@@ -157,36 +157,26 @@ html {
 
   .glass-card {
     @apply rounded-md border border-border bg-card;
-    box-shadow: 0 1px 2px hsl(var(--foreground) / 0.04);
     transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
-                box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1),
                 border-color 0.2s ease;
   }
 
   .glass-card:hover {
-    transform: translateY(-3px);
-    border-color: hsl(var(--primary) / 0.15);
-    box-shadow: 0 8px 24px hsl(var(--foreground) / 0.08), 0 2px 6px hsl(var(--foreground) / 0.04);
+    transform: translateY(-2px);
+    border-color: hsl(var(--primary) / 0.2);
   }
 
   .cta-button {
-    @apply px-8 py-4 rounded-md font-semibold text-primary-foreground;
-    background: var(--gradient-cta);
-    box-shadow: 0 2px 8px hsl(239 96% 47% / 0.18);
-    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
-                box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1),
-                background 0.25s ease;
+    @apply px-8 py-4 rounded-md font-semibold text-primary-foreground bg-primary;
+    transition: background-color 0.2s ease, transform 0.15s ease;
   }
 
   .cta-button:hover {
-    transform: scale(1.03);
-    background: var(--gradient-cta-hover);
-    box-shadow: 0 6px 24px hsl(239 96% 47% / 0.35), 0 0 0 1px hsl(239 96% 47% / 0.08);
+    background-color: hsl(var(--primary) / 0.92);
   }
 
   .cta-button:active {
     transform: scale(0.98);
-    box-shadow: 0 1px 4px hsl(239 96% 47% / 0.15);
   }
 
   .subtle-divider {
@@ -194,14 +184,9 @@ html {
     background: hsl(var(--border));
   }
 
-  .section-transition-down {
-    @apply w-full h-12;
-    background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--section-tint)) 100%);
-  }
-
+  .section-transition-down,
   .section-transition-up {
-    @apply w-full h-12;
-    background: linear-gradient(180deg, hsl(var(--section-tint)) 0%, hsl(var(--background)) 100%);
+    @apply w-full h-8;
   }
 }
 
@@ -276,8 +261,8 @@ html {
 }
 
 @keyframes glowPulse {
-  0%, 100% { box-shadow: 0 0 15px hsl(239 96% 60% / 0.08), 0 0 30px hsl(239 96% 60% / 0.04); }
-  50% { box-shadow: 0 0 25px hsl(239 96% 60% / 0.18), 0 0 60px hsl(239 96% 60% / 0.10); }
+  0%, 100% { box-shadow: none; }
+  50% { box-shadow: none; }
 }
 
 @keyframes shimmerFlow {
@@ -333,20 +318,5 @@ html {
   .shimmer-overlay {
     position: relative;
     overflow: hidden;
-  }
-
-  .shimmer-overlay::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      105deg,
-      transparent 40%,
-      hsl(239 96% 60% / 0.06) 50%,
-      transparent 60%
-    );
-    background-size: 200% 100%;
-    animation: shimmerFlow 12s linear infinite;
-    pointer-events: none;
   }
 }

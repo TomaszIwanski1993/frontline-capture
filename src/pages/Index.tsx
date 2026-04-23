@@ -30,14 +30,12 @@ const Index = () => {
         <HowItWorksSection />
 
         <PositioningSection />
-        <div className="section-transition-down" />
         <div className="section-tinted">
           <ProblemSection />
         </div>
-        <div className="section-transition-up" />
 
         {/* Pull quote */}
-        <div className="py-14 lg:py-18">
+        <div className="py-20 lg:py-28">
           <div className="section-container max-w-3xl text-center">
             <ScrollReveal>
               <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-foreground/80 leading-snug">
@@ -47,21 +45,17 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="section-transition-down" />
         <div className="section-tinted">
           <ValueSection />
         </div>
-        <div className="section-transition-up" />
 
         <AboutSection />
 
         <TrustSection />
 
-        <div className="section-transition-down" />
         <div className="section-tinted">
           <PilotSection />
         </div>
-        <div className="section-transition-up" />
 
         <FAQSection />
 

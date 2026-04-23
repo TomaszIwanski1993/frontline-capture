@@ -9,8 +9,8 @@ interface Particle {
   drift: number;
 }
 
-const PARTICLE_COUNT = 28;
-const BASE_SPEED = 0.25;
+const PARTICLE_COUNT = 14;
+const BASE_SPEED = 0.2;
 
 const DataFlowCanvas = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -41,7 +41,7 @@ const DataFlowCanvas = () => {
       y: initial ? Math.random() * h : -20 - Math.random() * 120,
       speed: BASE_SPEED + Math.random() * 0.35,
       length: 18 + Math.random() * 40,
-      opacity: 0.06 + Math.random() * 0.1,
+      opacity: 0.04 + Math.random() * 0.06,
       drift: (Math.random() - 0.5) * 0.15,
     });
 
@@ -110,7 +110,7 @@ const DataFlowCanvas = () => {
       ref={canvasRef}
       className="absolute inset-0 w-full h-full pointer-events-none text-primary"
       aria-hidden="true"
-      style={{ opacity: 0.55 }}
+      style={{ opacity: 0.35 }}
     />
   );
 };
