@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "@/components/Logo";
-import ThemeToggle from "@/components/ThemeToggle";
+
 import LanguageSwitch from "@/components/LanguageSwitch";
 import { useT } from "@/hooks/useT";
 
