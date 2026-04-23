@@ -26,7 +26,7 @@ const ResourcesSection = () => {
             const Icon = featuredIcons[i] ?? FileText;
             return (
               <ScrollReveal key={item.title} delay={0.08 * i}>
-                <div className="glass-card p-6 lg:p-8 h-full border-primary/20 relative overflow-hidden">
+                <div className="glass-card p-8 lg:p-10 h-full border-primary/20 relative overflow-hidden">
                   <div className="flex items-center justify-between mb-5">
                     <div className="flex items-center gap-3">
                       <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary/10">
@@ -56,7 +56,7 @@ const ResourcesSection = () => {
         <div className="mt-10 grid md:grid-cols-3 gap-6">
           {t.resources.items.map((article, i) => (
             <ScrollReveal key={article.title} delay={0.08 * i}>
-              <div className="glass-card p-6 lg:p-8 group cursor-pointer hover:border-primary/30 transition-colors duration-300 h-full">
+              <div className="glass-card p-8 lg:p-10 group cursor-pointer hover:border-primary/30 transition-colors duration-300 h-full">
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-xs font-medium text-primary uppercase tracking-wider">{article.category}</span>
                   <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
