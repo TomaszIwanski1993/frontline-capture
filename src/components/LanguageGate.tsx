@@ -19,12 +19,30 @@ type Phase = "in" | "hold" | "out";
 interface MorphingTaglineProps {
   text: string;
   phase: Phase;
+  reducedMotion: boolean;
 }
 
-const MorphingTagline = ({ text, phase }: MorphingTaglineProps) => {
-  // Split into characters but preserve word boundaries for line-wrap safety
+const MorphingTagline = ({ text, phase, reducedMotion }: MorphingTaglineProps) => {
+  // Always call hooks before any early return
   const chars = useMemo(() => Array.from(text), [text]);
   const total = chars.length;
+
+  // Reduced-motion fallback: simple, calm crossfade of the whole string
+  if (reducedMotion) {
+    return (
+      <p
+        className="text-white/85 text-base sm:text-lg tracking-wide leading-snug"
+        lang={text === TAGLINES[0].text ? "en" : "pl"}
+        style={{
+          opacity: phase === "out" ? 0 : 1,
+          transition: "opacity 600ms ease-in-out",
+          willChange: "opacity",
+        }}
+      >
+        {text}
+      </p>
+    );
+  }
 
   return (
     <p
@@ -91,6 +109,17 @@ const LanguageGate = () => {
   const { hasSelected, setLanguage } = useLanguage();
   const [tagIndex, setTagIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>("in");
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  // Honor prefers-reduced-motion (and react to live changes)
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReducedMotion(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setReducedMotion(e.matches);
+    mq.addEventListener?.("change", handler);
+    return () => mq.removeEventListener?.("change", handler);
+  }, []);
 
   useEffect(() => {
     if (hasSelected) return;
@@ -166,7 +195,7 @@ const LanguageGate = () => {
           className="mt-10 min-h-[2.5rem] sm:min-h-[2.75rem] w-full flex items-center justify-center px-4"
           aria-live="polite"
         >
-          <MorphingTagline key={current.lang} text={current.text} phase={phase} />
+          <MorphingTagline key={current.lang} text={current.text} phase={phase} reducedMotion={reducedMotion} />
         </div>
 
         <div className="mt-12 mb-6 text-white/50 text-xs sm:text-sm tracking-[0.2em] uppercase">
