@@ -27,7 +27,7 @@ const HeroSection = () => {
             <p className="text-xs lg:text-sm text-muted-foreground/70 font-semibold tracking-[0.2em] uppercase">
               {t.hero.eyebrow}
             </p>
-            <h1 className="mt-8 lg:mt-10 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight leading-[1.0] text-foreground">
+            <h1 className="mt-12 lg:mt-16 mb-4 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15] text-foreground">
               {t.hero.titleA}
               <br />
               <span className="gradient-text">{t.hero.titleB}</span>
@@ -38,7 +38,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
-            className="mt-10 lg:mt-12 text-lg lg:text-xl text-foreground/70 leading-relaxed max-w-2xl mx-auto"
+            className="mt-12 lg:mt-14 text-lg lg:text-xl text-foreground/70 leading-relaxed max-w-2xl mx-auto"
           >
             {t.hero.tagline}
           </motion.p>
