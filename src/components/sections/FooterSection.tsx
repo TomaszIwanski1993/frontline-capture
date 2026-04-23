@@ -10,11 +10,11 @@ const FooterSection = () => {
   return (
     <footer className="relative z-10 bg-foreground text-background pt-24 lg:pt-32 pb-10">
       <div className="section-container">
-        <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-8 gap-y-14">
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-8 gap-y-14 items-start">
           {/* Brand column */}
           <div className="col-span-2 lg:col-span-5">
-            <Logo surface="dark" variant="full" className="h-32 lg:h-40 w-auto -ml-2 block" />
-            <p className="mt-12 text-sm text-background/60 leading-relaxed">
+            <Logo surface="dark" variant="full" className="h-14 lg:h-16 w-auto block -ml-1" />
+            <p className="mt-8 text-sm text-background/60 leading-relaxed">
               {t.footer.legalName}<br />
               {t.footer.addressLine1}<br />
               {t.footer.addressLine2}
