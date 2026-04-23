@@ -24,6 +24,12 @@ interface MorphingTaglineProps {
 
 const MorphingTagline = ({ text, phase, reducedMotion }: MorphingTaglineProps) => {
   // Reduced-motion fallback: simple, calm crossfade of the whole string
+const MorphingTagline = ({ text, phase, reducedMotion }: MorphingTaglineProps) => {
+  // Always call hooks before any early return
+  const chars = useMemo(() => Array.from(text), [text]);
+  const total = chars.length;
+
+  // Reduced-motion fallback: simple, calm crossfade of the whole string
   if (reducedMotion) {
     return (
       <p
@@ -39,9 +45,6 @@ const MorphingTagline = ({ text, phase, reducedMotion }: MorphingTaglineProps) =
       </p>
     );
   }
-  // Split into characters but preserve word boundaries for line-wrap safety
-  const chars = useMemo(() => Array.from(text), [text]);
-  const total = chars.length;
 
   return (
     <p
