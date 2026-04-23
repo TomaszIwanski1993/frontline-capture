@@ -1,9 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage, Language } from "@/contexts/LanguageContext";
 import Logo from "@/components/Logo";
 
+const TAGLINES = [
+  { lang: "en", text: "AI for operational knowledge retention" },
+  { lang: "pl", text: "AI do utrzymania wiedzy operacyjnej" },
+] as const;
+
 const LanguageGate = () => {
   const { hasSelected, setLanguage } = useLanguage();
+  const [tagIndex, setTagIndex] = useState(0);
 
   useEffect(() => {
     if (hasSelected) return;
@@ -12,6 +18,15 @@ const LanguageGate = () => {
     return () => {
       document.body.style.overflow = prev;
     };
+  }, [hasSelected]);
+
+  // Gentle crossfade loop between EN and PL taglines while gate is visible
+  useEffect(() => {
+    if (hasSelected) return;
+    const id = window.setInterval(() => {
+      setTagIndex((i) => (i + 1) % TAGLINES.length);
+    }, 3800);
+    return () => window.clearInterval(id);
   }, [hasSelected]);
 
   if (hasSelected) return null;
@@ -46,12 +61,28 @@ const LanguageGate = () => {
           Built in Poland
         </p>
 
-        <p className="mt-10 text-white/75 text-base sm:text-lg tracking-wide">
-          AI for operational knowledge retention
-        </p>
-        <p className="mt-1 text-white/40 text-xs sm:text-sm">
-          AI do utrzymania wiedzy operacyjnej
-        </p>
+        <div className="mt-10 relative h-7 sm:h-8 w-full flex items-center justify-center overflow-hidden">
+          {TAGLINES.map((t, i) => {
+            const active = i === tagIndex;
+            return (
+              <p
+                key={t.lang}
+                lang={t.lang}
+                aria-hidden={!active}
+                className="absolute inset-0 flex items-center justify-center text-white/80 text-base sm:text-lg tracking-wide whitespace-nowrap px-4"
+                style={{
+                  opacity: active ? 1 : 0,
+                  transform: active ? "translateY(0)" : "translateY(6px)",
+                  transition:
+                    "opacity 1100ms cubic-bezier(0.4, 0, 0.2, 1), transform 1100ms cubic-bezier(0.4, 0, 0.2, 1)",
+                  willChange: "opacity, transform",
+                }}
+              >
+                {t.text}
+              </p>
+            );
+          })}
+        </div>
 
         <div className="mt-12 mb-6 text-white/50 text-xs sm:text-sm tracking-[0.2em] uppercase">
           Choose your language <span className="mx-2 opacity-50">/</span> Wybierz język
