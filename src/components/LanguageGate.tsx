@@ -9,6 +9,7 @@ const TAGLINES = [
 
 const LanguageGate = () => {
   const { hasSelected, setLanguage } = useLanguage();
+  const [tagIndex, setTagIndex] = useState(0);
 
   useEffect(() => {
     if (hasSelected) return;
@@ -17,6 +18,15 @@ const LanguageGate = () => {
     return () => {
       document.body.style.overflow = prev;
     };
+  }, [hasSelected]);
+
+  // Gentle crossfade loop between EN and PL taglines while gate is visible
+  useEffect(() => {
+    if (hasSelected) return;
+    const id = window.setInterval(() => {
+      setTagIndex((i) => (i + 1) % TAGLINES.length);
+    }, 3800);
+    return () => window.clearInterval(id);
   }, [hasSelected]);
 
   if (hasSelected) return null;
