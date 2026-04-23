@@ -18,7 +18,7 @@ const ProblemSection = () => {
 
   return (
     <section id="problem" className="relative section-padding">
-      <KnowledgeFlow mode="disperse" intensity={0.5} density={1.2} />
+      <KnowledgeFlow {...flowConfig.problem} />
       <div className="section-container relative z-10">
         <ScrollReveal>
           <div className="max-w-3xl">
