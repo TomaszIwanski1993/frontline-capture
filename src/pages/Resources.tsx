@@ -1,5 +1,6 @@
 import { ArrowUpRight, FileText, BarChart3 } from "lucide-react";
 import Header from "@/components/Header";
+import BrandRail from "@/components/BrandRail";
 import FooterSection from "@/components/sections/FooterSection";
 import ScrollReveal from "@/components/ScrollReveal";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -13,6 +14,7 @@ const Resources = () => {
 
   return (
     <div className="relative min-h-screen bg-background">
+      <BrandRail />
       <Header />
       <main className="relative z-10 pt-24 lg:pt-32">
         {/* Hero / Header */}
