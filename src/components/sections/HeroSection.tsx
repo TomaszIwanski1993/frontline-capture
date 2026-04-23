@@ -36,7 +36,7 @@ const HeroSection = () => {
             <p className="text-sm text-muted-foreground/60 font-medium tracking-wide uppercase">
               {t.hero.eyebrow}
             </p>
-            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08] text-foreground">
+            <h1 className="mt-5 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight leading-[1.02] text-foreground">
               {t.hero.titleA}
               <br />
               <span className="gradient-text">{t.hero.titleB}</span>

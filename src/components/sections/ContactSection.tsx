@@ -21,10 +21,10 @@ const ContactSection = () => {
             <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
               {t.contact.eyebrow}
             </p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+            <h2 className="mt-2 text-4xl lg:text-5xl xl:text-6xl font-extrabold text-foreground tracking-tight leading-[1.05]">
               {t.contact.title}
             </h2>
-            <p className="mt-3 text-muted-foreground text-base">{t.contact.sub}</p>
+            <p className="mt-6 text-foreground/65 text-base lg:text-lg">{t.contact.sub}</p>
           </ScrollReveal>
         </div>
 
