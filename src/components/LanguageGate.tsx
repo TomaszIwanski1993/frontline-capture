@@ -109,6 +109,17 @@ const LanguageGate = () => {
   const { hasSelected, setLanguage } = useLanguage();
   const [tagIndex, setTagIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>("in");
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  // Honor prefers-reduced-motion (and react to live changes)
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReducedMotion(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setReducedMotion(e.matches);
+    mq.addEventListener?.("change", handler);
+    return () => mq.removeEventListener?.("change", handler);
+  }, []);
 
   useEffect(() => {
     if (hasSelected) return;
