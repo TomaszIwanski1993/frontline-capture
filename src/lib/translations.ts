@@ -292,7 +292,7 @@ const en = {
       solutions: "Solutions",
       legal: "Legal",
       links: {
-        about: "About",
+        about: "Why Quantum",
         contact: "Contact",
         resources: "Resources",
         howItWorks: "How It Works",
