@@ -18,7 +18,7 @@ const ValueSection = () => {
   return (
     <section id="outcomes" className="relative section-padding">
       <SectionBgImage src={bgValue} alt="Warehouse operations" opacity={0.12} />
-      <KnowledgeFlow mode="align" intensity={0.45} density={1.1} />
+      <KnowledgeFlow {...flowConfig.outcomes} />
       <div className="section-container relative z-10">
         <ScrollReveal>
           <div>
