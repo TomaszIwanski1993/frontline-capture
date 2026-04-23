@@ -142,7 +142,7 @@ html {
 
 @layer components {
   .section-container {
-    @apply max-w-6xl mx-auto px-6 lg:pl-[calc(18vw+2rem)] lg:pr-8;
+    @apply max-w-6xl mx-auto px-6 lg:px-8;
   }
 
   .section-padding {
