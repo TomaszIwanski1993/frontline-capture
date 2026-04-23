@@ -1,6 +1,7 @@
 import { TrendingDown, CheckCircle, Shield, RefreshCw } from "lucide-react";
 import bgValue from "@/assets/bg-value-logistics.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
+import KnowledgeFlow from "@/components/KnowledgeFlow";
 import cardProficiency from "@/assets/card-proficiency.jpg";
 import cardConsistency from "@/assets/card-consistency.jpg";
 import cardResilience from "@/assets/card-resilience.jpg";
@@ -16,6 +17,7 @@ const ValueSection = () => {
   return (
     <section id="outcomes" className="relative section-padding">
       <SectionBgImage src={bgValue} alt="Warehouse operations" opacity={0.12} />
+      <KnowledgeFlow mode="align" intensity={0.45} density={1.1} />
       <div className="section-container relative z-10">
         <ScrollReveal>
           <div>
