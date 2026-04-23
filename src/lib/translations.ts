@@ -127,6 +127,20 @@ const en = {
             "Your best people's expertise scales across every team and site.",
         },
       ],
+      kpis: [
+        {
+          label: "Onboarding time",
+          from: "Months",
+          to: "Weeks",
+          caption: "New operators reach productive output sooner.",
+        },
+        {
+          label: "Execution consistency",
+          from: "Shift-dependent",
+          to: "Standardized",
+          caption: "Same proven steps, regardless of who's on shift.",
+        },
+      ],
     },
     trust: {
       label: "Piloted in real warehousing and production environments",
@@ -437,6 +451,20 @@ const pl: Translations = {
           title: "Zależność od najlepszych operatorów",
           description:
             "Doświadczenie najlepszych ludzi działa w każdym zespole i lokalizacji.",
+        },
+      ],
+      kpis: [
+        {
+          label: "Czas wdrożenia",
+          from: "Miesiące",
+          to: "Tygodnie",
+          caption: "Nowi operatorzy szybciej osiągają produktywność.",
+        },
+        {
+          label: "Spójność wykonania",
+          from: "Zależna od zmiany",
+          to: "Ustandaryzowana",
+          caption: "Te same sprawdzone kroki, niezależnie od obsady.",
         },
       ],
     },
