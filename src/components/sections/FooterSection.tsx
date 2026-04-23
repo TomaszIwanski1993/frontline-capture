@@ -13,7 +13,7 @@ const FooterSection = () => {
         <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-8 gap-y-14">
           {/* Brand column */}
           <div className="col-span-2 lg:col-span-5">
-            <Logo surface="dark" variant="full" className="h-10 w-auto" />
+            <Logo surface="dark" variant="full" className="h-20 lg:h-24 w-auto" />
             <p className="mt-8 text-sm text-background/60 leading-relaxed">
               {t.footer.legalName}<br />
               {t.footer.addressLine1}<br />
