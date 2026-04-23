@@ -14,7 +14,7 @@ const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="relative section-padding">
       <SectionBgImage src={bgHowIt} alt="Team collaboration" opacity={0.12} />
-      <KnowledgeFlow mode="align" intensity={0.5} density={1.3} />
+      <KnowledgeFlow {...flowConfig.howItWorks} />
       <div className="section-container relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
           <div className="flex-1">
