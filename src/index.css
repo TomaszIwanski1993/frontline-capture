@@ -169,16 +169,26 @@ html {
   }
 
   .cta-button {
-    @apply px-8 py-4 rounded-md font-semibold text-primary-foreground bg-primary;
+    @apply inline-flex items-center justify-center px-7 py-3.5 rounded-md font-semibold text-primary-foreground bg-primary;
     transition: background-color 0.2s ease, transform 0.15s ease;
   }
 
   .cta-button:hover {
-    background-color: hsl(var(--primary) / 0.92);
+    background-color: hsl(var(--primary) / 0.9);
   }
 
   .cta-button:active {
     transform: scale(0.98);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-7 py-3.5 rounded-md font-medium text-foreground border border-border bg-transparent;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+
+  .btn-outline:hover {
+    border-color: hsl(var(--foreground) / 0.4);
+    background-color: hsl(var(--foreground) / 0.03);
   }
 
   .subtle-divider {

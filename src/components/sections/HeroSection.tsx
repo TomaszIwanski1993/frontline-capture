@@ -47,15 +47,12 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-            className="mt-14 lg:mt-16 flex flex-col sm:flex-row gap-3 justify-center"
+            className="mt-16 lg:mt-20 flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <a href="#pilot" className="cta-button text-base lg:text-lg px-10 py-4 text-center">
+            <a href="#pilot" className="cta-button text-base px-8 py-4 text-center">
               {t.hero.cta1}
             </a>
-            <a
-              href="#how-it-works"
-              className="px-8 py-4 rounded-md text-base font-medium text-muted-foreground border border-border hover:border-foreground/20 hover:text-foreground transition-colors duration-150 text-center"
-            >
+            <a href="#how-it-works" className="btn-outline text-base px-8 py-4 text-center">
               {t.hero.cta2}
             </a>
           </motion.div>
