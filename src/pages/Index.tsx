@@ -11,7 +11,7 @@ import PilotSection from "@/components/sections/PilotSection";
 import FAQSection from "@/components/sections/FAQSection";
 import AboutSection from "@/components/sections/AboutSection";
 
-import ResourcesSection from "@/components/sections/ResourcesSection";
+
 import ContactSection from "@/components/sections/ContactSection";
 import FooterSection from "@/components/sections/FooterSection";
 import CookieConsent from "@/components/CookieConsent";
