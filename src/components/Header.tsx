@@ -1,22 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import Logo from "@/components/Logo";
+import headerLogo from "@/assets/logo-quantum-header.svg";
 
 import LanguageSwitch from "@/components/LanguageSwitch";
 import { useT } from "@/hooks/useT";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const t = useT();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const navLinks = [
     { label: t.nav.problem, href: "/#problem", type: "anchor" as const },
@@ -47,24 +39,13 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90 h-16 lg:h-20">
       <div className="section-container flex items-center justify-between h-full overflow-visible">
-        <Link to="/" className="flex items-center shrink-0 overflow-visible relative" aria-label="Quantum home">
-          {/* Reserve a stable width slot so layout doesn't shift between full/icon */}
-          <span className="relative block h-36 lg:h-44 w-[170px] lg:w-[210px] -my-11 lg:-my-13">
-            <Logo
-              variant="full"
-              alt="Quantum"
-              className={`absolute inset-0 h-full w-auto transition-all duration-300 ease-out ${
-                scrolled ? "opacity-0 scale-95 pointer-events-none" : "opacity-100 scale-100"
-              }`}
-            />
-            <Logo
-              variant="icon"
-              alt="Quantum"
-              className={`absolute inset-0 h-full w-auto transition-all duration-300 ease-out ${
-                scrolled ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
-              }`}
-            />
-          </span>
+        <Link to="/" className="flex items-center shrink-0" aria-label="Quantum home">
+          <img
+            src={headerLogo}
+            alt="Quantum"
+            loading="eager"
+            className="h-32 lg:h-40 w-auto -my-9 lg:-my-11"
+          />
         </Link>
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => renderLink(link))}
