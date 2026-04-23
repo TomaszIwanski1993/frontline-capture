@@ -9,7 +9,7 @@ const PositioningSection = () => {
   const t = useT();
   return (
     <section className="relative py-16 lg:py-20">
-      <KnowledgeFlow mode="align" intensity={0.45} density={1.0} />
+      <KnowledgeFlow {...flowConfig.positioning} />
       <div className="section-container relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           <div className="flex-1 text-center lg:text-left">
