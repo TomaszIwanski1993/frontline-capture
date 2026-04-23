@@ -1,4 +1,5 @@
 import AnimatedBackground from "@/components/AnimatedBackground";
+import BrandRail from "@/components/BrandRail";
 import Header from "@/components/Header";
 import HeroSection from "@/components/sections/HeroSection";
 import ProblemSection from "@/components/sections/ProblemSection";
@@ -23,6 +24,7 @@ const Index = () => {
   return (
     <div className="relative min-h-screen bg-background">
       <AnimatedBackground />
+      <BrandRail />
       <Header />
       <main className="relative z-10">
         {/* Hero — light */}
