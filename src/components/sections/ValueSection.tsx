@@ -2,6 +2,7 @@ import { TrendingDown, CheckCircle, Shield, RefreshCw } from "lucide-react";
 import bgValue from "@/assets/bg-value-logistics.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import KnowledgeFlow from "@/components/KnowledgeFlow";
+import { flowConfig } from "@/lib/flowConfig";
 import cardProficiency from "@/assets/card-proficiency.jpg";
 import cardConsistency from "@/assets/card-consistency.jpg";
 import cardResilience from "@/assets/card-resilience.jpg";
