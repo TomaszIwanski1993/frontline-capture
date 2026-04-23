@@ -1,6 +1,7 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import FloatingVisual from "@/components/FloatingVisual";
 import KnowledgeFlow from "@/components/KnowledgeFlow";
+import { flowConfig } from "@/lib/flowConfig";
 import layersImg from "@/assets/layers-illustration.jpg";
 import { useT } from "@/hooks/useT";
 
