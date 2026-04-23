@@ -453,6 +453,20 @@ const pl: Translations = {
             "Doświadczenie najlepszych ludzi działa w każdym zespole i lokalizacji.",
         },
       ],
+      kpis: [
+        {
+          label: "Czas wdrożenia",
+          from: "Miesiące",
+          to: "Tygodnie",
+          caption: "Nowi operatorzy szybciej osiągają produktywność.",
+        },
+        {
+          label: "Spójność wykonania",
+          from: "Zależna od zmiany",
+          to: "Ustandaryzowana",
+          caption: "Te same sprawdzone kroki, niezależnie od obsady.",
+        },
+      ],
     },
     trust: {
       label: "Pilotowane w realnych środowiskach magazynowych i produkcyjnych",
