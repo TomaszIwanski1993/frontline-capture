@@ -38,8 +38,11 @@ const HowItWorksSection = () => {
               <ScrollReveal key={numbers[i]} delay={0.1 * i}>
                 <div className="relative">
                   <span
-                    className="text-7xl font-black block text-primary/60 select-none leading-none animate-step-glow"
-                    style={{ animationDelay: `${i * 1.5}s` }}
+                    className="text-7xl font-black block select-none leading-none animate-step-glow"
+                    style={{
+                      animationDelay: `${i * 1.5}s`,
+                      color: "hsl(239 96% 47%)",
+                    }}
                   >
                     {numbers[i]}
                   </span>

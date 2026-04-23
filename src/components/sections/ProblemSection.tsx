@@ -2,8 +2,12 @@ import { Users, Clock, AlertTriangle } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useT } from "@/hooks/useT";
+import cardKnowledge from "@/assets/card-problem-1-knowledge.jpg";
+import cardTraining from "@/assets/card-problem-2-training.jpg";
+import cardImpact from "@/assets/card-problem-3-impact.jpg";
 
 const icons = [Users, Clock, AlertTriangle];
+const cardImages = [cardKnowledge, cardTraining, cardImpact];
 
 const ProblemSection = () => {
   const t = useT();
@@ -32,10 +36,22 @@ const ProblemSection = () => {
             const Icon = icons[i];
             return (
               <ScrollReveal key={p.title} delay={0.08 * i}>
-                <div className="glass-card card-padding h-full">
-                  <Icon className="h-6 w-6 text-primary mb-6" strokeWidth={1.5} />
-                  <h3 className="text-lg font-semibold text-foreground mb-3">{p.title}</h3>
-                  <p className="text-foreground/65 text-sm leading-relaxed">{p.description}</p>
+                <div className="glass-card overflow-hidden h-full flex flex-col">
+                  <div className="h-44 overflow-hidden">
+                    <img
+                      src={cardImages[i]}
+                      alt={p.title}
+                      loading="lazy"
+                      width={1024}
+                      height={768}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="card-padding flex-1">
+                    <Icon className="h-6 w-6 text-primary mb-6" strokeWidth={1.5} />
+                    <h3 className="text-lg font-semibold text-foreground mb-3">{p.title}</h3>
+                    <p className="text-foreground/65 text-sm leading-relaxed">{p.description}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             );
