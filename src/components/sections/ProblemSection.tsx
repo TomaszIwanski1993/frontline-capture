@@ -6,6 +6,7 @@ import cardKnowledge from "@/assets/card-problem-1-knowledge.jpg";
 import cardTraining from "@/assets/card-problem-2-training.jpg";
 import cardImpact from "@/assets/card-problem-3-impact.jpg";
 import KnowledgeFlow from "@/components/KnowledgeFlow";
+import { flowConfig } from "@/lib/flowConfig";
 
 const icons = [Users, Clock, AlertTriangle];
 const cardImages = [cardKnowledge, cardTraining, cardImpact];
