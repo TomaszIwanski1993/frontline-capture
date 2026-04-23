@@ -23,8 +23,6 @@ interface MorphingTaglineProps {
 }
 
 const MorphingTagline = ({ text, phase, reducedMotion }: MorphingTaglineProps) => {
-  // Reduced-motion fallback: simple, calm crossfade of the whole string
-const MorphingTagline = ({ text, phase, reducedMotion }: MorphingTaglineProps) => {
   // Always call hooks before any early return
   const chars = useMemo(() => Array.from(text), [text]);
   const total = chars.length;
