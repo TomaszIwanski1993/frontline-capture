@@ -195,7 +195,7 @@ const LanguageGate = () => {
           className="mt-10 min-h-[2.5rem] sm:min-h-[2.75rem] w-full flex items-center justify-center px-4"
           aria-live="polite"
         >
-          <MorphingTagline key={current.lang} text={current.text} phase={phase} />
+          <MorphingTagline key={current.lang} text={current.text} phase={phase} reducedMotion={reducedMotion} />
         </div>
 
         <div className="mt-12 mb-6 text-white/50 text-xs sm:text-sm tracking-[0.2em] uppercase">
