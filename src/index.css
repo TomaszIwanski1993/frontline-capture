@@ -296,8 +296,8 @@ html {
 }
 
 @keyframes stepNumberGlow {
-  0%, 100% { opacity: 0.30; text-shadow: 0 0 20px hsl(239 96% 60% / 0.05); }
-  50% { opacity: 0.42; text-shadow: 0 0 40px hsl(239 96% 60% / 0.18); }
+  0%, 100% { opacity: 0.55; text-shadow: 0 0 20px hsl(239 96% 47% / 0.08); }
+  50% { opacity: 0.75; text-shadow: 0 0 40px hsl(239 96% 47% / 0.20); }
 }
 
 @keyframes subtleRotate {
