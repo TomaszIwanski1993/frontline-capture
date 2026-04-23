@@ -46,9 +46,8 @@ const Header = () => {
           {navLinks.map((link) => renderLink(link))}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-5">
           <LanguageSwitch />
-          <ThemeToggle />
           <a href="/#pilot" className="cta-button text-sm px-6 py-2.5 inline-block">
             {t.nav.bookDemo}
           </a>
@@ -69,7 +68,6 @@ const Header = () => {
             {navLinks.map((link) => renderLink(link, () => setOpen(false)))}
             <div className="flex items-center gap-3 pt-2">
               <LanguageSwitch />
-              <ThemeToggle />
             </div>
             <a href="/#pilot" onClick={() => setOpen(false)} className="cta-button text-sm px-6 py-2.5 text-center mt-2">
               {t.nav.bookDemo}
