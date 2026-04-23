@@ -73,8 +73,6 @@ const Index = () => {
           <FAQSection />
         </div>
 
-        {/* Resources — light */}
-        <ResourcesSection />
 
         {/* Contact — tinted */}
         <div className="section-tinted">
