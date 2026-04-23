@@ -1,6 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage, Language } from "@/contexts/LanguageContext";
 import Logo from "@/components/Logo";
+
+const TAGLINES = [
+  { lang: "en", text: "AI for operational knowledge retention" },
+  { lang: "pl", text: "AI do utrzymania wiedzy operacyjnej" },
+] as const;
 
 const LanguageGate = () => {
   const { hasSelected, setLanguage } = useLanguage();
