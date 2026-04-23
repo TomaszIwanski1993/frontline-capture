@@ -60,12 +60,12 @@ const ContactSection = () => {
           <ScrollReveal delay={0.08}>
             <div>
               {submitted ? (
-                <div className="glass-card p-10 text-center h-full flex flex-col items-center justify-center">
+                <div className="glass-card p-12 text-center h-full flex flex-col items-center justify-center">
                   <h3 className="text-xl font-semibold text-foreground mb-3">{t.contact.thanks}</h3>
                   <p className="text-muted-foreground">{t.contact.thanksSub}</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="glass-card p-8 lg:p-10 space-y-6">
+                <form onSubmit={handleSubmit} className="glass-card p-10 lg:p-12 space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                       {t.contact.name}

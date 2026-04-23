@@ -25,7 +25,7 @@ const AboutSection = () => {
             const Icon = icons[i];
             return (
               <ScrollReveal key={i} delay={0.08 * i}>
-                <div className="glass-card p-8 h-full text-center">
+                <div className="glass-card p-10 lg:p-12 h-full text-center">
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 mb-5">
                     <Icon className="h-6 w-6 text-primary" strokeWidth={1.5} />
                   </div>

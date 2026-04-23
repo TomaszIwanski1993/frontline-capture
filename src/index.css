@@ -146,7 +146,7 @@ html {
   }
 
   .section-padding {
-    @apply py-28 lg:py-40;
+    @apply py-32 lg:py-48;
   }
 
   .section-tinted {
@@ -172,7 +172,7 @@ html {
   }
 
   .card-padding {
-    @apply p-6 lg:p-8;
+    @apply p-8 lg:p-10;
   }
 
   .cta-button {
