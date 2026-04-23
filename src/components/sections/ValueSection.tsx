@@ -34,7 +34,7 @@ const ValueSection = () => {
             const Icon = icons[i];
             return (
               <ScrollReveal key={item.title} delay={0.08 * i}>
-                <div className="glass-card overflow-hidden h-full shimmer-overlay">
+                <div className="glass-card overflow-hidden h-full">
                   <div className="h-44 overflow-hidden relative">
                     <img
                       src={images[i]}
@@ -42,7 +42,7 @@ const ValueSection = () => {
                       loading="lazy"
                       width={640}
                       height={512}
-                      className="w-full h-full object-cover animate-card-drift"
+                      className="w-full h-full object-cover"
                       style={{ animationDelay: `${i * 3}s` }}
                     />
                   </div>

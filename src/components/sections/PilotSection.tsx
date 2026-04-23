@@ -12,7 +12,7 @@ const PilotSection = () => {
       <SectionBgImage src={bgPilot} alt="Industrial machinery" opacity={0.12} />
       <div className="section-container relative z-10">
         <ScrollReveal>
-          <div className="glass-card p-8 lg:p-14 max-w-3xl mx-auto text-center shimmer-overlay">
+          <div className="glass-card p-8 lg:p-14 max-w-3xl mx-auto text-center">
             <div className="flex flex-col items-center gap-8">
               <img
                 src={layersCapture}
@@ -20,7 +20,7 @@ const PilotSection = () => {
                 loading="lazy"
                 width={800}
                 height={800}
-                className="w-32 sm:w-40 rounded-lg flex-shrink-0 animate-float animate-glow-pulse"
+                className="w-32 sm:w-40 rounded-lg flex-shrink-0"
               />
               <div>
                 <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">

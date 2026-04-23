@@ -156,14 +156,16 @@ html {
   }
 
   .glass-card {
-    @apply rounded-md border border-border bg-card;
-    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
-                border-color 0.2s ease;
+    @apply rounded-lg border border-border/60 bg-card;
+    transition: border-color 0.2s ease;
   }
 
   .glass-card:hover {
-    transform: translateY(-2px);
-    border-color: hsl(var(--primary) / 0.2);
+    border-color: hsl(var(--border));
+  }
+
+  .card-padding {
+    @apply p-6 lg:p-8;
   }
 
   .cta-button {
