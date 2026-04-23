@@ -127,6 +127,20 @@ const en = {
             "Your best people's expertise scales across every team and site.",
         },
       ],
+      kpis: [
+        {
+          label: "Onboarding time",
+          from: "Months",
+          to: "Weeks",
+          caption: "New operators reach productive output sooner.",
+        },
+        {
+          label: "Execution consistency",
+          from: "Shift-dependent",
+          to: "Standardized",
+          caption: "Same proven steps, regardless of who's on shift.",
+        },
+      ],
     },
     trust: {
       label: "Piloted in real warehousing and production environments",
