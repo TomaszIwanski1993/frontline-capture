@@ -1,5 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import FloatingVisual from "@/components/FloatingVisual";
+import KnowledgeFlow from "@/components/KnowledgeFlow";
 import layersImg from "@/assets/layers-illustration.jpg";
 import { useT } from "@/hooks/useT";
 
@@ -7,6 +8,7 @@ const PositioningSection = () => {
   const t = useT();
   return (
     <section className="relative py-16 lg:py-20">
+      <KnowledgeFlow mode="align" intensity={0.45} density={1.0} />
       <div className="section-container relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           <div className="flex-1 text-center lg:text-left">
