@@ -19,9 +19,26 @@ type Phase = "in" | "hold" | "out";
 interface MorphingTaglineProps {
   text: string;
   phase: Phase;
+  reducedMotion: boolean;
 }
 
-const MorphingTagline = ({ text, phase }: MorphingTaglineProps) => {
+const MorphingTagline = ({ text, phase, reducedMotion }: MorphingTaglineProps) => {
+  // Reduced-motion fallback: simple, calm crossfade of the whole string
+  if (reducedMotion) {
+    return (
+      <p
+        className="text-white/85 text-base sm:text-lg tracking-wide leading-snug"
+        lang={text === TAGLINES[0].text ? "en" : "pl"}
+        style={{
+          opacity: phase === "out" ? 0 : 1,
+          transition: "opacity 600ms ease-in-out",
+          willChange: "opacity",
+        }}
+      >
+        {text}
+      </p>
+    );
+  }
   // Split into characters but preserve word boundaries for line-wrap safety
   const chars = useMemo(() => Array.from(text), [text]);
   const total = chars.length;
