@@ -43,7 +43,7 @@ const ProblemSection = () => {
             const Icon = icons[i];
             return (
               <ScrollReveal key={p.title} delay={0.08 * i}>
-                <div className="glass-card overflow-hidden h-full shimmer-overlay">
+                <div className="glass-card overflow-hidden h-full">
                   <div className="h-48 overflow-hidden relative">
                     <img
                       src={images[i]}
@@ -51,7 +51,7 @@ const ProblemSection = () => {
                       loading="lazy"
                       width={640}
                       height={512}
-                      className="w-full h-full object-cover animate-card-drift"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="p-6">
