@@ -7,6 +7,7 @@ const en = {
       outcomes: "Outcomes",
       industries: "Industries",
       whyQuantum: "Why Quantum",
+      resources: "Resources",
       contact: "Contact",
       bookDemo: "Book a Demo",
       toggleMenu: "Toggle menu",
@@ -213,6 +214,7 @@ const en = {
     resources: {
       eyebrow: "Resources",
       title: "Research, whitepaper and pilot results",
+      subtitle: "Insights and research on frontline knowledge, onboarding, and AI in operations.",
       more: "Whitepaper and first pilot report coming soon.",
       featured: [
         {
@@ -316,6 +318,7 @@ const pl: Translations = {
       outcomes: "Efekty",
       industries: "Branże",
       whyQuantum: "Dlaczego Quantum",
+      resources: "Materiały",
       contact: "Kontakt",
       bookDemo: "Umów demo",
       toggleMenu: "Otwórz menu",
@@ -523,6 +526,7 @@ const pl: Translations = {
     resources: {
       eyebrow: "Materiały",
       title: "Badania, whitepaper i wyniki pilotaży",
+      subtitle: "Analizy i badania o wiedzy operatorów, onboardingu i AI w operacjach.",
       more: "Whitepaper i pierwszy raport z pilotażu już wkrótce.",
       featured: [
         {
