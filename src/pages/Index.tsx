@@ -25,17 +25,16 @@ const Index = () => {
       <AnimatedBackground />
       <Header />
       <main className="relative z-10">
+        {/* Hero — light */}
         <HeroSection />
 
-        <HowItWorksSection />
-
-        <PositioningSection />
+        {/* Problem — tinted */}
         <div className="section-tinted">
           <ProblemSection />
         </div>
 
-        {/* Pull quote */}
-        <div className="py-20 lg:py-28">
+        {/* Pull quote — light, breathing room */}
+        <div className="py-24 lg:py-32">
           <div className="section-container max-w-3xl text-center">
             <ScrollReveal>
               <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-foreground/80 leading-snug">
@@ -45,22 +44,42 @@ const Index = () => {
           </div>
         </div>
 
+        {/* Positioning — tinted */}
+        <div className="section-tinted">
+          <PositioningSection />
+        </div>
+
+        {/* How it works — light */}
+        <HowItWorksSection />
+
+        {/* Value — tinted */}
         <div className="section-tinted">
           <ValueSection />
         </div>
 
-        <AboutSection />
-
+        {/* Trust logos — light, quiet */}
         <TrustSection />
 
+        {/* About — tinted */}
         <div className="section-tinted">
-          <PilotSection />
+          <AboutSection />
         </div>
 
-        <FAQSection />
+        {/* Pilot CTA — light */}
+        <PilotSection />
 
+        {/* FAQ — tinted */}
+        <div className="section-tinted">
+          <FAQSection />
+        </div>
+
+        {/* Resources — light */}
         <ResourcesSection />
-        <ContactSection />
+
+        {/* Contact — tinted */}
+        <div className="section-tinted">
+          <ContactSection />
+        </div>
       </main>
       <FooterSection />
       <CookieConsent />
