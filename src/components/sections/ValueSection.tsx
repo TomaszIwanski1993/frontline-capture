@@ -1,4 +1,4 @@
-import { TrendingDown, CheckCircle, Shield, RefreshCw, Clock, GitCommitHorizontal, ArrowRight } from "lucide-react";
+import { TrendingDown, CheckCircle, Shield, RefreshCw } from "lucide-react";
 import bgValue from "@/assets/bg-value-logistics.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import cardProficiency from "@/assets/card-proficiency.jpg";
