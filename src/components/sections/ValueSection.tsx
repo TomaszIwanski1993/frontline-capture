@@ -63,41 +63,6 @@ const ValueSection = () => {
         </div>
 
         <ScrollReveal delay={0.2}>
-          <div className="mt-10 grid sm:grid-cols-2 gap-4">
-            {t.value.kpis.map((kpi, i) => {
-              const KpiIcon = i === 0 ? Clock : GitCommitHorizontal;
-              return (
-                <div
-                  key={kpi.label}
-                  className="glass-card p-5 lg:p-6 flex items-center gap-5"
-                >
-                  <div className="flex-shrink-0 h-11 w-11 rounded-md bg-primary/8 border border-primary/15 flex items-center justify-center">
-                    <KpiIcon className="h-5 w-5 text-primary" strokeWidth={1.5} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-[11px] font-semibold text-primary tracking-[0.18em] uppercase mb-1.5">
-                      {kpi.label}
-                    </p>
-                    <div className="flex items-center gap-2.5 mb-1.5">
-                      <span className="text-sm font-medium text-muted-foreground line-through decoration-foreground/20">
-                        {kpi.from}
-                      </span>
-                      <ArrowRight className="h-3.5 w-3.5 text-primary flex-shrink-0" strokeWidth={2} />
-                      <span className="text-base font-bold text-foreground">
-                        {kpi.to}
-                      </span>
-                    </div>
-                    <p className="text-xs text-muted-foreground leading-relaxed">
-                      {kpi.caption}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </ScrollReveal>
-
-        <ScrollReveal delay={0.25}>
           <p className="mt-6 max-w-3xl text-xs text-muted-foreground/70 leading-relaxed">
             {t.sources.proficiency}
           </p>
