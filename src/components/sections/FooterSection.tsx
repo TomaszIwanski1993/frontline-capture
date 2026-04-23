@@ -8,7 +8,7 @@ const FooterSection = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative z-10 bg-foreground text-background pt-24 lg:pt-32 pb-10">
+    <footer className="relative z-10 bg-foreground text-background pt-10 lg:pt-12 pb-10">
       <div className="section-container">
         <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-8 gap-y-14 items-start">
           {/* Brand column */}
