@@ -14,7 +14,7 @@ const AboutSection = () => {
             <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
               {t.about.eyebrow}
             </p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+            <h2 className="mt-2 text-4xl lg:text-5xl xl:text-6xl font-extrabold text-foreground tracking-tight leading-[1.05]">
               {t.about.title}
             </h2>
           </div>

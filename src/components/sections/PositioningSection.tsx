@@ -14,12 +14,12 @@ const PositioningSection = () => {
               <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
                 {t.positioning.eyebrow}
               </p>
-              <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground tracking-tight leading-[1.2]">
+              <h2 className="mt-2 text-4xl lg:text-5xl xl:text-6xl font-extrabold text-foreground tracking-tight leading-[1.05]">
                 {t.positioning.title}
               </h2>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
-              <p className="mt-5 text-base lg:text-lg text-muted-foreground leading-relaxed max-w-2xl">
+              <p className="mt-6 text-base lg:text-lg text-foreground/65 leading-relaxed max-w-2xl">
                 {t.positioning.body}
               </p>
             </ScrollReveal>

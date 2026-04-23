@@ -20,10 +20,10 @@ const HowItWorksSection = () => {
                 <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
                   {t.howItWorks.eyebrow}
                 </p>
-                <h2 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+                <h2 className="mt-2 text-4xl lg:text-5xl xl:text-6xl font-extrabold text-foreground tracking-tight leading-[1.05]">
                   {t.howItWorks.title}
                 </h2>
-                <p className="mt-3 text-muted-foreground text-base max-w-2xl">
+                <p className="mt-6 text-foreground/65 text-base lg:text-lg leading-relaxed max-w-2xl">
                   {t.howItWorks.sub}
                 </p>
               </div>

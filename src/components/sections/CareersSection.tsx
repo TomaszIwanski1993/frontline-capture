@@ -12,7 +12,7 @@ const CareersSection = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">Careers</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+          <h2 className="mt-2 text-4xl lg:text-5xl xl:text-6xl font-extrabold text-foreground tracking-tight leading-[1.05]">
             Join Our Team
           </h2>
         </motion.div>
