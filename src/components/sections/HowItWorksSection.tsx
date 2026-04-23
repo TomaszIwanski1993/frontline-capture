@@ -2,6 +2,7 @@ import { Video, Layers, PlayCircle } from "lucide-react";
 import bgHowIt from "@/assets/bg-howit-collab.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import KnowledgeFlow from "@/components/KnowledgeFlow";
+import { flowConfig } from "@/lib/flowConfig";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useT } from "@/hooks/useT";
 
