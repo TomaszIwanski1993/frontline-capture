@@ -60,29 +60,6 @@ const ProblemSection = () => {
           })}
         </div>
 
-        <div className="mt-20 grid sm:grid-cols-2 gap-6 lg:gap-8">
-          <ScrollReveal delay={0}>
-            <div className="rounded-lg border border-border/60 bg-card p-10 lg:p-12 text-center">
-              <p
-                className="text-5xl lg:text-7xl font-extrabold text-foreground tracking-tight"
-                ref={stat2Ref as React.Ref<HTMLParagraphElement>}
-              >
-                6-{stat2}mo
-                <sup className="text-base lg:text-lg text-primary ml-1 align-super">*</sup>
-              </p>
-              <p className="text-sm text-foreground/65 mt-5 leading-relaxed">
-                {t.problem.stat2}{" "}
-                <span className="text-foreground font-semibold">{t.problem.stat2Bold}</span>
-              </p>
-            </div>
-          </ScrollReveal>
-        </div>
-
-        <ScrollReveal delay={0.2}>
-          <div className="mt-10 max-w-3xl text-xs text-muted-foreground/70 leading-relaxed space-y-1">
-            <p>{t.sources.stat2}</p>
-          </div>
-        </ScrollReveal>
       </div>
     </section>
   );
