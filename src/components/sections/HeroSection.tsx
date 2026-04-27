@@ -29,8 +29,12 @@ const HeroSection = () => {
             </p>
             <h1 className="mt-12 lg:mt-16 mb-4 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.3] text-foreground">
               {t.hero.titleA}
-              <br />
-              <span className="gradient-text mt-4 block">{t.hero.titleB}</span>
+              {t.hero.titleB && (
+                <>
+                  <br />
+                  <span className="gradient-text mt-4 block">{t.hero.titleB}</span>
+                </>
+              )}
             </h1>
           </motion.div>
 
