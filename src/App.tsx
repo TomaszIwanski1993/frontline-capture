@@ -4,6 +4,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
+import { BookDemoProvider } from "@/contexts/BookDemoContext";
+import BookDemoDialog from "@/components/BookDemoDialog";
 import LanguageGate from "@/components/LanguageGate";
 import Index from "./pages/Index.tsx";
 import Resources from "./pages/Resources.tsx";
@@ -19,7 +21,7 @@ const GatedApp = () => {
     <>
       <LanguageGate />
       {hasSelected && (
-        <>
+        <BookDemoProvider>
           <Toaster />
           <Sonner />
           <BrowserRouter>
@@ -31,7 +33,8 @@ const GatedApp = () => {
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
-        </>
+          <BookDemoDialog />
+        </BookDemoProvider>
       )}
     </>
   );
@@ -48,3 +51,4 @@ const App = () => (
 );
 
 export default App;
+
