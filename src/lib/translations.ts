@@ -64,12 +64,12 @@ const en = {
             "Quantum records how experienced operators work — including the tacit knowledge manuals miss.",
         },
         {
-          title: "Access",
+          title: "Document",
           description:
             "Raw expertise becomes structured, searchable guidance, ready to deploy across teams.",
         },
         {
-          title: "Document\n\n",
+          title: "Access",
           description:
             "Make knowledge available for onboarding, training, and continuous improvement.",
         },
