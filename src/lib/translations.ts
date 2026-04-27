@@ -213,7 +213,7 @@ const en = {
         },
         {
           q: "What results should we expect?",
-          a: "30-40% faster time-to-proficiency and measurably more consistent execution across shifts. Confirmed in every deployment.",
+          a: "30-40% faster time-to-proficiency and measurably more consistent execution across shifts. ",
         },
         {
           q: "How is this different from a knowledge management tool?",
