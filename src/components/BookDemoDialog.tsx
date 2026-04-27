@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Calendar as CalendarIcon, Clock, Video, Loader2, ArrowLeft, ExternalLink, Mail } from "lucide-react";
+import { Calendar as CalendarIcon, Clock, Video, Loader2, ArrowLeft, ExternalLink, Mail, Check, Globe, CalendarPlus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
