@@ -14,7 +14,7 @@ const en = {
     },
     hero: {
       eyebrow: "DEMOGRAPHIC CHANGE AND SHIFTING WORKER PREFERENCES REQUIRE A NEW APPROACH.",
-      titleA: "We secure your business from knowledge loss and capability erosion through seamless AI integration.",
+      titleA: "Secure your business from knowledge loss and capability erosion through seamless AI integration.",
       titleB: "",
       tagline: "A user-friendly, hardware-enabled AI solution that captures how the job is actually done.",
       sub: "Quantum Making keeps your best know-how in the operation — even when people leave.",
@@ -391,8 +391,8 @@ const pl: Translations = {
     },
     hero: {
       eyebrow: "ZMIANY DEMOGRAFICZNE I ZMIENIAJĄCE SIĘ PREFERENCJE PRACOWNIKÓW WYMAGAJĄ NOWEGO PODEJŚCIA.",
-      titleA: "Zabezpieczymy Twój biznes przed systemową utratą wiedzy i erozją kompetencji.",
-      titleB: "Zrealizujemy naszą obietnicę poprzez bezproblemową integrację AI w DNA Twojej firmy",
+      titleA: "Zabezpiecz Twój biznes przed systemową utratą wiedzy i erozją kompetencji.",
+      titleB: "Poprzez bezproblemową integrację AI.",
       tagline: "Przyjazne dla użytkownika rozwiązanie AI oparte na sprzęcie, które rejestruje to, jak praca jest faktycznie wykonywana.",
       sub: "Quantum Making zatrzymuje wiedzę w operacji — nawet gdy ludzie odchodzą.",
       cta1: "Umów demo",
