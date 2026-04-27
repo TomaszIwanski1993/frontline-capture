@@ -21,7 +21,7 @@ const GatedApp = () => {
     <>
       <LanguageGate />
       {hasSelected && (
-        <BookDemoProvider>
+        <>
           <Toaster />
           <Sonner />
           <BrowserRouter>
@@ -34,7 +34,7 @@ const GatedApp = () => {
             </Routes>
           </BrowserRouter>
           <BookDemoDialog />
-        </BookDemoProvider>
+        </>
       )}
     </>
   );
@@ -44,7 +44,9 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <LanguageProvider>
-        <GatedApp />
+        <BookDemoProvider>
+          <GatedApp />
+        </BookDemoProvider>
       </LanguageProvider>
     </TooltipProvider>
   </QueryClientProvider>
