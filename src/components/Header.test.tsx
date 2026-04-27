@@ -2,11 +2,17 @@ import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Header from "./Header";
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import { BookDemoProvider } from "@/contexts/BookDemoContext";
 
 const renderHeader = () =>
   render(
     <MemoryRouter>
-      <Header />
+      <LanguageProvider>
+        <BookDemoProvider>
+          <Header />
+        </BookDemoProvider>
+      </LanguageProvider>
     </MemoryRouter>
   );
 
