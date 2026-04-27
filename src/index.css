@@ -146,7 +146,7 @@ html {
   }
 
   .section-padding {
-    @apply py-32 lg:py-48;
+    @apply py-20 lg:py-28;
   }
 
   .section-tinted {

@@ -33,8 +33,8 @@ const Index = () => {
           <ProblemSection />
         </div>
 
-        {/* Pull quote — light, breathing room */}
-        <div className="py-24 lg:py-32">
+        {/* Pull quote — light, tighter to flow into next tinted block */}
+        <div className="py-14 lg:py-20">
           <div className="section-container max-w-3xl text-center">
             <ScrollReveal>
               <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-foreground/80 leading-snug">
