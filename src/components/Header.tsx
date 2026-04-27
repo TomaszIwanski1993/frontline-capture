@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import headerLogo from "@/assets/logo-quantum-header.svg";
+import headerLogo from "@/assets/logo-quantum-header-light.svg";
 
 import LanguageSwitch from "@/components/LanguageSwitch";
 import BookDemoButton from "@/components/BookDemoButton";
@@ -45,7 +45,7 @@ const Header = () => {
             src={headerLogo}
             alt="Quantum"
             loading="eager"
-            className="h-24 lg:h-28 w-auto"
+            className="h-8 lg:h-10 w-auto block"
           />
         </Link>
         <nav className="hidden lg:flex items-center gap-8">
