@@ -46,7 +46,7 @@ const HeroSection = () => {
             <p className="text-xs lg:text-sm text-muted-foreground/70 font-semibold tracking-[0.2em] uppercase">
               {renderEyebrowWithBadge(t.hero.eyebrow)}
             </p>
-            <h1 className="mt-12 lg:mt-16 mb-4 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.3] text-foreground">
+            <h1 className="mt-10 lg:mt-16 mb-4 text-[1.75rem] sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] sm:leading-[1.2] lg:leading-[1.25] text-balance text-foreground">
               <motion.span {...slideUp(0.1)} className="block">
                 {t.hero.titleA}
               </motion.span>
@@ -54,7 +54,7 @@ const HeroSection = () => {
                 <motion.span
                   key="titleB"
                   {...slideUp(0.22)}
-                  className="accent-text mt-4 block"
+                  className="accent-text mt-2 sm:mt-3 lg:mt-4 block"
                 >
                   {t.hero.titleB}
                 </motion.span>
