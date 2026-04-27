@@ -54,7 +54,7 @@ const HeroSection = () => {
                 <motion.span
                   key="titleB"
                   {...slideUp(0.22)}
-                  className="gradient-text mt-4 block"
+                  className="accent-text mt-4 block"
                 >
                   {t.hero.titleB}
                 </motion.span>
