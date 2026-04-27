@@ -2,7 +2,7 @@ import { Language } from "@/contexts/LanguageContext";
 
 const en = {
     nav: {
-      problem: "Problem",
+      problem: "Challenge",
       howItWorks: "How It Works",
       outcomes: "Outcomes",
       industries: "Industries",
@@ -27,8 +27,8 @@ const en = {
       body: "Most operations run on undocumented expertise. Quantum captures how work is really done.",
     },
     problem: {
-      eyebrow: "The Problem",
-      title: "We've seen this problem first-hand",
+      eyebrow: "The Challenge",
+      title: "We've seen this challenge first-hand",
       sub: "We've spent time on factory floors, in warehouses, and on construction sites. The same pattern repeats: 50-80% of operational knowledge is tacit — it lives in people, not systems. When experienced workers leave, it goes with them.",
       cards: [
         {
@@ -327,7 +327,7 @@ export type Translations = typeof en;
 
 const pl: Translations = {
     nav: {
-      problem: "Problem",
+      problem: "Wyzwanie",
       howItWorks: "Jak to działa",
       outcomes: "Efekty",
       industries: "Branże",
@@ -352,8 +352,8 @@ const pl: Translations = {
       body: "Większość operacji opiera się na nieudokumentowanej wiedzy. Quantum rejestruje, jak praca naprawdę wygląda, i podaje ją operatorom w czasie rzeczywistym.",
     },
     problem: {
-      eyebrow: "Problem",
-      title: "Widzieliśmy ten problem z bliska",
+      eyebrow: "Wyzwanie",
+      title: "Widzieliśmy to wyzwanie z bliska",
       sub: "Jesteśmy badaczami i praktykami. Spędziliśmy czas na halach produkcyjnych, w magazynach i na budowach. Wzorzec się powtarza: 50-80% wiedzy operacyjnej jest niejawna — żyje w ludziach, nie w systemach. Gdy odchodzą doświadczeni pracownicy, wiedza odchodzi z nimi.",
       cards: [
         {
