@@ -100,31 +100,31 @@ const en = {
     value: {
       eyebrow: "Outcomes",
       title: "Measurable impact on operations",
-      sub: "Proven results from real industrial deployments.",
+      sub: "What teams can expect when tacit knowledge becomes shared, structured, and reusable.",
       items: [
         {
-          metric: "Expected 30-40%",
+          metric: "Weeks, not months",
           title: "Faster time-to-proficiency",
           description:
-            "New operators reach competence in weeks, guided by your best performers' knowledge.",
+            "New operators ramp up guided by your top performers' know-how, instead of trial and error.",
         },
         {
-          metric: "Measurably",
-          title: "Less variability across shifts",
+          metric: "Shift-to-shift",
+          title: "More consistent execution",
           description:
-            "Every operator works from the same proven knowledge. Quality stops depending on who's on shift.",
+            "Every operator works from the same proven steps, so output stops swinging with the roster.",
         },
         {
-          metric: "Eliminated",
-          title: "Single points of failure",
+          metric: "No single point of failure",
+          title: "Knowledge stays in the operation",
           description:
-            "Critical knowledge no longer lives in a few heads. Turnover stops disrupting operations.",
+            "Critical know-how lives in the system, not in a few heads — turnover stops disrupting work.",
         },
         {
-          metric: "Reduced",
-          title: "Dependency on top operators",
+          metric: "Less reliance on heroes",
+          title: "Top-operator expertise, scaled",
           description:
-            "Your best people's expertise scales across every team and site.",
+            "Your best people's expertise is available to every team and site, not just their own shift.",
         },
       ],
       kpis: [
@@ -426,31 +426,31 @@ const pl: Translations = {
     value: {
       eyebrow: "Efekty",
       title: "Mierzalny wpływ na operacje",
-      sub: "Sprawdzone wyniki z realnych wdrożeń przemysłowych.",
+      sub: "Czego mogą oczekiwać zespoły, gdy wiedza praktyczna staje się wspólna, uporządkowana i wielokrotnego użytku.",
       items: [
         {
-          metric: "Oczekiwane 30-40%",
+          metric: "Tygodnie zamiast miesięcy",
           title: "Krótszy czas dochodzenia do biegłości",
           description:
-            "Nowi operatorzy osiągają biegłość w kilka tygodni, prowadzeni wiedzą najlepszych w zespole.",
+            "Nowi operatorzy uczą się prowadzeni wiedzą najlepszych, zamiast metodą prób i błędów.",
         },
         {
-          metric: "Mierzalnie",
-          title: "Mniejsza zmienność między zmianami",
+          metric: "Zmiana po zmianie",
+          title: "Bardziej spójne wykonanie",
           description:
-            "Każdy pracuje z tej samej, sprawdzonej bazy wiedzy. Jakość przestaje zależeć od tego, kto jest na zmianie.",
+            "Każdy pracuje z tych samych sprawdzonych kroków, więc wynik przestaje zależeć od obsady.",
         },
         {
-          metric: "Eliminacja",
-          title: "Pojedynczych punktów awarii",
+          metric: "Bez pojedynczych punktów awarii",
+          title: "Wiedza zostaje w operacji",
           description:
-            "Wiedza nie zostaje w głowach kilku osób. Rotacja przestaje zaburzać produkcję.",
+            "Kluczowe know-how żyje w systemie, nie w kilku głowach — rotacja przestaje zaburzać pracę.",
         },
         {
-          metric: "Mniejsza",
-          title: "Zależność od najlepszych operatorów",
+          metric: "Mniej zależności od bohaterów",
+          title: "Wiedza najlepszych, w skali",
           description:
-            "Doświadczenie najlepszych ludzi działa w każdym zespole i lokalizacji.",
+            "Doświadczenie najlepszych ludzi jest dostępne dla każdego zespołu i lokalizacji, nie tylko ich własnej zmiany.",
         },
       ],
       kpis: [
