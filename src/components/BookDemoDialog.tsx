@@ -341,7 +341,7 @@ const BookDemoDialog = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="bd-name" className="block text-xs font-medium text-foreground mb-1.5">
-                      {t.bookDemo.name}
+                      {t.bookDemo.name} <span className="text-destructive">*</span>
                     </label>
                     <input
                       id="bd-name"
@@ -350,13 +350,26 @@ const BookDemoDialog = () => {
                       maxLength={200}
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
+                      onBlur={() => setTouched((p) => ({ ...p, name: true }))}
                       placeholder={t.bookDemo.namePh}
-                      className="w-full px-3.5 py-2.5 rounded-md bg-secondary border border-border text-foreground placeholder:text-muted-foreground/70 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+                      aria-invalid={!!showError("name")}
+                      aria-describedby={showError("name") ? "bd-name-error" : undefined}
+                      className={cn(
+                        "w-full px-3.5 py-2.5 rounded-md bg-secondary border text-foreground placeholder:text-muted-foreground/70 text-sm focus:outline-none focus:ring-2",
+                        showError("name")
+                          ? "border-destructive focus:ring-destructive/40"
+                          : "border-border focus:ring-primary/50",
+                      )}
                     />
+                    {showError("name") && (
+                      <p id="bd-name-error" className="mt-1.5 text-xs text-destructive">
+                        {showError("name")}
+                      </p>
+                    )}
                   </div>
                   <div>
                     <label htmlFor="bd-email" className="block text-xs font-medium text-foreground mb-1.5">
-                      {t.bookDemo.email}
+                      {t.bookDemo.email} <span className="text-destructive">*</span>
                     </label>
                     <input
                       id="bd-email"
@@ -365,13 +378,26 @@ const BookDemoDialog = () => {
                       maxLength={320}
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
+                      onBlur={() => setTouched((p) => ({ ...p, email: true }))}
                       placeholder={t.bookDemo.emailPh}
-                      className="w-full px-3.5 py-2.5 rounded-md bg-secondary border border-border text-foreground placeholder:text-muted-foreground/70 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+                      aria-invalid={!!showError("email")}
+                      aria-describedby={showError("email") ? "bd-email-error" : undefined}
+                      className={cn(
+                        "w-full px-3.5 py-2.5 rounded-md bg-secondary border text-foreground placeholder:text-muted-foreground/70 text-sm focus:outline-none focus:ring-2",
+                        showError("email")
+                          ? "border-destructive focus:ring-destructive/40"
+                          : "border-border focus:ring-primary/50",
+                      )}
                     />
+                    {showError("email") && (
+                      <p id="bd-email-error" className="mt-1.5 text-xs text-destructive">
+                        {showError("email")}
+                      </p>
+                    )}
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="bd-company" className="block text-xs font-medium text-foreground mb-1.5">
-                      {t.bookDemo.company}
+                      {t.bookDemo.company} <span className="text-destructive">*</span>
                     </label>
                     <input
                       id="bd-company"
@@ -380,9 +406,22 @@ const BookDemoDialog = () => {
                       maxLength={200}
                       value={form.company}
                       onChange={(e) => setForm({ ...form, company: e.target.value })}
+                      onBlur={() => setTouched((p) => ({ ...p, company: true }))}
                       placeholder={t.bookDemo.companyPh}
-                      className="w-full px-3.5 py-2.5 rounded-md bg-secondary border border-border text-foreground placeholder:text-muted-foreground/70 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+                      aria-invalid={!!showError("company")}
+                      aria-describedby={showError("company") ? "bd-company-error" : undefined}
+                      className={cn(
+                        "w-full px-3.5 py-2.5 rounded-md bg-secondary border text-foreground placeholder:text-muted-foreground/70 text-sm focus:outline-none focus:ring-2",
+                        showError("company")
+                          ? "border-destructive focus:ring-destructive/40"
+                          : "border-border focus:ring-primary/50",
+                      )}
                     />
+                    {showError("company") && (
+                      <p id="bd-company-error" className="mt-1.5 text-xs text-destructive">
+                        {showError("company")}
+                      </p>
+                    )}
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="bd-notes" className="block text-xs font-medium text-foreground mb-1.5">
