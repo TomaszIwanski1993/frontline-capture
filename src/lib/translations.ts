@@ -69,7 +69,7 @@ const en = {
             "Raw expertise becomes structured, searchable guidance, ready to deploy across teams.",
         },
         {
-          title: "Document",
+          title: "Document\n\n",
           description:
             "Make knowledge available for onboarding, training, and continuous improvement.",
         },
