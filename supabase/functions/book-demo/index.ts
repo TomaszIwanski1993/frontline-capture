@@ -70,12 +70,12 @@ async function ensureSlotFree(slotStart: Date, slotEnd: Date): Promise<boolean> 
       timeMin: slotStart.toISOString(),
       timeMax: slotEnd.toISOString(),
       timeZone: TIMEZONE,
-      items: [{ id: "primary" }],
+      items: [{ id: TARGET_CALENDAR_ID }],
     }),
   });
   const data = await res.json();
   if (!res.ok) throw new Error(`freeBusy failed: ${JSON.stringify(data)}`);
-  const busy = data?.calendars?.primary?.busy ?? [];
+  const busy = data?.calendars?.[TARGET_CALENDAR_ID]?.busy ?? [];
   return busy.length === 0;
 }
 
