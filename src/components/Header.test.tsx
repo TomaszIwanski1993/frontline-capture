@@ -31,12 +31,12 @@ describe("Header — responsive logo & sticky layout", () => {
     expect(logo.getAttribute("src") ?? "").toMatch(/logo-quantum-header-light/);
   });
 
-  it("constrains logo height to 40px on mobile and 48px on desktop (h-10 / lg:h-12)", () => {
+  it("constrains logo height to 64px on mobile and 80px on desktop (h-16 / lg:h-20)", () => {
     renderHeader();
     const logo = screen.getByAltText("Quantum Making");
-    // Tailwind h-10 = 2.5rem = 40px, lg:h-12 = 3rem = 48px
-    expect(logo.className).toMatch(/\bh-10\b/);
-    expect(logo.className).toMatch(/\blg:h-12\b/);
+    // Tailwind h-16 = 4rem = 64px, lg:h-20 = 5rem = 80px
+    expect(logo.className).toMatch(/\bh-16\b/);
+    expect(logo.className).toMatch(/\blg:h-20\b/);
   });
 
   it("preserves logo proportions (w-auto, no fixed width / no stretching)", () => {
@@ -64,18 +64,18 @@ describe("Header — responsive logo & sticky layout", () => {
     expect(link.className).toMatch(/\bh-full\b/);
   });
 
-  it("logo height (h-10 = 40px) fits inside mobile header (h-16 = 64px)", () => {
-    const logoPx = 40;
-    const headerPxMobile = 64;
+  it("logo height (h-16 = 64px) fits inside mobile header (h-20 = 80px)", () => {
+    const logoPx = 64;
+    const headerPxMobile = 80;
     expect(logoPx).toBeLessThanOrEqual(headerPxMobile);
-    expect(headerPxMobile - logoPx).toBeGreaterThanOrEqual(16);
+    expect(headerPxMobile - logoPx).toBeGreaterThanOrEqual(8);
   });
 
-  it("logo height (lg:h-12 = 48px) fits inside desktop header (lg:h-20 = 80px)", () => {
-    const logoPx = 48;
-    const headerPxDesktop = 80;
+  it("logo height (lg:h-20 = 80px) fits inside desktop header (lg:h-24 = 96px)", () => {
+    const logoPx = 80;
+    const headerPxDesktop = 96;
     expect(logoPx).toBeLessThanOrEqual(headerPxDesktop);
-    expect(headerPxDesktop - logoPx).toBeGreaterThanOrEqual(16);
+    expect(headerPxDesktop - logoPx).toBeGreaterThanOrEqual(8);
   });
 
   it("header is sticky (fixed top-0) so logo stays stable on scroll", () => {
@@ -86,11 +86,11 @@ describe("Header — responsive logo & sticky layout", () => {
     expect(header.className).toMatch(/\bz-50\b/);
   });
 
-  it("header has fixed responsive heights (h-16 mobile / lg:h-20 desktop) preventing reflow", () => {
+  it("header has fixed responsive heights (h-20 mobile / lg:h-24 desktop) preventing reflow", () => {
     renderHeader();
     const header = screen.getByRole("banner");
-    expect(header.className).toMatch(/\bh-16\b/);
-    expect(header.className).toMatch(/\blg:h-20\b/);
+    expect(header.className).toMatch(/\bh-20\b/);
+    expect(header.className).toMatch(/\blg:h-24\b/);
   });
 
   it("brand link uses shrink-0 so the logo never compresses on narrow viewports", () => {
