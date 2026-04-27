@@ -29,7 +29,7 @@ const en = {
     problem: {
       eyebrow: "The Problem",
       title: "We've seen this problem first-hand",
-      sub: "We're researchers and practitioners. We've spent time on factory floors, in warehouses, and on construction sites. The same pattern repeats: 50-80% of operational knowledge is tacit — it lives in people, not systems. When experienced workers leave, it goes with them.",
+      sub: "We've spent time on factory floors, in warehouses, and on construction sites. The same pattern repeats: 50-80% of operational knowledge is tacit — it lives in people, not systems. When experienced workers leave, it goes with them.",
       cards: [
         {
           title: "Knowledge walks out the door",
@@ -56,7 +56,7 @@ const en = {
     howItWorks: {
       eyebrow: "How It Works",
       title: "Three steps to retained knowledge",
-      sub: "Built on AI that understands real workflows, not documents.",
+      sub: "Built on AI that understands both real workflows and documentation.",
       steps: [
         {
           title: "Capture",
@@ -64,14 +64,14 @@ const en = {
             "Quantum records how experienced operators work — including the tacit knowledge manuals miss.",
         },
         {
-          title: "Structure",
+          title: "Access",
           description:
             "Raw expertise becomes structured, searchable guidance, ready to deploy across teams.",
         },
         {
-          title: "Apply",
+          title: "Document\n\n",
           description:
-            "Operators get step-by-step guidance during live work. Onboarding accelerates. Knowledge stays.",
+            "Make knowledge available for onboarding, training, and continuous improvement.",
         },
       ],
     },
