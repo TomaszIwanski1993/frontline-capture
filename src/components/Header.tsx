@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import headerLogo from "@/assets/logo-quantum-header.svg";
 
 import LanguageSwitch from "@/components/LanguageSwitch";
+import BookDemoButton from "@/components/BookDemoButton";
 import { useT } from "@/hooks/useT";
 
 const Header = () => {
@@ -53,9 +54,9 @@ const Header = () => {
 
         <div className="hidden lg:flex items-center gap-5">
           <LanguageSwitch />
-          <a href="/#pilot" className="cta-button text-sm px-6 py-2.5 inline-block">
+          <BookDemoButton className="text-sm px-6 py-2.5">
             {t.nav.bookDemo}
-          </a>
+          </BookDemoButton>
         </div>
 
         <button
@@ -74,9 +75,9 @@ const Header = () => {
             <div className="flex items-center gap-3 pt-2">
               <LanguageSwitch />
             </div>
-            <a href="/#pilot" onClick={() => setOpen(false)} className="cta-button text-sm px-6 py-2.5 text-center mt-2">
+            <BookDemoButton onClick={() => setOpen(false)} className="text-sm px-6 py-2.5 text-center mt-2 w-full">
               {t.nav.bookDemo}
-            </a>
+            </BookDemoButton>
           </nav>
         </div>
       )}

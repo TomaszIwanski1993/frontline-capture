@@ -3,6 +3,7 @@ import bgPilot from "@/assets/bg-pilot-machinery.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import layersCapture from "@/assets/layers-capture.jpg";
 import ScrollReveal from "@/components/ScrollReveal";
+import BookDemoButton from "@/components/BookDemoButton";
 import { useT } from "@/hooks/useT";
 
 const PilotSection = () => {
@@ -45,9 +46,9 @@ const PilotSection = () => {
             </div>
 
             <div className="mt-12 text-center">
-              <a href="#contact" className="cta-button text-base px-8 py-4">
+              <BookDemoButton className="text-base px-8 py-4">
                 {t.pilot.cta}
-              </a>
+              </BookDemoButton>
               <p className="mt-4 text-xs text-muted-foreground/60 tracking-wide">
                 {t.pilot.ctaSub}
               </p>
