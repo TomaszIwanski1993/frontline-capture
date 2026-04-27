@@ -45,7 +45,7 @@ const PilotSection = () => {
             </div>
 
             <div className="mt-12 text-center">
-              <a href="#contact" className="cta-button text-base">
+              <a href="#contact" className="cta-button text-base px-8 py-4">
                 {t.pilot.cta}
               </a>
               <p className="mt-4 text-xs text-muted-foreground/60 tracking-wide">
