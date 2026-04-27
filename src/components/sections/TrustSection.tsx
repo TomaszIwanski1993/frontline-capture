@@ -8,7 +8,6 @@ const TrustSection = () => {
   const t = useT();
   return (
     <section className="relative py-12 lg:py-16">
-      <search>placeholder</search>
       <div className="section-container relative z-10 max-w-5xl">
         <ScrollReveal>
           <div className="flex flex-col items-center gap-10 text-center">
