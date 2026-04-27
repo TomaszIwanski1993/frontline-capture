@@ -38,9 +38,24 @@ const HeroSection = () => {
               {renderEyebrowWithBadge(t.hero.eyebrow)}
             </p>
             <h1 className="mt-12 lg:mt-16 mb-4 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.3] text-foreground">
-              {t.hero.titleA}
+              <motion.span
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.05, ease: "easeOut" }}
+                className="block"
+              >
+                {t.hero.titleA}
+              </motion.span>
               {t.hero.titleB ? (
-                <span key="titleB" className="gradient-text mt-4 block">{t.hero.titleB}</span>
+                <motion.span
+                  key="titleB"
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.25, ease: "easeOut" }}
+                  className="gradient-text mt-4 block"
+                >
+                  {t.hero.titleB}
+                </motion.span>
               ) : null}
             </h1>
           </motion.div>
