@@ -391,8 +391,8 @@ const pl: Translations = {
     },
     hero: {
       eyebrow: "ZMIANY DEMOGRAFICZNE I ZMIENIAJĄCE SIĘ PREFERENCJE PRACOWNIKÓW WYMAGAJĄ NOWEGO PODEJŚCIA.",
-      titleA: "Zabezpieczymy Twój biznes przed systemową utratą wiedzy i erozją kompetencji.",
-      titleB: "Zrealizujemy naszą obietnicę poprzez bezproblemową integrację AI w DNA Twojej firmy",
+      titleA: "Zabezpiecz Twój biznes przed systemową utratą wiedzy i erozją kompetencji.",
+      titleB: "Poprzez bezproblemową integrację AI.",
       tagline: "Przyjazne dla użytkownika rozwiązanie AI oparte na sprzęcie, które rejestruje to, jak praca jest faktycznie wykonywana.",
       sub: "Quantum Making zatrzymuje wiedzę w operacji — nawet gdy ludzie odchodzą.",
       cta1: "Umów demo",
