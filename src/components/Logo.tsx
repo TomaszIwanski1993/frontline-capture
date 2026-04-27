@@ -11,7 +11,7 @@ interface LogoProps {
 
 const Logo = ({
   className,
-  alt = "Quantum",
+  alt = "Quantum Making",
 }: LogoProps) => {
   return <img src={logoFull} alt={alt} className={className} loading="eager" />;
 };

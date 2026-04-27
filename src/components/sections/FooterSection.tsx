@@ -13,7 +13,7 @@ const FooterSection = () => {
         <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-8 gap-y-14 items-start">
           {/* Brand column */}
           <div className="col-span-2 lg:col-span-5">
-            <img src={logoFooter} alt="Quantum" className="h-14 lg:h-16 w-auto block -ml-1" />
+            <img src={logoFooter} alt="Quantum Making" className="h-14 lg:h-16 w-auto block -ml-1" />
             <p className="mt-8 text-sm text-background/60 leading-relaxed">
               {t.footer.legalName}<br />
               {t.footer.addressLine1}<br />
