@@ -6,7 +6,7 @@ const en = {
       howItWorks: "How It Works",
       outcomes: "Outcomes",
       industries: "Industries",
-      whyQuantum Making: "Why Quantum Making",
+      whyQuantum: "Why Us",
       resources: "Resources",
       contact: "Contact",
       bookDemo: "Book a Demo",
@@ -76,7 +76,7 @@ const en = {
       ],
     },
     about: {
-      eyebrow: "Why Quantum Making",
+      eyebrow: "Why Us",
       title: "Built for speed and scale",
       values: [
         {
@@ -292,7 +292,7 @@ const en = {
       solutions: "Solutions",
       legal: "Legal",
       links: {
-        about: "Why Quantum Making",
+        about: "Why Us",
         contact: "Contact",
         resources: "Resources",
         howItWorks: "How It Works",
@@ -383,7 +383,7 @@ const pl: Translations = {
       howItWorks: "Jak to działa",
       outcomes: "Efekty",
       industries: "Branże",
-      whyQuantum Making: "Dlaczego Quantum Making",
+      whyQuantum: "Dlaczego my",
       resources: "Materiały",
       contact: "Kontakt",
       bookDemo: "Umów demo",
@@ -454,7 +454,7 @@ const pl: Translations = {
       ],
     },
     about: {
-      eyebrow: "Dlaczego Quantum Making",
+      eyebrow: "Dlaczego my",
       title: "Zbudowany pod tempo i skalę",
       values: [
         {
