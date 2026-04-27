@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
         <div className="space-y-8 text-sm text-muted-foreground leading-relaxed">
           <section>
             <h2 className="text-lg font-semibold text-foreground mb-3">1. Introduction</h2>
-            <p>Quantum Making ("Quantum Making", "we", "us") is committed to protecting your privacy. This policy explains how we collect, use, and protect personal data when you visit our website or use our services.</p>
+            <p>Quantum Making ("we", "us") is committed to protecting your privacy. This policy explains how we collect, use, and protect personal data when you visit our website or use our services.</p>
           </section>
           <section>
             <h2 className="text-lg font-semibold text-foreground mb-3">2. Data We Collect</h2>
