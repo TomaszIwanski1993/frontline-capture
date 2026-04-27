@@ -12,7 +12,6 @@ const cardImages = [cardKnowledge, cardTraining, cardImpact];
 
 const ProblemSection = () => {
   const t = useT();
-  const { count: stat2, ref: stat2Ref } = useCountUp(12, 2000);
 
   return (
     <section id="problem" className="relative section-padding">
