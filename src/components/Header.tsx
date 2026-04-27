@@ -40,12 +40,12 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-lg bg-background/90 h-24 lg:h-28">
       <div className="section-container flex items-center justify-between h-full">
-        <Link to="/" className="flex items-center shrink-0 h-full" aria-label="Quantum Making home">
+        <Link to="/" className="flex items-center shrink-0 h-full overflow-visible" aria-label="Quantum Making home">
           <img
             src={headerLogo}
             alt="Quantum Making"
             loading="eager"
-            className="h-[72px] lg:h-[88px] w-auto block"
+            className="h-[120px] lg:h-[160px] w-auto block origin-left -my-8"
           />
         </Link>
         <nav className="hidden lg:flex items-center gap-8">
