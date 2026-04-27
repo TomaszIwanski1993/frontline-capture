@@ -65,11 +65,6 @@ const ValueSection = () => {
           })}
         </div>
 
-        <ScrollReveal delay={0.2}>
-          <p className="mt-6 max-w-3xl text-xs text-muted-foreground/70 leading-relaxed">
-            {t.sources.proficiency}
-          </p>
-        </ScrollReveal>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 subtle-divider" />
