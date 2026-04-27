@@ -14,7 +14,7 @@ const en = {
     },
     hero: {
       eyebrow: "DEMOGRAPHIC CHANGE AND SHIFTING WORKER PREFERENCES REQUIRE A NEW APPROACH.",
-      titleA: "We secure your business from knowledge loss and capability erosion through seamless AI integration.",
+      titleA: "Secure your business from knowledge loss and capability erosion through seamless AI integration.",
       titleB: "",
       tagline: "A user-friendly, hardware-enabled AI solution that captures how the job is actually done.",
       sub: "Quantum Making keeps your best know-how in the operation — even when people leave.",
