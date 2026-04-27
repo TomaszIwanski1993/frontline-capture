@@ -13,7 +13,10 @@ const corsHeaders = {
 const GATEWAY_URL = "https://connector-gateway.lovable.dev/google_calendar/calendar/v3";
 const TIMEZONE = "Europe/Warsaw";
 const SLOT_MINUTES = 30;
-const NOTIFY_EMAIL = "info@quantummaking.com";
+// Calendar that owns the demo events. Must be shared with the connected
+// Google account with "Make changes to events" permission.
+const TARGET_CALENDAR_ID = "tomasz.iwanski@quantummaking.com";
+const NOTIFY_EMAIL = "tomasz.iwanski@quantummaking.com";
 
 interface BookingPayload {
   name: string;
