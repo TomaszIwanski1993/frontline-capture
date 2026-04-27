@@ -63,18 +63,14 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
+            {...slideUp(0.34)}
             className="mt-12 lg:mt-14 text-lg lg:text-xl text-foreground/70 leading-relaxed max-w-2xl mx-auto"
           >
             {t.hero.tagline}
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+            {...slideUp(0.46)}
             className="mt-16 lg:mt-20 flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <BookDemoButton className="text-base px-8 py-4 text-center">
