@@ -15,6 +15,9 @@ const DAY_END_HOUR = 18; // 18:00 local
 const SLOT_MINUTES = 30;
 const NOTICE_HOURS = 4;
 const HORIZON_DAYS = 30;
+// Calendar that owns the demo events. Must be shared with the connected
+// Google account (read access is enough for freeBusy).
+const TARGET_CALENDAR_ID = "tomasz.iwanski@quantummaking.com";
 
 // Get the UTC offset in minutes for a given UTC instant in a named timezone.
 function getTimezoneOffsetMinutes(utcDate: Date, timeZone: string): number {
