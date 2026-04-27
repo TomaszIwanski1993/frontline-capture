@@ -464,27 +464,85 @@ const BookDemoDialog = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.2 }}
-                className="px-7 py-10 text-center"
+                className="px-7 py-8"
               >
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <CalendarIcon className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground">{t.bookDemo.successTitle}</h3>
-                <p className="mt-2 text-sm text-muted-foreground max-w-md mx-auto">
-                  {t.bookDemo.successBody}
-                </p>
-                <div className="mt-5 inline-block rounded-md border border-border bg-secondary px-5 py-3 text-left">
-                  <p className="text-xs uppercase tracking-wider text-muted-foreground">
-                    {t.bookDemo.successWhen}
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-foreground">
-                    {formatDateLong(confirmed.startIso, language)}
-                  </p>
-                  <p className="text-sm text-foreground/80">
-                    {formatTime(confirmed.startIso, language)} – {formatTime(confirmed.endIso, language)}
+                {/* Header */}
+                <div className="text-center">
+                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 ring-1 ring-primary/20">
+                    <Check className="h-6 w-6 text-primary" strokeWidth={2.5} />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">{t.bookDemo.successTitle}</h3>
+                  <p className="mt-1.5 text-sm text-muted-foreground max-w-md mx-auto">
+                    {t.bookDemo.successBody}
                   </p>
                 </div>
-                <div className="mt-6 flex flex-wrap justify-center gap-3">
+
+                {/* Summary card */}
+                <div className="mt-6 rounded-lg border border-border bg-secondary/60 overflow-hidden">
+                  <dl className="divide-y divide-border/60">
+                    <div className="flex items-start gap-3 px-4 py-3">
+                      <CalendarIcon className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <dt className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                          {t.bookDemo.successWhen}
+                        </dt>
+                        <dd className="mt-0.5 text-sm font-medium text-foreground">
+                          {formatDateLong(confirmed.startIso, language)}
+                        </dd>
+                        <dd className="text-sm text-foreground/80">
+                          {formatTime(confirmed.startIso, language)} – {formatTime(confirmed.endIso, language)}
+                        </dd>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3 px-4 py-3">
+                      <Globe className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <dt className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                          {t.bookDemo.successTimezone}
+                        </dt>
+                        <dd className="mt-0.5 text-sm font-medium text-foreground">
+                          {Intl.DateTimeFormat().resolvedOptions().timeZone}
+                        </dd>
+                        {confirmed.timezone &&
+                          confirmed.timezone !== Intl.DateTimeFormat().resolvedOptions().timeZone && (
+                            <dd className="text-xs text-muted-foreground mt-0.5">
+                              {t.bookDemo.successHostTz}:{" "}
+                              {new Date(confirmed.startIso).toLocaleTimeString(localeFor(language), {
+                                hour: "2-digit",
+                                minute: "2-digit",
+                                timeZone: confirmed.timezone,
+                              })}
+                            </dd>
+                          )}
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3 px-4 py-3">
+                      <Clock className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <dt className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                          {t.bookDemo.successDuration}
+                        </dt>
+                        <dd className="mt-0.5 text-sm font-medium text-foreground">
+                          {t.bookDemo.duration}
+                        </dd>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3 px-4 py-3">
+                      <Video className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <dt className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                          {t.bookDemo.successMeeting}
+                        </dt>
+                        <dd className="mt-0.5 text-sm font-medium text-foreground">
+                          {t.bookDemo.successMeetingValue}
+                        </dd>
+                      </div>
+                    </div>
+                  </dl>
+                </div>
+
+                {/* CTAs */}
+                <div className="mt-5 flex flex-wrap gap-3">
                   {confirmed.meetUrl && (
                     <a
                       href={confirmed.meetUrl}
@@ -494,9 +552,43 @@ const BookDemoDialog = () => {
                     >
                       <Video className="h-4 w-4" />
                       {t.bookDemo.successJoin}
-                      <ExternalLink className="h-3.5 w-3.5" />
+                      <ExternalLink className="h-3.5 w-3.5 opacity-80" />
                     </a>
                   )}
+                  {confirmed.eventLink && (
+                    <a
+                      href={confirmed.eventLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-outline text-sm px-5 py-2.5 inline-flex items-center gap-2"
+                    >
+                      <CalendarPlus className="h-4 w-4" />
+                      {t.bookDemo.successAddToCalendar}
+                      <ExternalLink className="h-3.5 w-3.5 opacity-70" />
+                    </a>
+                  )}
+                </div>
+
+                {/* What happens next */}
+                <div className="mt-7 pt-5 border-t border-border/60">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground/80 mb-3">
+                    {t.bookDemo.successNextTitle}
+                  </p>
+                  <ul className="space-y-2.5">
+                    {[t.bookDemo.successNext1, t.bookDemo.successNext2, t.bookDemo.successNext3].map(
+                      (item, i) => (
+                        <li key={i} className="flex items-start gap-2.5 text-sm text-foreground/80">
+                          <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-primary/15">
+                            <Check className="h-2.5 w-2.5 text-primary" strokeWidth={3} />
+                          </span>
+                          <span className="leading-relaxed">{item}</span>
+                        </li>
+                      ),
+                    )}
+                  </ul>
+                </div>
+
+                <div className="mt-6 flex justify-end">
                   <button
                     type="button"
                     onClick={closeDialog}
