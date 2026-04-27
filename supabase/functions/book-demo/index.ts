@@ -13,7 +13,10 @@ const corsHeaders = {
 const GATEWAY_URL = "https://connector-gateway.lovable.dev/google_calendar/calendar/v3";
 const TIMEZONE = "Europe/Warsaw";
 const SLOT_MINUTES = 30;
-const NOTIFY_EMAIL = "info@quantummaking.com";
+// Calendar that owns the demo events. Must be shared with the connected
+// Google account with "Make changes to events" permission.
+const TARGET_CALENDAR_ID = "tomasz.iwanski@quantummaking.com";
+const NOTIFY_EMAIL = "tomasz.iwanski@quantummaking.com";
 
 interface BookingPayload {
   name: string;
@@ -67,12 +70,12 @@ async function ensureSlotFree(slotStart: Date, slotEnd: Date): Promise<boolean> 
       timeMin: slotStart.toISOString(),
       timeMax: slotEnd.toISOString(),
       timeZone: TIMEZONE,
-      items: [{ id: "primary" }],
+      items: [{ id: TARGET_CALENDAR_ID }],
     }),
   });
   const data = await res.json();
   if (!res.ok) throw new Error(`freeBusy failed: ${JSON.stringify(data)}`);
-  const busy = data?.calendars?.primary?.busy ?? [];
+  const busy = data?.calendars?.[TARGET_CALENDAR_ID]?.busy ?? [];
   return busy.length === 0;
 }
 
@@ -96,7 +99,7 @@ async function createEvent(opts: {
   ].join("\n");
 
   const requestId = crypto.randomUUID();
-  const url = `${GATEWAY_URL}/calendars/primary/events?conferenceDataVersion=1&sendUpdates=all`;
+  const url = `${GATEWAY_URL}/calendars/${encodeURIComponent(TARGET_CALENDAR_ID)}/events?conferenceDataVersion=1&sendUpdates=all`;
 
   const res = await fetch(url, {
     method: "POST",
