@@ -56,7 +56,7 @@ const en = {
     howItWorks: {
       eyebrow: "How It Works",
       title: "Three steps to retained knowledge",
-      sub: "Built on AI that understands real workflows, not documents.",
+      sub: "Built on AI that understands both real workflows and documentation.",
       steps: [
         {
           title: "Capture",
