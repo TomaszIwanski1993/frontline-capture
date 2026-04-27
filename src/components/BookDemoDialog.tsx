@@ -60,6 +60,7 @@ const BookDemoDialog = () => {
   const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
 
   const [form, setForm] = useState({ name: "", email: "", company: "", notes: "" });
+  const [touched, setTouched] = useState({ name: false, email: false, company: false });
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [confirmed, setConfirmed] = useState<BookingResponse | null>(null);
@@ -71,6 +72,7 @@ const BookDemoDialog = () => {
     setSelectedDate(undefined);
     setSelectedSlot(null);
     setForm({ name: "", email: "", company: "", notes: "" });
+    setTouched({ name: false, email: false, company: false });
     setSubmitError(null);
     setConfirmed(null);
 
