@@ -14,8 +14,8 @@ const en = {
     },
     hero: {
       eyebrow: "DEMOGRAPHIC CHANGE AND SHIFTING WORKER PREFERENCES REQUIRE A NEW APPROACH.",
-      titleA: "We will secure your business from systemic knowledge loss and capability erosion.",
-      titleB: "We will deliver our promise by seamless AI integration in your company DNA",
+      titleA: "We secure your business from knowledge loss and capability erosion through seamless AI integration.",
+      titleB: "",
       tagline: "A user-friendly, hardware-enabled AI solution that captures how the job is actually done.",
       sub: "Quantum keeps your best know-how in the operation — even when people leave.",
       cta1: "Book a Demo",
