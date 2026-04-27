@@ -31,12 +31,11 @@ describe("Header — responsive logo & sticky layout", () => {
     expect(logo.getAttribute("src") ?? "").toMatch(/logo-quantum-header-light/);
   });
 
-  it("constrains logo height to 64px on mobile and 80px on desktop (h-16 / lg:h-20)", () => {
+  it("constrains logo height to 72px on mobile and 88px on desktop", () => {
     renderHeader();
     const logo = screen.getByAltText("Quantum Making");
-    // Tailwind h-16 = 4rem = 64px, lg:h-20 = 5rem = 80px
-    expect(logo.className).toMatch(/\bh-16\b/);
-    expect(logo.className).toMatch(/\blg:h-20\b/);
+    expect(logo.className).toMatch(/\bh-\[72px\]\b/);
+    expect(logo.className).toMatch(/\blg:h-\[88px\]\b/);
   });
 
   it("preserves logo proportions (w-auto, no fixed width / no stretching)", () => {
@@ -64,16 +63,16 @@ describe("Header — responsive logo & sticky layout", () => {
     expect(link.className).toMatch(/\bh-full\b/);
   });
 
-  it("logo height (h-16 = 64px) fits inside mobile header (h-20 = 80px)", () => {
-    const logoPx = 64;
-    const headerPxMobile = 80;
+  it("logo height (72px) fits inside mobile header (h-24 = 96px)", () => {
+    const logoPx = 72;
+    const headerPxMobile = 96;
     expect(logoPx).toBeLessThanOrEqual(headerPxMobile);
     expect(headerPxMobile - logoPx).toBeGreaterThanOrEqual(8);
   });
 
-  it("logo height (lg:h-20 = 80px) fits inside desktop header (lg:h-24 = 96px)", () => {
-    const logoPx = 80;
-    const headerPxDesktop = 96;
+  it("logo height (88px) fits inside desktop header (lg:h-28 = 112px)", () => {
+    const logoPx = 88;
+    const headerPxDesktop = 112;
     expect(logoPx).toBeLessThanOrEqual(headerPxDesktop);
     expect(headerPxDesktop - logoPx).toBeGreaterThanOrEqual(8);
   });
@@ -86,11 +85,11 @@ describe("Header — responsive logo & sticky layout", () => {
     expect(header.className).toMatch(/\bz-50\b/);
   });
 
-  it("header has fixed responsive heights (h-20 mobile / lg:h-24 desktop) preventing reflow", () => {
+  it("header has fixed responsive heights (h-24 mobile / lg:h-28 desktop) preventing reflow", () => {
     renderHeader();
     const header = screen.getByRole("banner");
-    expect(header.className).toMatch(/\bh-20\b/);
-    expect(header.className).toMatch(/\blg:h-24\b/);
+    expect(header.className).toMatch(/\bh-24\b/);
+    expect(header.className).toMatch(/\blg:h-28\b/);
   });
 
   it("brand link uses shrink-0 so the logo never compresses on narrow viewports", () => {
