@@ -34,8 +34,8 @@ describe("Header — responsive logo & sticky layout", () => {
   it("constrains logo height to 72px on mobile and 88px on desktop", () => {
     renderHeader();
     const logo = screen.getByAltText("Quantum Making");
-    expect(logo.className).toMatch(/\bh-\[72px\]\b/);
-    expect(logo.className).toMatch(/\blg:h-\[88px\]\b/);
+    expect(logo.className).toContain("h-[72px]");
+    expect(logo.className).toContain("lg:h-[88px]");
   });
 
   it("preserves logo proportions (w-auto, no fixed width / no stretching)", () => {
