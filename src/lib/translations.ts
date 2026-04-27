@@ -24,7 +24,7 @@ const en = {
     positioning: {
       eyebrow: "The Quantum Layer",
       title: "A new operational layer for frontline work",
-      body: "Most operations run on undocumented expertise. Quantum captures how work is really done and delivers it to operators in real time.",
+      body: "Most operations run on undocumented expertise. Quantum captures how work is really done.",
     },
     problem: {
       eyebrow: "The Problem",
