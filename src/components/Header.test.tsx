@@ -31,12 +31,12 @@ describe("Header — responsive logo & sticky layout", () => {
     expect(logo.getAttribute("src") ?? "").toMatch(/logo-quantum-header-light/);
   });
 
-  it("constrains logo height to 32px on mobile and 40px on desktop (h-8 / lg:h-10)", () => {
+  it("constrains logo height to 40px on mobile and 48px on desktop (h-10 / lg:h-12)", () => {
     renderHeader();
     const logo = screen.getByAltText("Quantum Making");
-    // Tailwind h-8 = 2rem = 32px, lg:h-10 = 2.5rem = 40px
-    expect(logo.className).toMatch(/\bh-8\b/);
-    expect(logo.className).toMatch(/\blg:h-10\b/);
+    // Tailwind h-10 = 2.5rem = 40px, lg:h-12 = 3rem = 48px
+    expect(logo.className).toMatch(/\bh-10\b/);
+    expect(logo.className).toMatch(/\blg:h-12\b/);
   });
 
   it("preserves logo proportions (w-auto, no fixed width / no stretching)", () => {
@@ -64,16 +64,15 @@ describe("Header — responsive logo & sticky layout", () => {
     expect(link.className).toMatch(/\bh-full\b/);
   });
 
-  it("logo height (h-8 = 32px) fits inside mobile header (h-16 = 64px)", () => {
-    // Constraint check: 32 <= 64, leaves >=16px vertical breathing room
-    const logoPx = 32;
+  it("logo height (h-10 = 40px) fits inside mobile header (h-16 = 64px)", () => {
+    const logoPx = 40;
     const headerPxMobile = 64;
     expect(logoPx).toBeLessThanOrEqual(headerPxMobile);
     expect(headerPxMobile - logoPx).toBeGreaterThanOrEqual(16);
   });
 
-  it("logo height (lg:h-10 = 40px) fits inside desktop header (lg:h-20 = 80px)", () => {
-    const logoPx = 40;
+  it("logo height (lg:h-12 = 48px) fits inside desktop header (lg:h-20 = 80px)", () => {
+    const logoPx = 48;
     const headerPxDesktop = 80;
     expect(logoPx).toBeLessThanOrEqual(headerPxDesktop);
     expect(headerPxDesktop - logoPx).toBeGreaterThanOrEqual(16);
