@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import bgHero from "@/assets/bg-hero-factory.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
 import NewBadge from "@/components/NewBadge";
@@ -15,6 +15,19 @@ const renderEyebrowWithBadge = (text: string) => {
 
 const HeroSection = () => {
   const t = useT();
+  const prefersReducedMotion = useReducedMotion();
+
+  // Subtle slide-up; respects prefers-reduced-motion by collapsing to a fade.
+  const slideUp = (delay = 0) => ({
+    initial: prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 6 },
+    animate: prefersReducedMotion ? { opacity: 1 } : { opacity: 1, y: 0 },
+    transition: {
+      duration: prefersReducedMotion ? 0.3 : 0.7,
+      delay,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  });
+
   return (
     <section className="relative min-h-screen flex items-center pt-24 lg:pt-32 pb-20 overflow-hidden">
       <SectionBgImage src={bgHero} alt="Factory floor" opacity={0.06} />
@@ -29,29 +42,18 @@ const HeroSection = () => {
 
       <div className="section-container w-full relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-          >
+          <motion.div {...slideUp(0)}>
             <p className="text-xs lg:text-sm text-muted-foreground/70 font-semibold tracking-[0.2em] uppercase">
               {renderEyebrowWithBadge(t.hero.eyebrow)}
             </p>
             <h1 className="mt-12 lg:mt-16 mb-4 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.3] text-foreground">
-              <motion.span
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.05, ease: "easeOut" }}
-                className="block"
-              >
+              <motion.span {...slideUp(0.1)} className="block">
                 {t.hero.titleA}
               </motion.span>
               {t.hero.titleB ? (
                 <motion.span
                   key="titleB"
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.25, ease: "easeOut" }}
+                  {...slideUp(0.22)}
                   className="gradient-text mt-4 block"
                 >
                   {t.hero.titleB}
