@@ -121,9 +121,27 @@ const BookDemoDialog = () => {
     return !availableDays.has(ymdKey(date));
   };
 
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  const fieldErrors = useMemo(() => {
+    const errs: { name?: string; email?: string; company?: string } = {};
+    if (form.name.trim().length === 0) errs.name = t.bookDemo.errors.nameRequired;
+    const emailTrim = form.email.trim();
+    if (emailTrim.length === 0) errs.email = t.bookDemo.errors.emailRequired;
+    else if (!emailRe.test(emailTrim)) errs.email = t.bookDemo.errors.emailInvalid;
+    if (form.company.trim().length === 0) errs.company = t.bookDemo.errors.companyRequired;
+    return errs;
+  }, [form, t]);
+
+  const showError = (field: "name" | "email" | "company") =>
+    touched[field] && fieldErrors[field] ? fieldErrors[field] : null;
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!selectedSlot) return;
+    // Force-show any remaining errors
+    setTouched({ name: true, email: true, company: true });
+    if (Object.keys(fieldErrors).length > 0) return;
     setSubmitError(null);
     setSubmitting(true);
     try {
@@ -165,10 +183,7 @@ const BookDemoDialog = () => {
     }
   };
 
-  const formValid =
-    form.name.trim().length > 0 &&
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim()) &&
-    form.company.trim().length > 0;
+  const formValid = Object.keys(fieldErrors).length === 0;
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => (open ? null : closeDialog())}>
