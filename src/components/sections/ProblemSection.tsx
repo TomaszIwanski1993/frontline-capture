@@ -1,5 +1,4 @@
 import { Users, Clock, AlertTriangle } from "lucide-react";
-import { useCountUp } from "@/hooks/useCountUp";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useT } from "@/hooks/useT";
 import cardKnowledge from "@/assets/card-problem-1-knowledge.jpg";
