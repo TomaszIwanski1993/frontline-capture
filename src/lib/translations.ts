@@ -213,7 +213,7 @@ const en = {
         },
         {
           q: "What results should we expect?",
-          a: "30-40% faster time-to-proficiency and measurably more consistent execution across shifts. ",
+          a: "Shorter time-to-proficiency for new operators and more consistent execution across shifts. Exact impact is measured during the pilot.",
         },
         {
           q: "How is this different from a knowledge management tool?",
@@ -539,7 +539,7 @@ const pl: Translations = {
         },
         {
           q: "Jakich efektów można się spodziewać?",
-          a: "30-40% szybsze dochodzenie do biegłości i zauważalnie spójniejsze wykonanie zadań między zmianami. Potwierdzone w każdym wdrożeniu.",
+          a: "Krótszy czas dochodzenia do biegłości u nowych operatorów i bardziej spójne wykonanie między zmianami. Konkretny wpływ mierzymy podczas pilotażu.",
         },
         {
           q: "Czym Quantum różni się od narzędzia do zarządzania wiedzą?",
