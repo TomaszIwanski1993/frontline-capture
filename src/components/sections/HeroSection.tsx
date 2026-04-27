@@ -1,7 +1,16 @@
 import { motion } from "framer-motion";
 import bgHero from "@/assets/bg-hero-factory.jpg";
 import SectionBgImage from "@/components/SectionBgImage";
+import NewBadge from "@/components/NewBadge";
 import { useT } from "@/hooks/useT";
+
+// Highlight standalone uppercase "NEW" tokens in the eyebrow with a styled badge.
+const renderEyebrowWithBadge = (text: string) => {
+  const parts = text.split(/(\bNEW\b)/g);
+  return parts.map((part, i) =>
+    part === "NEW" ? <NewBadge key={i} /> : <span key={i}>{part}</span>,
+  );
+};
 
 const HeroSection = () => {
   const t = useT();
