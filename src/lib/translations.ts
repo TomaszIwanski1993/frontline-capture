@@ -723,6 +723,12 @@ const pl: Translations = {
       fallbackEmail: "Napisz na info@quantummaking.com",
       slotTaken: "Ta godzina została właśnie zajęta. Wybierz inny termin.",
       genericError: "Coś poszło nie tak. Spróbuj ponownie lub napisz na info@quantummaking.com.",
+      errors: {
+        nameRequired: "Podaj imię i nazwisko.",
+        emailRequired: "Podaj służbowy adres e-mail.",
+        emailInvalid: "Podaj prawidłowy adres e-mail.",
+        companyRequired: "Podaj nazwę firmy.",
+      },
     },
 };
 
