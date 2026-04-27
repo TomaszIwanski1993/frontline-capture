@@ -69,9 +69,9 @@ const en = {
             "Raw expertise becomes structured, searchable guidance, ready to deploy across teams.",
         },
         {
-          title: "Apply",
+          title: "Document",
           description:
-            "Operators get step-by-step guidance during live work. Onboarding accelerates. Knowledge stays.",
+            "Make knowledge available for onboarding, training, and continuous improvement.",
         },
       ],
     },
