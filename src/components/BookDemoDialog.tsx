@@ -446,7 +446,8 @@ const BookDemoDialog = () => {
                 <div className="mt-6 flex justify-end">
                   <Button
                     type="submit"
-                    disabled={!formValid || submitting}
+                    disabled={submitting}
+                    aria-disabled={!formValid || submitting}
                     className="cta-button text-sm px-6 py-2.5 disabled:opacity-50 inline-flex items-center gap-2"
                   >
                     {submitting && <Loader2 className="h-4 w-4 animate-spin" />}
