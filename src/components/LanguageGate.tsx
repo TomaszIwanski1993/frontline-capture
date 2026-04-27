@@ -53,28 +53,28 @@ const LanguageGate = () => {
   return (
     <div
       className="fixed inset-0 z-[1000] flex items-center justify-center px-6 overflow-hidden"
-      style={{ backgroundColor: "#100d28" }}
+      style={{ backgroundColor: "#ffffff" }}
       role="dialog"
       aria-modal="true"
       aria-label="Language selection"
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-50"
+        className="pointer-events-none absolute inset-0 opacity-40"
         style={{
           background:
-            "radial-gradient(circle at 30% 25%, rgba(137, 6, 230, 0.28), transparent 55%), radial-gradient(circle at 70% 75%, rgba(5, 13, 235, 0.28), transparent 55%)",
+            "radial-gradient(circle at 30% 25%, rgba(0, 8, 232, 0.06), transparent 55%), radial-gradient(circle at 70% 75%, rgba(16, 8, 40, 0.05), transparent 55%)",
         }}
       />
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-lg w-full animate-fade-in">
         <Logo
-          surface="dark"
+          surface="light"
           variant="full"
           alt="Quantum"
-          className="h-28 sm:h-36 w-auto drop-shadow-[0_0_50px_rgba(137,6,230,0.4)]"
+          className="h-28 sm:h-36 w-auto"
         />
 
-        <p className="mt-3 text-white/40 text-[11px] sm:text-xs tracking-[0.25em] uppercase">
+        <p className="mt-3 text-foreground/50 text-[11px] sm:text-xs tracking-[0.25em] uppercase">
           Built in Poland
         </p>
 
@@ -94,7 +94,7 @@ const LanguageGate = () => {
                 key={t.lang}
                 lang={t.lang}
                 aria-hidden={!active}
-                className="absolute inset-0 flex items-center justify-center text-white/85 text-base sm:text-lg tracking-wide leading-snug"
+                className="absolute inset-0 flex items-center justify-center text-foreground/85 text-base sm:text-lg tracking-wide leading-snug"
                 style={{
                   opacity: active ? 1 : 0,
                   transform: reducedMotion
@@ -112,20 +112,20 @@ const LanguageGate = () => {
           })}
         </div>
 
-        <div className="mt-12 mb-6 text-white/50 text-xs sm:text-sm tracking-[0.2em] uppercase">
+        <div className="mt-12 mb-6 text-foreground/55 text-xs sm:text-sm tracking-[0.2em] uppercase">
           Choose your language <span className="mx-2 opacity-50">/</span> Wybierz język
         </div>
 
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full max-w-md justify-center">
           <button
             onClick={() => choose("en")}
-            className="w-full sm:w-44 px-6 py-3.5 border border-white/40 text-white text-sm tracking-[0.2em] uppercase rounded-md transition-all duration-300 hover:border-white hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] focus:outline-none focus:ring-2 focus:ring-white/50"
+            className="w-full sm:w-44 px-6 py-3.5 border border-foreground/30 text-foreground text-sm tracking-[0.2em] uppercase rounded-md transition-all duration-300 hover:border-primary hover:text-primary hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-primary/40"
           >
             English
           </button>
           <button
             onClick={() => choose("pl")}
-            className="w-full sm:w-44 px-6 py-3.5 border border-white/40 text-white text-sm tracking-[0.2em] uppercase rounded-md transition-all duration-300 hover:border-white hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] focus:outline-none focus:ring-2 focus:ring-white/50"
+            className="w-full sm:w-44 px-6 py-3.5 border border-foreground/30 text-foreground text-sm tracking-[0.2em] uppercase rounded-md transition-all duration-300 hover:border-primary hover:text-primary hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-primary/40"
           >
             Polski
           </button>
