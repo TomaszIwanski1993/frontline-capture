@@ -29,7 +29,7 @@ const en = {
     problem: {
       eyebrow: "The Problem",
       title: "We've seen this problem first-hand",
-      sub: "We're researchers and practitioners. We've spent time on factory floors, in warehouses, and on construction sites. The same pattern repeats: 50-80% of operational knowledge is tacit — it lives in people, not systems. When experienced workers leave, it goes with them.",
+      sub: "We've spent time on factory floors, in warehouses, and on construction sites. The same pattern repeats: 50-80% of operational knowledge is tacit — it lives in people, not systems. When experienced workers leave, it goes with them.",
       cards: [
         {
           title: "Knowledge walks out the door",
