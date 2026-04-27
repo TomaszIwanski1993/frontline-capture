@@ -6,7 +6,7 @@ const en = {
       howItWorks: "How It Works",
       outcomes: "Outcomes",
       industries: "Industries",
-      whyQuantum: "Why Quantum",
+      whyQuantum: "Why Us",
       resources: "Resources",
       contact: "Contact",
       bookDemo: "Book a Demo",
@@ -17,14 +17,14 @@ const en = {
       titleA: "We secure your business from knowledge loss and capability erosion through seamless AI integration.",
       titleB: "",
       tagline: "A user-friendly, hardware-enabled AI solution that captures how the job is actually done.",
-      sub: "Quantum keeps your best know-how in the operation — even when people leave.",
+      sub: "Quantum Making keeps your best know-how in the operation — even when people leave.",
       cta1: "Book a Demo",
       cta2: "How It Works",
     },
     positioning: {
-      eyebrow: "The Quantum Layer",
+      eyebrow: "The Quantum Making Layer",
       title: "A new operational layer for frontline work",
-      body: "Most operations run on undocumented expertise. Quantum captures how work is really done - so it can be scaled, improved, and retained.",
+      body: "Most operations run on undocumented expertise. Quantum Making captures how work is really done - so it can be scaled, improved, and retained.",
     },
     problem: {
       eyebrow: "The Challenge",
@@ -61,7 +61,7 @@ const en = {
         {
           title: "Capture",
           description:
-            "Quantum records how experienced operators work — including the tacit knowledge manuals miss.",
+            "Quantum Making records how experienced operators work — including the tacit knowledge manuals miss.",
         },
         {
           title: "Document",
@@ -76,7 +76,7 @@ const en = {
       ],
     },
     about: {
-      eyebrow: "Why Quantum",
+      eyebrow: "Why Us",
       title: "Built for speed and scale",
       values: [
         {
@@ -87,7 +87,7 @@ const en = {
         {
           title: "AI does the manual work",
           description:
-            "Quantum captures, structures, and delivers guidance automatically — across every shift.",
+            "Quantum Making captures, structures, and delivers guidance automatically — across every shift.",
         },
         {
           title: "Consistent execution",
@@ -187,7 +187,7 @@ const en = {
         "Clear metrics to evaluate results",
       ],
       cta: "Book a Demo",
-      ctaSub: "See Quantum on your actual operations.",
+      ctaSub: "See Quantum Making on your actual operations.",
     },
     faq: {
       eyebrow: "",
@@ -196,15 +196,15 @@ const en = {
       titleC: "& Answers",
       items: [
         {
-          q: "Who is Quantum built for?",
-          a: "Companies that depend on frontline operators: manufacturing, FMCG, warehouses, construction, and field service. If your operation relies on experienced people whose knowledge isn't documented, Quantum solves that.",
+          q: "Who is Quantum Making built for?",
+          a: "Companies that depend on frontline operators: manufacturing, FMCG, warehouses, construction, and field service. If your operation relies on experienced people whose knowledge isn't documented, Quantum Making solves that.",
         },
         {
           q: "Does this work in any factory environment?",
-          a: "Yes. Quantum runs in real industrial conditions — production floors, cleanrooms, outdoor sites — and fits existing workflows without specialized infrastructure.",
+          a: "Yes. Quantum Making runs in real industrial conditions — production floors, cleanrooms, outdoor sites — and fits existing workflows without specialized infrastructure.",
         },
         {
-          q: "What exactly does Quantum capture?",
+          q: "What exactly does Quantum Making capture?",
           a: "Task demonstrations from experienced operators: the steps, sequences, and decision points that define real know-how. The tacit expertise documentation always misses.",
         },
         {
@@ -217,7 +217,7 @@ const en = {
         },
         {
           q: "How is this different from a knowledge management tool?",
-          a: "Knowledge tools are built for office work. Quantum is built for the floor — capturing knowledge through demonstrations, not documents. Operators actually use it.",
+          a: "Knowledge tools are built for office work. Quantum Making is built for the floor — capturing knowledge through demonstrations, not documents. Operators actually use it.",
         },
         {
           q: "Can we try before committing?",
@@ -241,7 +241,7 @@ const en = {
         {
           tag: "Pilot results",
           status: "In progress",
-          title: "Quantum pilot — onboarding and OEE",
+          title: "Quantum Making pilot — onboarding and OEE",
           description:
             "Measured impact on time-to-proficiency, error rates, and OEE from our first industrial pilot. Full report on release.",
         },
@@ -292,7 +292,7 @@ const en = {
       solutions: "Solutions",
       legal: "Legal",
       links: {
-        about: "Why Quantum",
+        about: "Why Us",
         contact: "Contact",
         resources: "Resources",
         howItWorks: "How It Works",
@@ -323,7 +323,7 @@ const en = {
     },
     bookDemo: {
       title: "Book a Demo",
-      subtitle: "30-minute intro call. We'll show Quantum on operations like yours.",
+      subtitle: "30-minute intro call. We'll show Quantum Making on operations like yours.",
       duration: "30 minutes",
       location: "Google Meet (link shared on confirmation)",
       timezone: "All times in your local timezone",
@@ -383,7 +383,7 @@ const pl: Translations = {
       howItWorks: "Jak to działa",
       outcomes: "Efekty",
       industries: "Branże",
-      whyQuantum: "Dlaczego Quantum",
+      whyQuantum: "Dlaczego my",
       resources: "Materiały",
       contact: "Kontakt",
       bookDemo: "Umów demo",
@@ -394,14 +394,14 @@ const pl: Translations = {
       titleA: "Zabezpieczymy Twój biznes przed systemową utratą wiedzy i erozją kompetencji.",
       titleB: "Zrealizujemy naszą obietnicę poprzez bezproblemową integrację AI w DNA Twojej firmy",
       tagline: "Przyjazne dla użytkownika rozwiązanie AI oparte na sprzęcie, które rejestruje to, jak praca jest faktycznie wykonywana.",
-      sub: "Quantum zatrzymuje wiedzę w operacji — nawet gdy ludzie odchodzą.",
+      sub: "Quantum Making zatrzymuje wiedzę w operacji — nawet gdy ludzie odchodzą.",
       cta1: "Umów demo",
       cta2: "Jak to działa",
     },
     positioning: {
-      eyebrow: "Warstwa Quantum",
+      eyebrow: "Warstwa Quantum Making",
       title: "Nowa warstwa operacyjna dla pracy na hali",
-      body: "Większość operacji opiera się na nieudokumentowanej wiedzy. Quantum rejestruje, jak praca naprawdę wygląda, i podaje ją operatorom w czasie rzeczywistym.",
+      body: "Większość operacji opiera się na nieudokumentowanej wiedzy. Quantum Making rejestruje, jak praca naprawdę wygląda, i podaje ją operatorom w czasie rzeczywistym.",
     },
     problem: {
       eyebrow: "Wyzwanie",
@@ -439,7 +439,7 @@ const pl: Translations = {
         {
           title: "Rejestracja",
           description:
-            "Quantum nagrywa, jak doświadczeni operatorzy pracują — łapie wiedzę praktyczną, której nie ma w instrukcjach.",
+            "Quantum Making nagrywa, jak doświadczeni operatorzy pracują — łapie wiedzę praktyczną, której nie ma w instrukcjach.",
         },
         {
           title: "Strukturyzacja",
@@ -454,7 +454,7 @@ const pl: Translations = {
       ],
     },
     about: {
-      eyebrow: "Dlaczego Quantum",
+      eyebrow: "Dlaczego my",
       title: "Zbudowany pod tempo i skalę",
       values: [
         {
@@ -465,7 +465,7 @@ const pl: Translations = {
         {
           title: "AI robi pracę manualną",
           description:
-            "Quantum sam rejestruje, porządkuje i podaje wskazówki — na każdej zmianie, bez limitu skali.",
+            "Quantum Making sam rejestruje, porządkuje i podaje wskazówki — na każdej zmianie, bez limitu skali.",
         },
         {
           title: "Spójne wykonanie",
@@ -565,7 +565,7 @@ const pl: Translations = {
         "Czytelne wskaźniki do oceny wyników",
       ],
       cta: "Umów demo",
-      ctaSub: "Zobacz Quantum na twoich realnych operacjach.",
+      ctaSub: "Zobacz Quantum Making na twoich realnych operacjach.",
     },
     faq: {
       eyebrow: "",
@@ -574,15 +574,15 @@ const pl: Translations = {
       titleC: "i odpowiedzi",
       items: [
         {
-          q: "Dla kogo jest Quantum?",
-          a: "Dla firm opartych na operatorach pierwszej linii: produkcja, FMCG, magazyny, budowy, serwis terenowy. Jeśli twoja operacja zależy od doświadczonych ludzi, których wiedza nie jest spisana — Quantum to rozwiązuje.",
+          q: "Dla kogo jest Quantum Making?",
+          a: "Dla firm opartych na operatorach pierwszej linii: produkcja, FMCG, magazyny, budowy, serwis terenowy. Jeśli twoja operacja zależy od doświadczonych ludzi, których wiedza nie jest spisana — Quantum Making to rozwiązuje.",
         },
         {
           q: "Czy to działa w każdej fabryce?",
-          a: "Tak. Quantum działa w realnych warunkach przemysłowych — halach, cleanroomach, na zewnątrz — i wpasowuje się w istniejące procesy bez specjalistycznej infrastruktury.",
+          a: "Tak. Quantum Making działa w realnych warunkach przemysłowych — halach, cleanroomach, na zewnątrz — i wpasowuje się w istniejące procesy bez specjalistycznej infrastruktury.",
         },
         {
-          q: "Co dokładnie rejestruje Quantum?",
+          q: "Co dokładnie rejestruje Quantum Making?",
           a: "Pokazy zadań od doświadczonych operatorów: kroki, sekwencje i punkty decyzyjne, które tworzą realną wiedzę. To, czego nie ma w dokumentacji.",
         },
         {
@@ -594,8 +594,8 @@ const pl: Translations = {
           a: "Krótszy czas dochodzenia do biegłości u nowych operatorów i bardziej spójne wykonanie między zmianami. Konkretny wpływ mierzymy podczas pilotażu.",
         },
         {
-          q: "Czym Quantum różni się od narzędzia do zarządzania wiedzą?",
-          a: "Narzędzia do wiedzy są pod pracę biurową. Quantum jest pod pracę na hali — rejestruje wiedzę przez pokazy, nie dokumenty. Operatorzy realnie z niego korzystają.",
+          q: "Czym Quantum Making różni się od narzędzia do zarządzania wiedzą?",
+          a: "Narzędzia do wiedzy są pod pracę biurową. Quantum Making jest pod pracę na hali — rejestruje wiedzę przez pokazy, nie dokumenty. Operatorzy realnie z niego korzystają.",
         },
         {
           q: "Czy można sprawdzić bez zobowiązań?",
@@ -619,7 +619,7 @@ const pl: Translations = {
         {
           tag: "Wyniki pilotażu",
           status: "W trakcie",
-          title: "Pilotaż Quantum — onboarding i OEE",
+          title: "Pilotaż Quantum Making — onboarding i OEE",
           description:
             "Mierzony wpływ na czas dochodzenia do biegłości, liczbę błędów i OEE z naszego pierwszego pilotażu przemysłowego. Pełny raport po publikacji.",
         },
@@ -700,7 +700,7 @@ const pl: Translations = {
     },
     bookDemo: {
       title: "Umów demo",
-      subtitle: "30-minutowa rozmowa wprowadzająca. Pokażemy Quantum na operacjach takich jak Twoje.",
+      subtitle: "30-minutowa rozmowa wprowadzająca. Pokażemy Quantum Making na operacjach takich jak Twoje.",
       duration: "30 minut",
       location: "Google Meet (link wysyłamy w potwierdzeniu)",
       timezone: "Godziny w Twojej lokalnej strefie czasowej",
