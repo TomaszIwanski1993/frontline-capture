@@ -59,7 +59,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
             className="mt-16 lg:mt-20 flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <a href="#pilot" className="cta-button text-base px-8 py-4 text-center">
+            <a href="/#pilot" className="cta-button text-base px-8 py-4 text-center">
               {t.hero.cta1}
             </a>
             <a href="#how-it-works" className="btn-outline text-base px-8 py-4 text-center">
