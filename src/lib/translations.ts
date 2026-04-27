@@ -356,6 +356,12 @@ const en = {
       fallbackEmail: "Email info@quantummaking.com",
       slotTaken: "That time was just booked. Please pick another slot.",
       genericError: "Something went wrong. Please try again or email info@quantummaking.com.",
+      errors: {
+        nameRequired: "Please enter your full name.",
+        emailRequired: "Please enter your work email.",
+        emailInvalid: "Please enter a valid email address.",
+        companyRequired: "Please enter your company name.",
+      },
     },
 };
 
@@ -717,6 +723,12 @@ const pl: Translations = {
       fallbackEmail: "Napisz na info@quantummaking.com",
       slotTaken: "Ta godzina została właśnie zajęta. Wybierz inny termin.",
       genericError: "Coś poszło nie tak. Spróbuj ponownie lub napisz na info@quantummaking.com.",
+      errors: {
+        nameRequired: "Podaj imię i nazwisko.",
+        emailRequired: "Podaj służbowy adres e-mail.",
+        emailInvalid: "Podaj prawidłowy adres e-mail.",
+        companyRequired: "Podaj nazwę firmy.",
+      },
     },
 };
 
