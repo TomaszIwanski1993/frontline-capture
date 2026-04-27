@@ -20,51 +20,51 @@ html {
   :root {
     /* Light theme — white surface, deep indigo text, cobalt primary */
     --background: 0 0% 100%;                /* #ffffff */
-    --foreground: 243 52% 10%;              /* #100d28 */
+    --foreground: 255 67% 9%;               /* #100828 logo navy */
 
     --card: 0 0% 100%;
-    --card-foreground: 243 52% 10%;
+    --card-foreground: 255 67% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 243 52% 10%;
+    --popover-foreground: 255 67% 9%;
 
-    --primary: 239 96% 47%;                 /* #050deb cobalt */
+    --primary: 238 100% 45%;                /* #0008e8 logo cobalt */
     --primary-foreground: 0 0% 100%;        /* #ffffff */
 
-    --secondary: 243 30% 96%;
-    --secondary-foreground: 243 52% 10%;
+    --secondary: 240 30% 96%;
+    --secondary-foreground: 255 67% 9%;
 
-    --muted: 243 20% 95%;
-    --muted-foreground: 243 20% 38%;
+    --muted: 240 20% 95%;
+    --muted-foreground: 240 12% 35%;
 
-    --accent: 239 96% 47%;                  /* #050deb cobalt */
+    --accent: 238 100% 45%;                 /* #0008e8 logo cobalt */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 243 18% 88%;
-    --input: 243 18% 88%;
-    --ring: 239 96% 47%;
+    --border: 240 18% 88%;
+    --input: 240 18% 88%;
+    --ring: 238 100% 45%;
 
     --radius: 0.375rem;
 
-    --section-tint: 243 30% 97%;
-    --section-tint-strong: 243 25% 95%;
+    --section-tint: 240 30% 97%;
+    --section-tint-strong: 240 25% 95%;
 
-    /* Brand gradients — cobalt blue to deep navy only */
-    --gradient-primary: linear-gradient(135deg, hsl(239 96% 47%), hsl(243 80% 25%));
-    --gradient-cta: linear-gradient(135deg, hsl(239 96% 47%) 0%, hsl(239 96% 38%) 60%, hsl(243 80% 22%) 100%);
-    --gradient-cta-hover: linear-gradient(135deg, hsl(239 96% 42%) 0%, hsl(239 96% 33%) 60%, hsl(243 80% 18%) 100%);
+    /* Brand gradients — logo cobalt blue to deep navy */
+    --gradient-primary: linear-gradient(135deg, hsl(238 100% 45%), hsl(255 67% 12%));
+    --gradient-cta: linear-gradient(135deg, hsl(238 100% 45%) 0%, hsl(238 100% 36%) 60%, hsl(255 67% 12%) 100%);
+    --gradient-cta-hover: linear-gradient(135deg, hsl(238 100% 40%) 0%, hsl(238 100% 30%) 60%, hsl(255 67% 9%) 100%);
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 243 52% 10%;
-    --sidebar-primary: 239 96% 47%;
+    --sidebar-foreground: 255 67% 9%;
+    --sidebar-primary: 238 100% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 243 20% 95%;
-    --sidebar-accent-foreground: 243 52% 10%;
-    --sidebar-border: 243 18% 88%;
-    --sidebar-ring: 239 96% 47%;
+    --sidebar-accent: 240 20% 95%;
+    --sidebar-accent-foreground: 255 67% 9%;
+    --sidebar-border: 240 18% 88%;
+    --sidebar-ring: 238 100% 45%;
   }
 
   .dark {
