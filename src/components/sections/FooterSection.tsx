@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Mail } from "lucide-react";
-import Logo from "@/components/Logo";
+import logoFooter from "@/assets/logo-footer.svg";
 import { useT } from "@/hooks/useT";
 
 const FooterSection = () => {
@@ -13,7 +13,7 @@ const FooterSection = () => {
         <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-8 gap-y-14 items-start">
           {/* Brand column */}
           <div className="col-span-2 lg:col-span-5">
-            <Logo surface="dark" variant="full" className="h-14 lg:h-16 w-auto block -ml-1" />
+            <img src={logoFooter} alt="Quantum" className="h-14 lg:h-16 w-auto block -ml-1" />
             <p className="mt-8 text-sm text-background/60 leading-relaxed">
               {t.footer.legalName}<br />
               {t.footer.addressLine1}<br />
