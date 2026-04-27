@@ -1,4 +1,4 @@
-import { Users, Clock, AlertTriangle } from "lucide-react";
+import { Users, TrendingDown, AlertTriangle } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useT } from "@/hooks/useT";
 import cardKnowledge from "@/assets/card-problem-1-knowledge.jpg";
@@ -7,7 +7,7 @@ import cardImpact from "@/assets/card-problem-3-impact.jpg";
 import KnowledgeFlow from "@/components/KnowledgeFlow";
 import { flowConfig } from "@/lib/flowConfig";
 
-const icons = [Users, Clock, AlertTriangle];
+const icons = [Users, TrendingDown, AlertTriangle];
 const cardImages = [cardKnowledge, cardTraining, cardImpact];
 
 const ProblemSection = () => {
