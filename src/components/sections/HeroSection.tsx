@@ -34,7 +34,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <p className="text-xs lg:text-sm text-muted-foreground/70 font-semibold tracking-[0.2em] uppercase">
-              {t.hero.eyebrow}
+              {renderEyebrowWithBadge(t.hero.eyebrow)}
             </p>
             <h1 className="mt-12 lg:mt-16 mb-4 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.3] text-foreground">
               {t.hero.titleA}
