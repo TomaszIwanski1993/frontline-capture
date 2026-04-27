@@ -66,21 +66,6 @@ const ProblemSection = () => {
             <div className="rounded-lg border border-border/60 bg-card p-10 lg:p-12 text-center">
               <p
                 className="text-5xl lg:text-7xl font-extrabold text-foreground tracking-tight"
-                ref={stat1Ref as React.Ref<HTMLParagraphElement>}
-              >
-                50-{stat1}%
-                <sup className="text-base lg:text-lg text-primary ml-1 align-super">*</sup>
-              </p>
-              <p className="text-sm text-foreground/65 mt-5 leading-relaxed">
-                {t.problem.stat1}{" "}
-                <span className="text-foreground font-semibold">{t.problem.stat1Bold}</span>
-              </p>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal delay={0.1}>
-            <div className="rounded-lg border border-border/60 bg-card p-10 lg:p-12 text-center">
-              <p
-                className="text-5xl lg:text-7xl font-extrabold text-foreground tracking-tight"
                 ref={stat2Ref as React.Ref<HTMLParagraphElement>}
               >
                 6-{stat2}mo
@@ -96,7 +81,6 @@ const ProblemSection = () => {
 
         <ScrollReveal delay={0.2}>
           <div className="mt-10 max-w-3xl text-xs text-muted-foreground/70 leading-relaxed space-y-1">
-            <p>{t.sources.stat1}</p>
             <p>{t.sources.stat2}</p>
           </div>
         </ScrollReveal>
