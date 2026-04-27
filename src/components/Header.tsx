@@ -45,7 +45,7 @@ const Header = () => {
             src={headerLogo}
             alt="Quantum Making"
             loading="eager"
-            className="h-8 lg:h-10 w-auto block"
+            className="h-10 lg:h-12 w-auto block"
           />
         </Link>
         <nav className="hidden lg:flex items-center gap-8">
