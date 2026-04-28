@@ -7,7 +7,7 @@ import PositioningSection from "@/components/sections/PositioningSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import ValueSection from "@/components/sections/ValueSection";
 import TrustSection from "@/components/sections/TrustSection";
-import PilotSection from "@/components/sections/PilotSection";
+
 import FAQSection from "@/components/sections/FAQSection";
 import AboutSection from "@/components/sections/AboutSection";
 
