@@ -5,11 +5,14 @@ import NewBadge from "@/components/NewBadge";
 import BookDemoButton from "@/components/BookDemoButton";
 import { useT } from "@/hooks/useT";
 
-// Highlight standalone uppercase "NEW" tokens in the eyebrow with a styled badge.
+// Highlight standalone uppercase badge tokens (e.g. "NEW", "NOWEGO") in the
+// eyebrow with a styled badge — keeps EN/PL visually consistent.
+const BADGE_SPLIT = /(\bNEW\b|\bNOWEGO\b)/g;
+const BADGE_MATCH = /^(NEW|NOWEGO)$/;
 const renderEyebrowWithBadge = (text: string) => {
-  const parts = text.split(/(\bNEW\b)/g);
+  const parts = text.split(BADGE_SPLIT);
   return parts.map((part, i) =>
-    part === "NEW" ? <NewBadge key={i} /> : <span key={i} className="text-sm">{part}</span>,
+    BADGE_MATCH.test(part) ? <NewBadge key={i}>{part}</NewBadge> : <span key={i} className="text-sm">{part}</span>,
   );
 };
 
