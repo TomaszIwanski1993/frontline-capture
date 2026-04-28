@@ -21,7 +21,7 @@ const ValueSection = () => {
       <KnowledgeFlow {...flowConfig.outcomes} />
       <div className="section-container relative z-10">
         <ScrollReveal>
-          <div>
+          <div className="text-foreground">
             <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
               {t.value.eyebrow}
             </p>
