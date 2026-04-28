@@ -62,12 +62,6 @@ const HeroSection = () => {
             </h1>
           </motion.div>
 
-          <motion.p
-            {...slideUp(0.34)}
-            className="mt-12 lg:mt-14 text-lg lg:text-xl text-foreground/70 leading-relaxed max-w-2xl mx-auto"
-          >
-            {t.hero.tagline}
-          </motion.p>
 
           <motion.div
             {...slideUp(0.46)}
