@@ -403,7 +403,7 @@ const pl: Translations = {
     problem: {
       eyebrow: "Potrzeba biznesowa",
       title: "Widzieliśmy to wyzwanie z bliska",
-      sub: "Jesteśmy badaczami i praktykami. Spędziliśmy czas na halach produkcyjnych, w magazynach i na budowach. Wzorzec się powtarza: 50-80% wiedzy operacyjnej jest niejawna — żyje w ludziach, nie w systemach. Gdy odchodzą doświadczeni pracownicy, wiedza odchodzi z nimi.",
+      sub: "Jesteśmy badaczami i praktykami. Spędziliśmy czas na halach produkcyjnych, w magazynach i na budowach. Wzorzec się powtarza: większość wiedzy operacyjnej jest niejawna—żyje w ludziach, nie w systemach. Gdy odchodzą doświadczeni pracownicy, wiedza odchodzi z nimi.",
       cards: [
         {
           title: "Wiedza wychodzi razem z ludźmi",
