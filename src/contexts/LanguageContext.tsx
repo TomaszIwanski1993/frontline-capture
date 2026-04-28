@@ -27,13 +27,9 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         document.documentElement.lang = stored;
         setLanguageState(stored);
         setHasSelected(true);
-      } else {
-        document.documentElement.lang = "en";
-        setLanguageState("en");
       }
     } catch {
-      document.documentElement.lang = "en";
-      setLanguageState("en");
+      // ignore — gate will be shown
     }
     setHydrated(true);
   }, []);
