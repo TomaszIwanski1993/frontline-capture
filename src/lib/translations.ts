@@ -584,8 +584,8 @@ const pl: Translations = {
           a: "Sposób wykonywania pracy przez doświadczonych operatorów — kroki, sekwencje i decyzje, których nie znajdziesz w dokumentacji.",
         },
         {
-          q: "Jak wygląda bezpieczeństwo i RODO?",
-          a: "Dane są szyfrowane, przechowywane w UE i przetwarzane zgodnie z RODO. Nie zbieramy danych osobowych ani nie monitorujemy osób. Z każdym klientem podpisujemy umowę powierzenia.",
+          q: "Jak podchodzicie do bezpieczeństwa i RODO?",
+          a: "Dane są szyfrowane, przechowywane w UE i przetwarzane zgodnie z RODO. Nie zbieramy danych osobowych ani nie śledzimy pracowników. Z każdym klientem podpisujemy umowę powierzenia danych.",
         },
         {
           q: "Jakich efektów można się spodziewać?",
