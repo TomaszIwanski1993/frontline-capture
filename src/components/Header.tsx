@@ -16,7 +16,7 @@ const Header = () => {
     { label: t.nav.howItWorks, href: "/#how-it-works", type: "anchor" as const },
     { label: t.nav.outcomes, href: "/#outcomes", type: "anchor" as const },
     { label: t.nav.whyQuantum, href: "/#about", type: "anchor" as const },
-    { label: t.nav.resources, href: "/resources", type: "route" as const },
+    
     { label: t.nav.contact, href: "/#contact", type: "anchor" as const },
   ];
 

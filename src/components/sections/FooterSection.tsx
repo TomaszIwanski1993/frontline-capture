@@ -48,7 +48,7 @@ const FooterSection = () => {
             <ul className="space-y-3 text-sm text-background/60">
               <li><a href="#about" className="hover:text-background transition-colors">{t.footer.links.about}</a></li>
               <li><a href="#contact" className="hover:text-background transition-colors">{t.footer.links.contact}</a></li>
-              <li><a href="/resources" className="hover:text-background transition-colors">{t.footer.links.resources}</a></li>
+              
             </ul>
           </div>
 
