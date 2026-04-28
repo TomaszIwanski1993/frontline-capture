@@ -9,7 +9,7 @@ import { useT } from "@/hooks/useT";
 const renderEyebrowWithBadge = (text: string) => {
   const parts = text.split(/(\bNEW\b)/g);
   return parts.map((part, i) =>
-    part === "NEW" ? <NewBadge key={i} /> : <span key={i}>{part}</span>,
+    part === "NEW" ? <NewBadge key={i} /> : <span key={i} className="text-sm">{part}</span>,
   );
 };
 
