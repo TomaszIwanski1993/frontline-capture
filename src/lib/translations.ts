@@ -59,19 +59,19 @@ const en = {
       sub: "Built on AI that understands both real workflows and documentation.",
       steps: [
         {
-          title: "\nContextualize",
+          title: "Contextualize",
           description:
             "You provide documentation, workflows, procedures, and SOPs to help the AI understand your business and processes.",
         },
         {
           title: "Capture",
           description:
-            "\nQuantum Making records how experienced operators work — including the tacit knowledge manuals miss.",
+            "Quantum Making records how experienced operators work — including the tacit knowledge manuals miss.",
         },
         {
           title: "Document",
           description:
-            "\nRaw expertise becomes structured, searchable guidance, ready to deploy across teams that will make knowledge available for onboarding, training, and continuous improvement.",
+            "Raw expertise becomes structured, searchable guidance, ready to deploy across teams that will make knowledge available for onboarding, training, and continuous improvement.",
         },
       ],
     },
@@ -434,19 +434,19 @@ const pl: Translations = {
       sub: "Zbudowane na AI, które rozumie realne procesy, nie dokumenty.",
       steps: [
         {
-          title: "\nKontekstualizacja",
+          title: "Kontekstualizacja",
           description:
             "Dostarczasz dokumentację, przepływy pracy, procedury i SOP, aby pomóc AI zrozumieć Twój biznes i procesy.",
         },
         {
           title: "Rejestracja",
           description:
-            "\nQuantum Making nagrywa, jak doświadczeni operatorzy pracują — łapie wiedzę praktyczną, której nie ma w instrukcjach.",
+            "Quantum Making nagrywa, jak doświadczeni operatorzy pracują — łapie wiedzę praktyczną, której nie ma w instrukcjach.",
         },
         {
           title: "Dokumentacja",
           description:
-            "\nSurowe doświadczenie staje się uporządkowanymi, gotowymi do użycia wskazówkami dla zespołów, które udostępnią wiedzę do wdrożenia, szkolenia i ciągłego doskonalenia.",
+            "Surowe doświadczenie staje się uporządkowanymi, gotowymi do użycia wskazówkami dla zespołów, które udostępnią wiedzę do wdrożenia, szkolenia i ciągłego doskonalenia.",
         },
       ],
     },
