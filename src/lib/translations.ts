@@ -581,7 +581,7 @@ const pl: Translations = {
         },
         {
           q: "Co dokładnie rejestruje Quantum Making?",
-          a: "Pokazy zadań od doświadczonych operatorów: kroki, sekwencje i punkty decyzyjne, które tworzą realną wiedzę. To, czego nie ma w dokumentacji.",
+          a: "Sposób wykonywania pracy przez doświadczonych operatorów — kroki, sekwencje i decyzje, których nie znajdziesz w dokumentacji.",
         },
         {
           q: "Jak wygląda bezpieczeństwo i RODO?",
