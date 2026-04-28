@@ -406,19 +406,19 @@ const pl: Translations = {
       sub: "Jako praktycy i badacze pracowaliśmy na halach produkcyjnych, w magazynach i na budowach. Widzimy ten sam schemat: kluczowa wiedza operacyjna nie trafia do systemów — zostaje w głowach ludzi. A gdy doświadczeni pracownicy odchodzą, firma traci ją razem z nimi.",
       cards: [
         {
-          title: "Wiedza wychodzi razem z ludźmi",
+          title: "Wiedza odchodzi razem z ludźmi",
           description:
-            "Większość know-how nigdy nie zostaje spisana. Gdy doświadczony operator odchodzi, jego wiedza znika z dnia na dzień.",
+            "Większość know-how nie jest nigdzie spisana. Gdy doświadczeni operatorzy odchodzą, wiedza znika razem z nimi.",
         },
         {
-          title: "Niedobór kadr zagraża biznesowi",
+          title: "Niedobór kadr uderza w biznes",
           description:
-            "Niedobór kompetencji technicznych rośnie; wyzwania kadrowe wywierają presję na wyniki i trwałość obecnych modeli biznesowych.",
+            "Brakuje kompetencji technicznych, a wyzwania kadrowe coraz mocniej wpływają na wyniki i stabilność biznesu.",
         },
         {
-          title: "Skutki są operacyjne",
+          title: "Skutki widać w operacjach",
           description:
-            "Wolniejsze wdrożenia. Więcej błędów. Niższe OEE. Jakość produkcji zmienia się razem ze zmianą.",
+            "Wolniejsze wdrożenia. Więcej błędów. Niższe OEE. Jakość produkcji zależy od tego, kto jest na zmianie.",
         },
       ],
       stat1: "wiedzy operacyjnej jest",
