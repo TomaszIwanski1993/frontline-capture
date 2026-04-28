@@ -28,7 +28,7 @@ const en = {
     },
     problem: {
       eyebrow: "The Business Need",
-      title: "We've seen this challenge first-hand",
+      title: "We’ve seen this challenge first-hand",
       sub: "We’ve spent time on factory floors, in warehouses, and on construction sites. The same pattern repeats: the majority of operational knowledge is tacit—it lives in people, not systems. When experienced workers leave, it goes with them.",
       cards: [
         {
@@ -91,9 +91,9 @@ const en = {
             "Our solution prepares detailed, ready-to-use documentation built from how the work is actually done.",
         },
         {
-          title: "Hands-free, on the shop floor",
+          title: "Hands-free on the shop floor",
           description:
-            "The documentation process is user-friendly and hands-free — it happens directly on the shop floor where the work is performed.",
+            "The documentation process is hands-free and runs directly on the shop floor, where the work is actually performed.",
         },
       ],
       origin: "Built in Poland",
@@ -466,9 +466,9 @@ const pl: Translations = {
             "Nasze rozwiązanie przygotowuje szczegółową, gotową do użycia dokumentację opartą na tym, jak praca jest naprawdę wykonywana.",
         },
         {
-          title: "Bez użycia rąk, na hali",
+          title: "Bezdotykowo, na hali",
           description:
-            "Proces dokumentowania jest przyjazny i bezdotykowy — odbywa się bezpośrednio na hali, tam gdzie wykonywana jest praca.",
+            "Proces dokumentowania jest bezdotykowy i odbywa się bezpośrednio na hali, tam gdzie wykonywana jest praca.",
         },
       ],
       origin: "Zbudowane w Polsce",
@@ -663,7 +663,7 @@ const pl: Translations = {
       solutions: "Rozwiązania",
       legal: "Informacje prawne",
       links: {
-        about: "O nas",
+        about: "Dlaczego my",
         contact: "Kontakt",
         resources: "Materiały",
         howItWorks: "Jak to działa",

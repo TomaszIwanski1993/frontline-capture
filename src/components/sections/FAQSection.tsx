@@ -15,8 +15,7 @@ const FAQSection = () => {
         <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-16">
           <ScrollReveal>
             <div className="lg:sticky lg:top-24">
-              <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">{"\n"}</p>
-              <h2 className="mt-2 text-4xl lg:text-5xl xl:text-6xl font-extrabold text-foreground tracking-tight leading-[1.02]">
+              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-foreground tracking-tight leading-[1.02]">
                 {t.faq.titleA}<br />{t.faq.titleB}<br />{t.faq.titleC}
               </h2>
             </div>
