@@ -85,14 +85,14 @@ const en = {
             "Knowledge is captured in minutes and live the same day. No long documentation projects.",
         },
         {
-          title: "AI does the manual work",
+          title: "Ready-to-use documentation",
           description:
-            "Quantum Making captures, structures, and delivers guidance automatically — across every shift.",
+            "Our solution prepares detailed, ready-to-use documentation built from how the work is actually done.",
         },
         {
-          title: "Consistent execution",
+          title: "Hands-free, on the shop floor",
           description:
-            "Every operator gets the same expert-level guidance. Output stops depending on who's on shift.",
+            "The documentation process is user-friendly and hands-free — it happens directly on the shop floor where the work is performed.",
         },
       ],
       origin: "Built in Poland",
@@ -463,14 +463,14 @@ const pl: Translations = {
             "Wiedza powstaje w kilka minut i działa tego samego dnia. Bez długich projektów dokumentacyjnych.",
         },
         {
-          title: "AI robi pracę manualną",
+          title: "Gotowa do użycia dokumentacja",
           description:
-            "Quantum Making sam rejestruje, porządkuje i podaje wskazówki — na każdej zmianie, bez limitu skali.",
+            "Nasze rozwiązanie przygotowuje szczegółową, gotową do użycia dokumentację opartą na tym, jak praca jest naprawdę wykonywana.",
         },
         {
-          title: "Spójne wykonanie",
+          title: "Bez użycia rąk, na hali",
           description:
-            "Każdy operator dostaje wskazówki na poziomie eksperta. Jakość przestaje zależeć od zmiany.",
+            "Proces dokumentowania jest przyjazny i bezdotykowy — odbywa się bezpośrednio na hali, tam gdzie wykonywana jest praca.",
         },
       ],
       origin: "Zbudowane w Polsce",

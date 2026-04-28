@@ -1,8 +1,8 @@
 import ScrollReveal from "@/components/ScrollReveal";
-import { Zap, Bot, ShieldCheck } from "lucide-react";
+import { Zap, FileCheck2, HardHat } from "lucide-react";
 import { useT } from "@/hooks/useT";
 
-const icons = [Zap, Bot, ShieldCheck];
+const icons = [Zap, FileCheck2, HardHat];
 
 const AboutSection = () => {
   const t = useT();
