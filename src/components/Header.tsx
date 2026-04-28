@@ -23,13 +23,6 @@ const Header = () => {
   const renderLink = (link: typeof navLinks[number], onClick?: () => void) => {
     const className =
       "text-sm text-muted-foreground hover:text-foreground transition-colors duration-200";
-    if (link.type === "route") {
-      return (
-        <Link key={link.href} to={link.href} className={className} onClick={onClick}>
-          {link.label}
-        </Link>
-      );
-    }
     return (
       <a key={link.href} href={link.href} className={className} onClick={onClick}>
         {link.label}
