@@ -18,16 +18,22 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    // Always show the language gate on every page load.
-    // We still read a stored preference (if any) just to set <html lang>,
-    // but we do NOT mark the language as "selected" — the gate will appear.
+    // If a language was previously chosen, skip the gate entirely.
+    // Otherwise default to English so the site is immediately visible,
+    // while still allowing the user to switch via the gate or the language switcher.
     try {
       const stored = localStorage.getItem(STORAGE_KEY) as Language | null;
       if (stored === "en" || stored === "pl") {
         document.documentElement.lang = stored;
+        setLanguageState(stored);
+        setHasSelected(true);
+      } else {
+        document.documentElement.lang = "en";
+        setLanguageState("en");
       }
     } catch {
-      // ignore
+      document.documentElement.lang = "en";
+      setLanguageState("en");
     }
     setHydrated(true);
   }, []);
