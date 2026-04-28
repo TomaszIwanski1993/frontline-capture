@@ -5,7 +5,7 @@ import { useT } from "@/hooks/useT";
 
 const ContactSection = () => {
   const t = useT();
-  const [form, setForm] = useState({ name: "", company: "", email: "" });
+  const [form, setForm] = useState({ name: "", company: "", email: "", challenge: "" });
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
