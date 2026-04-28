@@ -387,7 +387,7 @@ const pl: Translations = {
       toggleMenu: "Otwórz menu",
     },
     hero: {
-      eyebrow: "NOWA ERA WIEDZY OPERACYJNEJ.",
+      eyebrow: "ZMIANY DEMOGRAFICZNE I EWOLUUJĄCE OCZEKIWANIA PRACOWNIKÓW WYMAGAJĄ NOWEGO PODEJŚCIA.",
       titleA: "Zabezpiecz wiedzę.",
       titleB: "Zabezpiecz biznes.",
       tagline: "",
