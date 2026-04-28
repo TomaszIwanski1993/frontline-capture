@@ -452,23 +452,23 @@ const pl: Translations = {
     },
     about: {
       eyebrow: "Dlaczego my",
-      title: "Zbudowany pod tempo i skalę",
-      subtitle: "Jesteśmy bardzo elastyczni i dostosowujemy rozwiązanie oraz model wdrożenia do Twoich konkretnych potrzeb.",
+      title: "Rozwiązanie zaprojektowane do szybkiego skalowania",
+      subtitle: "Jesteśmy elastyczni i dopasowujemy rozwiązanie oraz model wdrożenia do Twoich potrzeb.\n",
       values: [
         {
           title: "Szybkie wdrożenie",
           description:
-            "Wiedza powstaje w kilka minut i działa tego samego dnia. Bez długich projektów dokumentacyjnych.",
+            "Dokumentacja powstaje w kilka minut i jest gotowa do użycia od razu — bez długich projektów.",
         },
         {
           title: "Gotowa do użycia dokumentacja",
           description:
-            "Nasze rozwiązanie przygotowuje szczegółową, gotową do użycia dokumentację opartą na tym, jak praca jest naprawdę wykonywana.",
+            "Tworzymy szczegółową, gotową do użycia dokumentację opartą na tym, jak praca naprawdę wygląda.",
         },
         {
-          title: "Bezdotykowo, na hali",
+          title: "Bezdotykowo, w miejscu pracy",
           description:
-            "Proces dokumentowania jest bezdotykowy i odbywa się bezpośrednio na hali, tam gdzie wykonywana jest praca.",
+            "Dokumentowanie odbywa się bez ingerencji w pracę — bezpośrednio na hali, tam gdzie naprawdę się ona odbywa.",
         },
       ],
       origin: "Zbudowane w Polsce",
