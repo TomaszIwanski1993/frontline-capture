@@ -592,8 +592,8 @@ const pl: Translations = {
           a: "Szybsze wdrożenia i spójna praca na każdej zmianie.",
         },
         {
-          q: "Czym Quantum Making różni się od narzędzia do zarządzania wiedzą?",
-          a: "Narzędzia do wiedzy są pod pracę biurową. Quantum Making jest pod pracę na hali — rejestruje wiedzę przez pokazy, nie dokumenty. Operatorzy realnie z niego korzystają.",
+          q: "Czym Quantum Making różni się od innych narzędzi do zarządzania wiedzą w firmie?",
+          a: "Klasyczne narzędzia są stworzone do pracy biurowej. Quantum Making działa w środowisku operacyjnym — rejestruje, jak praca naprawdę wygląda, zamiast polegać na dokumentach. Dzięki temu operatorzy faktycznie z niego korzystają.",
         },
       ],
     },
