@@ -59,19 +59,19 @@ const en = {
       sub: "Built on AI that understands both real workflows and documentation.",
       steps: [
         {
-          title: "\nContextualize",
+          title: "Contextualize",
           description:
             "You provide documentation, workflows, procedures, and SOPs to help the AI understand your business and processes.",
         },
         {
           title: "Capture",
           description:
-            "\nQuantum Making records how experienced operators work — including the tacit knowledge manuals miss.",
+            "Quantum Making records how experienced operators work — including the tacit knowledge manuals miss.",
         },
         {
           title: "Document",
           description:
-            "\nRaw expertise becomes structured, searchable guidance, ready to deploy across teams that will make knowledge available for onboarding, training, and continuous improvement.",
+            "Raw expertise becomes structured, searchable guidance, ready to deploy across teams that will make knowledge available for onboarding, training, and continuous improvement.",
         },
       ],
     },
