@@ -642,7 +642,7 @@ const pl: Translations = {
     contact: {
       eyebrow: "Kontakt",
       title: "Porozmawiajmy",
-      sub: "Odpowiadamy w ciągu jednego dnia roboczego.",
+      sub: "Odezwiemy się w ciągu jednego dnia roboczego.",
       addressLine1: "Grzegórzecka 69D/46",
       addressLine2: "31-559 Kraków, Polska",
       name: "Imię i nazwisko",
