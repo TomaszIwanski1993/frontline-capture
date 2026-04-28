@@ -44,18 +44,21 @@ const Header = () => {
           to="/"
           aria-label="Go to homepage"
           onClick={(e) => {
-            if (window.location.pathname === "/") {
-              e.preventDefault();
+            e.preventDefault();
+            if (window.location.pathname !== "/") {
+              window.history.pushState({}, "", "/");
             }
             window.scrollTo({ top: 0, behavior: "smooth" });
+            document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+            document.body.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="flex items-center shrink-0 h-full overflow-visible cursor-pointer"
+          className="relative z-10 flex items-center shrink-0 h-full overflow-visible cursor-pointer pointer-events-auto"
         >
           <img
             src={headerLogo}
             alt="Quantum Making"
             loading="eager"
-            className="h-[120px] lg:h-[160px] w-auto block origin-left -my-8"
+            className="h-[120px] lg:h-[160px] w-auto block origin-left -my-8 pointer-events-none"
           />
         </Link>
         <nav className="hidden lg:flex items-center gap-8">
