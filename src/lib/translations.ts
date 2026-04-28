@@ -388,7 +388,7 @@ const pl: Translations = {
     },
     hero: {
       eyebrow: "ZMIANY DEMOGRAFICZNE I EWOLUUJĄCE OCZEKIWANIA PRACOWNIKÓW WYMAGAJĄ NOWEGO PODEJŚCIA.",
-      titleA: "Zabezpiecz wiedzę.",
+      titleA: "Zabezpiecz swój biznes przed utratą wiedzy i erozją kompetencji dzięki płynnej integracji AI.",
       titleB: "Zabezpiecz biznes.",
       tagline: "",
       sub: "Wiedza zostaje, nawet gdy ludzie odchodzą.",
