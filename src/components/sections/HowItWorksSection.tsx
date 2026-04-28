@@ -19,7 +19,7 @@ const HowItWorksSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
           <div className="flex-1">
             <ScrollReveal>
-              <div>
+              <div className="text-foreground">
                 <p className="text-xs font-semibold text-primary tracking-[0.2em] uppercase mb-4">
                   {t.howItWorks.eyebrow}
                 </p>
