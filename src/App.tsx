@@ -16,26 +16,21 @@ import NotFound from "./pages/NotFound.tsx";
 const queryClient = new QueryClient();
 
 const GatedApp = () => {
-  const { hasSelected } = useLanguage();
   return (
     <>
       <LanguageGate />
-      {hasSelected && (
-        <>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/resources" element={<Resources />} />
-              <Route path="/privacy" element={<PrivacyPolicy />} />
-              <Route path="/cookies" element={<CookiePolicy />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-          <BookDemoDialog />
-        </>
-      )}
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/cookies" element={<CookiePolicy />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+      <BookDemoDialog />
     </>
   );
 };
