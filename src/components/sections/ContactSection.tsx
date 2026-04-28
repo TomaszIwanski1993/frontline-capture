@@ -111,6 +111,20 @@ const ContactSection = () => {
                       placeholder={t.contact.emailPh}
                     />
                   </div>
+                  <div>
+                    <label htmlFor="challenge" className="block text-sm font-medium text-foreground mb-2">
+                      {t.contact.challenge}
+                    </label>
+                    <textarea
+                      id="challenge"
+                      rows={4}
+                      maxLength={1000}
+                      value={form.challenge}
+                      onChange={(e) => setForm({ ...form, challenge: e.target.value })}
+                      className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-y min-h-[7rem]"
+                      placeholder={t.contact.challengePh}
+                    />
+                  </div>
                   <button type="submit" className="cta-button w-full text-base py-4">
                     {t.contact.submit}
                   </button>
