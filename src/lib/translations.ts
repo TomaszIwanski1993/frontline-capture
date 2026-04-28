@@ -213,7 +213,7 @@ const en = {
         },
         {
           q: "What results should we expect?",
-          a: "Shorter time-to-proficiency for new operators and more consistent execution across shifts. Exact impact is measured during the pilot.",
+          a: "Shorter time-to-proficiency for new operators and more consistent execution across shifts.",
         },
         {
           q: "How is this different from a knowledge management tool?",
@@ -591,7 +591,7 @@ const pl: Translations = {
         },
         {
           q: "Jakich efektów można się spodziewać?",
-          a: "Krótszy czas dochodzenia do biegłości u nowych operatorów i bardziej spójne wykonanie między zmianami. Konkretny wpływ mierzymy podczas pilotażu.",
+          a: "Krótszy czas dochodzenia do biegłości u nowych operatorów i bardziej spójne wykonanie między zmianami.",
         },
         {
           q: "Czym Quantum Making różni się od narzędzia do zarządzania wiedzą?",
