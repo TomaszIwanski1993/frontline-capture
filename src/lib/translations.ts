@@ -434,19 +434,19 @@ const pl: Translations = {
       sub: "Zbudowane na AI, które rozumie realne procesy, nie dokumenty.",
       steps: [
         {
-          title: "\nKontekstualizacja",
+          title: "Kontekstualizacja",
           description:
             "Dostarczasz dokumentację, przepływy pracy, procedury i SOP, aby pomóc AI zrozumieć Twój biznes i procesy.",
         },
         {
           title: "Rejestracja",
           description:
-            "\nQuantum Making nagrywa, jak doświadczeni operatorzy pracują — łapie wiedzę praktyczną, której nie ma w instrukcjach.",
+            "Quantum Making nagrywa, jak doświadczeni operatorzy pracują — łapie wiedzę praktyczną, której nie ma w instrukcjach.",
         },
         {
           title: "Dokumentacja",
           description:
-            "\nSurowe doświadczenie staje się uporządkowanymi, gotowymi do użycia wskazówkami dla zespołów, które udostępnią wiedzę do wdrożenia, szkolenia i ciągłego doskonalenia.",
+            "Surowe doświadczenie staje się uporządkowanymi, gotowymi do użycia wskazówkami dla zespołów, które udostępnią wiedzę do wdrożenia, szkolenia i ciągłego doskonalenia.",
         },
       ],
     },
