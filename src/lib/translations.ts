@@ -588,8 +588,8 @@ const pl: Translations = {
           a: "Dane są szyfrowane, przechowywane w UE i przetwarzane zgodnie z RODO. Nie zbieramy danych osobowych ani nie śledzimy pracowników. Z każdym klientem podpisujemy umowę powierzenia danych.",
         },
         {
-          q: "Jakich efektów można się spodziewać?",
-          a: "Krótszy czas dochodzenia do biegłości u nowych operatorów i bardziej spójne wykonanie między zmianami.",
+          q: "Jakie efekty daje Quantum Making?",
+          a: "Szybsze wdrożenia i spójna praca na każdej zmianie.",
         },
         {
           q: "Czym Quantum Making różni się od narzędzia do zarządzania wiedzą?",
