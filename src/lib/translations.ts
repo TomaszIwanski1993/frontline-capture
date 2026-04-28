@@ -61,7 +61,7 @@ const en = {
         {
           title: "Contextualize",
           description:
-            "\n",
+            "You provide documentation, workflows, procedures, and SOPs to help the AI understand your business and processes.",
         },
         {
           title: "Capture",
@@ -436,7 +436,7 @@ const pl: Translations = {
         {
           title: "Kontekstualizacja",
           description:
-            "\n",
+            "Dostarczasz dokumentację, przepływy pracy, procedury i SOP, aby pomóc AI zrozumieć Twój biznes i procesy.",
         },
         {
           title: "Rejestracja",
