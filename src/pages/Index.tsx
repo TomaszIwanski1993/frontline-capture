@@ -49,6 +49,11 @@ const Index = () => {
           <PositioningSection />
         </div>
 
+        {/* About (Why Us) — tinted */}
+        <div className="section-tinted">
+          <AboutSection />
+        </div>
+
         {/* How it works — light */}
         <HowItWorksSection />
 
@@ -59,11 +64,6 @@ const Index = () => {
 
         {/* Trust logos — light, quiet */}
         <TrustSection />
-
-        {/* About — tinted */}
-        <div className="section-tinted">
-          <AboutSection />
-        </div>
 
         {/* FAQ — tinted */}
         <div className="section-tinted">
