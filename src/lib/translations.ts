@@ -519,7 +519,7 @@ const pl: Translations = {
       ],
     },
     trust: {
-      label: "Pilotowane w realnych środowiskach magazynowych i produkcyjnych",
+      label: "SPRAWDZONE W REALNYCH ŚRODOWISKACH MAGAZYNOWYCH I PRODUKCYJNYCH",
       tags: ["Produkcja", "Logistyka", "FMCG", "Serwis terenowy"],
     },
     industries: {
