@@ -16,20 +16,13 @@ const Header = () => {
     { label: t.nav.howItWorks, href: "/#how-it-works", type: "anchor" as const },
     { label: t.nav.outcomes, href: "/#outcomes", type: "anchor" as const },
     { label: t.nav.whyQuantum, href: "/#about", type: "anchor" as const },
-    { label: t.nav.resources, href: "/resources", type: "route" as const },
+    
     { label: t.nav.contact, href: "/#contact", type: "anchor" as const },
   ];
 
   const renderLink = (link: typeof navLinks[number], onClick?: () => void) => {
     const className =
       "text-sm text-muted-foreground hover:text-foreground transition-colors duration-200";
-    if (link.type === "route") {
-      return (
-        <Link key={link.href} to={link.href} className={className} onClick={onClick}>
-          {link.label}
-        </Link>
-      );
-    }
     return (
       <a key={link.href} href={link.href} className={className} onClick={onClick}>
         {link.label}

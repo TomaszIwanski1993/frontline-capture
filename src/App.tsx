@@ -8,7 +8,6 @@ import { BookDemoProvider } from "@/contexts/BookDemoContext";
 import BookDemoDialog from "@/components/BookDemoDialog";
 import LanguageGate from "@/components/LanguageGate";
 import Index from "./pages/Index.tsx";
-import Resources from "./pages/Resources.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import CookiePolicy from "./pages/CookiePolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -24,7 +23,6 @@ const GatedApp = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/resources" element={<Resources />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/cookies" element={<CookiePolicy />} />
           <Route path="*" element={<NotFound />} />
