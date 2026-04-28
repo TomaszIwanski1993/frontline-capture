@@ -51,7 +51,7 @@ const HowItWorksSection = () => {
                   </span>
                   <Icon className="h-5 w-5 text-primary mt-3 mb-3" strokeWidth={1.5} />
                   <h3 className="text-lg font-semibold text-foreground mb-3 whitespace-pre-line">{step.title}</h3>
-                  <p className="text-foreground/65 text-base lg:text-lg leading-relaxed">{step.description}</p>
+                  <p className="text-foreground/65 text-sm font-normal leading-relaxed">{step.description}</p>
 
                   {i < t.howItWorks.steps.length - 1 && (
                     <div className="hidden md:block absolute top-6 -right-4 w-8 h-px bg-border" />
