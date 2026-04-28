@@ -427,7 +427,7 @@ const pl: Translations = {
       stat2Bold: "zastąpienie jednego doświadczonego operatora",
     },
     pullQuote:
-      '"Twoja operacja jest tak silna, jak doświadczenie Twoich operatorów."',
+      '"Twoja operacja jest tylko tak silna, jak doświadczenie Twoich operatorów."',
     howItWorks: {
       eyebrow: "Jak to działa",
       title: "Trzy kroki do utrzymania wiedzy",
