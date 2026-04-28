@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLanguage, Language } from "@/contexts/LanguageContext";
 import Logo from "@/components/Logo";
+import LanguageGateParticles from "@/components/LanguageGateParticles";
 
 const TAGLINES = [
   { lang: "en", text: "AI for operational knowledge retention" },
@@ -50,6 +51,8 @@ const LanguageGate = () => {
       aria-modal="true"
       aria-label="Language selection"
     >
+      <LanguageGateParticles />
+
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
