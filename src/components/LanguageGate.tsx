@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLanguage, Language } from "@/contexts/LanguageContext";
 import Logo from "@/components/Logo";
+import LanguageGateParticles from "@/components/LanguageGateParticles";
 
 const TAGLINES = [
   { lang: "en", text: "AI for operational knowledge retention" },
