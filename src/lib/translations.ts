@@ -475,32 +475,32 @@ const pl: Translations = {
     },
     value: {
       eyebrow: "Efekty",
-      title: "Mierzalny wpływ na operacje",
-      sub: "Czego mogą oczekiwać zespoły, gdy wiedza praktyczna staje się wspólna, uporządkowana i wielokrotnego użytku.",
+      title: "Realny, mierzalny wpływ na operacje",
+      sub: "Co zyskują zespoły, gdy wiedza staje się wspólna, uporządkowana i dostępna dla wszystkich?",
       items: [
         {
-          metric: "Tygodnie zamiast miesięcy",
-          title: "Krótszy czas dochodzenia do biegłości",
+          metric: "Wdrożenie w dni, nie miesiące",
+          title: "Szybsze wdrożenie do pracy",
           description:
-            "Nowi operatorzy uczą się prowadzeni wiedzą najlepszych, zamiast metodą prób i błędów.",
+            "Nowi operatorzy uczą się na wiedzy najlepszych — zamiast metodą prób i błędów.",
         },
         {
-          metric: "Zmiana po zmianie",
-          title: "Bardziej spójne wykonanie",
+          metric: "Spójność między zmianami",
+          title: "Spójne wykonywanie pracy",
           description:
-            "Każdy pracuje z tych samych sprawdzonych kroków, więc wynik przestaje zależeć od obsady.",
+            "Każdy pracuje według tych samych sprawdzonych kroków — wynik nie zależy już od tego, kto jest na zmianie.",
         },
         {
           metric: "Bez pojedynczych punktów awarii",
-          title: "Wiedza zostaje w operacji",
+          title: "Wiedza zostaje w firmie",
           description:
-            "Kluczowe know-how żyje w systemie, nie w kilku głowach — rotacja przestaje zaburzać pracę.",
+            "Kluczowe know-how jest w systemie, nie tylko w głowach pracowników — rotacja przestaje zaburzać pracę.",
         },
         {
           metric: "Mniej zależności od bohaterów",
-          title: "Wiedza najlepszych, w skali",
+          title: "Wiedza najlepszych dostępna dla wszystkich",
           description:
-            "Doświadczenie najlepszych ludzi jest dostępne dla każdego zespołu i lokalizacji, nie tylko ich własnej zmiany.",
+            "Doświadczenie najlepszych jest dostępne dla wszystkich zespołów i lokalizacji — nie tylko na ich zmianie.",
         },
       ],
       kpis: [
