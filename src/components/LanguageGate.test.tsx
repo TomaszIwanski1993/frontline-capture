@@ -39,7 +39,8 @@ describe("LanguageGate — first visit gating & returning visit skip", () => {
     expect(dialog.className).toMatch(/\binset-0\b/);
     expect(dialog.className).toMatch(/z-\[1000\]/);
     // Opaque background so underlying content is not perceivable
-    expect(dialog.style.backgroundColor.replace(/\s/g, "")).toBe("#ffffff");
+    const bg = dialog.style.backgroundColor.replace(/\s/g, "").toLowerCase();
+    expect(["#ffffff", "rgb(255,255,255)"]).toContain(bg);
     // The gate must NOT expose a dismiss/close affordance — choice is required
     expect(screen.queryByRole("button", { name: /close language selection/i })).toBeNull();
   });
