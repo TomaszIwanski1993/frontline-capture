@@ -430,23 +430,23 @@ const pl: Translations = {
       '"Twoja operacja jest tylko tak silna, jak doświadczenie Twoich operatorów."',
     howItWorks: {
       eyebrow: "Jak to działa",
-      title: "Trzy kroki do utrzymania wiedzy",
-      sub: "Zbudowane na AI, które rozumie realne procesy, nie dokumenty.",
+      title: "Trzy kroki do zachowania wiedzy",
+      sub: "Oparte na AI, które rozumie realne procesy — nie tylko dokumenty.",
       steps: [
         {
-          title: "Kontekstualizacja",
+          title: "Kontekst",
           description:
-            "Dostarczasz dokumentację, przepływy pracy, procedury i SOP, aby pomóc AI zrozumieć Twój biznes i procesy.",
+            "Dostarczasz dokumentację, procedury i SOP, dzięki którym AI rozumie Twój biznes i sposób pracy.",
         },
         {
           title: "Rejestracja",
           description:
-            "Quantum Making nagrywa, jak doświadczeni operatorzy pracują — łapie wiedzę praktyczną, której nie ma w instrukcjach.",
+            "Quantum Making rejestruje jak pracują doświadczeni operatorzy — uchwytując wiedzę praktyczną, której nie znajdziesz w instrukcjach.",
         },
         {
           title: "Dokumentacja",
           description:
-            "Surowe doświadczenie staje się uporządkowanymi, gotowymi do użycia wskazówkami dla zespołów, które udostępnią wiedzę do wdrożenia, szkolenia i ciągłego doskonalenia.",
+            "Zamieniamy doświadczenie w uporządkowaną, gotową do użycia wiedzę — do wdrożeń, szkoleń i ciągłego doskonalenia.",
         },
       ],
     },
