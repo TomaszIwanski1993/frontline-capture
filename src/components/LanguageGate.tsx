@@ -51,6 +51,25 @@ const LanguageGate = () => {
       aria-modal="true"
       aria-label="Language selection"
     >
+      {/* Video background — covers the viewport, plays muted/looped/auto */}
+      <video
+        className="pointer-events-none absolute inset-0 w-full h-full object-cover"
+        src="/language-gate-bg.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+      />
+
+      {/* White readability overlay */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{ backgroundColor: "rgba(255, 255, 255, 0.78)" }}
+        aria-hidden="true"
+      />
+
       <LanguageGateParticles />
 
       <div
