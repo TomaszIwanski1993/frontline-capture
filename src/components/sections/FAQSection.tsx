@@ -22,7 +22,7 @@ const FAQSection = () => {
             </div>
           </ScrollReveal>
 
-          <div>
+          <div className="text-foreground">
             <Accordion type="single" collapsible className="space-y-3">
               {t.faq.items.map((faq, i) => (
                 <ScrollReveal key={i} delay={0.05 * i}>
