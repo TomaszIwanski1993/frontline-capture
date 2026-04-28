@@ -37,9 +37,9 @@ const en = {
             "Most operational know-how is never written down. When experienced operators retire or change jobs, what they knew disappears overnight.",
         },
         {
-          title: "Traditional training doesn't work here",
+          title: "Workforce shortages threaten the business",
           description:
-            "Manuals, slides, and classrooms aren't built for the floor. Real expertise comes from doing the work — and that's what classic training never captures.",
+            "The shortage of technical competencies is increasing; workforce challenges are putting pressure on the results and sustainability of current business models.",
         },
         {
           title: "The impact is operational",
@@ -414,9 +414,9 @@ const pl: Translations = {
             "Większość know-how nigdy nie zostaje spisana. Gdy doświadczony operator odchodzi, jego wiedza znika z dnia na dzień.",
         },
         {
-          title: "Klasyczne szkolenia tu nie działają",
+          title: "Niedobór kadr zagraża biznesowi",
           description:
-            "Instrukcje, slajdy i sale szkoleniowe nie są zrobione pod halę. Prawdziwa wiedza powstaje przy pracy — a tego klasyczne szkolenia nigdy nie łapią.",
+            "Niedobór kompetencji technicznych rośnie; wyzwania kadrowe wywierają presję na wyniki i trwałość obecnych modeli biznesowych.",
         },
         {
           title: "Skutki są operacyjne",
