@@ -17,15 +17,7 @@ const LanguageGate = () => {
   const { hasSelected, setLanguage } = useLanguage();
   const [activeIndex, setActiveIndex] = useState(0);
   const [reducedMotion, setReducedMotion] = useState(false);
-
-  useEffect(() => {
-    if (hasSelected) return;
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = prev;
-    };
-  }, [hasSelected]);
+  const [dismissed, setDismissed] = useState(false);
 
   // Honor prefers-reduced-motion
   useEffect(() => {
