@@ -402,8 +402,8 @@ const pl: Translations = {
     },
     problem: {
       eyebrow: "Potrzeba biznesowa",
-      title: "Widzieliśmy to wyzwanie z bliska",
-      sub: "Jesteśmy badaczami i praktykami. Spędziliśmy czas na halach produkcyjnych, w magazynach i na budowach. Wzorzec się powtarza: większość wiedzy operacyjnej jest niejawna—żyje w ludziach, nie w systemach. Gdy odchodzą doświadczeni pracownicy, wiedza odchodzi z nimi.",
+      title: "Widzieliśmy ten problem z bliska",
+      sub: "Jako praktycy i badacze pracowaliśmy na halach produkcyjnych, w magazynach i na budowach. Widzimy ten sam schemat: kluczowa wiedza operacyjna nie trafia do systemów — zostaje w głowach ludzi. A gdy doświadczeni pracownicy odchodzą, firma traci ją razem z nimi.",
       cards: [
         {
           title: "Wiedza wychodzi razem z ludźmi",
