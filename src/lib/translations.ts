@@ -78,6 +78,7 @@ const en = {
     about: {
       eyebrow: "Why Us",
       title: "Built for speed and scale",
+      subtitle: "We are highly flexible and adapt our solution and delivery model to your specific needs.",
       values: [
         {
           title: "Fast to deploy",
@@ -452,6 +453,7 @@ const pl: Translations = {
     about: {
       eyebrow: "Dlaczego my",
       title: "Zbudowany pod tempo i skalę",
+      subtitle: "Jesteśmy bardzo elastyczni i dostosowujemy rozwiązanie oraz model wdrożenia do Twoich konkretnych potrzeb.",
       values: [
         {
           title: "Szybkie wdrożenie",

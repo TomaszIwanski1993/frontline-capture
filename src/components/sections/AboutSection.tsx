@@ -17,6 +17,9 @@ const AboutSection = () => {
             <h2 className="mt-2 text-4xl lg:text-5xl xl:text-6xl font-extrabold text-foreground tracking-tight leading-[1.05]">
               {t.about.title}
             </h2>
+            <p className="mt-5 text-sm sm:text-base text-muted-foreground leading-relaxed">
+              {t.about.subtitle}
+            </p>
           </div>
         </ScrollReveal>
 
