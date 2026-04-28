@@ -7,11 +7,12 @@ import { useT } from "@/hooks/useT";
 
 // Highlight standalone uppercase badge tokens (e.g. "NEW", "NOWEGO") in the
 // eyebrow with a styled badge — keeps EN/PL visually consistent.
-const BADGE_TOKENS = /(\bNEW\b|\bNOWEGO\b)/g;
+const BADGE_SPLIT = /(\bNEW\b|\bNOWEGO\b)/g;
+const BADGE_MATCH = /^(NEW|NOWEGO)$/;
 const renderEyebrowWithBadge = (text: string) => {
-  const parts = text.split(BADGE_TOKENS);
+  const parts = text.split(BADGE_SPLIT);
   return parts.map((part, i) =>
-    BADGE_TOKENS.test(part) ? <NewBadge key={i}>{part}</NewBadge> : <span key={i} className="text-sm">{part}</span>,
+    BADGE_MATCH.test(part) ? <NewBadge key={i}>{part}</NewBadge> : <span key={i} className="text-sm">{part}</span>,
   );
 };
 
