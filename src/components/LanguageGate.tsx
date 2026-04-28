@@ -51,6 +51,8 @@ const LanguageGate = () => {
       aria-modal="true"
       aria-label="Language selection"
     >
+      <LanguageGateParticles />
+
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
