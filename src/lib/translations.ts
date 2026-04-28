@@ -9,7 +9,7 @@ const en = {
       whyQuantum: "Why Us",
       resources: "Resources",
       contact: "Contact",
-      bookDemo: "Book a Demo",
+      bookDemo: "Book a Call",
       toggleMenu: "Toggle menu",
     },
     hero: {
@@ -18,7 +18,7 @@ const en = {
       titleB: "through seamless AI integration.",
       tagline: "A user-friendly, hardware-enabled AI solution that captures how the job is actually done.",
       sub: "Quantum Making keeps your best know-how in the operation — even when people leave.",
-      cta1: "Book a Demo",
+      cta1: "Book a Call",
       cta2: "How It Works",
     },
     positioning: {
@@ -186,7 +186,7 @@ const en = {
         "Fits existing workflows — no IT overhaul",
         "Clear metrics to evaluate results",
       ],
-      cta: "Book a Demo",
+      cta: "Book a Call",
       ctaSub: "See Quantum Making on your actual operations.",
     },
     faq: {
@@ -322,7 +322,7 @@ const en = {
       choose: "Choose your language",
     },
     bookDemo: {
-      title: "Book a Demo",
+      title: "Book a Call",
       subtitle: "30-minute intro call. We'll show Quantum Making on operations like yours.",
       duration: "30 minutes",
       location: "Google Meet (link shared on confirmation)",
@@ -386,7 +386,7 @@ const pl: Translations = {
       whyQuantum: "Dlaczego my",
       resources: "Materiały",
       contact: "Kontakt",
-      bookDemo: "Umów demo",
+      bookDemo: "Umów rozmowę",
       toggleMenu: "Otwórz menu",
     },
     hero: {
@@ -395,7 +395,7 @@ const pl: Translations = {
       titleB: "poprzez bezproblemową integrację AI.",
       tagline: "Przyjazne dla użytkownika rozwiązanie AI oparte na sprzęcie, które rejestruje to, jak praca jest faktycznie wykonywana.",
       sub: "Quantum Making zatrzymuje wiedzę w operacji — nawet gdy ludzie odchodzą.",
-      cta1: "Umów demo",
+      cta1: "Umów rozmowę",
       cta2: "Jak to działa",
     },
     positioning: {
@@ -564,7 +564,7 @@ const pl: Translations = {
         "Wpasowuje się w istniejące procesy — bez przebudowy IT",
         "Czytelne wskaźniki do oceny wyników",
       ],
-      cta: "Umów demo",
+      cta: "Umów rozmowę",
       ctaSub: "Zobacz Quantum Making na twoich realnych operacjach.",
     },
     faq: {
@@ -699,7 +699,7 @@ const pl: Translations = {
       choose: "Wybierz język",
     },
     bookDemo: {
-      title: "Umów demo",
+      title: "Umów rozmowę",
       subtitle: "30-minutowa rozmowa wprowadzająca. Pokażemy Quantum Making na operacjach takich jak Twoje.",
       duration: "30 minut",
       location: "Google Meet (link wysyłamy w potwierdzeniu)",
