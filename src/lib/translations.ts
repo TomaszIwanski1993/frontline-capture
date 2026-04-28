@@ -398,7 +398,7 @@ const pl: Translations = {
     positioning: {
       eyebrow: "Warstwa Quantum Making",
       title: "Nowa warstwa operacyjna dla pracy na hali",
-      body: "Większość operacji opiera się na nieudokumentowanej wiedzy. Quantum Making rejestruje, jak praca naprawdę wygląda, i podaje ją operatorom w czasie rzeczywistym.",
+      body: "Większość operacji opiera się na wiedzy, która nie jest nigdzie zapisana. Quantum Making rejestruje, jak praca naprawdę wygląda — i zamienia ją w uporządkowaną wiedzę.",
     },
     problem: {
       eyebrow: "Potrzeba biznesowa",
