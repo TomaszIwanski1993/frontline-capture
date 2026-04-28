@@ -219,10 +219,6 @@ const en = {
           q: "How is this different from a knowledge management tool?",
           a: "Knowledge tools are built for office work. Quantum Making is built for the floor — capturing knowledge through demonstrations, not documents. Operators actually use it.",
         },
-        {
-          q: "Can we try before committing?",
-          a: "Every engagement starts with a 2-4 week pilot on a single process. No long-term commitment. Concrete results before you decide on broader deployment.",
-        },
       ],
     },
     resources: {
@@ -596,10 +592,6 @@ const pl: Translations = {
         {
           q: "Czym Quantum Making różni się od narzędzia do zarządzania wiedzą?",
           a: "Narzędzia do wiedzy są pod pracę biurową. Quantum Making jest pod pracę na hali — rejestruje wiedzę przez pokazy, nie dokumenty. Operatorzy realnie z niego korzystają.",
-        },
-        {
-          q: "Czy można sprawdzić bez zobowiązań?",
-          a: "Każda współpraca zaczyna się od pilotażu 2-4 tygodnie na jednym procesie. Bez długoterminowych zobowiązań. Konkretne wyniki przed decyzją o szerszym wdrożeniu.",
         },
       ],
     },
