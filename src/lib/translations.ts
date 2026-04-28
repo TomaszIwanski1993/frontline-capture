@@ -197,7 +197,7 @@ const en = {
       items: [
         {
           q: "Who is Quantum Making built for?",
-          a: "Companies that depend on frontline operators: manufacturing, FMCG, warehouses, construction, and field service. If your operation relies on experienced people whose knowledge isn't documented, Quantum Making solves that.",
+          a: "Companies that depend on frontline operators—such as manufacturing, FMCG, maintenance, warehousing, construction, and field service. If your operations rely on experienced people whose knowledge isn’t documented, Quantum Making can solve that.",
         },
         {
           q: "Does this work in any factory environment?",
@@ -575,7 +575,7 @@ const pl: Translations = {
       items: [
         {
           q: "Dla kogo jest Quantum Making?",
-          a: "Dla firm opartych na operatorach pierwszej linii: produkcja, FMCG, magazyny, budowy, serwis terenowy. Jeśli twoja operacja zależy od doświadczonych ludzi, których wiedza nie jest spisana — Quantum Making to rozwiązuje.",
+          a: "Dla firm opartych na operatorach pierwszej linii — takich jak produkcja, FMCG, utrzymanie ruchu, magazynowanie, budownictwo i serwis terenowy. Jeśli Twoje operacje zależą od doświadczonych ludzi, których wiedza nie jest spisana, Quantum Making może to rozwiązać.",
         },
         {
           q: "Czy to działa w każdej fabryce?",
