@@ -52,7 +52,7 @@ const en = {
       stat2: "to",
       stat2Bold: "replace one experienced operator",
     },
-    pullQuote: '"Your operation is only as strong as what your best operator remembers."',
+    pullQuote: '"Your operation is only as strong as your operators’ experience."',
     howItWorks: {
       eyebrow: "How It Works",
       title: "Three steps to retained knowledge",
@@ -430,7 +430,7 @@ const pl: Translations = {
       stat2Bold: "zastąpienie jednego doświadczonego operatora",
     },
     pullQuote:
-      '"Twoja operacja jest tak silna, jak to, co pamięta twój najlepszy operator."',
+      '"Twoja operacja jest tak silna, jak doświadczenie Twoich operatorów."',
     howItWorks: {
       eyebrow: "Jak to działa",
       title: "Trzy kroki do utrzymania wiedzy",
