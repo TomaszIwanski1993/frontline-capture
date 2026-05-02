@@ -587,7 +587,7 @@ const pl: Translations = {
         },
         {
           q: "Czy to działa w każdej fabryce?",
-          a: "Tak. Quantum Making działa w realnych warunkach przemysłowych — na halach produkcyjnych i w terenie — i łatwo dopasowuje się do istniejących procesów, bez potrzeby specjalistycznej infrastruktury.",
+          a: "Tak. Quantum Making działa w realnych warunkach przemysłowych — na halach produkcyjnych i w magazynach — i łatwo dopasowuje się do istniejących procesów, bez potrzeby specjalistycznej infrastruktury.",
         },
         {
           q: "Co dokładnie rejestruje Quantum Making?",
