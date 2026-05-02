@@ -408,8 +408,8 @@ const pl: Translations = {
     },
     problem: {
       eyebrow: "Potrzeba biznesowa",
-      title: "Widzieliśmy ten problem z bliska",
-      sub: "Jako praktycy i badacze pracowaliśmy na halach produkcyjnych, w magazynach i na budowach. Widzimy ten sam schemat: kluczowa wiedza operacyjna nie trafia do systemów — zostaje w głowach ludzi. A gdy doświadczeni pracownicy odchodzą, firma traci ją razem z nimi.",
+      title: "Poznaliśmy ten problem z bliska",
+      sub: "Pracując w środowiskach produkcyjnych zaobserwowaliśmy ten sam schemat: kluczowa wiedza operacyjna nie trafia do systemów — zostaje w głowach ludzi. A gdy doświadczeni pracownicy odchodzą, firma traci ją razem z nimi.",
       cards: [
         {
           title: "Wiedza odchodzi razem z ludźmi",
@@ -417,14 +417,15 @@ const pl: Translations = {
             "Większość know-how nie jest nigdzie spisana. Gdy doświadczeni operatorzy odchodzą, wiedza znika razem z nimi.",
         },
         {
-          title: "Niedobór kadr uderza w biznes",
+          title: "Wyniki operacyjne",
           description:
             "Brakuje kompetencji technicznych, a wyzwania kadrowe coraz mocniej wpływają na wyniki i stabilność biznesu.",
         },
         {
           title: "Skutki widać w operacjach",
           description:
-            "Wolniejsze wdrożenia. Więcej błędów. Niższe OEE. Jakość produkcji zależy od tego, kto jest na zmianie.",
+            "Wolniejsze wdrożenia nowych pracowników. Więcej błędów. Niższe OEE. Jakość i efektywność produkcji mocno uzależniona od czynnika ludzkiego.",
+        },
         },
       ],
       stat1: "wiedzy operacyjnej jest",
@@ -433,7 +434,7 @@ const pl: Translations = {
       stat2Bold: "zastąpienie jednego doświadczonego operatora",
     },
     pullQuote:
-      '"Twoja operacja jest tylko tak silna, jak doświadczenie Twoich operatorów."',
+      '"Twoja doskonałość operacyjna jest tak silna, jak duże jest doświadczenie Twoich operatorów."',
     howItWorks: {
       eyebrow: "Jak to działa",
       title: "Trzy kroki do zachowania wiedzy",
