@@ -603,7 +603,7 @@ const pl: Translations = {
         },
         {
           q: "Czym Quantum Making różni się od innych narzędzi do zarządzania wiedzą w firmie?",
-          a: "Klasyczne narzędzia są stworzone do pracy biurowej. Quantum Making działa w środowisku operacyjnym — rejestruje, jak praca naprawdę wygląda, zamiast polegać na dokumentach. Dzięki temu operatorzy faktycznie z niego korzystają.",
+          a: "Klasyczne narzędzia są stworzone do pracy biurowej. Quantum Making działa w środowisku operacyjnym — rejestruje, jak praca naprawdę wygląda. Dzięki temu operatorzy i cała organizacja faktycznie mogą z tego skorzystać.",
         },
       ],
     },
