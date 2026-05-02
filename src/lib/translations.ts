@@ -507,7 +507,7 @@ const pl: Translations = {
             "Kluczowe know-how jest w systemie, nie tylko w głowach pracowników — rotacja przestaje zaburzać pracę.",
         },
         {
-          metric: "Mniej zależności od bohaterów",
+          metric: "Mniej zależności od wysiłku jednostki",
           title: "Wiedza najlepszych dostępna dla wszystkich",
           description:
             "Doświadczenie najlepszych jest dostępne dla wszystkich zespołów.",
