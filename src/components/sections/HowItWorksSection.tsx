@@ -58,10 +58,33 @@ const HowItWorksSection = () => {
                     <div className="hidden md:block absolute top-6 -right-4 w-8 h-px bg-border" />
                   )}
                 </div>
-              </ScrollReveal>
+           </ScrollReveal>
             );
           })}
         </div>
+
+        <ScrollReveal delay={0.1}>
+          <div className="mt-16 lg:mt-24 grid md:grid-cols-2 gap-10 lg:gap-14 items-center">
+            <div className="order-2 md:order-1">
+              <h3 className="text-2xl lg:text-3xl font-extrabold text-foreground tracking-tight leading-tight">
+                {t.howItWorks.summaryTitle}
+              </h3>
+              <p className="mt-5 text-foreground/70 text-base lg:text-lg leading-relaxed">
+                {t.howItWorks.summary}
+              </p>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="relative overflow-hidden rounded-2xl border border-border shadow-lg">
+                <img
+                  src={realwearImg}
+                  alt={t.howItWorks.imageAlt}
+                  loading="lazy"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 subtle-divider" />
