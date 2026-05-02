@@ -478,7 +478,7 @@ const pl: Translations = {
         {
           title: "Bezdotykowo, w miejscu pracy",
           description:
-            "Dokumentowanie odbywa się bez ingerencji w pracę — bezpośrednio na hali, tam gdzie naprawdę się ona odbywa.",
+            "Dokumentowanie odbywa się bez ingerencji w pracę ",
         },
       ],
       origin: "Zbudowane w Polsce",
