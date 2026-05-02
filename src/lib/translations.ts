@@ -595,7 +595,7 @@ const pl: Translations = {
         },
         {
           q: "Jak podchodzicie do bezpieczeństwa i RODO?",
-          a: "Dane są szyfrowane, przechowywane w UE i przetwarzane zgodnie z RODO. Nie zbieramy danych osobowych ani nie śledzimy pracowników. Z każdym klientem podpisujemy umowę powierzenia danych.",
+          a: "Dane są szyfrowane, przechowywane w UE i przetwarzane zgodnie z RODO. Nie zbieramy danych osobowych ani nie śledzimy pracowników. Z każdym klientem podpisujemy indywidualną umowę powierzenia danych.",
         },
         {
           q: "Jakie efekty daje Quantum Making?",
