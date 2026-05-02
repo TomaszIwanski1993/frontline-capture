@@ -599,7 +599,7 @@ const pl: Translations = {
         },
         {
           q: "Jakie efekty daje Quantum Making?",
-          a: "Szybsze wdrożenia i spójna praca na każdej zmianie.",
+          a: "Precyzyjna i realistyczna dokumentacja na temat Twoich procesów produkcyjnych i logistycznych.",
         },
         {
           q: "Czym Quantum Making różni się od innych narzędzi do zarządzania wiedzą w firmie?",
