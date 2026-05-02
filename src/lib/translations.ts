@@ -97,7 +97,7 @@ const en = {
         {
           title: "For Who",
           description:
-            "Production, Manufacturing, Logistics, Constructions Businesses, HR.",
+            "Production, Logistics, Constructions, Maintenance, HR.",
         },
       ],
       origin: "Built in Poland",
