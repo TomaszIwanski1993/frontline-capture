@@ -485,18 +485,18 @@ const pl: Translations = {
     },
     value: {
       eyebrow: "Efekty",
-      title: "Realny, mierzalny wpływ na operacje",
+      title: "Realny, mierzalny wpływ na doskonałość operacyjną",
       sub: "Co zyskują zespoły, gdy wiedza staje się wspólna, uporządkowana i dostępna dla wszystkich?",
       items: [
         {
           metric: "Wdrożenie w dni, nie miesiące",
-          title: "Szybsze wdrożenie do pracy",
+          title: "\n",
           description:
             "Nowi operatorzy uczą się na wiedzy najlepszych — zamiast metodą prób i błędów.",
         },
         {
           metric: "Spójność między zmianami",
-          title: "Spójne wykonywanie pracy",
+          title: "Mniej zależności od indywidualnego wysiłku",
           description:
             "Każdy pracuje według tych samych sprawdzonych kroków — wynik nie zależy już od tego, kto jest na zmianie.",
         },
@@ -510,7 +510,7 @@ const pl: Translations = {
           metric: "Mniej zależności od bohaterów",
           title: "Wiedza najlepszych dostępna dla wszystkich",
           description:
-            "Doświadczenie najlepszych jest dostępne dla wszystkich zespołów i lokalizacji — nie tylko na ich zmianie.",
+            "Doświadczenie najlepszych jest dostępne dla wszystkich zespołów — nie tylko na ich zmianie.",
         },
       ],
       kpis: [
