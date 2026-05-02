@@ -498,7 +498,7 @@ const pl: Translations = {
           metric: "Spójność między brygadami",
           title: "\n",
           description:
-            "Każdy pracuje według tych samych sprawdzonych kroków — wynik nie zależy już od tego, kto jest na zmianie.",
+            "Każdy operator pracuje według tych samych sprawdzonych kroków.",
         },
         {
           metric: "Bez pojedynczych punktów awarii",
