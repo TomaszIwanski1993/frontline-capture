@@ -1,8 +1,12 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import logoPatio from "@/assets/logo-patio.png";
+import logoTatarczuch from "@/assets/logo-tatarczuch.png";
 import { useT } from "@/hooks/useT";
 
-const logos = [{ src: logoPatio, alt: "Patio" }];
+const logos = [
+  { src: logoPatio, alt: "Patio" },
+  { src: logoTatarczuch, alt: "Tatarczuch Domy & Dachy" },
+];
 
 const TrustSection = () => {
   const t = useT();
