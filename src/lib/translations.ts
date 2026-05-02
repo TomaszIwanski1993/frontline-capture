@@ -510,7 +510,7 @@ const pl: Translations = {
           metric: "Mniej zależności od bohaterów",
           title: "Wiedza najlepszych dostępna dla wszystkich",
           description:
-            "Doświadczenie najlepszych jest dostępne dla wszystkich zespołów — nie tylko na ich zmianie.",
+            "Doświadczenie najlepszych jest dostępne dla wszystkich zespołów.",
         },
       ],
       kpis: [
