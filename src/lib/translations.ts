@@ -76,7 +76,7 @@ const en = {
       ],
       summaryTitle: "Industrial-grade compliance, powered by AI",
       summary:
-        "Industrial compliance for ISO-certified appliances, powered by AI. A user-friendly, hands-free solution that captures expert know-how directly on the shop floor — no keyboards, no interruptions, no manual write-ups.",
+        "A user-friendly, hands-free solution that captures expert know-how directly on the shop floor through video and voice analysis. No keyboards, no interruptions, and no manual write-ups—ensuring industrial compliance for ISO-certified operations, powered by AI.",
       imageAlt: "Operator using a hands-free RealWear headset on the shop floor",
     },
     about: {
@@ -457,7 +457,7 @@ const pl: Translations = {
       ],
       summaryTitle: "Zgodność przemysłowa klasy ISO, napędzana przez AI",
       summary:
-        "Zgodność przemysłowa dla urządzeń certyfikowanych ISO, napędzana przez AI. Proste w obsłudze, bezdotykowe rozwiązanie, które przechwytuje wiedzę ekspertów bezpośrednio na hali produkcyjnej — bez klawiatur, bez przerywania pracy, bez ręcznego spisywania.",
+        "Przyjazne dla użytkownika, bezdotykowe rozwiązanie, które przechwytuje wiedzę ekspercką bezpośrednio na hali produkcyjnej poprzez analizę wideo i głosu. Bez klawiatur, bez przerywania pracy i bez ręcznego spisywania – zapewniając zgodność przemysłową operacji certyfikowanych wg norm ISO, napędzaną przez AI.",
       imageAlt: "Operator korzystający z bezdotykowego zestawu RealWear na hali produkcyjnej",
     },
     about: {
