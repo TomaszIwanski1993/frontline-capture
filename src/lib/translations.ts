@@ -495,7 +495,7 @@ const pl: Translations = {
             "Nowi operatorzy uczą się na wiedzy najlepszych — zamiast metodą prób i błędów.",
         },
         {
-          metric: "Spójność między zmianami",
+          metric: "Spójność między brygadami",
           title: "\n",
           description:
             "Każdy pracuje według tych samych sprawdzonych kroków — wynik nie zależy już od tego, kto jest na zmianie.",
