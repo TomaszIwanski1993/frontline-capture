@@ -462,18 +462,18 @@ const pl: Translations = {
     },
     about: {
       eyebrow: "Dlaczego my",
-      title: "Rozwiązanie zaprojektowane do szybkiego skalowania",
-      subtitle: "Jesteśmy elastyczni i dopasowujemy rozwiązanie oraz model wdrożenia do Twoich potrzeb.\n",
+      title: "Szybkoscaleowalne rozwiązanie",
+      subtitle: "Szybko i skutecznie dopasujemy nasze rozwiązanie oraz model biznesowy do potrzeb Twojej organizacji",
       values: [
         {
           title: "Szybkie wdrożenie",
           description:
-            "Dokumentacja powstaje w kilka minut i jest gotowa do użycia od razu — bez długich projektów.",
+            "Dokumentacja powstaje w kilka minut i jest gotowa do użycia od razu.",
         },
         {
-          title: "Gotowa do użycia dokumentacja",
+          title: "Nieinwazyjna metoda obserwacji pracy dostarcza lepsze wyniki",
           description:
-            "Tworzymy szczegółową, gotową do użycia dokumentację opartą na tym, jak praca naprawdę wygląda.",
+            "\n",
         },
         {
           title: "Bezdotykowo, w miejscu pracy",
