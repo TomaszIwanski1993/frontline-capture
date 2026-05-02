@@ -16,8 +16,9 @@ const FAQSection = () => {
           <ScrollReveal>
             <div className="lg:sticky lg:top-24">
               <h2 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-foreground tracking-tight leading-[1.1]">
-                {t.faq.titleA}<br />
-                {t.faq.titleB} {t.faq.titleC}
+                {`${t.faq.titleA}\n${t.faq.titleB} ${t.faq.titleC}`.split("\n").map((line, idx) => (
+                  <span key={idx} className="block">{line}</span>
+                ))}
               </h2>
             </div>
           </ScrollReveal>
