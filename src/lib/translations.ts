@@ -462,7 +462,7 @@ const pl: Translations = {
     },
     about: {
       eyebrow: "Dlaczego my",
-      title: "Szybkoscaleowalne rozwiązanie",
+      title: "Szybkoskalowalne rozwiązanie",
       subtitle: "Szybko i skutecznie dopasujemy nasze rozwiązanie oraz model biznesowy do potrzeb Twojej organizacji",
       values: [
         {
