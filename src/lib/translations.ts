@@ -95,9 +95,9 @@ const en = {
             "Our solution prepares detailed, ready-to-use documentation built from how the work is actually done.",
         },
         {
-          title: "Hands-free on the shop floor",
+          title: "For Who",
           description:
-            "The documentation process is hands-free and runs directly on the shop floor, where the work is actually performed.",
+            "Production, Manufacturing, Logistics, Constructions Businesses, HR.",
         },
       ],
       origin: "Built in Poland",
