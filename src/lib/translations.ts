@@ -502,7 +502,7 @@ const pl: Translations = {
         },
         {
           metric: "Bez pojedynczych punktów awarii",
-          title: "Wiedza zostaje w firmie",
+          title: "\n",
           description:
             "Kluczowe know-how jest w systemie, nie tylko w głowach pracowników — rotacja przestaje zaburzać pracę.",
         },
