@@ -471,9 +471,9 @@ const pl: Translations = {
             "Dokumentacja powstaje w kilka minut i jest gotowa do użycia od razu.",
         },
         {
-          title: "Nieinwazyjna metoda obserwacji pracy dostarcza lepsze wyniki",
+          title: "Dla kogo",
           description:
-            "\n",
+            "Produkcja, logistyka, budownictwo, utrzymanie ruchu, inżyniering, HR",
         },
         {
           title: "Bezdotykowo, w miejscu pracy",
