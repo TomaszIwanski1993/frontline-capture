@@ -473,7 +473,7 @@ const pl: Translations = {
         {
           title: "Dla kogo",
           description:
-            "Produkcja, logistyka, budownictwo, utrzymanie ruchu, inżyniering, HR",
+            "\n",
         },
         {
           title: "Bezdotykowo, w miejscu pracy",
