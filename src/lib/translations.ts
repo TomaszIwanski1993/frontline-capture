@@ -70,10 +70,14 @@ const en = {
         },
         {
           title: "Document",
-          description:
+         description:
             "Raw expertise becomes structured, searchable guidance, ready to deploy across teams that will make knowledge available for onboarding, training, and continuous improvement.",
         },
       ],
+      summaryTitle: "Industrial-grade compliance, powered by AI",
+      summary:
+        "Industrial compliance for ISO-certified appliances, powered by AI. A user-friendly, hands-free solution that captures expert know-how directly on the shop floor — no keyboards, no interruptions, no manual write-ups.",
+      imageAlt: "Operator using a hands-free RealWear headset on the shop floor",
     },
     about: {
       eyebrow: "Why Us",
@@ -447,10 +451,14 @@ const pl: Translations = {
         },
         {
           title: "Dokumentacja",
-          description:
+         description:
             "Zamieniamy doświadczenie w uporządkowaną, gotową do użycia wiedzę — do wdrożeń, szkoleń i ciągłego doskonalenia.",
         },
       ],
+      summaryTitle: "Zgodność przemysłowa klasy ISO, napędzana przez AI",
+      summary:
+        "Zgodność przemysłowa dla urządzeń certyfikowanych ISO, napędzana przez AI. Proste w obsłudze, bezdotykowe rozwiązanie, które przechwytuje wiedzę ekspertów bezpośrednio na hali produkcyjnej — bez klawiatur, bez przerywania pracy, bez ręcznego spisywania.",
+      imageAlt: "Operator korzystający z bezdotykowego zestawu RealWear na hali produkcyjnej",
     },
     about: {
       eyebrow: "Dlaczego my",

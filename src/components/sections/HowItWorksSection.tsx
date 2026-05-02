@@ -1,5 +1,6 @@
 import { Video, Layers, PlayCircle } from "lucide-react";
 import bgHowIt from "@/assets/bg-howit-collab.jpg";
+import realwearImg from "@/assets/howitworks-realwear.png";
 import SectionBgImage from "@/components/SectionBgImage";
 import KnowledgeFlow from "@/components/KnowledgeFlow";
 import { flowConfig } from "@/lib/flowConfig";
