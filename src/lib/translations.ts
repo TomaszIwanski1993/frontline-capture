@@ -426,7 +426,6 @@ const pl: Translations = {
           description:
             "Wolniejsze wdrożenia nowych pracowników. Więcej błędów. Niższe OEE. Jakość i efektywność produkcji mocno uzależniona od czynnika ludzkiego.",
         },
-        },
       ],
       stat1: "wiedzy operacyjnej jest",
       stat1Bold: "niejawne, nie spisane",
