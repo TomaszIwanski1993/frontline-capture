@@ -583,7 +583,7 @@ const pl: Translations = {
       items: [
         {
           q: "Dla kogo jest Quantum Making?",
-          a: "Dla firm opartych na pracy pracowników operacyjnych — w produkcji, FMCG, logistyce, magazynach i budownictwie. Jeśli Twoje operacje zależą od doświadczonych ludzi, a ich wiedza nie jest nigdzie zapisana - rozwiązanie oferowane przez Quantum Making jest dla Ciebie.",
+          a: "Dla firm w produkcji, FMCG, logistyce, magazynach i budownictwie. Jeśli Twoje procesy zależą od doświadczonych ludzi, a ich wiedza praktyczna nie jest nigdzie zapisana - rozwiązanie oferowane przez Quantum Making jest dla Ciebie.",
         },
         {
           q: "Czy to działa w każdej fabryce?",
