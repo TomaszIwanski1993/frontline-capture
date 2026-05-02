@@ -508,7 +508,7 @@ const pl: Translations = {
         },
         {
           metric: "Mniej zależności od wysiłku jednostki",
-          title: "Wiedza najlepszych dostępna dla wszystkich",
+          title: "\n",
           description:
             "Doświadczenie najlepszych jest dostępne dla wszystkich zespołów.",
         },
