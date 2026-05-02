@@ -403,8 +403,8 @@ const pl: Translations = {
     },
     positioning: {
       eyebrow: "Warstwa Quantum Making",
-      title: "Nowa warstwa operacyjna dla pracy na hali",
-      body: "Większość operacji opiera się na wiedzy, która nie jest nigdzie zapisana. Quantum Making rejestruje, jak praca naprawdę wygląda — i zamienia ją w uporządkowaną wiedzę.",
+      title: "Nowe podejście do utrzymania i rozwoju doskonałości operacyjnej",
+      body: "Większość procesów opiera się na wiedzy i doświadczeniu, które nie są nigdzie zapisane. Quantum Making dokumentuje, jak praca wygląda naprawdę.",
     },
     problem: {
       eyebrow: "Potrzeba biznesowa",
@@ -437,12 +437,12 @@ const pl: Translations = {
     howItWorks: {
       eyebrow: "Jak to działa",
       title: "Trzy kroki do zachowania wiedzy",
-      sub: "Oparte na AI, które rozumie realne procesy — nie tylko dokumenty.",
+      sub: "Oparte na AI, które rozumie i interpretuje realne procesy.",
       steps: [
         {
-          title: "Kontekst",
+          title: "Kontekstualizacja",
           description:
-            "Dostarczasz dokumentację, procedury i SOP, dzięki którym AI rozumie Twój biznes i sposób pracy.",
+            "Zamieniamy doświadczenie w uporządkowaną, gotową do użycia wiedzę.",
         },
         {
           title: "Rejestracja",
