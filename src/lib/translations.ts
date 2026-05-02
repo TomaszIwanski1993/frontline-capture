@@ -455,9 +455,9 @@ const pl: Translations = {
             "Zamieniamy doświadczenie w uporządkowaną, gotową do użycia wiedzę — do wdrożeń, szkoleń i ciągłego doskonalenia.",
         },
       ],
-      summaryTitle: "Zgodność przemysłowa klasy ISO, napędzana przez AI",
+      summaryTitle: "Gotowość przemysłowa klasy ISO, napędzana przez AI",
       summary:
-        "Przyjazne dla użytkownika, bezdotykowe rozwiązanie, które przechwytuje wiedzę ekspercką bezpośrednio na hali produkcyjnej poprzez analizę wideo i głosu. Łączy rozpoznawanie i interpretację obiektów w czasie rzeczywistym z analizą komentarzy użytkownika. Bez klawiatur, bez przerywania pracy i bez ręcznego spisywania – zapewniając zgodność przemysłową operacji certyfikowanych wg norm ISO, napędzaną przez AI.",
+        "Przyjazne dla użytkownika, bezdotykowe rozwiązanie, które przechwytuje wiedzę ekspercką bezpośrednio na hali produkcyjnej poprzez analizę wideo i głosu. Łączy rozpoznawanie i interpretację obiektów w czasie rzeczywistym z analizą komentarzy użytkownika. Bez klawiatur, bez rozpraszania w czasie pracy i ręcznego spisywania. Zapewnia zgodność z normami ISO. Wszystko razem zintegrowane z AI.",
       imageAlt: "Operator korzystający z bezdotykowego zestawu RealWear na hali produkcyjnej",
     },
     about: {
