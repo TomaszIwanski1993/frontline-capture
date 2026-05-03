@@ -504,7 +504,7 @@ const pl: Translations = {
           metric: "Równa dystrybucja kompetencji",
           title: "\n",
           description:
-            "Kluczowe know-how jest w systemie, nie tylko w głowach pracowników — rotacja przestaje zaburzać pracę.",
+            "Kluczowa wiedza jest zapisana w systemie, a nie wyłącznie w głowach pracowników — rotacja kadry przestaje zakłócać pracę.",
         },
         {
           metric: "Mniej zależności od wysiłku jednostki",
