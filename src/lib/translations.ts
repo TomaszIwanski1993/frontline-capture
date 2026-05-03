@@ -501,7 +501,7 @@ const pl: Translations = {
             "Każdy operator pracuje według tych samych sprawdzonych kroków.",
         },
         {
-          metric: "Bez pojedynczych punktów awarii",
+          metric: "Równa dystrybucja kompetencji",
           title: "\n",
           description:
             "Kluczowe know-how jest w systemie, nie tylko w głowach pracowników — rotacja przestaje zaburzać pracę.",
