@@ -422,7 +422,7 @@ const pl: Translations = {
             "Brakuje kompetencji technicznych, a wyzwania kadrowe coraz mocniej wpływają na wyniki i stabilność biznesu.",
         },
         {
-          title: "Skutki widać w operacjach",
+          title: "Skutki widać w poziomie doskonałości operacyjnej",
           description:
             "Wolniejsze wdrożenia nowych pracowników. Więcej błędów. Niższe OEE. Jakość i efektywność produkcji mocno uzależniona od czynnika ludzkiego.",
         },
