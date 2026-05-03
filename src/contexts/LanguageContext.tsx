@@ -13,24 +13,25 @@ const STORAGE_KEY = "quantum-language";
 const LanguageContext = createContext<LanguageContextValue | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguageState] = useState<Language | null>(null);
-  const [hasSelected, setHasSelected] = useState(false);
+  const [language, setLanguageState] = useState<Language>("en");
+  const [hasSelected, setHasSelected] = useState(true);
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    // If a language was previously chosen, skip the gate entirely.
-    // Otherwise default to English so the site is immediately visible,
-    // while still allowing the user to switch via the gate or the language switcher.
+    // Default to English so the site is immediately visible to users and
+    // search engines. Honor a previously-stored choice if present.
     try {
       const stored = localStorage.getItem(STORAGE_KEY) as Language | null;
       if (stored === "en" || stored === "pl") {
         document.documentElement.lang = stored;
         setLanguageState(stored);
-        setHasSelected(true);
+      } else {
+        document.documentElement.lang = "en";
       }
     } catch {
-      // ignore — gate will be shown
+      document.documentElement.lang = "en";
     }
+    setHasSelected(true);
     setHydrated(true);
   }, []);
 

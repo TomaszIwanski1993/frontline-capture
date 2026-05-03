@@ -6,7 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { BookDemoProvider } from "@/contexts/BookDemoContext";
 import BookDemoDialog from "@/components/BookDemoDialog";
-import LanguageGate from "@/components/LanguageGate";
 import Index from "./pages/Index.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import CookiePolicy from "./pages/CookiePolicy.tsx";
@@ -17,7 +16,6 @@ const queryClient = new QueryClient();
 const GatedApp = () => {
   return (
     <>
-      <LanguageGate />
       <Toaster />
       <Sonner />
       <BrowserRouter>
