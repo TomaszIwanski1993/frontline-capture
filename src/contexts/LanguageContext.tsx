@@ -3,7 +3,7 @@ import { createContext, useContext, useEffect, useState, ReactNode } from "react
 export type Language = "en" | "pl";
 
 interface LanguageContextValue {
-  language: Language | null;
+  language: Language;
   setLanguage: (lang: Language) => void;
   hasSelected: boolean;
 }
