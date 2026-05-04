@@ -15,7 +15,12 @@ const TIMEZONE = "Europe/Warsaw";
 const SLOT_MINUTES = 30;
 // Calendar that owns the demo events. Must be shared with the connected
 // Google account with "Make changes to events" permission.
+// Calendar used to check busy times (read access via freeBusy is enough).
 const TARGET_CALENDAR_ID = "tomasz.iwanski@quantummaking.com";
+// Calendar used to CREATE the event. "primary" = the connected Google
+// account's own calendar, which guarantees write access. The owner is
+// still added as an attendee below so the event appears on their calendar.
+const EVENT_CALENDAR_ID = "primary";
 const NOTIFY_EMAIL = "tomasz.iwanski@quantummaking.com";
 
 interface BookingPayload {
