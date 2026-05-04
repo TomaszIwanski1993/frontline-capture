@@ -104,7 +104,7 @@ async function createEvent(opts: {
   ].join("\n");
 
   const requestId = crypto.randomUUID();
-  const url = `${GATEWAY_URL}/calendars/${encodeURIComponent(TARGET_CALENDAR_ID)}/events?conferenceDataVersion=1&sendUpdates=all`;
+  const url = `${GATEWAY_URL}/calendars/${encodeURIComponent(EVENT_CALENDAR_ID)}/events?conferenceDataVersion=1&sendUpdates=all`;
 
   const res = await fetch(url, {
     method: "POST",
