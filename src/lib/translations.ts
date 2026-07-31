@@ -538,9 +538,9 @@ const pl: Translations = {
       tags: ["Produkcja", "Logistyka", "FMCG", "Serwis terenowy"],
     },
     partner: {
-      title: "Zaufanie przemysłu. Wsparcie globalnej innowacji AI.",
+      title: "Budujemy przyszłość pracy z pomocą globalnego ekosystemu AI.",
       description:
-        "Quantum Making jest członkiem NVIDIA Inception — programu wspierającego startupy rozwijające sztuczną inteligencję i obliczenia akcelerowane.",
+        "Quantum Making jest członkiem NVIDIA Inception - programu wspierającego startupy budujące przyszłość dzięki sztucznej inteligencji.",
     },
     industries: {
       eyebrow: "Branże",
