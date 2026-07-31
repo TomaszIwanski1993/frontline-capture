@@ -151,6 +151,11 @@ const en = {
       label: "Piloted in real warehousing and production environments",
       tags: ["Manufacturing", "Logistics", "FMCG", "Field Service"],
     },
+    partner: {
+      title: "Trusted by industry. Supported by global AI innovation.",
+      description:
+        "Quantum Making is a proud member of NVIDIA Inception, a program supporting startups advancing AI and accelerated computing.",
+    },
     industries: {
       eyebrow: "Industries",
       title: "Wherever operations depend on human expertise",
