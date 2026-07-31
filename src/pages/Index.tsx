@@ -65,6 +65,9 @@ const Index = () => {
         {/* Trust logos — light, quiet */}
         <TrustSection />
 
+        {/* NVIDIA Inception — credibility */}
+        <PartnerSection />
+
         {/* FAQ — tinted */}
         <div className="section-tinted">
           <FAQSection />
