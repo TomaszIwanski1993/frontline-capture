@@ -151,6 +151,11 @@ const en = {
       label: "Piloted in real warehousing and production environments",
       tags: ["Manufacturing", "Logistics", "FMCG", "Field Service"],
     },
+    partner: {
+      title: "Trusted by industry. Supported by global AI innovation.",
+      description:
+        "Quantum Making is a proud member of NVIDIA Inception, a program supporting startups advancing AI and accelerated computing.",
+    },
     industries: {
       eyebrow: "Industries",
       title: "Wherever operations depend on human expertise",
@@ -531,6 +536,11 @@ const pl: Translations = {
     trust: {
       label: "SPRAWDZONE W REALNYCH ŚRODOWISKACH MAGAZYNOWYCH I PRODUKCYJNYCH",
       tags: ["Produkcja", "Logistyka", "FMCG", "Serwis terenowy"],
+    },
+    partner: {
+      title: "Zaufanie przemysłu. Wsparcie globalnej innowacji AI.",
+      description:
+        "Quantum Making jest członkiem NVIDIA Inception — programu wspierającego startupy rozwijające sztuczną inteligencję i obliczenia akcelerowane.",
     },
     industries: {
       eyebrow: "Branże",

@@ -7,6 +7,7 @@ import PositioningSection from "@/components/sections/PositioningSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import ValueSection from "@/components/sections/ValueSection";
 import TrustSection from "@/components/sections/TrustSection";
+import PartnerSection from "@/components/sections/PartnerSection";
 
 import FAQSection from "@/components/sections/FAQSection";
 import AboutSection from "@/components/sections/AboutSection";
@@ -64,6 +65,9 @@ const Index = () => {
 
         {/* Trust logos — light, quiet */}
         <TrustSection />
+
+        {/* NVIDIA Inception — credibility */}
+        <PartnerSection />
 
         {/* FAQ — tinted */}
         <div className="section-tinted">
